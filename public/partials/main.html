@@ -1,0 +1,96 @@
+<div class="Title">
+    <div class="col-sm-12">
+        <p style='font-size: 45px; text-align: center'>
+          Welcome to United Airlines.
+        </p>
+    </div>
+</div>
+
+
+<div class="Book">
+    <p>Search Flights</p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class = "airports">
+                <input name="originAirports"
+                        id="originAirports"
+                        type="text"
+                        placeholder="Flying From*"
+                        ng-model="selectedOrigin"
+                        uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
+                        class="form-control",
+                        typeahead-on-select="SetOriginAirport($item.iata)">
+            </div>
+            <p class="input-group">
+              <input type="text"
+                     class="form-control"
+                     uib-datepicker-popup="{{format}}"
+                     ng-model="dt1"
+                     is-open="popup1.opened"
+                     ng-required="true"
+                     close-text="Close"
+                     alt-input-formats="altInputFormats"
+                     placeholder="Depart Date*" />
+              <span class="input-group-btn">
+                <button type="button"
+                        class="btn btn-default"
+                        ng-click="open1()">
+                        <i class="glyphicon glyphicon-calendar"></i>
+               </button>
+              </span>
+            </p>
+            <div class="btn-group" uib-dropdown is-open="status.isopenP">
+              <button id="single-button" type="button" class="DropDownButton" uib-dropdown-toggle ng-disabled="disabled">
+                {{selectedP}}<span class="caret"></span>
+              </button>
+              <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                <li role="menuitem"><button type="button" class="listButton" id='btn1' ng-click='selectNum(1)'>1</button></li>
+                <li role="menuitem"><button type="button" class="listButton" id='btn2' ng-click='selectNum(2)'>2</button></li>
+                <li role="menuitem"><button type="button" class="listButton" id='btn3' ng-click='selectNum(3)'>3</button></li>
+                <li role="menuitem"><button type="button" class="listButton" id='btn4' ng-click='selectNum(4)'>4</button></li>
+                <li role="menuitem"><button type="button" class="listButton" id='btn5' ng-click='selectNum(5)'>5</button></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class = "airports">
+                <input name="destinationAirports"
+                        id="destinationAirports"
+                        type="text"
+                        placeholder="Flying To*"
+                        ng-model="selectedDestination"
+                        uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
+                        class="form-control",
+                        typeahead-on-select="SetDestinationAirport($item.iata)">
+            </div>
+            <p class="input-group">
+                <input type="text"
+                        class="form-control"
+                        uib-datepicker-popup="{{format}}"
+                        ng-model="dt2"
+                        is-open="popup2.opened"
+                        ng-required="true"
+                        close-text="Close"
+                        placeholder="Return Date*" 
+                        />
+                <span class="input-group-btn">
+                    <button type="button"
+                        class="btn btn-default"
+                        ng-click="open2()">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                    </button>
+                </span>
+            </p>
+            <div class="btn-group" uib-dropdown is-open="status.isopenC">
+              <button id="single-button" type="button" class="DropDownButton" uib-dropdown-toggle ng-disabled="disabled">
+                {{selectedC}}<span class="caret"></span>
+              </button>
+              <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                <li role="menuitem"><button type="button" class="listButton" id='eco' ng-click='selectCabin("Economy")'>Economy</button></li>
+                <li role="menuitem"><button type="button" class="listButton" id='first' ng-click='selectCabin("First Class")'>First Class</button></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+  <button type="button" class="Button" id='btnSearch' ng-click='SearchFlights()'>Search</button>
+</div>
