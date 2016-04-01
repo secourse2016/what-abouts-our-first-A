@@ -1,6 +1,6 @@
 App.controller('confirmCtrl',function($scope,$location){
 
-	// $scope.text=;
+	$scope.text=;
 
 	$scope.proceed="payment.html";
 
