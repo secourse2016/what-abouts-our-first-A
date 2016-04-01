@@ -1,54 +1,53 @@
 <style>
-.proceed
-{
-	
- background: hsla(219, 100%, 50%, 0.68);
-/*       margin:200px 450px;
-*/
-margin-right: 150px;
-margin-left: 150px;
-
-}
-body
-{
+.proceedContainer
+{	
+    background: hsla(219, 100%, 50%, 0.68);
+    padding: 20px 0px 0px 0px;
+    border-radius: 15px;
+    margin: 9.6% 20% 9.5% 20%;
+    min-height: 357px;
     line-height: 2;
     font-family: Lato, Arial, sans-serif;
     text-align: center;
-    overflow:auto;
-    align-items: center;
-    justify-content: center;
-    background-image:url("https://www.united.com/ual/Format/img/backgrounds/home-brand-787dreamliner-usa.jpg");
-    background-repeat:no-repeat;
-    background-position: center center;
-    background-size: cover;
+    box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
 }
-input[type=submit] 
+
+.confirmBtn
 {
-    width: 30%;
+    width: 20%;
     height:60%;
-    background-color: #4CAF50;
+    background-color: #1fa823;
     color: white;
-    font-size: 100%;
-    /*padding: 7px 70px;
-    */margin: 50px 50px;
+    font-size: 150%;
+    padding: 7px 50px 7px 50%px;
+    margin: 20px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-input[type=submit]:hover 
+.confirmBtn:hover 
 {
-    background-color: #45a049;
+    background-color: #136716;
 }
-h4{
+h4
+{
 	color:white;
-
-
+    font-weight: 600;
+}
+h3
+{
+    color:white;
+    font-weight: 600;    
 }
 </style>
-<div class="proceed">
-	<h4> {{text}}</h4>
-	  <button type="button" class="confirmHome" id='btnSearch' ng-click='pay()'>Proceed</button>
-
-	  <button type="button" class="confirmHome" id='btnSearch' ng-click='home()'>Cancel</button>
+<div class="proceedContainer">
+	<h4> Are you sure you would like to book this flight?</h4>
+    <br>
+    <h3> This is the Depart Flight</h3>
+    <br>
+    <h3> This is the Return Flight</h3>
+    <br>
+    <button type="button" class="confirmBtn" id='btnPay' ng-click='pay()'>Proceed</button>
+    <button type="button" class="confirmBtn" id='btnHome' ng-click='home()'>Cancel</button>
 </div>
