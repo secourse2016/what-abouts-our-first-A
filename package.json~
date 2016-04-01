@@ -1,11 +1,12 @@
 {
-  "name": "unitedairlines",
+  "name": "United Airlines",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node ./server.js"
   },
   "dependencies": {
+    "Istanbul": "0.4.2",
     "angular": "^1.5.3",
     "angular-ui-bootstrap": "^1.2.5",
     "body-parser": "~1.13.2",

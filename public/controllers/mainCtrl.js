@@ -77,7 +77,7 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
 
     /* Find All Available Flights  */
     $scope.SearchFlights = function() {
-    $location.url('/confirm');
+    $location.url('/flights');
     };
 
     /* Get Airports on page render  */
