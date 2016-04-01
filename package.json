@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./server.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
+    "Istanbul": "0.4.2",
     "angular": "^1.5.3",
     "angular-ui-bootstrap": "^1.2.5",
     "body-parser": "~1.13.2",
@@ -21,4 +22,4 @@
     "should": ">= 0.0.1",
     "supertest": "0.3.x"
   }
-}
+
