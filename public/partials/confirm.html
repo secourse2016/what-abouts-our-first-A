@@ -1,6 +1,54 @@
-<div class="proceed">
-<h4> {{text}}</h4>
-  <button type="button" class="confirmHome" id='btnSearch' ng-click='home()'>Proceed</button>
+<style>
+.proceed
+{
+	
+ background: hsla(219, 100%, 50%, 0.68);
+/*       margin:200px 450px;
+*/
+margin-right: 150px;
+margin-left: 150px;
 
-  <button type="button" class="confirmHome" id='btnSearch' ng-click='home()'>Cancel</button>
+}
+body
+{
+    line-height: 2;
+    font-family: Lato, Arial, sans-serif;
+    text-align: center;
+    overflow:auto;
+    align-items: center;
+    justify-content: center;
+    background-image:url("https://www.united.com/ual/Format/img/backgrounds/home-brand-787dreamliner-usa.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+input[type=submit] 
+{
+    width: 30%;
+    height:60%;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 100%;
+    /*padding: 7px 70px;
+    */margin: 50px 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover 
+{
+    background-color: #45a049;
+}
+h4{
+	color:white;
+
+
+}
+</style>
+<div class="proceed">
+	<h4> {{text}}</h4>
+	  <button type="button" class="confirmHome" id='btnSearch' ng-click='pay()'>Proceed</button>
+
+	  <button type="button" class="confirmHome" id='btnSearch' ng-click='home()'>Cancel</button>
 </div>
