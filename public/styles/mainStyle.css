@@ -2,9 +2,9 @@ html
 {
     height: 100%;
 }
-
 body
 {
+    height: 100%;
     line-height: 2;
     font-family: Lato, Arial, sans-serif;
     text-align: center;
@@ -16,112 +16,4 @@ body
     background-position: center center;
     background-size: cover;
     font-weight: 600;
-}
-
-.Title 
-{
-    text-align: center;
-    display: flex;
-    margin: 2%;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-
-.Book
-{
-    font-weight: 300%;
-    margin: 0px 20%;
-    font-size: 70%;
-    padding:10px 0px;
-    min-width: 700px;
-    text-align: center;
-    align-items: center;
-    justify-content: center; 
-    box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
-    background: hsla(219, 100%, 50%, 0.68);
-    border-radius: 15px;
-    color:white;
-}
-
-.Book p
-{
-    font-weight: 300%;
-    font-size: 300%;
-    margin-bottom: 25px;
-}
-
-.DropDownButton
-{
-    min-width: 225px;
-    font-size:200%;
-    /*margin: 0px 50px;*/
-    padding:6px 10px;
-    color:white;
-    border-radius: 4px;
-    border: 1px solid hsla(208, 72%, 39%, 1);
-    background-color: hsla(208, 72%, 39%, 1);
-}
-.DropDownButton:hover
-{
-    background:hsla(212, 72%, 24%, 1);
-}
-
-.listButton
-{
-    font-size: 110%;
-    width: 100%;
-    text-align: left;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    background: white;
-    color: hsla(0, 0%, 39%, 1);
-    cursor: pointer; 
-}
-
-.listButton:hover
-{
-    background:hsla(208, 72%, 39%, 1);
-    color:white;
-}
-
-.airports
-{
-    width: 200%;
-    margin-left: 20%;
-    margin-bottom: 7%;
-}
-
-.input-group
-{
-    width: 60%;
-    margin-bottom: 5%;
-    margin-left: 20%;
-
-
-}
-
-input[type=text]
-{
-    width: 30%;
-    padding: 12px 21px;
-    margin-bottom: 10px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-}
-.Button
-{
-    background-color: #1fa823;
-    color: white;
-    font-size: 200%;
-    padding: 10px 25px;
-    margin: 30px 0;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.Button:hover 
-{
-    background-color: #136716;
 }
