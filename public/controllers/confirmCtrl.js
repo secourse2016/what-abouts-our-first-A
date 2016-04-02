@@ -1,8 +1,6 @@
 App.controller('confirmCtrl',function($scope,$location){
 
-	$scope.text=;
-
-	$scope.proceed="payment.html";
+	$scope.text="";
 
     $scope.home = function() {
     $location.url('/');

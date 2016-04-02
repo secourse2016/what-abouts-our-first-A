@@ -4,7 +4,7 @@ App.config(function($routeProvider,$locationProvider) {
     $routeProvider
 
         // route for the home page
-        .when('/', {
+        .when('/asdf', {
             templateUrl : '/partials/main.html',
             controller  : 'mainCtrl'
         })
@@ -20,7 +20,7 @@ App.config(function($routeProvider,$locationProvider) {
             controller  : 'flights2Ctrl'
         })
 
-        .when('/confirm',{
+        .when('/',{
             templateUrl : '/partials/confirm.html',
             controller  : 'confirmCtrl'
         })
