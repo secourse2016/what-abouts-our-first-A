@@ -7,7 +7,7 @@
         margin: 20px 0px 0px 0px;
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
         padding: 20px 0 0 0;
-        background: hsla(219, 100%, 50%, 0.68);
+        background: hsla(219, 100%, 33%, 0.82);
     }
     .FromTo
 	{
@@ -15,9 +15,13 @@
         align-items: left;
         justify-content: left;
         color:#fff;
-        margin:0px 45px;
+        margin:0px 0px;
         font-size: 200%;
         font-weight: 600;
+    }
+    .FromTo h4
+    {
+    	padding-left: 45px;
     }
     .FlightsTable1
     {
@@ -26,26 +30,24 @@
         align-items: left;
         justify-content: left;
         color:#fff;
-        margin:0px 45px;
+        margin:0px 0px;
+        padding-left: 50px;
         overflow:auto;
-        /*background: hsla(219, 100%, 34%, 0.68);*/
-        /*box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);*/
         font-size: 120%;
         font-weight: 600;
     }
     .FlightsTable2
     {
-    	height: 390px;
+    	height: 400px;
     	line-height: 100px;
         text-align: left;
         align-items: left;
         justify-content: left;
-        margin:0px 45px;
+        margin:0px 0px;
         color:#fff;
         overflow:auto;
-        background: hsla(219, 100%, 34%, 0.68);
+        background: hsla(219, 100%, 25%, 0.84);
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
-        border-radius: 15px;
         font-size: 170%;
         font-weight: 600;
     }
@@ -55,7 +57,7 @@
     }
     hr
     {
-    	margin: 0.5%;
+    	margin: 0%;
     }
     .FlightsTable2 table td       
     {
@@ -99,8 +101,8 @@
 </div>
 <div class="blueBackground"> 
    	<div class="FromTo">
-     Flights departing from Cairo to Madrid
-     <thead> 
+    	<h4>Flights departing from Cairo to Madrid</h4>
+     	<thead> 
        	<hr>
 			<div class="FlightsTable1">
  	  	<table>
@@ -287,6 +289,6 @@
 	<br>   
    	</div>
    	<div class="Proceeding">
-   	  <input type="submit" value="Proceed">
+   	  <input type="submit" value="Proceed" ng-click="return()">
    	</div>
 </div>
