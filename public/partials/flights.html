@@ -113,9 +113,9 @@
 	</div>
 	<hr>
    	<div class="FlightsTable2">
- 	  	<p>
- 	  		9:00 10:00 1-Hour MS181 100$
- 	  	</p>
+        <p ng-repeat="flight in Flights">
+            {{flight.date}} {{flight.date + duration}} {{flight.duration}} {{flight.flighNumber}}. 194$
+        </p>
    	</div>
    	<div class="Proceeding">
    	  <input type="submit" value="Proceed" ng-click="return()">

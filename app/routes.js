@@ -9,6 +9,11 @@ module.exports = function(app,mongo) {
       res.json( codes );
     });
 
+    app.get('/api/data/flights', function(req, res) {
+      var flights =  require('../flights.json');
+      res.json( flights );
+    });
+
     /* RENDER MAIN PAGE */
  
 	app.get('/', function (req, res) {
