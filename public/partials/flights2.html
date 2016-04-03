@@ -6,7 +6,7 @@
         font-size: 60%;
         margin: 20px 0px 0px 0px;
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
-        padding: 20px 0 0 0;
+        padding: 20px 0;
         background: hsla(219, 100%, 33%, 0.82);
     }
     .FromTo
@@ -15,6 +15,7 @@
         align-items: left;
         justify-content: left;
         color:#fff;
+        padding-right: 0;
         margin:0px 0px;
         font-size: 200%;
         font-weight: 600;
@@ -26,15 +27,20 @@
     .FlightsTable1
     {
     	height: 40px;
-        text-align: left;
-        align-items: left;
-        justify-content: left;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         color:#fff;
-        margin:0px 0px;
-        padding-left: 50px;
+        margin:0;
+        padding:0;
         overflow:auto;
         font-size: 120%;
         font-weight: 600;
+    }
+    .FlightsTable1 table
+    {
+    	width: 100%;
+    	margin-top:0.5%; 
     }
     .FlightsTable2
     {
@@ -53,7 +59,14 @@
     }
     .FlightsTable1 table td        
     {
-    	padding:0px 60px;
+    	padding:0px 0px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    	/*background: red;*/
+    	/*width: 20%;*/
+    	font-size:180%;
     }
     hr
     {
@@ -63,6 +76,15 @@
     {
     	padding:0px 60px;
     	padding-left:88px;
+    }
+    .FlightsTable2 table tr
+    {
+    	cursor: pointer;
+    	border-radius: 18px;
+    }
+    .FlightsTable2 table tr:hover      
+    {
+        background: hsla(219, 100%, 33%, 0.82);
     }
     input[type="submit"]
     {
@@ -101,182 +123,30 @@
 </div>
 <div class="blueBackground"> 
    	<div class="FromTo">
-    	<h4>Flights departing from Madrid to Cairo</h4>
-     	<thead> 
-       	<hr>
-			<div class="FlightsTable1">
- 	  	<table>
-			  <tr>	
-				  <td></td>
-				  <td>Depart</td>
-				  <td>Arrive</td>
-				  <td>Duration</td>
-				  <td>Flight No.</td>
-				  <td>Price</td>
-			  </tr>		
-			</thead>
-			</table>
-			</div>
-			  	<hr>
+    	<h4>Flights departing from Cairo to Madrid</h4>
     </div>
+   	<hr>
+	<div class="FlightsTable1">
+ 	  	<table>
+  	     	<thead> 
+				<tr>	
+					<td></td>
+					<td>Depart</td>
+					<td>Arrive</td>
+					<td>Duration</td>
+					<td>Flight No.</td>
+					<td>Price</td>
+				</tr>		
+			</thead>
+		</table>
+	</div>
+	<hr>
    	<div class="FlightsTable2">
  	  	<table>
 			
 
 			<tbody>		 	
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			    <tr>
-						<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>
-			  	<tr>
+			  	<tr ng-click="confirm()">
 					<td><input type="radio" name="group"></td>
 				  	<td>8:10</td> 
 				  	<td>11:10</td>
@@ -286,9 +156,8 @@
 			  	</tr>		 
 			</tbody>
 		</table>
-	<br>   
    	</div>
    	<div class="Proceeding">
-   	  <input type="submit" value="Proceed" ng-click="confirm()">
+   	  <input type="submit" value="Proceed" ng-click="return()">
    	</div>
 </div>

@@ -1,14 +1,14 @@
-html
+html,body
 {
     height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 body
 {
-    height: 100%;
     line-height: 2;
     font-family: Lato, Arial, sans-serif;
     text-align: center;
-    overflow:hidden;
     align-items: center;
     justify-content: center;
     background-image:url("https://www.united.com/ual/Format/img/backgrounds/home-brand-787dreamliner-usa.jpg");
@@ -16,4 +16,5 @@ body
     background-position: center center;
     background-size: cover;
     font-weight: 600;
+    padding: 0;
 }
