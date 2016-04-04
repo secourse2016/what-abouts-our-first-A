@@ -113,7 +113,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="flight in Flights | filter : {origin:destination} | filter : {destination : origin}" ng-click="setReturnFlight(flight,getPrice(flight.costeconomy,flight.costfirst))">
+            <tr ng-repeat="flight in Flights | filter : {origin:destination} | filter : {destination : origin}| filter : dateFilter" ng-click="setReturnFlight(flight,getPrice(flight.costeconomy,flight.costfirst))">
                 <td>
                     {{dateFixer(flight.date)}}
                 </td>

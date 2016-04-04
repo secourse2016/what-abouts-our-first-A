@@ -5,7 +5,8 @@ App.controller('flights2Ctrl',function($scope,FlightsSrv,$location){
 
     $scope.origin = FlightsSrv.getSelectedOriginAirport();
     $scope.destination = FlightsSrv.getSelectedDestinationAirport();
-    
+    $scope.returnDate = FlightsSrv.getReturnDate();
+
     $scope.setReturnFlight=function(flight,price){
         FlightsSrv.setReturnFlight(flight);
         FlightsSrv.setReturnPrice(price);
@@ -55,5 +56,16 @@ App.controller('flights2Ctrl',function($scope,FlightsSrv,$location){
             return first;
         }
     }
+
+    $scope.dateFilter = function(flight)
+    {
+        var d = new Date(flight.date);
+        if(d.getDay()===$scope.returnDate.getDay() && d.getMonth()===$scope.returnDate.getMonth() && d.getYear()===$scope.returnDate.getYear())
+        {
+            return true;
+        }
+        return false;
+    };
+
     Flights();
 })

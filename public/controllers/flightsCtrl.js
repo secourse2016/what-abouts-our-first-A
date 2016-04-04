@@ -47,11 +47,6 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
         return hours + "h " + minutes+"m";
     }
 
-    $scope.dateTrimmer = function (flight) {
-        var d = flight.date;
-        return new Date(d.getYear(),d.getMonth(),d.getDay());
-    }
-
     $scope.getPrice = function(economy,first){
         var cabin = FlightsSrv.getCabin();
         if(cabin === "Economy"){
@@ -62,6 +57,15 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
             return first;
         }
     }
-    
+
+    $scope.dateFilter = function(flight)
+    {
+        var d = new Date(flight.date);
+        if(d.getDay()===$scope.departDate.getDay() && d.getMonth()===$scope.departDate.getMonth() && d.getYear()===$scope.departDate.getYear())
+        {
+            return true;
+        }
+        return false;
+    };
     Flights();
 })
