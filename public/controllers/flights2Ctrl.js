@@ -17,7 +17,6 @@ App.controller('flights2Ctrl',function($scope,FlightsSrv,$location){
 	     $scope.Flights = flights;
      });
     };
-    Flights();
 
     function addZero(i) {
     if (i < 10) {
@@ -45,5 +44,5 @@ App.controller('flights2Ctrl',function($scope,FlightsSrv,$location){
         var minutes = duration-(60*hours);
         return hours + "h " + minutes+"m";
     }
-
+    Flights();
 })

@@ -113,9 +113,9 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="flight in Flights" ng-click="setReturnFlight(flight,194)">
+            <tr ng-repeat="flight in Flights | filter : {origin:destination} | filter : {destination : origin}" ng-click="setReturnFlight(flight,194)">
                 <td>
-                    {{dateFixer(flight.date)}} 
+                    {{dateFixer(flight.date)}}
                 </td>
                 <td>
                     {{addMinutes(flight.date,flight.duration)}}
