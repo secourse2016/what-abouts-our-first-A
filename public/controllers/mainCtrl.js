@@ -1,38 +1,26 @@
-/**
-* Main Controller
-*/
 App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
 
-/*----------- Angular Bootstrap Datepicker -----------*/
     $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
     $scope.format = $scope.formats[0];
 
     $scope.open1 = function() {
-    $scope.popup1.opened = true;
+        $scope.popup1.opened = true;
     };
 
     $scope.open2 = function() {
-    $scope.popup2.opened = true;
-    };
-
-    $scope.setDate1 = function(year, month, day) {
-    $scope.dt1 = new Date(year, month, day);
-    };
-
-    $scope.setDate2 = function(year, month, day) {
-    $scope.dt2 = new Date(year, month, day);
+        $scope.popup2.opened = true;
     };
 
     $scope.popup1 = {
-    opened: false
+        opened: false
     };
 
     $scope.popup2 = {
-    opened: false
+        opened: false
     };
 
     $scope.status = {
-    isopenP: false,isopenC:false
+        isopenP: false,isopenC:false
     };
 
     $scope.selectedP = "Persons";
@@ -48,15 +36,15 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
     }
 
     $scope.toggleDropdownP = function($event) {
-    $event.preventDefault();
-    $event.stopPropagation();
-    $scope.status.isopenP = !$scope.status.isopenP;
+        $event.preventDefault();
+        $event.stopPropagation();
+        $scope.status.isopenP = !$scope.status.isopenP;
     };
 
     $scope.toggleDropdownC = function($event) {
-    $event.preventDefault();
-    $event.stopPropagation();
-    $scope.status.isopenC = !$scope.status.isopenC;
+        $event.preventDefault();
+        $event.stopPropagation();
+        $scope.status.isopenC = !$scope.status.isopenC;
     };
 
     function AirportCodes() {
@@ -65,22 +53,32 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
      });
     };
 
-    /* Record User's Selected Origin Airport  */
     $scope.SetOriginAirport = function(originAirport) {
-    FlightsSrv.setSelectedOriginAirport(originAirport);
+        FlightsSrv.setSelectedOriginAirport(originAirport);
     };
 
-    /* Record User's Selected Destination Airport  */
     $scope.SetDestinationAirport = function(destAirport) {
-    FlightsSrv.setSelectedDestinationAirport(destAirport);
+        FlightsSrv.setSelectedDestinationAirport(destAirport);
     };
 
-    /* Find All Available Flights  */
     $scope.SearchFlights = function() {
-    $location.url('/confirm');
+        if($scope.selectedP==="Persons"){
+            FlightsSrv.setMultiplier(1);
+        }
+        else{
+            FlightsSrv.setMultiplier($scope.selectedP);
+        }
+        FlightsSrv.setReturnDate($scope.dt2);
+        FlightsSrv.setDepartDate($scope.dt1);
+        if($scope.selectedC==="Cabin"||$scope.selectedC==="Economy"){
+            FlightsSrv.setCabin("Economy");
+        }
+        else{
+            FlightsSrv.setCabin("First");
+        }
+        $location.url('/flights');
     };
 
-    /* Get Airports on page render  */
     AirportCodes();
 
 });

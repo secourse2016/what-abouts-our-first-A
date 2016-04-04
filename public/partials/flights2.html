@@ -8,7 +8,7 @@
         background-color: hsla(219, 100%, 45%, 0.73);
     }
     .FromTo
-	{
+    {
         text-align: left;
         align-items: left;
         justify-content: left;
@@ -19,34 +19,34 @@
     }
     .FromTo h4
     {
-    	padding-left: 45px;
+        padding-left: 45px;
         font-weight: 600;
     }
     hr
     {
-    	margin: 0%;
+        margin: 0%;
     }
     input[type="submit"]
     {
-		border: 0;
-	    padding: 10px;
-	    font-size: 22px;
-	    background: #1fa823;
-	    color:white;
-		width: 150px;
-		font-weight: bold;
-		text-align: center;
-		margin-top: 20px;
-		margin-left: 80%;
-		border-radius: 10px;
-		margin-bottom: 17px;
+        border: 0;
+        padding: 10px;
+        font-size: 22px;
+        background: #1fa823;
+        color:white;
+        width: 150px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 80%;
+        border-radius: 10px;
+        margin-bottom: 17px;
     }   
-	input[type=submit]:hover 
-	{
-   		background-color: #136716;
-	}
-	.logo
-	{
+    input[type=submit]:hover 
+    {
+        background-color: #136716;
+    }
+    .logo
+    {
         margin: 20px 45px ;
         text-align: left;
         width: 180px;
@@ -98,10 +98,10 @@
     <img src="https://www.united.com/ual/Format/img/logos/unitedLogo-white.png" >
 </div>
 <div class="blueBackground"> 
-   	<div class="FromTo">
-    	<h4>Flights departing from {{origin}} to {{destination}}</h4>
+    <div class="FromTo">
+        <h4>Flights departing from {{destination}} to {{origin}}</h4>
     </div>
-   	<hr>
+    <hr>
     <table style="width:100%">
         <thead>
             <tr>
@@ -113,9 +113,9 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="flight in Flights | filter : {origin:origin} | filter : {destination : destination} | filter : dateFilter" ng-click="setDepartFlight(flight,getPrice(flight.costeconomy,flight.costfirst))">
-                <td> 
-                    {{dateFixer(flight.date)}} 
+            <tr ng-repeat="flight in Flights | filter : {origin:destination} | filter : {destination : origin}| filter : dateFilter" ng-click="setReturnFlight(flight,getPrice(flight.costeconomy,flight.costfirst))">
+                <td>
+                    {{dateFixer(flight.date)}}
                 </td>
                 <td>
                     {{addMinutes(flight.date,flight.duration)}}
@@ -132,7 +132,7 @@
             </tr>
         </tbody>
     </table>
-   	<div class="Proceeding">
-   	  <input type="submit" value="Cancel" ng-click="return()">
-   	</div>
+    <div class="Proceeding">
+      <input type="submit" value="Cancel" ng-click="return()">
+    </div>
 </div>

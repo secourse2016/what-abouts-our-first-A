@@ -1,16 +1,16 @@
-App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
+App.controller('flights2Ctrl',function($scope,FlightsSrv,$location){
     $scope.return = function() {
         $location.url('/');
     };
 
     $scope.origin = FlightsSrv.getSelectedOriginAirport();
     $scope.destination = FlightsSrv.getSelectedDestinationAirport();
-    $scope.departDate = FlightsSrv.getDepartDate();
+    $scope.returnDate = FlightsSrv.getReturnDate();
 
-    $scope.setDepartFlight=function(flight,price){
-        FlightsSrv.setDepartFlight(flight);
-        FlightsSrv.setDepartPrice(price);
-        $location.url('/flights2');
+    $scope.setReturnFlight=function(flight,price){
+        FlightsSrv.setReturnFlight(flight);
+        FlightsSrv.setReturnPrice(price);
+        $location.url('/confirm');
     }
 
     function Flights() {
@@ -40,7 +40,6 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
         var m = addZero(d.getMinutes());
         return h + ":" + m;
     }
-
     $scope.convertDuration = function (duration) { 
         var hours = Math.floor(duration/60);
         var minutes = duration-(60*hours);
@@ -61,11 +60,12 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
     $scope.dateFilter = function(flight)
     {
         var d = new Date(flight.date);
-        if(d.getDay()===$scope.departDate.getDay() && d.getMonth()===$scope.departDate.getMonth() && d.getYear()===$scope.departDate.getYear())
+        if(d.getDay()===$scope.returnDate.getDay() && d.getMonth()===$scope.returnDate.getMonth() && d.getYear()===$scope.returnDate.getYear())
         {
             return true;
         }
         return false;
     };
+
     Flights();
 })

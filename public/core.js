@@ -1,6 +1,6 @@
 App = angular.module('United_Airlines', ['ui.bootstrap', 'ngRoute']);
 
-App.config(function($routeProvider) {
+App.config(function($routeProvider,$locationProvider) {
     $routeProvider
 
         // route for the home page
@@ -29,4 +29,6 @@ App.config(function($routeProvider) {
             templateUrl : '/partials/payment.html',
             controller  : 'paymentCtrl'
         });
+        
+    $locationProvider.html5Mode({enabled: true,requireBase: false});    
 });
