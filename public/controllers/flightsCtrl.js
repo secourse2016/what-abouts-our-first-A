@@ -41,5 +41,11 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
         return h + ":" + m;
     }
 
+    $scope.convertDuration = function (duration) { 
+        var hours = Math.floor(duration/60);
+        var minutes = duration-(60*hours);
+        return hours + "h " + minutes+"m";
+    }
+
     Flights();
 })
