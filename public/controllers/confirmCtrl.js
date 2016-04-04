@@ -23,8 +23,6 @@ App.controller('confirmCtrl',function($scope,FlightsSrv,$location){
     	var d = new Date(date);
         var h = addZero(d.getHours());
         var m = addZero(d.getMinutes());
-        var s = addZero(d.getSeconds());
-        return h + ":" + m + ":" + s;
-;
+        return h + ":" + m;
     }
 })

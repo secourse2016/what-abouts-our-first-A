@@ -47,7 +47,6 @@ App.factory('FlightsSrv', function ($http) {
         },
         setMultiplier:function(mult) {
             this.multiplier = mult;
-            console.log(mult);
         },
         getMultiplier:function() {
             return this.multiplier;

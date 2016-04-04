@@ -62,8 +62,8 @@
     }
     .FlightsTable2 p       
     {
-    	word-spacing: 205px;
-    	font-size: 110%;
+    	word-spacing: 200px;
+    	font-size: 100%;
     	padding-left:100px; 
     }
     .FlightsTable2 p:hover
@@ -107,14 +107,14 @@
     </div>
    	<hr>
 	<div class="FlightsTable1">
-		<p>
+		<p id="demo">
 			Depart Arrive Duration FlightNo. Price
 		</p>
 	</div>
 	<hr>
    	<div class="FlightsTable2">
         <p ng-repeat="flight in Flights" ng-click="setDepartFlight(flight,194)">
-            {{flight.date}} {{flight.date + duration}} {{flight.duration}} {{flight.flighNumber}} 194$
+            {{dateFixer(flight.date)}} {{addMinutes(flight.date,flight.duration)}} {{flight.duration}} {{flight.flighNumber}} 194$
         </p>
    	</div>
    	<div class="Proceeding">
