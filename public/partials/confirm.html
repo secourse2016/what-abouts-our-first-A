@@ -4,8 +4,8 @@
         background: hsla(219, 100%, 25%, 0.84);
         padding: 0px 0px 0px 0px;
         border-radius: 15px;
-        margin: 9.6% 20% 9.5% 20%;
-        min-height: 357px;
+        margin: 4.6% 20% 9.5% 20%;
+        min-height: 400px;
         line-height: 2;
         font-family: Lato, Arial, sans-serif;
         text-align: center;
@@ -35,7 +35,7 @@
         background-color:hsla(219, 100%, 54%, 0.73);
         margin: 0;
         padding: 20px 0px 0px 0px;
-        font-size:300%;
+        /*font-size:300%;*/
         border-top-left-radius: 15px;
         border-top-right-radius: 15px; 
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.2);
@@ -52,9 +52,12 @@
 <div class="proceedContainer">
 	<h4> Are you sure you would like to book this flight?    <hr>
 </h4>
-    <h3> This is the Depart Flight</h3>
+    <h3> Departure Flight : {{timeD}} from {{depart.origin}} to {{depart.destination}} </h3>
+    <p id="demo"></p>
     <br>
-    <h3> This is the Return Flight</h3>
+    <h3> Return Flight : {{timeR}} from {{return.origin}} to {{return.destination}} </h3>
+    <hr>
+    <h3> Total price = {{price}}$</h3>
     <br>
     <button type="button" class="confirmBtn" id='btnPay' ng-click='pay()'>Proceed</button>
     <button type="button" class="confirmBtn" id='btnHome' ng-click='home()'>Cancel</button>

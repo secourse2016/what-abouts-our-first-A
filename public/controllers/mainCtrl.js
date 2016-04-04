@@ -77,6 +77,12 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
 
     /* Find All Available Flights  */
     $scope.SearchFlights = function() {
+    if($scope.selectedP==="Persons"){
+        FlightsSrv.setMultiplier(1);
+    }
+    else{
+        FlightsSrv.setMultiplier($scope.selectedP);
+    }
     $location.url('/flights');
     };
 

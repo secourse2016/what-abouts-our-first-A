@@ -10,7 +10,7 @@
         background: hsla(219, 100%, 33%, 0.82);
     }
     .FromTo
-	{
+    {
         text-align: left;
         align-items: left;
         justify-content: left;
@@ -22,96 +22,76 @@
     }
     .FromTo h4
     {
-    	padding-left: 45px;
+        padding-left: 45px;
     }
     .FlightsTable1
     {
-    	height: 40px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        color:#fff;
-        margin:0;
-        padding:0;
-        overflow:auto;
-        font-size: 120%;
-        font-weight: 600;
-    }
-    .FlightsTable1 table
-    {
-    	width: 100%;
-    	margin-top:0.5%; 
-    }
-    .FlightsTable2
-    {
-    	height: 400px;
-    	line-height: 100px;
+        height: 40px;
         text-align: left;
         align-items: left;
         justify-content: left;
-        margin:0px 0px;
         color:#fff;
+        margin:0px;
         overflow:auto;
-        background: hsla(219, 100%, 25%, 0.84);
-        box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
         font-size: 170%;
         font-weight: 600;
     }
-    .FlightsTable1 table td        
+    .FlightsTable1 p
     {
-    	padding:0px 0px;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-    	/*background: red;*/
-    	/*width: 20%;*/
-    	font-size:180%;
+        word-spacing: 205px;
+        font-size: 120%;
+        padding-left:100px; 
+    }
+    .FlightsTable2
+    {
+        height: 400px;
+        line-height: 100px;
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+        margin:0px;
+        color:#fff;
+        overflow:auto;
+        background: hsla(219, 100%, 25%, 0.84);
+        font-size: 170%;
+        font-weight: 600;
     }
     hr
     {
-    	margin: 0%;
+        margin: 0%;
     }
-    .FlightsTable2 table td       
+    .FlightsTable2 p       
     {
-    	padding:0px 60px;
-    	padding-left:88px;
+        word-spacing: 205px;
+        font-size: 110%;
+        padding-left:100px; 
     }
-    .FlightsTable2 table tr
+    .FlightsTable2 p:hover
     {
-    	cursor: pointer;
-    	border-radius: 18px;
-    }
-    .FlightsTable2 table tr:hover      
-    {
+        cursor:pointer;
         background: hsla(219, 100%, 33%, 0.82);
     }
     input[type="submit"]
     {
-		border: 0;
-	    padding: 10px;
-	    font-size: 22px;
-	    background: #1fa823;
-	    color:white;
-		width: 150px;
-		font-weight: bold;
-		text-align: center;
-		margin-top: 20px;
-		margin-left: 80%;
-		border-radius: 10px;
-		margin-bottom: 17px;
+        border: 0;
+        padding: 10px;
+        font-size: 22px;
+        background: #1fa823;
+        color:white;
+        width: 150px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 80%;
+        border-radius: 10px;
+        margin-bottom: 17px;
     }   
-	input[type=submit]:hover 
-	{
-   		background-color: #136716;
-	}
-	span
-	{
-		font-family: Lato;
-		color:#BAE6F5;
-	}
-	.logo
-	{
+    input[type=submit]:hover 
+    {
+        background-color: #136716;
+    }
+    .logo
+    {
         margin: 20px 45px ;
         text-align: left;
         width: 180px;
@@ -122,42 +102,22 @@
     <img src="https://www.united.com/ual/Format/img/logos/unitedLogo-white.png" >
 </div>
 <div class="blueBackground"> 
-   	<div class="FromTo">
-    	<h4>Flights departing from Cairo to Madrid</h4>
+    <div class="FromTo">
+        <h4>Flights departing from {{destination}} to {{origin}}</h4>
     </div>
-   	<hr>
-	<div class="FlightsTable1">
- 	  	<table>
-  	     	<thead> 
-				<tr>	
-					<td></td>
-					<td>Depart</td>
-					<td>Arrive</td>
-					<td>Duration</td>
-					<td>Flight No.</td>
-					<td>Price</td>
-				</tr>		
-			</thead>
-		</table>
-	</div>
-	<hr>
-   	<div class="FlightsTable2">
- 	  	<table>
-			
-
-			<tbody>		 	
-			  	<tr ng-click="confirm()">
-					<td><input type="radio" name="group"></td>
-				  	<td>8:10</td> 
-				  	<td>11:10</td>
-				  	<td>2 hours</td>
-				  	<td>RM9248</td> 
-				  	<td>194$</td> 
-			  	</tr>		 
-			</tbody>
-		</table>
-   	</div>
-   	<div class="Proceeding">
-   	  <input type="submit" value="Proceed" ng-click="return()">
-   	</div>
+    <hr>
+    <div class="FlightsTable1">
+        <p>
+            Depart Arrive Duration FlightNo. Price
+        </p>
+    </div>
+    <hr>
+    <div class="FlightsTable2">
+        <p ng-repeat="flight in Flights" ng-click="setReturnFlight(flight,194)">
+            {{flight.date}} {{flight.date + duration}} {{flight.duration}} {{flight.flighNumber}} 194$
+        </p>
+    </div>
+    <div class="Proceeding">
+      <input type="submit" value="Proceed" ng-click="return()">
+    </div>
 </div>

@@ -113,8 +113,8 @@
 	</div>
 	<hr>
    	<div class="FlightsTable2">
-        <p ng-repeat="flight in Flights">
-            {{flight.date}} {{flight.date + duration}} {{flight.duration}} {{flight.flighNumber}}. 194$
+        <p ng-repeat="flight in Flights" ng-click="setDepartFlight(flight,194)">
+            {{flight.date}} {{flight.date + duration}} {{flight.duration}} {{flight.flighNumber}} 194$
         </p>
    	</div>
    	<div class="Proceeding">
