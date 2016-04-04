@@ -18,4 +18,26 @@ App.controller('flights2Ctrl',function($scope,FlightsSrv,$location){
      });
     };
     Flights();
+
+    function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+    }
+
+    $scope.dateFixer = function (date) {
+        var d = new Date(date);
+        var h = addZero(d.getHours());
+        var m = addZero(d.getMinutes());
+        return h + ":" + m;
+    }
+
+    $scope.addMinutes = function (date,duration) {
+        var d = new Date(date);
+        d.setMinutes(d.getMinutes()+parseInt(duration));
+        var h = addZero(d.getHours());
+        var m = addZero(d.getMinutes());
+        return h + ":" + m;
+    }
 })

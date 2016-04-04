@@ -62,8 +62,8 @@
     }
     .FlightsTable2 p       
     {
-        word-spacing: 205px;
-        font-size: 110%;
+        word-spacing: 200px;
+        font-size: 100%;
         padding-left:100px; 
     }
     .FlightsTable2 p:hover
@@ -97,8 +97,7 @@
         width: 180px;
         height: 40px;
     }
-</style>
-<div class="logo">
+</style><div class="logo">
     <img src="https://www.united.com/ual/Format/img/logos/unitedLogo-white.png" >
 </div>
 <div class="blueBackground"> 
@@ -114,7 +113,7 @@
     <hr>
     <div class="FlightsTable2">
         <p ng-repeat="flight in Flights" ng-click="setReturnFlight(flight,194)">
-            {{flight.date}} {{flight.date + duration}} {{flight.duration}} {{flight.flighNumber}} 194$
+            {{dateFixer(flight.date)}} {{addMinutes(flight.date,flight.duration)}} {{flight.duration}} {{flight.flighNumber}} 194$
         </p>
     </div>
     <div class="Proceeding">
