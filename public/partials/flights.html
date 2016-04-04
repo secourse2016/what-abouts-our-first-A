@@ -2,12 +2,10 @@
     .blueBackground
     {
         overflow: auto;
-        height: 100%;
-        font-size: 60%;
         margin: 20px 0px 0px 0px;
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
         padding: 20px 0;
-        background: hsla(219, 100%, 33%, 0.82);
+        background-color: hsla(219, 100%, 54%, 0.73);
     }
     .FromTo
 	{
@@ -15,61 +13,18 @@
         align-items: left;
         justify-content: left;
         color:#fff;
-        padding-right: 0;
-        margin:0px 0px;
-        font-size: 200%;
-        font-weight: 600;
+        padding-right: 0px;
+        margin:0px;
+        font-size: 300%;
     }
     .FromTo h4
     {
     	padding-left: 45px;
-    }
-    .FlightsTable1
-    {
-    	height: 40px;
-        text-align: left;
-        align-items: left;
-        justify-content: left;
-        color:#fff;
-        margin:0px;
-        overflow:auto;
-        font-size: 170%;
-        font-weight: 600;
-    }
-    .FlightsTable1 p
-    {
-    	word-spacing: 205px;
-    	font-size: 120%;
-    	padding-left:100px; 
-    }
-    .FlightsTable2
-    {
-    	height: 400px;
-    	line-height: 100px;
-        text-align: left;
-        align-items: left;
-        justify-content: left;
-        margin:0px;
-        color:#fff;
-        overflow:auto;
-        background: hsla(219, 100%, 25%, 0.84);
-        font-size: 170%;
         font-weight: 600;
     }
     hr
     {
     	margin: 0%;
-    }
-    .FlightsTable2 p       
-    {
-    	word-spacing: 200px;
-    	font-size: 100%;
-    	padding-left:100px; 
-    }
-    .FlightsTable2 p:hover
-    {
-    	cursor:pointer;
-        background: hsla(219, 100%, 33%, 0.82);
     }
     input[type="submit"]
     {
@@ -97,6 +52,47 @@
         width: 180px;
         height: 40px;
     }
+    tr td
+    {
+        cursor:pointer;
+    }
+    tbody tr:hover
+    {
+        background: hsla(219, 100%, 33%, 0.8);
+    }
+    tr
+    {
+        background: hsla(219, 100%, 25%, 0.84);
+    }
+    th, td 
+    {
+        width:265px;
+        color:white;
+        text-align: center;
+    }
+    th 
+    {   
+        color:white;
+        text-align: center;
+    }
+    table thead,table tbody
+    {
+        font-size: 150%;
+    }
+    table thead
+    {
+        border-bottom: 1px solid white;
+    }
+    table tbody
+    {
+        height: 300px;
+        line-height: 80px;
+        overflow: auto;
+    }
+    thead > tr, tbody
+    {
+        display:block;
+    }
 </style>
 <div class="logo">
     <img src="https://www.united.com/ual/Format/img/logos/unitedLogo-white.png" >
@@ -106,18 +102,37 @@
     	<h4>Flights departing from {{origin}} to {{destination}}</h4>
     </div>
    	<hr>
-	<div class="FlightsTable1">
-		<p id="demo">
-			Depart Arrive Duration FlightNo. Price
-		</p>
-	</div>
-	<hr>
-   	<div class="FlightsTable2">
-        <p ng-repeat="flight in Flights" ng-click="setDepartFlight(flight,194)">
-            {{dateFixer(flight.date)}} {{addMinutes(flight.date,flight.duration)}} {{flight.duration}} {{flight.flighNumber}} 194$
-        </p>
-   	</div>
+    <table style="width:100%">
+        <thead>
+            <tr>
+                <th>Depart</th>
+                <th>Arrive</th>       
+                <th>Duration</th>
+                <th>FlightNo.</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="flight in Flights" ng-click="setDepartFlight(flight,194)">
+                <td>
+                    {{dateFixer(flight.date)}} 
+                </td>
+                <td>
+                    {{addMinutes(flight.date,flight.duration)}}
+                </td>
+                <td> 
+                    {{flight.duration}} 
+                </td>
+                <td>
+                    {{flight.flighNumber}} 
+                </td>
+                <td>
+                    194$
+                </td>
+            </tr>
+        </tbody>
+    </table>
    	<div class="Proceeding">
-   	  <input type="submit" value="Proceed" ng-click="return()">
+   	  <input type="submit" value="Cancel" ng-click="return()">
    	</div>
 </div>
