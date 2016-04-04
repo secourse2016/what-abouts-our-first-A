@@ -44,5 +44,16 @@ App.controller('flights2Ctrl',function($scope,FlightsSrv,$location){
         var minutes = duration-(60*hours);
         return hours + "h " + minutes+"m";
     }
+
+    $scope.getPrice = function(economy,first){
+        var cabin = FlightsSrv.getCabin();
+        if(cabin === "Economy"){
+            return economy;
+        }
+        else
+        {
+            return first;
+        }
+    }
     Flights();
 })

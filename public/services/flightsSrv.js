@@ -50,6 +50,24 @@ App.factory('FlightsSrv', function ($http) {
         },
         getMultiplier:function() {
             return this.multiplier;
+        },
+        setDepartDate:function(date) {
+            this.departDate = date;
+        },
+        getDepartDate:function() {
+            return this.departDate;
+        },
+        setReturnDate:function(date) {
+            this.returnDate = date;
+        },
+        getReturnDate:function() {
+            return this.returnDate;
+        },
+        setCabin:function(cabin) {
+            this.cabin = cabin;
+        },
+        getCabin:function() {
+            return this.cabin;
         }
     };
 });

@@ -85,7 +85,7 @@
     input[type=text]
     {
         width: 30%;
-        padding: 12px 21px;
+        padding: 0px 21px;
         margin-bottom: 10px;
         border: 1px solid #fff;
         border-radius: 4px;
@@ -124,7 +124,7 @@
                 <input name="originAirports"
                         id="originAirports"
                         type="text"
-                        placeholder="Flying From*"
+                        placeholder="Flying From"
                         ng-model="selectedOrigin"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
                         class="form-control",
@@ -139,7 +139,7 @@
                      ng-required="true"
                      close-text="Close"
                      alt-input-formats="altInputFormats"
-                     placeholder="Depart Date*" />
+                     placeholder="Depart Date" />
               <span class="input-group-btn">
                 <button type="button"
                         class="btn btn-default"
@@ -166,7 +166,7 @@
                 <input name="destinationAirports"
                         id="destinationAirports"
                         type="text"
-                        placeholder="Flying To*"
+                        placeholder="Flying To"
                         ng-model="selectedDestination"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
                         class="form-control",
@@ -180,7 +180,7 @@
                         is-open="popup2.opened"
                         ng-required="true"
                         close-text="Close"
-                        placeholder="Return Date*" 
+                        placeholder="Return Date" 
                         />
                 <span class="input-group-btn">
                     <button type="button"

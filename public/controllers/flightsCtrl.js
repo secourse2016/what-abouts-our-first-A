@@ -5,7 +5,7 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
 
     $scope.origin = FlightsSrv.getSelectedOriginAirport();
     $scope.destination = FlightsSrv.getSelectedDestinationAirport();
-
+    $scope.departDate = FlightsSrv.getDepartDate();
 
     $scope.setDepartFlight=function(flight,price){
         FlightsSrv.setDepartFlight(flight);
@@ -47,5 +47,21 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
         return hours + "h " + minutes+"m";
     }
 
+    $scope.dateTrimmer = function (flight) {
+        var d = flight.date;
+        return new Date(d.getYear(),d.getMonth(),d.getDay());
+    }
+
+    $scope.getPrice = function(economy,first){
+        var cabin = FlightsSrv.getCabin();
+        if(cabin === "Economy"){
+            return economy;
+        }
+        else
+        {
+            return first;
+        }
+    }
+    
     Flights();
 })

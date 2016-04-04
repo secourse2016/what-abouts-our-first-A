@@ -30,8 +30,8 @@
 "origin": "BAR",
 "destination": "MAD",
 "availableSeats":1000,
-"costeconomy":855,
-"costfirst":1500,
+"costeconomy":890,
+"costfirst":1600,
 "seatmap":[
 {"window":true,
 "economy":true,
@@ -52,8 +52,8 @@
 "origin": "CAI",
 "destination": "MAD",
 "availableSeats":1000,
-"costeconomy":855,
-"costfirst":1500,
+"costeconomy":700,
+"costfirst":1900,
 "seatmap":[
 {"window":true,
 "economy":true,
@@ -74,8 +74,8 @@
 "origin": "MUN",
 "destination": "MAD",
 "availableSeats":1000,
-"costeconomy":855,
-"costfirst":1500,
+"costeconomy":800,
+"costfirst":1400,
 "seatmap":[
 {"window":true,
 "economy":true,
