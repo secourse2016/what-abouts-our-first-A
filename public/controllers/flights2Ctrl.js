@@ -40,4 +40,10 @@ App.controller('flights2Ctrl',function($scope,FlightsSrv,$location){
         var m = addZero(d.getMinutes());
         return h + ":" + m;
     }
+    $scope.convertDuration = function (duration) { 
+        var hours = Math.floor(duration/60);
+        var minutes = duration-(60*hours);
+        return hours + "h " + minutes+"m";
+    }
+
 })
