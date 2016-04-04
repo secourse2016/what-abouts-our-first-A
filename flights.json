@@ -3,15 +3,16 @@
 "flighNumber":"CR7KB9GB11",
 "aircraft": "",
 "capacity":5000,
-"date": "2016-04-02T20:30:00",
+"date": "2016-04-2T20:30:00",
 "duration":90,
 "origin": "MAD",
 "destination": "BAR",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"ABCD1234",
 "seatNo":"M19"
 }
@@ -24,15 +25,16 @@
 "flighNumber":"N11LS9LM10",
 "aircraft": "",
 "capacity":6000,
-"date": "2016-04-02T20:30:00",
+"date": "2016-04-2T20:30:00",
 "duration":90,
 "origin": "BAR",
 "destination": "MAD",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"EFGH5678",
 "seatNo":"I8"
 }
@@ -45,15 +47,16 @@
 "flighNumber":"FR7RL9AR10",
 "aircraft": "",
 "capacity":5000,
-"date": "2016-04-04T20:30:00",
+"date": "2016-04-4T20:30:00",
 "duration":20,
 "origin": "CAI",
 "destination": "MAD",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"ABCD12345",
 "seatNo":"TA10"
 }
@@ -71,10 +74,11 @@
 "origin": "MUN",
 "destination": "BAR",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"1234",
 "seatNo":"A12"
 }
@@ -92,10 +96,11 @@
 "origin": "MUN",
 "destination": "MAD",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"12345",
 "seatNo":"C7"
 }
@@ -113,10 +118,11 @@
 "origin": "CAI",
 "destination": "MAD",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"4545",
 "seatNo":"B11"
 }
@@ -134,10 +140,11 @@
 "origin": "MUN",
 "destination": "MAD",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"5555",
 "seatNo":"M19"
 }
@@ -155,10 +162,11 @@
 "origin": "MUN",
 "destination": "MAD",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"1789",
 "seatNo":"C13"
 }
@@ -171,15 +179,16 @@
 "flighNumber":"GM12",
 "aircraft": "",
 "capacity":5000,
-"date": "2016-04-01T18:25:00",
+"date": "2016-04-01T18:25:43.511Z",
 "duration":20,
 "origin": "CAI",
 "destination": "MAD",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"6666",
 "seatNo":"C16"
 }
@@ -197,10 +206,11 @@
 "origin": "CAI",
 "destination": "BAR",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"77777",
 "seatNo":"B14"
 }
@@ -218,10 +228,11 @@
 "origin": "BAR",
 "destination": "MAD",
 "availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
 "seatmap":[
 {"window":true,
 "economy":true,
-"cost":855,
 "reservation_id":"999999",
 "seatNo":"J12"
 }
