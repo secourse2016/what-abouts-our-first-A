@@ -9,7 +9,7 @@ module.exports = function(app,mongo) {
       res.json( codes );
     });
 
-    app.get('/api/data/flights', function(req, res) {
+    app.get('/api/data/flight', function(req, res) {
       var flights =  require('../flights.json');
       res.json( flights );
     });
