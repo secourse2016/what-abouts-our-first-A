@@ -28,7 +28,6 @@
         margin: 0px 20%;
         font-size: 70%;
         padding:0px 0px;
-        min-width: 700px;
         text-align: center;
         align-items: center;
         justify-content: center; 
@@ -45,7 +44,7 @@
     }
     .DropDownButton
     {
-        min-width: 225px;
+        width: 300px;
         font-size:200%;
         padding:6px 10px;
         color:white;
@@ -75,7 +74,7 @@
     }
     .airports
     {
-        width: 200%;
+        width: 60%;
         margin-left: 20%;
         margin-bottom: 7%;
     }
@@ -87,7 +86,6 @@
     }
     input[type=text]
     {
-        width: 30%;
         padding: 0px 21px;
         margin-bottom: 10px;
         border: 1px solid #fff;
@@ -117,7 +115,6 @@
     {
         background-color: hsla(347, 88%, 51%, 1);
         border-color: white;
-        /*border-width: 2px;*/
         color: white;
     }
 </style>
@@ -142,7 +139,7 @@
                 <input name="originAirports"
                         id="originAirports"
                         type="text"
-                        placeholder="Flying From"
+                        placeholder="Flying From*"
                         ng-model="selectedOrigin"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
                         class="form-control",
@@ -157,7 +154,7 @@
                      ng-required="true"
                      close-text="Close"
                      alt-input-formats="altInputFormats"
-                     placeholder="Depart Date" />
+                     placeholder="Depart Date*" />
               <span class="input-group-btn">
                 <button type="button"
                         class="btn btn-default"
@@ -184,7 +181,7 @@
                 <input name="destinationAirports"
                         id="destinationAirports"
                         type="text"
-                        placeholder="Flying To"
+                        placeholder="Flying To*"
                         ng-model="selectedDestination"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
                         class="form-control",
@@ -198,7 +195,7 @@
                         is-open="popup2.opened"
                         ng-required="true"
                         close-text="Close"
-                        placeholder="Return Date" 
+                        placeholder="Return Date*" 
                         />
                 <span class="input-group-btn">
                     <button type="button"
