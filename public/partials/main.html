@@ -10,6 +10,8 @@
     }
     .Head
     {
+        text-align: left;
+        text-indent: 9.2%;
         background-color:hsla(219, 100%, 54%, 0.73);
         margin: 0;
         padding: 20px 0px 0px 0px;
@@ -44,9 +46,10 @@
     }
     .DropDownButton
     {
-        width: 225px;
+        width: 228px;
         font-size:200%;
-        padding:6px 10px;
+        padding:5px 21px;
+        text-align: center;
         color:white;
         border-radius: 4px;
         border: 1px solid hsla(219, 100%, 25%, 0.84);
@@ -128,21 +131,23 @@
     {
         background:hsla(219, 100%, 12%, 1);
     }
-  /*  .btn-group label:
+    #x
     {
-      border: 20px solid white;
-    }  */  
+        display:block-inline;
+        text-align:center;
+        /*margin-left: 51%;*/
+    }
 </style>
 <div class="Title">
     <div class="col-sm-12">
-        <p style='font-size: 45px; text-align: center'>
-          Welcome to United Airlines.
+        <p style='font-size: 40px; text-align: center'>
+          Welcome to United Airlines
         </p>
     </div>
 </div>
 <div class="Book">
     <div class="Head">
-        <p>Search Flights</p>
+        <p>Book Flight</p>
         <hr>
     </div>
     <div class = "alert">
@@ -181,7 +186,7 @@
             </p>
             <div class="btn-group" uib-dropdown is-open="status.isopenP">
               <button id="single-button" type="button" class="DropDownButton" uib-dropdown-toggle ng-disabled="disabled">
-                {{selectedP}}<span class="caret"></span>
+                {{selectedP}}                <i class="glyphicon glyphicon-menu-down" id = "x"></i>
               </button>
               <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
                 <li role="menuitem"><button type="button" class="listButton" id='btn1' ng-click='selectNum(1)'>1</button></li>
@@ -228,7 +233,7 @@
             </p>
             <div class="btn-group" uib-dropdown is-open="status.isopenC">
               <button id="single-button" type="button" class="DropDownButton" uib-dropdown-toggle ng-disabled="disabled">
-                {{selectedC}}<span class="caret"></span>
+                {{selectedC}}                <i class="glyphicon glyphicon-menu-down" id = "x"></i>
               </button>
               <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
                 <li role="menuitem"><button type="button" class="listButton" id='eco' ng-click='selectCabin("Economy")'>Economy</button></li>
@@ -241,5 +246,5 @@
             <label class="btn btn-primary" ng-model="radioModel2" uib-btn-radio="'Other'" uib-uncheckable="true">Other airlines</label>
         </div>
     </div>
-  <button type="button" class="Button" id='btnSearch' ng-click='SearchFlights()'>Search</button>
+  <button type="button" class="Button" id='btnSearch' ng-click='SearchFlights()'>Search  <i class="glyphicon glyphicon-search"></i></button>
 </div>
