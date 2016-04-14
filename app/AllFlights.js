@@ -42,6 +42,12 @@ function seedDB (cb)
     });
 }
     
-
+function getFlights( flyingFrom , flyingTo , departDate , returnDate , cabin   ) //persons
+{
+	db.db().collection('Flights').find({ origin:flyingFrom , destination:flyingTo , date:departDate }).toArray(function (err, flights) {
+        if (err) return "An error occurred";
+        return flights;
+    });
+}
 
 	
