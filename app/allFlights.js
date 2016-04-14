@@ -4,20 +4,18 @@ var reservations = require('../reservations.json');
 var db = require('./db.js');
 var crypto = require('crypto');
 
-function seedDB (cb) 
-{
+function seedDB (cb) {
     seedFlights(function(err1,seededFlights) {
         seedAirports(function(err2,seededAirports) {
             seedReservations(function(err3,seededReservations) {
                 if(err1 || err2 || err3) throw Error('Failed to seed a collection in the Database');
-                return seededReservations || seededFlights || seedAirports;
+                return seededReservations && seededFlights && seedAirports;
             });
         });
     });
 }
 
-function seedFlights(cb)
-{
+function seedFlights(cb) {
     db.db().collection('Flights').find().toArray(function (err, docs) {
         if (err) return cb(err);
         if (docs.length > 0)
@@ -31,8 +29,7 @@ function seedFlights(cb)
     });
 }
 
-function seedAirports(cb)
-{
+function seedAirports(cb) {
     db.db().collection('Airports').find().toArray(function (err, docs) {
         if (err) return cb(err);
         if (docs.length > 0)
@@ -46,8 +43,7 @@ function seedAirports(cb)
     });
 }
     
-function seedReservations(cb)
-{
+function seedReservations(cb) {
     db.db().collection('Reservations').find().toArray(function (err, docs) {
         if (err) return cb(err);
         if (docs.length > 0)
@@ -61,38 +57,35 @@ function seedReservations(cb)
     });
 }
     
-function getFlights( flyingFrom , flyingTo , departDate , returnDate , cabin   ) //persons
-{
+function getFlights( flyingFrom , flyingTo , departDate , returnDate , cabin   ) {
 	db.db().collection('Flights').find({ origin:flyingFrom , destination:flyingTo , date:departDate }).toArray(function (err, flights) {
         if (err) return "An error occurred";
         return flights;
     });
 }
 
-function randomObjectId(length)
-{
+function randomObjectId(length) {
     return crypto.createHash('md5').update(Math.random().toString()).digest('hex').substring(0, length).toUpperCase();
 }
 
-function reserve( fn , ln , flightNumber , seatNumber ) 
-{
+function reserve( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , cb) {
     var bookingRefNum = randomObjectId(6);
     var receiptNum = randomObjectId(7);
     
-    db.db().collection('Reservations').findOne({ bookingRefNumber: bookingRefNum}, function(err, doc1) {
-        db.db().collection('Reservations').findOne({ receipt_number: receiptNum}, function(err, doc2) {
-            if( doc1 == null && doc2 == null) 
-            {
-                db.db().Reservations.insert({firstName : fn  , lastName : ln ,  bookingRefNumber : bookingRefNum , receipt_number : receiptNum});
-                var reservationID = db.db().Reservations.findOne({bookingRefNumber : bookingRefNum}, {_id:1});
-                db.db().Flights.update( {flighNumber: flightNumber , seatmap[4]=seatNumber} , {$set: { seatmap[3]=reservationID }} );
+    db.db().collection('Reservations').findOne({ bookingRefNumber: bookingRefNum}, function(err1, doc1) {
+        db.db().collection('Reservations').findOne({ receipt_number: receiptNum}, function(err2, doc2) {
+            if( doc1 === null && doc2 === null) {
+                db.db().collection('Reservations').insert({firstName : fn  , lastName : ln ,  bookingRefNumber : bookingRefNum , receipt_number : receiptNum});
+                db.db().collection('Reservations').findOne({bookingRefNumber : bookingRefNum},function(err,record){
+                    var reservationID = record._id;
+                    db.db().collection('Flights').updateOne( {flighNumber: flightNumber} , {$push: { seatmap:{reservationID:reservationID,seatNo:seatNumber,window:windowBoolean,economy:economyBoolean}}});
+                    cb(err,true);
+                });
             } 
-            else 
-            {
-               reserve( fn , ln ) ;
+            else {
+               reserve( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean ) ;
             }
         });
-
-        });
+    });
 }
     
