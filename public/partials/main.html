@@ -154,6 +154,7 @@
                 <input name="originAirports"
                         id="originAirports"
                         type="text"
+                        ng-required="true"
                         placeholder="Flying From*"
                         ng-model="selectedOrigin"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
@@ -201,6 +202,7 @@
                         id="destinationAirports"
                         type="text"
                         placeholder="Flying To*"
+                        ng-required="true"
                         ng-model="selectedDestination"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
                         class="form-control",
