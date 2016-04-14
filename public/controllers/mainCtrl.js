@@ -3,6 +3,19 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
     $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
     $scope.format = $scope.formats[0];
 
+    $scope.alerts = [];
+
+    function addAlertDate() {
+        $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose a date :(' });
+    };
+    function addAlertAirport() {
+        $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose an airport :(' });
+    };
+
+    $scope.closeAlert = function() {
+    $scope.alerts.splice(0, 1);
+    };
+
     $scope.open1 = function() {
         $scope.popup1.opened = true;
     };
@@ -62,20 +75,33 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
     };
 
     $scope.SearchFlights = function() {
+        $scope.alerts = [];
         if($scope.selectedP==="Persons"){
             FlightsSrv.setMultiplier(1);
         }
         else{
             FlightsSrv.setMultiplier($scope.selectedP);
         }
-        FlightsSrv.setReturnDate($scope.dt2);
-        FlightsSrv.setDepartDate($scope.dt1);
         if($scope.selectedC==="Cabin"||$scope.selectedC==="Economy"){
             FlightsSrv.setCabin("Economy");
         }
         else{
             FlightsSrv.setCabin("First");
         }
+        if($scope.selectedDestination === undefined || $scope.selectedOrigin === undefined)
+        {
+            addAlertAirport();
+            return;
+        }
+
+        if($scope.dt1 === undefined|| $scope.dt2 === undefined)
+        {
+            addAlertDate();
+            return;
+        }
+
+        FlightsSrv.setReturnDate($scope.dt2);
+        FlightsSrv.setDepartDate($scope.dt1); 
         $location.url('/flights');
     };
 

@@ -13,25 +13,27 @@
         background-color:hsla(219, 100%, 54%, 0.73);
         margin: 0;
         padding: 20px 0px 0px 0px;
-        font-size:300%;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px; 
+        font-size:100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.2);
     }
-
+    hr
+    {
+        margin: 0;
+    }
     .Book
     {
         font-weight: 300%;
         margin: 0px 20%;
         font-size: 70%;
         padding:0px 0px;
-        min-width: 700px;
         text-align: center;
         align-items: center;
         justify-content: center; 
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
         background: hsla(219, 100%, 25%, 0.84);
-        border-radius: 15px;
+        border-radius: 10px;
         color:white;
     }
     .Book p
@@ -42,7 +44,7 @@
     }
     .DropDownButton
     {
-        min-width: 225px;
+        width: 300px;
         font-size:200%;
         padding:6px 10px;
         color:white;
@@ -72,7 +74,7 @@
     }
     .airports
     {
-        width: 200%;
+        width: 60%;
         margin-left: 20%;
         margin-bottom: 7%;
     }
@@ -84,7 +86,6 @@
     }
     input[type=text]
     {
-        width: 30%;
         padding: 0px 21px;
         margin-bottom: 10px;
         border: 1px solid #fff;
@@ -98,12 +99,23 @@
         padding: 10px 25px;
         margin: 30px 0;
         border: none;
-        border-radius: 10px;
+        border-radius: 5px;
         cursor: pointer;
     }
     .Button:hover 
     {
         background-color: #136716;
+    }
+    .alert
+    {
+        margin: 0 10% 0 10%;
+        font-size: 110%;
+    }
+    .uib-alert
+    {
+        background-color: hsla(347, 88%, 51%, 1);
+        border-color: white;
+        color: white;
     }
 </style>
 <div class="Title">
@@ -114,9 +126,12 @@
     </div>
 </div>
 <div class="Book">
-    <div class="Head"
-    <p>Search Flights</p>
-    <hr>
+    <div class="Head">
+        <p>Search Flights</p>
+        <hr>
+    </div>
+    <div class = "alert">
+        <uib-alert class ="uib-alert" ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert()">{{alert.msg}}</uib-alert>
     </div>
     <div class="row">
         <div class="col-md-6">
@@ -124,7 +139,7 @@
                 <input name="originAirports"
                         id="originAirports"
                         type="text"
-                        placeholder="Flying From"
+                        placeholder="Flying From*"
                         ng-model="selectedOrigin"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
                         class="form-control",
@@ -139,7 +154,7 @@
                      ng-required="true"
                      close-text="Close"
                      alt-input-formats="altInputFormats"
-                     placeholder="Depart Date" />
+                     placeholder="Depart Date*" />
               <span class="input-group-btn">
                 <button type="button"
                         class="btn btn-default"
@@ -166,7 +181,7 @@
                 <input name="destinationAirports"
                         id="destinationAirports"
                         type="text"
-                        placeholder="Flying To"
+                        placeholder="Flying To*"
                         ng-model="selectedDestination"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
                         class="form-control",
@@ -180,7 +195,7 @@
                         is-open="popup2.opened"
                         ng-required="true"
                         close-text="Close"
-                        placeholder="Return Date" 
+                        placeholder="Return Date*" 
                         />
                 <span class="input-group-btn">
                     <button type="button"
