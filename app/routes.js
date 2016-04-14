@@ -18,6 +18,9 @@ module.exports = function(app,mongo) {
     });
  
      app.get('/db/seed', function(req, res) {
+     var db=require('./db.js');
+    /* res.use(db);
+*/
     });      
 
     /* DELETE DB */
