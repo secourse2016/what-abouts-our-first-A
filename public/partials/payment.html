@@ -62,7 +62,7 @@
         margin: 10px 40px;
         background-color: white;
     }
-    input[type="submit"]
+    .Button
     {
         border: 0;
         padding: 8px;
@@ -74,10 +74,10 @@
         font-weight: bold;
         text-align: center;
         margin-right: 26%;
-        border-radius: 7px;
+        border-radius: 5px;
         float: right;
     }
-    input[type=submit]:hover 
+    .Button:hover 
     {
         background-color: #136716;
     }
@@ -98,7 +98,6 @@
         line-height: 19px;
         color:white;
         font-size:90%;
-        /*float: left;*/
     }
 </style>
 <div class="logo">
@@ -369,7 +368,8 @@
         <option value="ZW">Zimbabwe</option>
     </select>
     <br>
-    <input type="submit" value="Purchase" align="center" ng-click='home()'>
+    <button class="Button" align="center" ng-click='home()'>Purchase  <i class="glyphicon glyphicon-usd"></i>
+    </button>
     <p>
         Purchase of this ticket means you understand and agree to all fare rules associated with this non-refundable ticket,United's dangerous goods policy, and the terms and conditions in United's Contract of Carriage, and the collection, processing and transfer of your information to the United States for handling in accordance with our privacy policy.
     </p>
