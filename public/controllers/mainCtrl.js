@@ -4,7 +4,7 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
     $scope.format = $scope.formats[0];
 
     $scope.alerts = [];
-
+    
     function addAlertDate() {
         $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose a date :(' });
     };
