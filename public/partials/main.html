@@ -44,7 +44,7 @@
     }
     .DropDownButton
     {
-        width: 300px;
+        width: 225px;
         font-size:200%;
         padding:6px 10px;
         color:white;
@@ -117,6 +117,21 @@
         border-color: white;
         color: white;
     }
+    .btn-group label
+    {
+        margin-top:25px;
+        margin-right:4px; 
+        background: hsla(219, 100%, 22%, 1);
+        border: none;
+    }
+    .btn-group label:hover
+    {
+        background:hsla(219, 100%, 12%, 1);
+    }
+  /*  .btn-group label:
+    {
+      border: 20px solid white;
+    }  */  
 </style>
 <div class="Title">
     <div class="col-sm-12">
@@ -175,6 +190,10 @@
                 <li role="menuitem"><button type="button" class="listButton" id='btn5' ng-click='selectNum(5)'>5</button></li>
               </ul>
             </div>
+            <div class="btn-group">
+                <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'One-way'" uib-uncheckable="false">One-way</label>
+                <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'Roundtrip'" uib-uncheckable="false">Roundtrip</label>
+            </div>
         </div>
         <div class="col-md-6">
             <div class = "airports">
@@ -214,6 +233,10 @@
                 <li role="menuitem"><button type="button" class="listButton" id='first' ng-click='selectCabin("First Class")'>First Class</button></li>
               </ul>
             </div>
+        </div>
+        <div class="btn-group">
+            <label class="btn btn-primary" ng-model="radioModel2" uib-btn-radio="'United'" uib-uncheckable="true">United only</label>
+            <label class="btn btn-primary" ng-model="radioModel2" uib-btn-radio="'Other'" uib-uncheckable="true">Other airlines</label>
         </div>
     </div>
   <button type="button" class="Button" id='btnSearch' ng-click='SearchFlights()'>Search</button>
