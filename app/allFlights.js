@@ -2,6 +2,7 @@ var flights = require('../flights.json');
 var airports = require('../airports.json');
 var reservations = require('../reservations.json');
 var db = require('./db.js');
+var crypto = require('crypto');
 
 function seedDB (cb) 
 {
@@ -68,4 +69,30 @@ function getFlights( flyingFrom , flyingTo , departDate , returnDate , cabin   )
     });
 }
 
-	
+function randomObjectId(length)
+{
+    return crypto.createHash('md5').update(Math.random().toString()).digest('hex').substring(0, length).toUpperCase();
+}
+
+function reserve( fn , ln , flightNumber , seatNumber ) 
+{
+    var bookingRefNum = randomObjectId(6);
+    var receiptNum = randomObjectId(7);
+    
+    db.db().collection('Reservations').findOne({ bookingRefNumber: bookingRefNum}, function(err, doc1) {
+        db.db().collection('Reservations').findOne({ receipt_number: receiptNum}, function(err, doc2) {
+            if( doc1 == null && doc2 == null) 
+            {
+                db.db().Reservations.insert({firstName : fn  , lastName : ln ,  bookingRefNumber : bookingRefNum , receipt_number : receiptNum});
+                var reservationID = db.db().Reservations.findOne({bookingRefNumber : bookingRefNum}, {_id:1});
+                db.db().Flights.update( {flighNumber: flightNumber , seatmap[4]=seatNumber} , {$set: { seatmap[3]=reservationID }} );
+            } 
+            else 
+            {
+               reserve( fn , ln ) ;
+            }
+        });
+
+        });
+}
+    
