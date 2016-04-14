@@ -3,7 +3,7 @@
     {	
         background: hsla(219, 100%, 25%, 0.84);
         padding: 0px 0px 0px 0px;
-        border-radius: 15px;
+        border-radius: 10px;
         margin: 5.6% 20% 0% 20%;
         min-height: 400px;
         line-height: 2;
@@ -22,7 +22,7 @@
         padding: 0;
         margin: 40px 10px 0px 0px;
         border: none;
-        border-radius: 10px;
+        border-radius: 5px;
         cursor: pointer;
     }
 
@@ -36,8 +36,8 @@
         margin: 0;
         padding: 20px 0px 0px 0px;
         /*font-size:300%;*/
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px; 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.2);
         color:white;
         font-size:150%;
@@ -59,6 +59,6 @@
     <h3> Return Flight : {{timeR}} from {{return.origin}} to {{return.destination}} </h3>
     <hr>
     <h3> Total price = {{price}}$</h3>
-    <button type="button" class="confirmBtn" id='btnPay' ng-click='pay()'>Proceed</button>
-    <button type="button" class="confirmBtn" id='btnHome' ng-click='home()'>Cancel</button>
+    <button type="button" class="confirmBtn" id='btnPay' ng-click='pay()'>Proceed <i class="glyphicon glyphicon-ok"></i></button>
+    <button type="button" class="confirmBtn" id='btnHome' ng-click='home()'>Cancel <i class="glyphicon glyphicon-remove"></i></button>
 </div>
