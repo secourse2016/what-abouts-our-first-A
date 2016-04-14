@@ -8,7 +8,7 @@ app.get('/user/listUsers' , function(req.res) {
 //middleware function 
 app.use(function (req, res, next)
 {
-//continue onlu if jwt is verified , otherwise return 403
+//continue only if jwt is verified , otherwise return 403
 // next();
 
 });
@@ -21,5 +21,5 @@ app.get('user/listSecureUsers' , function(req , res){
 });
 
 app.listen(3000,function() {
-	console.log('exaple app listening at http ://localhost:3000');
+	console.log('example app listening at http ://localhost:3000');
 });
