@@ -1,11 +1,23 @@
 var flights = require('../flights.json');
 var airports = require('../airports.json');
 var reservations = require('../reservations.json');
-var db = require('.db.js');
+var db = require('./db.js');
 
 function seedDB (cb) 
 {
-	db.db().collection('Flights').find().toArray(function (err, docs) {
+    seedFlights(function(err1,seededFlights) {
+        seedAirports(function(err2,seededAirports) {
+            seedReservations(function(err3,seededReservations) {
+                if(err1 || err2 || err3) throw Error('Failed to seed a collection in the Database');
+                return seededReservations || seededFlights || seedAirports;
+            });
+        });
+    });
+}
+
+function seedFlights(cb)
+{
+    db.db().collection('Flights').find().toArray(function (err, docs) {
         if (err) return cb(err);
         if (docs.length > 0)
             cb(null, false);
@@ -16,8 +28,11 @@ function seedDB (cb)
             });
         }
     });
+}
 
-	db.db().collection('Airports').find().toArray(function (err, docs) {
+function seedAirports(cb)
+{
+    db.db().collection('Airports').find().toArray(function (err, docs) {
         if (err) return cb(err);
         if (docs.length > 0)
             cb(null, false);
@@ -28,8 +43,11 @@ function seedDB (cb)
             });
         }
     });
-
-	db.db().collection('Reservations').find().toArray(function (err, docs) {
+}
+    
+function seedReservations(cb)
+{
+    db.db().collection('Reservations').find().toArray(function (err, docs) {
         if (err) return cb(err);
         if (docs.length > 0)
             cb(null, false);
