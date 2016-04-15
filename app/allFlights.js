@@ -93,14 +93,11 @@ function viewMyReservedFlight( bookingRefNum , cb ){
     db.db().collection('Reservations').findOne({bookingRefNumber : bookingRefNum},function(err,record){
         if( record === null )
             cb(err,null); //Not a valid booking reference number
-        
         else{
             var reservationID = record._id;
             db.db().collection('Flights').findOne( { seatmap: {reservationID:reservationID} } , function(err2 , flight){
                 cb(err2,flight);
             });
-            
         }
-        
     });
 }
