@@ -2,6 +2,11 @@
  * App routes:
  */
 module.exports = function(app,mongo) {
+      var path    = require('path');
+
+    app.get('/403', function (req, res) {
+      res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
+    });
 
 	app.get('/', function (req, res) {
 	  res.sendFile(__dirname + '/public/index.html');
