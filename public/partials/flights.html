@@ -5,6 +5,7 @@
         margin: 0px;
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
         padding: 20px 0;
+        min-height: 500px;
         background-color: hsla(219, 100%, 45%, 0.73);
     }
     .FromTo
@@ -45,13 +46,6 @@
 	{
    		background-color: #136716;
 	}
-	.logo
-	{
-        margin: 20px 45px ;
-        text-align: left;
-        width: 180px;
-        height: 40px;
-    }
     tr td
     {
         cursor:pointer;
@@ -62,11 +56,12 @@
     }
     tr
     {
+        width: 100%;
         background: hsla(219, 100%, 25%, 0.84);
     }
     th, td 
     {
-        width:265px;
+        /*width:265px;*/
         color:white;
         text-align: center;
     }
@@ -85,13 +80,15 @@
     }
     table tbody
     {
-        height: 300px;
-        line-height: 80px;
         overflow: auto;
+    }
+    table
+    {
+        margin-bottom:300px; 
     }
     thead > tr, tbody
     {
-        display:block;
+        /*display:block;*/
     }
 </style>
 <div class="blueBackground"> 
