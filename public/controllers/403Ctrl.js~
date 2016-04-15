@@ -1,5 +1,0 @@
-App.controller('403Ctrl',function($scope,$location){
-    $scope.home = function() {
-    $location.url('/');
-    };
-})
