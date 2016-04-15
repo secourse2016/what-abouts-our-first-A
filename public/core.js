@@ -1,15 +1,13 @@
-App = angular.module('United_Airlines', ['ui.bootstrap', 'ngRoute']);
+App = angular.module('United_Airlines', ['ui.bootstrap', 'ngRoute','ngAnimate']);
 
 App.config(function($routeProvider,$locationProvider) {
     $routeProvider
 
-        // route for the home page
         .when('/', {
             templateUrl : '/partials/main.html',
             controller  : 'mainCtrl'
         })
        
-        // route for the flights page
         .when('/flights', {
             templateUrl : '/partials/flights.html',
             controller  : 'flightsCtrl'
@@ -29,11 +27,14 @@ App.config(function($routeProvider,$locationProvider) {
             controller  : '403Ctrl'
         })
 
+        .when('/reservations',{
+            templateUrl : '/partials/reservations.html',
+            controller  : 'reservationsCtrl'
+        })
+
         .when('/payment',{
             templateUrl : '/partials/payment.html',
             controller  : 'paymentCtrl'
-
-       
         });
         
     $locationProvider.html5Mode({enabled: true,requireBase: false});    
