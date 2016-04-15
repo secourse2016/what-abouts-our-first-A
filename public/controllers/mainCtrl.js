@@ -66,14 +66,6 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
      });
     };
 
-    $scope.SetOriginAirport = function(originAirport) {
-        FlightsSrv.setSelectedOriginAirport(originAirport);
-    };
-
-    $scope.SetDestinationAirport = function(destAirport) {
-        FlightsSrv.setSelectedDestinationAirport(destAirport);
-    };
-
     $scope.SearchFlights = function() {
         $scope.alerts = [];
         if($scope.selectedP==="Persons"){
@@ -99,7 +91,8 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
             addAlertDate();
             return;
         }
-
+        FlightsSrv.setSelectedOriginAirport($scope.selectedOrigin);
+        FlightsSrv.setSelectedDestinationAirport($scope.selectedDestination);
         FlightsSrv.setReturnDate($scope.dt2);
         FlightsSrv.setDepartDate($scope.dt1); 
         $location.url('/flights');
