@@ -1,0 +1,75 @@
+<style>
+	.Head
+    {
+    	/*display: inline;*/
+        text-align: left;
+        height: 80px;
+        background-color:hsla(219, 100%, 54%, 0.83);
+        padding: 10px 0px 0px 0px;
+        font-size:200%;
+		font-weight: 300%;
+        margin: 2% 30% 0% 30%;
+        font-size: 70%;
+        padding:0px 0px; 
+        box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.2);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+    }
+    hr
+    {
+    	margin: 0 30%;
+    	height: 2px;
+    	padding: 0px;
+    	background: white;
+    	border: none;
+    }
+	.col-lg-6
+	{
+		margin-top: 3.5%;
+		margin-left: 40px;
+		padding: 0;
+	}
+	.Body
+	{
+		line-height: 50px;
+		color: white;
+		background: hsla(219, 100%, 25%, 0.84);
+        box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
+		padding-left: 40px;
+		margin: 0 30%;
+		text-align: left;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+		font-size: 130%; 
+	}
+</style>
+
+<div class ="Head">
+	<div class="col-lg-6">
+		<div class="input-group">
+			<input type="text" class="form-control" ng-model="refNo" placeholder="Booking Reference Number">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button" ng-click="search()" style="background:#00bd35;color: white;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+			</span>
+		</div>
+	</div>
+</div>
+<hr>
+<div uib-collapse="isCollapsed">
+	<div class="Body">
+		<label style="margin-right:160px;">From: CAI</label>
+		<label>To : FRA</label>
+		<br>
+		<label>Cabin : First Class</label>
+		<br>
+		<label>Flight Number: ABC123</label>
+		<br>
+  		<label>Seat Number: D12</label>
+		<br>
+		<label>Flight Duration: 90 minutes</label>
+		<br>
+  		<label>Departure: 25/9/2020 12:69 AM</label>
+  		<label>Arrival: 26/9/2020 69:12 PM</label>
+		<br>
+	</div>
+</div>
