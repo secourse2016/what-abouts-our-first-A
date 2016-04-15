@@ -2,7 +2,8 @@
 
 <html ng-app="United_Airlines">
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="/js/angular-route.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
@@ -13,6 +14,7 @@
         <script src="/controllers/paymentCtrl.js"></script>
         <script src="/controllers/flightsCtrl.js"></script>
         <script src="/controllers/confirmCtrl.js"></script>
+        <script src="/controllers/reservationsCtrl.js"></script>
         <script src="/services/flightsSrv.js"></script>
         <link rel="stylesheet" type="text/css" href="styles/mainStyle.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -34,6 +36,11 @@
                 color:black;
                 background: hsla(209, 33%, 69%, 0.41);
             }
+            .navbar-default .navbar-nav>li>a:focus
+            {
+                color:white;
+                /*background: hsla(209, 33%, 69%, 0.41);*/
+            }
             .navbar-default 
             {
                 box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
@@ -50,11 +57,11 @@
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#"><img src="http://www.englandairpark.org/sites/default/files/white_united_logo.png"style="width: 100px; height: 100%;" ></a>
+              <a class="navbar-brand" href="/"><img src="http://www.englandairpark.org/sites/default/files/white_united_logo.png"style="width: 100px; height: 100%;" ></a>
             </div>
             <ul class="nav navbar-nav">
               <li><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"</span> Home</a></li>
-              <li><a href="/"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"</span> Reservations</a></li>
+              <li><a href="/reservations"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"</span> Reservations</a></li>
             </ul>
           </div>
         </nav>
