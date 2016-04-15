@@ -4,7 +4,7 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
     $scope.format = $scope.formats[0];
 
     $scope.radioModel2 = "";
-    $scope.radioModel1 = "";
+    $scope.radioModel1 = 'Roundtrip';
 
     $scope.hidden = false;
 
@@ -95,12 +95,6 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
         if($scope.dt1 === undefined || ($scope.dt2 === undefined && !$scope.hidden))
         {
             $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose a date :(' });
-            return;
-        }
-
-        if($scope.radioModel1 == "")
-        {
-            $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose the type of trip :(' });
             return;
         }
 
