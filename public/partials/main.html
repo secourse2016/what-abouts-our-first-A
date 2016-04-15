@@ -3,7 +3,7 @@
     {
         text-align: center;
         display: flex;
-        margin: 2%;
+        margin: 0.2%;
         align-items: center;
         justify-content: center;
         color: #fff;
@@ -11,7 +11,7 @@
     .Head
     {
         text-align: left;
-        text-indent: 9.2%;
+        text-indent: 9.4%;
         background-color:hsla(219, 100%, 54%, 0.73);
         margin: 0;
         padding: 20px 0px 0px 0px;
@@ -163,8 +163,7 @@
                         placeholder="Flying From*"
                         ng-model="selectedOrigin"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
-                        class="form-control",
-                        typeahead-on-select="SetOriginAirport($item.iata)">
+                        class="form-control">
             </div>
             <p class="input-group">
               <input type="text"
@@ -210,8 +209,7 @@
                         ng-required="true"
                         ng-model="selectedDestination"
                         uib-typeahead="airport.iata for airport in Airports | filter:$viewValue | limitTo:10"
-                        class="form-control",
-                        typeahead-on-select="SetDestinationAirport($item.iata)">
+                        class="form-control">
             </div>
             <p class="input-group">
                 <input type="text"

@@ -30,7 +30,7 @@
         background:hsla(219, 100%, 25%, 0.84);
         padding-bottom:20px;
     }
-    li 
+    .methodOfPayment li 
     {
         display: inline;
         padding: 0px 30px 0px 0px;
@@ -38,13 +38,12 @@
     }
     input[type="text"]
     {
-        height: 25px;
-        padding-left: 2px;
+        height: 30px;
+        padding-left: 21px;
         border-width: 1.5px;
         border-style: solid;
         border-color: white;
-        /*margin-right: 100px;*/
-        font-size: 100%;
+        font-size: 110%;
         border-radius: 4px;
         margin: 12px 40px;
         font-weight: 600;
@@ -100,9 +99,6 @@
         font-size:90%;
     }
 </style>
-<div class="logo">
-    <img src="https://www.united.com/ual/Format/img/logos/unitedLogo-white.png" style="width: 180px; height: 35px;">
-</div>
 <div class="methodOfPayment">
 	<h2> Card type:</h2>
 	<ul>
@@ -113,12 +109,13 @@
 </div>
 <hr>
 <div class="data">
-
-    <input type="text" name="cardNumber" placeholder="Card number" size="30"  > <br> 
-    <input type="text" name="fullName" placeholder="Full name as it appears on the card" size="45"  ><br>
-    <input type="text" name="address" placeholder="Billing address" size="30"  ><br>
-    <input type="text" name="city" placeholder="City/town" size="30"  >
-    <input type="text" name="zip" placeholder="ZIP/postal code" size="30"  ><br>
+    
+    <input type="text" ng-required="true" name="firstName" placeholder="First name" size="30"  >
+    <input type="text" ng-required="true" name="lastName" placeholder="Last name" size="30"  > <br>
+    <input type="text" ng-required="true" name="cardNumber" placeholder="Card number" size="30"  > <br> 
+    <input type="text" ng-required="true" name="address" placeholder="Billing address" size="30"  ><br>
+    <input type="text" ng-required="true" name="city" placeholder="City/town" size="30"  >
+    <input type="text" ng-required="true" name="zip" placeholder="ZIP/postal code" size="30"  ><br>
 
     <select id="countries" name="countries" >	
         <option value="" disabled selected>Country</option>
