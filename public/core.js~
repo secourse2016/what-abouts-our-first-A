@@ -24,8 +24,8 @@ App.config(function($routeProvider,$locationProvider) {
             templateUrl : '/partials/confirm.html',
             controller  : 'confirmCtrl'
         })
-       .when('/403',{
-            templateUrl : '/partials/403.html',
+       .when('/notauthorized',{
+            templateUrl : '/partials/notauthorized.html',
             controller  : '403Ctrl'
         })
 

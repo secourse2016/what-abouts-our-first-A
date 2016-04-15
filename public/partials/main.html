@@ -3,7 +3,7 @@
     {
         text-align: center;
         display: flex;
-        margin: 0%;
+        margin: 0.2%;
         align-items: center;
         justify-content: center;
         color: #fff;
@@ -131,9 +131,9 @@
     {
         background:hsla(219, 100%, 12%, 1);
     }
-     .vis-hidden{
-     visibility: hidden;
-  }
+    .vis-hidden{
+        visibility: hidden;
+    }
 </style>
 <div class="Title">
     <div class="col-sm-12">
@@ -182,7 +182,7 @@
             </p>
             <div class="btn-group" uib-dropdown is-open="status.isopenP">
               <button id="single-button" type="button" class="DropDownButton" uib-dropdown-toggle ng-disabled="disabled">
-                {{selectedP}} <i class="glyphicon glyphicon-menu-down"></i>
+                {{selectedP}}                <i class="glyphicon glyphicon-menu-down" id = "x"></i>
               </button>
               <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
                 <li role="menuitem"><button type="button" class="listButton" id='btn1' ng-click='selectNum(1)'>1</button></li>
@@ -231,7 +231,7 @@
             </p>
             <div class="btn-group" uib-dropdown is-open="status.isopenC">
               <button id="single-button" type="button" class="DropDownButton" uib-dropdown-toggle ng-disabled="disabled">
-                {{selectedC}} <i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i>
+                {{selectedC}}                <i class="glyphicon glyphicon-menu-down" id = "x"></i>
               </button>
               <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
                 <li role="menuitem"><button type="button" class="listButton" id='eco' ng-click='selectCabin("Economy")'>Economy</button></li>
