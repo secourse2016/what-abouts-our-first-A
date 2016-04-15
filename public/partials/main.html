@@ -131,6 +131,9 @@
     {
         background:hsla(219, 100%, 12%, 1);
     }
+     .vis-hidden{
+     visibility: hidden;
+  }
 </style>
 <div class="Title">
     <div class="col-sm-12">
@@ -190,8 +193,8 @@
               </ul>
             </div>
             <div class="btn-group">
-                <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'One-way'" uib-uncheckable="false">One-way</label>
-                <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'Roundtrip'" uib-uncheckable="false">Roundtrip</label>
+                <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'One-way'" ng-click="one()" uib-uncheckable="false">One-way</label>
+                <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'Roundtrip'" ng-click="round()"uib-uncheckable="false">Roundtrip</label>
             </div>
         </div>
         <div class="col-md-6">
@@ -214,11 +217,14 @@
                         ng-required="true"
                         close-text="Close"
                         placeholder="Return Date*" 
+                        ng-class="{'vis-hidden': hidden ==true}"
                         />
                 <span class="input-group-btn">
                     <button type="button"
                         class="btn btn-default"
-                        ng-click="open2()">
+                        ng-click="open2()"
+                        ng-class="{'vis-hidden': hidden ==true}"
+                        >
                         <i class="glyphicon glyphicon-calendar"></i>
                     </button>
                 </span>

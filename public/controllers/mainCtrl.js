@@ -3,13 +3,19 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
     $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
     $scope.format = $scope.formats[0];
 
+    $scope.radioModel2 = "";
+    $scope.radioModel1 = "";
+
+    $scope.hidden = false;
+
     $scope.alerts = [];
     
-    function addAlertDate() {
-        $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose a date :(' });
+    $scope.one = function() {
+        $scope.hidden = true;
     };
-    function addAlertAirport() {
-        $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose an airport :(' });
+
+    $scope.round = function() {
+        $scope.hidden = false;
     };
 
     $scope.closeAlert = function() {
@@ -82,13 +88,25 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
         }
         if($scope.selectedDestination === undefined || $scope.selectedOrigin === undefined)
         {
-            addAlertAirport();
+            $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose an airport :(' });
             return;
         }
 
-        if($scope.dt1 === undefined|| $scope.dt2 === undefined)
+        if($scope.dt1 === undefined || ($scope.dt2 === undefined && !$scope.hidden))
         {
-            addAlertDate();
+            $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose a date :(' });
+            return;
+        }
+
+        if($scope.radioModel1 == "")
+        {
+            $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose the type of trip :(' });
+            return;
+        }
+
+        if($scope.radioModel2 == "")
+        {
+            $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose which airline to search from :(' });
             return;
         }
         FlightsSrv.setSelectedOriginAirport($scope.selectedOrigin);
