@@ -88,4 +88,17 @@ function reserve( fn , ln , flightNumber , seatNumber , windowBoolean , economyB
         });
     });
 }
-    
+
+function viewMyReservedFlight( bookingRefNum , cb ){
+    db.db().collection('Reservations').findOne({bookingRefNumber : bookingRefNum},function(err,record){
+        if( record === null )
+            cb(err,false); //Not a valid booking reference number
+        
+        else{
+            var reservationID = record._id;
+            db.db().collection('Flights').findOne( { seatmap: {reservationID:reservationID} } );
+            cb(err,true);
+        }
+        
+    });
+}
