@@ -5,6 +5,5 @@ App.controller('reservationsCtrl', function($scope,FlightsSrv,$location) {
 	$scope.search = function()
 	{
 		$scope.isCollapsed = !$scope.isCollapsed;
-		console.log($scope.refNo);
 	}
 });
