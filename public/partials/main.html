@@ -12,7 +12,7 @@
     {
         text-align: left;
         text-indent: 9.4%;
-        background-color:hsla(219, 100%, 54%, 0.73);
+        background-color:hsla(219, 100%, 54%, 1);
         margin: 0;
         padding: 20px 0px 0px 0px;
         font-size:100%;
@@ -131,7 +131,8 @@
     {
         background:hsla(219, 100%, 12%, 1);
     }
-    .vis-hidden{
+    .vis-hidden
+    {
         visibility: hidden;
     }
 </style>
@@ -182,7 +183,7 @@
             </p>
             <div class="btn-group" uib-dropdown is-open="status.isopenP">
               <button id="single-button" type="button" class="DropDownButton" uib-dropdown-toggle ng-disabled="disabled">
-                {{selectedP}}                <i class="glyphicon glyphicon-menu-down" id = "x"></i>
+                {{selectedP}} <i class="glyphicon glyphicon-menu-down" id = "x"></i>
               </button>
               <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
                 <li role="menuitem"><button type="button" class="listButton" id='btn1' ng-click='selectNum(1)'>1</button></li>
@@ -192,6 +193,8 @@
                 <li role="menuitem"><button type="button" class="listButton" id='btn5' ng-click='selectNum(5)'>5</button></li>
               </ul>
             </div>
+            <br>
+
             <div class="btn-group">
                 <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'One-way'" ng-click="one()" uib-uncheckable="false">One-way</label>
                 <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'Roundtrip'" ng-click="round()"uib-uncheckable="false">Roundtrip</label>
@@ -231,7 +234,7 @@
             </p>
             <div class="btn-group" uib-dropdown is-open="status.isopenC">
               <button id="single-button" type="button" class="DropDownButton" uib-dropdown-toggle ng-disabled="disabled">
-                {{selectedC}}                <i class="glyphicon glyphicon-menu-down" id = "x"></i>
+                {{selectedC}} <i class="glyphicon glyphicon-menu-down" id = "x"></i>
               </button>
               <ul uib-dropdown-menu role="menu" aria-labelledby="single-button">
                 <li role="menuitem"><button type="button" class="listButton" id='eco' ng-click='selectCabin("Economy")'>Economy</button></li>
@@ -240,8 +243,8 @@
             </div>
         </div>
         <div class="btn-group">
-            <label class="btn btn-primary" ng-model="radioModel2" uib-btn-radio="'United'" uib-uncheckable="true">United only</label>
-            <label class="btn btn-primary" ng-model="radioModel2" uib-btn-radio="'Other'" uib-uncheckable="true">Other airlines</label>
+            <label class="btn btn-primary" ng-model="radioModel2" uib-btn-radio="'United'" uib-uncheckable="false">United only</label>
+            <label class="btn btn-primary" ng-model="radioModel2" uib-btn-radio="'Other'" uib-uncheckable="false">Other airlines</label>
         </div>
     </div>
   <button type="button" class="Button" id='btnSearch' ng-click='SearchFlights()'>Search  <i class="glyphicon glyphicon-search"></i></button>
