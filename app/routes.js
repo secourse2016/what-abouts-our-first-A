@@ -33,7 +33,7 @@ module.exports = function(app,mongo) {
 
 
 	 // check header or url parameters or post parameters for token
-      var token = req.body.wt || req.query.wt || req.headers['x-access-token'];   
+      var token = req.body.token || req.query.token || req.headers['x-access-token'];   
 
       console.log("{{{{ TOKEN }}}} => ", token);
 
