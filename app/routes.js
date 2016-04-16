@@ -1,6 +1,3 @@
-
- * App routes:
- */
 module.exports = function(app,mongo) {
       var path    = require('path');
       var jwt     = require('jsonwebtoken');

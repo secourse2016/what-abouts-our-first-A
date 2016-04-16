@@ -20,7 +20,7 @@
     "debug": "~2.2.0",
     "dotenv": "*",
     "express": "*",
-    "jsonwebtoken": "*",
+    "jsonwebtoken": "^5.4.0",
     "mocha": "*",
     "moment": "*",
     "mongodb": "*",
