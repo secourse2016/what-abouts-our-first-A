@@ -1,8 +1,7 @@
-/**
- * App routes:
- */
 module.exports = function(app,mongo) {
       var path    = require('path');
+      var jwt     = require('jsonwebtoken');
+	
 
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
@@ -29,74 +28,146 @@ module.exports = function(app,mongo) {
     app.get('/db/delete', function(req, res) {
     });      
 
-    /* Middleware Ehab and Osama work here*/
+    /* Middleware */
     app.use(function(req, res, next) {
-    }); 
 
-    /* ROUND-TRIP SEARCH REST ENDPOINT */
-    app.get('/api/flights/search/:origin/:destination/:departingDate/returningDate/:class', function(req, res) {
-        // retrieve origin, destination, departingDate, returningDate, and class from req.params.{{origin | departingDate | ...}}
-        // return an array of objects with this exact format
+
+	 // check header or url parameters or post parameters for token
+      var token = req.body.token || req.query.token || req.headers['x-access-token'];   
+
+      if (token)
+       {
+      	console.log("passed!");
+      	}
+		else
+			{
+				console.log("No token provided.");
+			}
+
+     // console.log("{{{{ TOKEN }}}} => ", token); 
+
+// a new proposal for the solution 
+ /*if (token) {
+        jsonwebtoken.verify(token, secretKey, function(err, decoded) {
+            if (err) {
+                res.status(403).send({ sucess: false, message: "Failed to authenticate"});
+            } else {
+                req.decoded = decoded;
+                next();
+            }
+        });
+    } else {
+        res.status(403).send({ success: false, message: "No Token Provided"});
+    }
+});
+
+api.get('/me', function(req, res) {
+        res.json(req.decoded);
+    });
+
+    return api; 
+}
+
+*/
+
+
+      var jwtSecret = process.env.JWTSECRET;
+
+      // Get JWT contents:
+      try 
+      {
+        var payload = jwt.verify(token, jwtSecret);
+        req.payload = payload;
+        next();
+      } 
+      catch (err) 
+      {
+        console.error('[ERROR]: JWT Error reason:', err);
+        res.status(403).sendFile(path.join(__dirname, '../public/partials', '403.html'));
+      }
+	
+
+    }); 
+    /**
+     * ROUND-TRIP SEARCH REST ENDPOINT
+     * @param origin - Flight Origin Location - Airport Code
+     * @param destination - Flight Destination Location - Airport Code
+     * @param departingDate - JavaScript Date.GetTime() numerical value corresponding to format `YYYY-MM-DD`
+     * @param returningDate - JavaScript Date.GetTime() numerical value corresponding to format `YYYY-MM-DD`
+     * @param class - economy or business only
+     * @returns {Array}
+     */        
+    app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class', function(req, res) {
+        // retrieve params from req.params.{{origin | departingDate | ...}}
+        // return this exact format
         return 
-        [{
-            "flightNumber"      : "SE2804",
-            "aircraftType"      : "Boeing",
-            "aircraftModel"     : "747",
-            "departureDateTime" : "Tuesday, April 12, 2016 06:25 PM",
-            "arrivalDateTime"   : "Wednesday, April 13, 2016 12:25 AM",
-            "origin"            : "JFK",
-            "destination"       : "CAI",
-            "cost"              : "750",
-            "currency"          : "USD",
-            "class"             : "economy",
-            "Airline"           : "United"
-        },{
-            "flightNumber"      : "SE2805",
-            "aircraftType"      : "Boeing",
-            "aircraftModel"     : "747",
-            "departureDateTime" : "Friday, April 23, 2016 04:25 AM",
-            "arrivalDateTime"   : "Friday, April 23, 2016 03:25 PM",
-            "origin"            : "CAI",
-            "destination"       : "JFK",
-            "cost"              : "845",
-            "currency"          : "USD",
-            "class"             : "economy",
-            "Airline"           : "United"
-        }];
+        {
+          outgoingFlights: 
+            [{
+                "flightNumber"      : "SE2804",
+                "aircraftType"      : "Boeing",
+                "aircraftModel"     : "747",
+                "departureDateTime" : 1460478300000,
+                "arrivalDateTime"   : 1460478300000,
+                "origin"            : "JFK",
+                "destination"       : "CAI",
+                "cost"              : "750",
+                "currency"          : "USD",
+                "class"             : "economy",
+                "Airline"           : "United"
+            }
+
+            // ,
+            // {
+            //     other flights
+            // }
+            ]
+           
+          returnFlights:
+            [{
+                "flightNumber"      : "SE2805",
+                "aircraftType"      : "Boeing",
+                "aircraftModel"     : "747",
+                "departureDateTime" : 1460478300000,
+                "arrivalDateTime"   : 1460478300000,
+                "origin"            : "CAI",
+                "destination"       : "JFK",
+                "cost"              : "845",
+                "currency"          : "USD",
+                "class"             : "economy",
+                "Airline"           : "United"
+            }]
+        };
     });    
 
-    /* ROUND-TRIP SEARCH REST ENDPOINT */
-    app.post('/api/flights/search/roundtrip', function(req, res) {
-        // retrieve origin, destination, departingDate, returningDate, and class from req.payload
-        // return an array of objects matching format above
-        return [{}];
-    });     
+    /**
+     * ONE-WAY SEARCH REST ENDPOINT 
+     * @param origin - Flight Origin Location - Airport Code
+     * @param DepartingDate - JavaScript Date.GetTime() numerical value corresponding to format `YYYY-MM-DD`
+     * @param class - economy or business only
+     * @returns {Array}
+     */    
+    app.get('/api/flights/search/:origin/:destination/:departingDate/:class', function(req, res) {
+        // retrieve params from req.params.{{origin | departingDate | ...}}
+        // return this exact format
 
-    /* ONE-WAY SEARCH REST ENDPOINT */
-    app.get('/api/flights/search/:origin/:departingDate/:class', function(req, res) {
-        // retrieve origin, destination, departingDate, and class from req.params.{{origin | departingDate}}
-        // return an array of objects with this exact format
         return 
-        [{
-            "flightNumber"      : "SE2804",
-            "aircraftType"      : "Airbus",
-            "aircraftModel"     : "A320",
-            "departureDateTime" : "Tuesday, April 12, 2016 06:25 PM",
-            "arrivalDateTime"   : "Wednesday, April 13, 2016 12:25 AM",
-            "origin"            : "JFK",
-            "destination"       : "CAI",
-            "cost"              : "1567",
-            "currency"          : "USD",
-            "class"             : "economy",
-            "Airline"           : "United"
-        }];    
+        {
+          outgoingFlights: 
+            [{
+                "flightNumber"      : "SE2804",
+                "aircraftType"      : "Airbus",
+                "aircraftModel"     : "A320",
+                "departureDateTime" : 1460478300000,
+                "arrivalDateTime"   : 1460478300000,
+                "origin"            : "JFK",
+                "destination"       : "CAI",
+                "cost"              : "1567",
+                "currency"          : "USD",
+                "class"             : "economy",
+                "Airline"           : "United"
+            }]
+        };
     });        
-
-    /* ONE-WAY SEARCH REST ENDPOINT */
-    app.post('/api/flights/search/oneway', function(req, res) {
-        // retrieve origin, destination, departingDate, and class from req.payload
-        // return an array of objects matching format above
-        return [{}];
-    });         
-
+             
 };
