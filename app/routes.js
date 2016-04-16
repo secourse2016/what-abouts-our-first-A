@@ -35,6 +35,15 @@ module.exports = function(app,mongo) {
 	 // check header or url parameters or post parameters for token
       var token = req.body.token || req.query.token || req.headers['x-access-token'];   
 
+      if (token)
+       {
+      	console.log("passed!");
+      	}
+		else
+			{
+				console.log("No token provided.");
+			}
+
       console.log("{{{{ TOKEN }}}} => ", token);
 
       var jwtSecret = process.env.JWTSECRET;
