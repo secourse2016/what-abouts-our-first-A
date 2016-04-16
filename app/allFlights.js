@@ -4,12 +4,12 @@ var reservations = require('../reservations.json');
 var db = require('./db.js');
 var crypto = require('crypto');
 
-function seedDB (cb) {
+exports.seedDB = function seedDB (cb) {
     seedFlights(function(err1,seededFlights) {
         seedAirports(function(err2,seededAirports) {
             seedReservations(function(err3,seededReservations) {
                 if(err1 || err2 || err3) throw Error('Failed to seed a collection in the Database');
-                return seededReservations && seededFlights && seedAirports;
+                return seededReservations(cb) && seededFlights(cb) && seedAirports(cb);
             });
         });
     });
@@ -57,7 +57,7 @@ function seedReservations(cb) {
     });
 }
     
-function getFlights( flyingFrom , flyingTo , departDate , returnDate , cabin   ) {
+exports.getFlights = function getFlights( flyingFrom , flyingTo , departDate , returnDate , cabin   ) {
 	db.db().collection('Flights').find({ origin:flyingFrom , destination:flyingTo , date:departDate }).toArray(function (err, flights) {
         if (err) return "An error occurred";
         return flights;
@@ -68,7 +68,7 @@ function randomObjectId(length) {
     return crypto.createHash('md5').update(Math.random().toString()).digest('hex').substring(0, length).toUpperCase();
 }
 
-function reserve( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , cb) {
+exports.reserve = function reserve( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , cb) {
     var bookingRefNum = randomObjectId(6);
     var receiptNum = randomObjectId(7);
     

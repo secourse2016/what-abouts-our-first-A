@@ -1,6 +1,7 @@
 module.exports = function(app,mongo) {
-      var path    = require('path');
-      var jwt     = require('jsonwebtoken');
+      var path       = require('path');
+      var jwt        = require('jsonwebtoken');
+      var allFlights = require('./allFlights.js')
 	
 
     app.get('/403', function (req, res) {
@@ -22,6 +23,12 @@ module.exports = function(app,mongo) {
     });
  
      app.get('/db/seed', function(req, res) {
+        // allFlights.seed( function( err , seeded ){
+        //     if(err)
+        //         console.log("Error seeding");
+        //     if(seeded)
+        //         console.log("Seeding successfullly");
+        // });
     });      
 
     /* DELETE DB */
