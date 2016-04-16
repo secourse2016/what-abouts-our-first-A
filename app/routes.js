@@ -52,7 +52,7 @@ module.exports = function(app,mongo) {
       catch (err) 
       {
         console.error('[ERROR]: JWT Error reason:', err);
-        res.status(403).sendFile(path.join(__dirname, '../public', '403.html'));
+        res.status(403).sendFile(path.join(__dirname, '../public/partials', '403.html'));
       }
 	
 
