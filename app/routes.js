@@ -32,59 +32,26 @@ module.exports = function(app,mongo) {
     app.use(function(req, res, next) {
 
 
-	 // check header or url parameters or post parameters for token
-      var token = req.body.token || req.query.token || req.headers['x-access-token'];   
+    	 // check header or url parameters or post parameters for token
+        var token = req.body.wt || req.query.wt || req.headers['x-access-token'];   
 
-      if (token)
-       {
-      	console.log("passed!");
-      	}
-		else
-			{
-				console.log("No token provided.");
-			}
-
-     // console.log("{{{{ TOKEN }}}} => ", token); 
-
-// a new proposal for the solution 
- /*if (token) {
-        jsonwebtoken.verify(token, secretKey, function(err, decoded) {
-            if (err) {
-                res.status(403).send({ sucess: false, message: "Failed to authenticate"});
-            } else {
-                req.decoded = decoded;
-                next();
-            }
-        });
-    } else {
-        res.status(403).send({ success: false, message: "No Token Provided"});
-    }
-});
-
-api.get('/me', function(req, res) {
-        res.json(req.decoded);
-    });
-
-    return api; 
-}
-
-*/
+        console.log("{{{{ TOKEN }}}} => ", token); 
 
 
-      var jwtSecret = process.env.JWTSECRET;
+        var jwtSecret = process.env.JWTSECRET;
 
-      // Get JWT contents:
-      try 
-      {
-        var payload = jwt.verify(token, jwtSecret);
-        req.payload = payload;
-        next();
-      } 
-      catch (err) 
-      {
-        console.error('[ERROR]: JWT Error reason:', err);
-        res.status(403).sendFile(path.join(__dirname, '../public/partials', '403.html'));
-      }
+          // Get JWT contents:
+        try 
+        {
+            var payload = jwt.verify(token, jwtSecret);
+            req.payload = payload;
+            next();
+        } 
+        catch (err) 
+        {
+            console.error('[ERROR]: JWT Error reason:', err);
+            res.status(403).sendFile(path.join(__dirname, '../public/partials', '403.html'));
+        }
 	
 
     }); 
