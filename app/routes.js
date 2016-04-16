@@ -44,7 +44,7 @@ module.exports = function(app,mongo) {
 				console.log("No token provided.");
 			}
 
-      console.log("{{{{ TOKEN }}}} => ", token);
+     // console.log("{{{{ TOKEN }}}} => ", token);
 
       var jwtSecret = process.env.JWTSECRET;
 
