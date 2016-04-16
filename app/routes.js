@@ -3,6 +3,8 @@
  */
 module.exports = function(app,mongo) {
       var path    = require('path');
+      var jwt     = require('jsonwebtoken');
+	
 
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
@@ -31,6 +33,29 @@ module.exports = function(app,mongo) {
 
     /* Middleware Ehab and Osama work here*/
     app.use(function(req, res, next) {
+
+
+	 // check header or url parameters or post parameters for token
+      var token = req.body.wt || req.query.wt || req.headers['x-access-token'];   
+
+      console.log("{{{{ TOKEN }}}} => ", token);
+
+      var jwtSecret = process.env.JWTSECRET;
+
+      // Get JWT contents:
+      try 
+      {
+        var payload = jwt.verify(token, jwtSecret);
+        req.payload = payload;
+        next();
+      } 
+      catch (err) 
+      {
+        console.error('[ERROR]: JWT Error reason:', err);
+        res.status(403).sendFile(path.join(__dirname, '../public', '403.html'));
+      }
+	
+
     }); 
 
     /* ROUND-TRIP SEARCH REST ENDPOINT */
