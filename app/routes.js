@@ -28,14 +28,14 @@ module.exports = function(app,mongo) {
     app.get('/db/delete', function(req, res) {
     });      
 
-    /* Middleware Ehab and Osama work here*/
+    /* Middleware */
     app.use(function(req, res, next) {
 
 
 	 // check header or url parameters or post parameters for token
       var token = req.body.token || req.query.token || req.headers['x-access-token'];   
 
-    /*  if (token)
+      if (token)
        {
       	console.log("passed!");
       	}
@@ -44,10 +44,10 @@ module.exports = function(app,mongo) {
 				console.log("No token provided.");
 			}
 
-     // console.log("{{{{ TOKEN }}}} => ", token); */
+     // console.log("{{{{ TOKEN }}}} => ", token); 
 
 // a new proposal for the solution 
- if (token) {
+ /*if (token) {
         jsonwebtoken.verify(token, secretKey, function(err, decoded) {
             if (err) {
                 res.status(403).send({ sucess: false, message: "Failed to authenticate"});
@@ -68,7 +68,7 @@ api.get('/me', function(req, res) {
     return api; 
 }
 
-
+*/
 
 
       var jwtSecret = process.env.JWTSECRET;
