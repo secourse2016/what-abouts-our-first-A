@@ -11,7 +11,7 @@ App.controller('confirmCtrl',function($scope,FlightsSrv,$location){
 
     if(FlightsSrv.getHidden()===false){
         $scope.timeR = myFunction($scope.return.departureDateTime);
-        $scope.string="Return Flight : "+$scope.timeR+ " from "+$scope.return.origin +" to " +$scope.return.origin;
+        $scope.string="Return Flight : "+$scope.timeR+ " from "+$scope.return.origin +" to " +$scope.return.destination;
         $scope.price = parseInt(FlightsSrv.getDepartPrice())*FlightsSrv.getMultiplier()+parseInt(FlightsSrv.getReturnPrice())*FlightsSrv.getMultiplier();
     }
     $scope.pay = function() {
