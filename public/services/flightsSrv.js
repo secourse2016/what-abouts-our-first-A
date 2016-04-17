@@ -11,6 +11,7 @@ App.factory('FlightsSrv', function ($http) {
         },
         reserves : function() {
             return $http.get('/api/reserve/'+this.Fn+'/'+this.Ln+'/'+this.departFlight.flightNumber);
+            
         },
         getFlights : function() {
             return $http.get('/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.returnDate+'/'+this.cabin, {

@@ -17,8 +17,15 @@ module.exports = function(app,mongo) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
     });
     app.get('/api/reserve/:fn/:ln/:flightNumber', function(req, res) {
-      
-      allFlights.reserve(req.params.fn , req.params.ln , req.params.flightNumber , 1 , 1 , 1 , cb);
+      allFlights.reserve(req.params.fn , req.params.ln , req.params.flightNumber , 1 , 1 , 1 , function (err,seeded){
+        if(err){
+            res.send("err");
+        }
+        else{
+            res.send("done");
+        }
+      } 
+      );
 
     });
 
@@ -26,10 +33,10 @@ module.exports = function(app,mongo) {
 	   res.sendFile(__dirname + '/public/index.html');
     });
 
-    app.get('/api/dateconverter/:date',function(req, res){
-        var modifiedDate = moment(req.params.date).toDate().getTime();
-        res.send(moment(modifiedDate).format('YYYY-MM-DD'));
-    });
+    // app.get('/api/dateconverter/:date',function(req, res){
+    //     var modifiedDate = moment(req.params.date).toDate().getTime();
+    //     res.send(moment(modifiedDate).format('YYYY-MM-DD'));
+    // });
 
     app.get('/api/data/codes', function(req, res) {
       allFlights.getAirports( function (err , airports){
