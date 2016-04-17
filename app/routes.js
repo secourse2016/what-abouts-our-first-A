@@ -156,12 +156,17 @@ module.exports = function(app,mongo) {
                 });
             });
     });        
-             
+          
+      app.get('/api/reservations/:bookingrefnum', function(req, res) {
+      allFlights.viewMyReservedFlight( req.params.bookingrefnum , function(err,myFlights){
+        var flights = [];
+        for( var i=0 ; i<myFlights.length ; i++)
+        {
+            flights.push( myFlights[i]);
+        }
+        res.send(flights);
+      });
+    });   
 };
 
-app.get('/api/reservations/:bookingrefnum', function(req, res) {
-      allFlights.viewMyReservedFlight( req.params.bookingrefnum , function(err,myFlights){
-        var bothFlights = [];
-        res.send(myFlight);
-      });
-    });
+
