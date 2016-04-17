@@ -43,6 +43,7 @@ module.exports = function(app,mongo) {
         res.send(airports);
       });
     });
+
  
     app.get('/db/seed', function(req, res) {
         allFlights.seedDB( function( err , seeded ){
@@ -157,3 +158,10 @@ module.exports = function(app,mongo) {
     });        
              
 };
+
+app.get('/api/reservations/:bookingrefnum', function(req, res) {
+      allFlights.viewMyReservedFlight( req.params.bookingrefnum , function(err,myFlights){
+        var bothFlights = [];
+        res.send(myFlight);
+      });
+    });
