@@ -49,6 +49,7 @@ exports.getFlights = function ( flyingFrom , flyingTo , departDate,cb ) {
     function checkDate(d2) 
     {
      var dateJSON = new Date(d2.date);
+     console.log(dateJSON);
      return ((dateJSON.getMonth()+1 === d.getMonth()+1) && (dateJSON.getFullYear() === d.getFullYear()) && (dateJSON.getDate() === d.getDate()) ) ;
     }
 
