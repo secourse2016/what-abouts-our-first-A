@@ -14398,5 +14398,1880 @@
 } 
 
 
+{ 
+"flightNumber":"Z1315", 
+"aircraft": "Boeing", 
+"Capacity": 4767, 
+"date": "2016-04-13T7:25:00",
+"duration":7, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":714, 
+"costeconomy":998, 
+"costfirst":1298, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9410S", 
+"seatNo":"961" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z1415", 
+"aircraft": "Boeing", 
+"Capacity": 5941, 
+"date": "2016-04-14T5:15:00",
+"duration":5, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":196, 
+"costeconomy":1428, 
+"costfirst":1728, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L188S", 
+"seatNo":"540" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z1515", 
+"aircraft": "Boeing", 
+"Capacity": 4979, 
+"date": "2016-04-15T7:12:00",
+"duration":7, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":979, 
+"costeconomy":750, 
+"costfirst":1050, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7650S", 
+"seatNo":"341" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z1615", 
+"aircraft": "Boeing", 
+"Capacity": 3087, 
+"date": "2016-04-16T2:31:00",
+"duration":2, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":822, 
+"costeconomy":929, 
+"costfirst":1229, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7503S", 
+"seatNo":"293" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z1715", 
+"aircraft": "Boeing", 
+"Capacity": 2998, 
+"date": "2016-04-17T16:11:00",
+"duration":16, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":680, 
+"costeconomy":1333, 
+"costfirst":1633, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1217S", 
+"seatNo":"308" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z1815", 
+"aircraft": "Boeing", 
+"Capacity": 3558, 
+"date": "2016-04-18T12:53:00",
+"duration":12, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":162, 
+"costeconomy":737, 
+"costfirst":1037, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4882S", 
+"seatNo":"115" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z1915", 
+"aircraft": "Boeing", 
+"Capacity": 4343, 
+"date": "2016-04-19T19:45:00",
+"duration":19, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":618, 
+"costeconomy":579, 
+"costfirst":879, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7161S", 
+"seatNo":"378" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2015", 
+"aircraft": "Boeing", 
+"Capacity": 3448, 
+"date": "2016-04-20T11:43:00",
+"duration":11, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":361, 
+"costeconomy":862, 
+"costfirst":1162, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1339S", 
+"seatNo":"441" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2115", 
+"aircraft": "Boeing", 
+"Capacity": 4170, 
+"date": "2016-04-21T16:41:00",
+"duration":16, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":766, 
+"costeconomy":570, 
+"costfirst":870, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2791S", 
+"seatNo":"373" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2215", 
+"aircraft": "Boeing", 
+"Capacity": 3950, 
+"date": "2016-04-22T24:9:00",
+"duration":24, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":840, 
+"costeconomy":694, 
+"costfirst":994, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L6188S", 
+"seatNo":"654" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2315", 
+"aircraft": "Boeing", 
+"Capacity": 3154, 
+"date": "2016-04-23T4:18:00",
+"duration":4, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":64, 
+"costeconomy":960, 
+"costfirst":1260, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9226S", 
+"seatNo":"620" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2415", 
+"aircraft": "Boeing", 
+"Capacity": 5948, 
+"date": "2016-04-24T9:27:00",
+"duration":9, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":691, 
+"costeconomy":980, 
+"costfirst":1280, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7857S", 
+"seatNo":"164" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2515", 
+"aircraft": "Boeing", 
+"Capacity": 4307, 
+"date": "2016-04-25T24:31:00",
+"duration":24, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":738, 
+"costeconomy":808, 
+"costfirst":1108, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L6504S", 
+"seatNo":"736" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2615", 
+"aircraft": "Boeing", 
+"Capacity": 5880, 
+"date": "2016-04-26T1:27:00",
+"duration":1, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":593, 
+"costeconomy":1046, 
+"costfirst":1346, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7011S", 
+"seatNo":"677" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2715", 
+"aircraft": "Boeing", 
+"Capacity": 1306, 
+"date": "2016-04-27T2:1:00",
+"duration":2, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":626, 
+"costeconomy":1217, 
+"costfirst":1517, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3257S", 
+"seatNo":"903" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2815", 
+"aircraft": "Boeing", 
+"Capacity": 3350, 
+"date": "2016-04-28T18:11:00",
+"duration":18, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":136, 
+"costeconomy":1079, 
+"costfirst":1379, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4067S", 
+"seatNo":"126" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z2915", 
+"aircraft": "Boeing", 
+"Capacity": 1655, 
+"date": "2016-04-29T0:53:00",
+"duration":0, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":902, 
+"costeconomy":1018, 
+"costfirst":1318, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2585S", 
+"seatNo":"600" 
+} 
+] 
+} 
+{ 
+"flightNumber":"Z3015", 
+"aircraft": "Boeing", 
+"Capacity": 2507, 
+"date": "2016-04-30T6:25:00",
+"duration":6, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":653, 
+"costeconomy":1237, 
+"costfirst":1537, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2422S", 
+"seatNo":"165" 
+} 
+] 
+} 
+
+
+
+
+{ 
+"flightNumber":"AA115", 
+"aircraft": "Boeing", 
+"Capacity": 3419, 
+"date": "2016-05-1T22:20:00",
+"duration":22, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":408, 
+"costeconomy":1201, 
+"costfirst":1501, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1822S", 
+"seatNo":"435" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA215", 
+"aircraft": "Boeing", 
+"Capacity": 1267, 
+"date": "2016-05-2T19:10:00",
+"duration":19, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":938, 
+"costeconomy":1285, 
+"costfirst":1585, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9538S", 
+"seatNo":"2" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA315", 
+"aircraft": "Boeing", 
+"Capacity": 2178, 
+"date": "2016-05-3T17:44:00",
+"duration":17, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":532, 
+"costeconomy":1113, 
+"costfirst":1413, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1922S", 
+"seatNo":"320" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA415", 
+"aircraft": "Boeing", 
+"Capacity": 1961, 
+"date": "2016-05-4T2:16:00",
+"duration":2, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":422, 
+"costeconomy":1298, 
+"costfirst":1598, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3601S", 
+"seatNo":"444" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA515", 
+"aircraft": "Boeing", 
+"Capacity": 4796, 
+"date": "2016-05-5T14:8:00",
+"duration":14, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":154, 
+"costeconomy":882, 
+"costfirst":1182, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2488S", 
+"seatNo":"513" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA615", 
+"aircraft": "Boeing", 
+"Capacity": 2666, 
+"date": "2016-05-6T17:22:00",
+"duration":17, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":643, 
+"costeconomy":1268, 
+"costfirst":1568, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L6594S", 
+"seatNo":"533" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA715", 
+"aircraft": "Boeing", 
+"Capacity": 3401, 
+"date": "2016-05-7T21:40:00",
+"duration":21, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":536, 
+"costeconomy":1069, 
+"costfirst":1369, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9924S", 
+"seatNo":"128" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA815", 
+"aircraft": "Boeing", 
+"Capacity": 4245, 
+"date": "2016-05-8T7:5:00",
+"duration":7, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":983, 
+"costeconomy":1414, 
+"costfirst":1714, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9361S", 
+"seatNo":"720" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA915", 
+"aircraft": "Boeing", 
+"Capacity": 4440, 
+"date": "2016-05-9T19:5:00",
+"duration":19, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":75, 
+"costeconomy":1299, 
+"costfirst":1599, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3298S", 
+"seatNo":"312" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1015", 
+"aircraft": "Boeing", 
+"Capacity": 1545, 
+"date": "2016-05-10T22:52:00",
+"duration":22, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":142, 
+"costeconomy":720, 
+"costfirst":1020, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4041S", 
+"seatNo":"247" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1115", 
+"aircraft": "Boeing", 
+"Capacity": 2729, 
+"date": "2016-05-11T1:2:00",
+"duration":1, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":777, 
+"costeconomy":741, 
+"costfirst":1041, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3095S", 
+"seatNo":"145" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1215", 
+"aircraft": "Boeing", 
+"Capacity": 1373, 
+"date": "2016-05-12T13:48:00",
+"duration":13, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":457, 
+"costeconomy":704, 
+"costfirst":1004, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3863S", 
+"seatNo":"427" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1315", 
+"aircraft": "Boeing", 
+"Capacity": 3299, 
+"date": "2016-05-13T11:1:00",
+"duration":11, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":312, 
+"costeconomy":1103, 
+"costfirst":1403, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7176S", 
+"seatNo":"430" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1415", 
+"aircraft": "Boeing", 
+"Capacity": 2251, 
+"date": "2016-05-14T5:6:00",
+"duration":5, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":803, 
+"costeconomy":1295, 
+"costfirst":1595, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L388S", 
+"seatNo":"626" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1515", 
+"aircraft": "Boeing", 
+"Capacity": 1033, 
+"date": "2016-05-15T6:39:00",
+"duration":6, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":381, 
+"costeconomy":816, 
+"costfirst":1116, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L474S", 
+"seatNo":"694" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1615", 
+"aircraft": "Boeing", 
+"Capacity": 5818, 
+"date": "2016-05-16T7:27:00",
+"duration":7, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":618, 
+"costeconomy":1305, 
+"costfirst":1605, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1234S", 
+"seatNo":"718" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1715", 
+"aircraft": "Boeing", 
+"Capacity": 1915, 
+"date": "2016-05-17T0:48:00",
+"duration":0, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":482, 
+"costeconomy":563, 
+"costfirst":863, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4001S", 
+"seatNo":"617" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1815", 
+"aircraft": "Boeing", 
+"Capacity": 4283, 
+"date": "2016-05-18T9:5:00",
+"duration":9, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":133, 
+"costeconomy":1399, 
+"costfirst":1699, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L849S", 
+"seatNo":"226" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA1915", 
+"aircraft": "Boeing", 
+"Capacity": 5787, 
+"date": "2016-05-19T22:42:00",
+"duration":22, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":225, 
+"costeconomy":519, 
+"costfirst":819, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1542S", 
+"seatNo":"315" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2015", 
+"aircraft": "Boeing", 
+"Capacity": 3968, 
+"date": "2016-05-20T6:19:00",
+"duration":6, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":404, 
+"costeconomy":1134, 
+"costfirst":1434, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L5867S", 
+"seatNo":"826" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2115", 
+"aircraft": "Boeing", 
+"Capacity": 3203, 
+"date": "2016-05-21T2:3:00",
+"duration":2, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":358, 
+"costeconomy":740, 
+"costfirst":1040, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3845S", 
+"seatNo":"821" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2215", 
+"aircraft": "Boeing", 
+"Capacity": 3274, 
+"date": "2016-05-22T23:0:00",
+"duration":23, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":950, 
+"costeconomy":753, 
+"costfirst":1053, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2186S", 
+"seatNo":"267" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2315", 
+"aircraft": "Boeing", 
+"Capacity": 3513, 
+"date": "2016-05-23T23:38:00",
+"duration":23, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":907, 
+"costeconomy":1133, 
+"costfirst":1433, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7899S", 
+"seatNo":"580" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2415", 
+"aircraft": "Boeing", 
+"Capacity": 2335, 
+"date": "2016-05-24T3:51:00",
+"duration":3, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":79, 
+"costeconomy":1424, 
+"costfirst":1724, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4782S", 
+"seatNo":"573" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2515", 
+"aircraft": "Boeing", 
+"Capacity": 5006, 
+"date": "2016-05-25T24:46:00",
+"duration":24, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":556, 
+"costeconomy":809, 
+"costfirst":1109, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L6659S", 
+"seatNo":"356" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2615", 
+"aircraft": "Boeing", 
+"Capacity": 1926, 
+"date": "2016-05-26T19:14:00",
+"duration":19, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":25, 
+"costeconomy":1124, 
+"costfirst":1424, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1604S", 
+"seatNo":"897" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2715", 
+"aircraft": "Boeing", 
+"Capacity": 1551, 
+"date": "2016-05-27T7:14:00",
+"duration":7, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":650, 
+"costeconomy":1307, 
+"costfirst":1607, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3244S", 
+"seatNo":"977" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2815", 
+"aircraft": "Boeing", 
+"Capacity": 5537, 
+"date": "2016-05-28T11:36:00",
+"duration":11, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":546, 
+"costeconomy":985, 
+"costfirst":1285, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7205S", 
+"seatNo":"138" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA2915", 
+"aircraft": "Boeing", 
+"Capacity": 3872, 
+"date": "2016-05-29T15:42:00",
+"duration":15, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":942, 
+"costeconomy":901, 
+"costfirst":1201, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L5296S", 
+"seatNo":"559" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA3015", 
+"aircraft": "Boeing", 
+"Capacity": 5924, 
+"date": "2016-05-30T3:9:00",
+"duration":3, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":193, 
+"costeconomy":936, 
+"costfirst":1236, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9170S", 
+"seatNo":"846" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AA3115", 
+"aircraft": "Boeing", 
+"Capacity": 3668, 
+"date": "2016-05-31T5:31:00",
+"duration":5, 
+"origin": "LAX", 
+"destination": "SFO", 
+"availableSeats":658, 
+"costeconomy":858, 
+"costfirst":1158, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4412S", 
+"seatNo":"163" 
+} 
+] 
+} 
+
+
+
+
+{ 
+"flightNumber":"AB1315", 
+"aircraft": "AIRBUS", 
+"Capacity": 5805, 
+"date": "2016-04-13T2:56:00",
+"duration":2, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":82, 
+"costeconomy":615, 
+"costfirst":915, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S808L", 
+"seatNo":"781" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB1415", 
+"aircraft": "AIRBUS", 
+"Capacity": 4837, 
+"date": "2016-04-14T19:58:00",
+"duration":19, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":850, 
+"costeconomy":863, 
+"costfirst":1163, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S8637L", 
+"seatNo":"460" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB1515", 
+"aircraft": "AIRBUS", 
+"Capacity": 4822, 
+"date": "2016-04-15T9:24:00",
+"duration":9, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":711, 
+"costeconomy":819, 
+"costfirst":1119, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S9246L", 
+"seatNo":"326" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB1615", 
+"aircraft": "AIRBUS", 
+"Capacity": 5203, 
+"date": "2016-04-16T18:14:00",
+"duration":18, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":148, 
+"costeconomy":1359, 
+"costfirst":1659, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S504L", 
+"seatNo":"357" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB1715", 
+"aircraft": "AIRBUS", 
+"Capacity": 3573, 
+"date": "2016-04-17T8:35:00",
+"duration":8, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":528, 
+"costeconomy":1450, 
+"costfirst":1750, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S3719L", 
+"seatNo":"329" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB1815", 
+"aircraft": "AIRBUS", 
+"Capacity": 5882, 
+"date": "2016-04-18T11:55:00",
+"duration":11, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":975, 
+"costeconomy":1287, 
+"costfirst":1587, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S2101L", 
+"seatNo":"556" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB1915", 
+"aircraft": "AIRBUS", 
+"Capacity": 1832, 
+"date": "2016-04-19T2:12:00",
+"duration":2, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":307, 
+"costeconomy":1039, 
+"costfirst":1339, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S3766L", 
+"seatNo":"465" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2015", 
+"aircraft": "AIRBUS", 
+"Capacity": 4673, 
+"date": "2016-04-20T14:20:00",
+"duration":14, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":627, 
+"costeconomy":976, 
+"costfirst":1276, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S7592L", 
+"seatNo":"597" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2115", 
+"aircraft": "AIRBUS", 
+"Capacity": 1571, 
+"date": "2016-04-21T20:50:00",
+"duration":20, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":854, 
+"costeconomy":939, 
+"costfirst":1239, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S4547L", 
+"seatNo":"514" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2215", 
+"aircraft": "AIRBUS", 
+"Capacity": 5143, 
+"date": "2016-04-22T8:14:00",
+"duration":8, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":310, 
+"costeconomy":1014, 
+"costfirst":1314, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S9101L", 
+"seatNo":"390" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2315", 
+"aircraft": "AIRBUS", 
+"Capacity": 4088, 
+"date": "2016-04-23T9:47:00",
+"duration":9, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":833, 
+"costeconomy":578, 
+"costfirst":878, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S6619L", 
+"seatNo":"263" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2415", 
+"aircraft": "AIRBUS", 
+"Capacity": 3954, 
+"date": "2016-04-24T21:6:00",
+"duration":21, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":18, 
+"costeconomy":906, 
+"costfirst":1206, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S8533L", 
+"seatNo":"252" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2515", 
+"aircraft": "AIRBUS", 
+"Capacity": 4606, 
+"date": "2016-04-25T10:39:00",
+"duration":10, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":248, 
+"costeconomy":592, 
+"costfirst":892, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S3142L", 
+"seatNo":"427" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2615", 
+"aircraft": "AIRBUS", 
+"Capacity": 3032, 
+"date": "2016-04-26T6:24:00",
+"duration":6, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":563, 
+"costeconomy":1351, 
+"costfirst":1651, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S7201L", 
+"seatNo":"380" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2715", 
+"aircraft": "AIRBUS", 
+"Capacity": 4595, 
+"date": "2016-04-27T17:58:00",
+"duration":17, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":955, 
+"costeconomy":1439, 
+"costfirst":1739, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S2372L", 
+"seatNo":"894" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2815", 
+"aircraft": "AIRBUS", 
+"Capacity": 1211, 
+"date": "2016-04-28T11:57:00",
+"duration":11, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":369, 
+"costeconomy":578, 
+"costfirst":878, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S7080L", 
+"seatNo":"11" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB2915", 
+"aircraft": "AIRBUS", 
+"Capacity": 3326, 
+"date": "2016-04-29T0:1:00",
+"duration":0, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":754, 
+"costeconomy":807, 
+"costfirst":1107, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S6973L", 
+"seatNo":"361" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AB3015", 
+"aircraft": "AIRBUS", 
+"Capacity": 5089, 
+"date": "2016-04-30T2:53:00",
+"duration":2, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":470, 
+"costeconomy":1040, 
+"costfirst":1340, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S9473L", 
+"seatNo":"493" 
+} 
+] 
+} 
+
+
+{ 
+"flightNumber":"AC115", 
+"aircraft": "A777", 
+"Capacity": 5638, 
+"date": "2016-05-1T2:44:00",
+"duration":2, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":782, 
+"costeconomy":1115, 
+"costfirst":1415, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S1180L", 
+"seatNo":"714" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC215", 
+"aircraft": "A777", 
+"Capacity": 5193, 
+"date": "2016-05-2T4:35:00",
+"duration":4, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":672, 
+"costeconomy":727, 
+"costfirst":1027, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S3641L", 
+"seatNo":"116" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC315", 
+"aircraft": "A777", 
+"Capacity": 3939, 
+"date": "2016-05-3T17:4:00",
+"duration":17, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":61, 
+"costeconomy":756, 
+"costfirst":1056, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S5813L", 
+"seatNo":"987" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC415", 
+"aircraft": "A777", 
+"Capacity": 4428, 
+"date": "2016-05-4T3:51:00",
+"duration":3, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":813, 
+"costeconomy":1080, 
+"costfirst":1380, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S3789L", 
+"seatNo":"130" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC515", 
+"aircraft": "A777", 
+"Capacity": 2825, 
+"date": "2016-05-5T10:54:00",
+"duration":10, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":230, 
+"costeconomy":1139, 
+"costfirst":1439, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S2771L", 
+"seatNo":"10" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC615", 
+"aircraft": "A777", 
+"Capacity": 3043, 
+"date": "2016-05-6T13:45:00",
+"duration":13, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":125, 
+"costeconomy":627, 
+"costfirst":927, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S7737L", 
+"seatNo":"815" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC715", 
+"aircraft": "A777", 
+"Capacity": 2111, 
+"date": "2016-05-7T10:0:00",
+"duration":10, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":903, 
+"costeconomy":1489, 
+"costfirst":1789, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S3425L", 
+"seatNo":"178" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC815", 
+"aircraft": "A777", 
+"Capacity": 5957, 
+"date": "2016-05-8T22:34:00",
+"duration":22, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":797, 
+"costeconomy":699, 
+"costfirst":999, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S1011L", 
+"seatNo":"123" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC915", 
+"aircraft": "A777", 
+"Capacity": 3075, 
+"date": "2016-05-9T13:12:00",
+"duration":13, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":544, 
+"costeconomy":599, 
+"costfirst":899, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S1058L", 
+"seatNo":"862" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1015", 
+"aircraft": "A777", 
+"Capacity": 2864, 
+"date": "2016-05-10T23:38:00",
+"duration":23, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":225, 
+"costeconomy":583, 
+"costfirst":883, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S3513L", 
+"seatNo":"770" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1115", 
+"aircraft": "A777", 
+"Capacity": 5231, 
+"date": "2016-05-11T18:50:00",
+"duration":18, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":225, 
+"costeconomy":500, 
+"costfirst":800, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S3527L", 
+"seatNo":"956" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1215", 
+"aircraft": "A777", 
+"Capacity": 3212, 
+"date": "2016-05-12T11:39:00",
+"duration":11, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":207, 
+"costeconomy":929, 
+"costfirst":1229, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S1889L", 
+"seatNo":"422" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1315", 
+"aircraft": "A777", 
+"Capacity": 5019, 
+"date": "2016-05-13T18:57:00",
+"duration":18, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":113, 
+"costeconomy":1001, 
+"costfirst":1301, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S6587L", 
+"seatNo":"333" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1415", 
+"aircraft": "A777", 
+"Capacity": 5265, 
+"date": "2016-05-14T2:19:00",
+"duration":2, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":326, 
+"costeconomy":775, 
+"costfirst":1075, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S9778L", 
+"seatNo":"481" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1515", 
+"aircraft": "A777", 
+"Capacity": 1680, 
+"date": "2016-05-15T12:17:00",
+"duration":12, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":503, 
+"costeconomy":1285, 
+"costfirst":1585, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S4479L", 
+"seatNo":"850" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1615", 
+"aircraft": "A777", 
+"Capacity": 1482, 
+"date": "2016-05-16T22:36:00",
+"duration":22, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":579, 
+"costeconomy":1064, 
+"costfirst":1364, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S7462L", 
+"seatNo":"962" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1715", 
+"aircraft": "A777", 
+"Capacity": 5501, 
+"date": "2016-05-17T0:13:00",
+"duration":0, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":263, 
+"costeconomy":815, 
+"costfirst":1115, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S565L", 
+"seatNo":"30" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1815", 
+"aircraft": "A777", 
+"Capacity": 1012, 
+"date": "2016-05-18T24:34:00",
+"duration":24, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":736, 
+"costeconomy":1154, 
+"costfirst":1454, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S4427L", 
+"seatNo":"205" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC1915", 
+"aircraft": "A777", 
+"Capacity": 1715, 
+"date": "2016-05-19T8:13:00",
+"duration":8, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":540, 
+"costeconomy":1391, 
+"costfirst":1691, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S2178L", 
+"seatNo":"127" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2015", 
+"aircraft": "A777", 
+"Capacity": 3510, 
+"date": "2016-05-20T9:50:00",
+"duration":9, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":969, 
+"costeconomy":545, 
+"costfirst":845, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S3354L", 
+"seatNo":"800" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2115", 
+"aircraft": "A777", 
+"Capacity": 2914, 
+"date": "2016-05-21T18:26:00",
+"duration":18, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":961, 
+"costeconomy":1063, 
+"costfirst":1363, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S5990L", 
+"seatNo":"558" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2215", 
+"aircraft": "A777", 
+"Capacity": 3915, 
+"date": "2016-05-22T24:24:00",
+"duration":24, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":572, 
+"costeconomy":866, 
+"costfirst":1166, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S2955L", 
+"seatNo":"911" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2315", 
+"aircraft": "A777", 
+"Capacity": 5985, 
+"date": "2016-05-23T18:38:00",
+"duration":18, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":814, 
+"costeconomy":840, 
+"costfirst":1140, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S7145L", 
+"seatNo":"591" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2415", 
+"aircraft": "A777", 
+"Capacity": 1047, 
+"date": "2016-05-24T13:0:00",
+"duration":13, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":340, 
+"costeconomy":689, 
+"costfirst":989, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S9725L", 
+"seatNo":"768" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2515", 
+"aircraft": "A777", 
+"Capacity": 2838, 
+"date": "2016-05-25T21:38:00",
+"duration":21, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":848, 
+"costeconomy":850, 
+"costfirst":1150, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S1223L", 
+"seatNo":"333" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2615", 
+"aircraft": "A777", 
+"Capacity": 5190, 
+"date": "2016-05-26T10:38:00",
+"duration":10, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":915, 
+"costeconomy":787, 
+"costfirst":1087, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S6821L", 
+"seatNo":"206" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2715", 
+"aircraft": "A777", 
+"Capacity": 4891, 
+"date": "2016-05-27T21:2:00",
+"duration":21, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":926, 
+"costeconomy":725, 
+"costfirst":1025, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S153L", 
+"seatNo":"875" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2815", 
+"aircraft": "A777", 
+"Capacity": 3901, 
+"date": "2016-05-28T18:57:00",
+"duration":18, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":714, 
+"costeconomy":566, 
+"costfirst":866, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S7822L", 
+"seatNo":"447" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC2915", 
+"aircraft": "A777", 
+"Capacity": 4000, 
+"date": "2016-05-29T1:18:00",
+"duration":1, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":518, 
+"costeconomy":1059, 
+"costfirst":1359, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S4126L", 
+"seatNo":"863" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC3015", 
+"aircraft": "A777", 
+"Capacity": 1538, 
+"date": "2016-05-30T10:7:00",
+"duration":10, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":300, 
+"costeconomy":1020, 
+"costfirst":1320, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S6702L", 
+"seatNo":"916" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AC3115", 
+"aircraft": "A777", 
+"Capacity": 5163, 
+"date": "2016-05-31T6:27:00",
+"duration":6, 
+"origin": "SFO", 
+"destination": "LAX", 
+"availableSeats":456, 
+"costeconomy":1435, 
+"costfirst":1735, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"S2090L", 
+"seatNo":"596" 
+} 
+] 
+} 
+
+
+
 
 ]
