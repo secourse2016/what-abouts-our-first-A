@@ -82,11 +82,12 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
         else{
             FlightsSrv.setMultiplier($scope.selectedP);
         }
+
         if($scope.selectedC==="Cabin"||$scope.selectedC==="Economy"){
-            FlightsSrv.setCabin("Economy");
+            FlightsSrv.setCabin("economy");
         }
         else{
-            FlightsSrv.setCabin("First");
+            FlightsSrv.setCabin("business");        
         }
         if($scope.selectedDestination === undefined || $scope.selectedOrigin === undefined)
         {

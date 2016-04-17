@@ -5,6 +5,15 @@ module.exports = function(app,mongo) {
     var moment     = require('moment');
     moment().format();
 	
+    function determinePrice(eco,buis,cabin) {
+        console.log(cabin);
+        if(cabin === "business"){
+            return buis;
+        }else{
+            return eco;
+        }
+    }
+
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
     });
@@ -68,7 +77,7 @@ module.exports = function(app,mongo) {
     app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class', function(req, res) {
         // retrieve params from req.params.{{origin | departingDate | ...}}
         // return this exact format
-        allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,req.params.class,function(err,flights){
+        allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,function(err,flights){
             var outFlights = [];
             for (var i = 0; i < flights.length; i++) {
                 var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
@@ -81,13 +90,13 @@ module.exports = function(app,mongo) {
                 "arrivalDateTime"   : arriveDT,
                 "origin"            : flights[i].origin,
                 "destination"       : flights[i].destination,
-                "cost"              : flights[i].costeconomy,//tochange
+                "cost"              : determinePrice(flights[i].costeconomy,flights[i].costfirst,req.params.class),
                 "currency"          : "USD",
                 "class"             : req.params.class,
                 "Airline"           : "United"
             })
             }
-            allFlights.getFlights(req.params.destination,req.params.origin,req.params.returningDate,req.params.class,function(err,flights){
+            allFlights.getFlights(req.params.destination,req.params.origin,req.params.returningDate,function(err,flights){
                 var returnFlights = [];
                 for (var i = 0; i < flights.length; i++) {
                     var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
@@ -101,7 +110,7 @@ module.exports = function(app,mongo) {
                     "arrivalDateTime"   : arriveDT,
                     "origin"            : flights[i].origin,
                     "destination"       : flights[i].destination,
-                    "cost"              : flights[i].costeconomy,//tochange
+                    "cost"              : determinePrice(flights[i].costeconomy,flights[i].costfirst,req.params.class),
                     "currency"          : "USD",
                     "class"             : req.params.class,
                     "Airline"           : "United"
