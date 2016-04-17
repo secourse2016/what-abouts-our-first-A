@@ -74,7 +74,7 @@ function generateReceiptNumber(){
     return randomObjectId(7);
 }
 
-exports.reserve = function( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , bookingRefNum , receiptNum ,cb) {
+var r = function ( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , bookingRefNum , receiptNum ,cb) {
     
     db.db().collection('Reservations').findOne({ bookingRefNumber: bookingRefNum}, function(err1, doc1) {
         db.db().collection('Reservations').findOne({ receipt_number: receiptNum}, function(err2, doc2) {
@@ -87,11 +87,13 @@ exports.reserve = function( fn , ln , flightNumber , seatNumber , windowBoolean 
                 });
             } 
             else {
-               reserve( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean ) ;
+               r( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , bookingRefNum , receiptNum) ;
             }
         });
     });
 }
+
+exports.reserve = r;
 
 exports.clearDB = function() {
     db.db().listCollections().toArray().then(function (collections) {
