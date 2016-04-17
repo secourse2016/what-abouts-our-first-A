@@ -78,15 +78,7 @@ module.exports = function(app,mongo) {
 	
 
     }); 
-    /**
-     * ROUND-TRIP SEARCH REST ENDPOINT
-     * @param origin - Flight Origin Location - Airport Code
-     * @param destination - Flight Destination Location - Airport Code
-     * @param departingDate - JavaScript Date.GetTime() numerical value corresponding to format `YYYY-MM-DD`
-     * @param returningDate - JavaScript Date.GetTime() numerical value corresponding to format `YYYY-MM-DD`
-     * @param class - economy or business only
-     * @returns {Array}
-     */        
+
     app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class', function(req, res) {
         // retrieve params from req.params.{{origin | departingDate | ...}}
         // return this exact format
@@ -136,14 +128,7 @@ module.exports = function(app,mongo) {
             });
         });
     });    
-
-    /**
-     * ONE-WAY SEARCH REST ENDPOINT 
-     * @param origin - Flight Origin Location - Airport Code
-     * @param DepartingDate - JavaScript Date.GetTime() numerical value corresponding to format `YYYY-MM-DD`
-     * @param class - economy or business only
-     * @returns {Array}
-     */    
+ 
     app.get('/api/flights/search/:origin/:destination/:departingDate/:class', function(req, res) {
         // retrieve params from req.params.{{origin | departingDate | ...}}
         // return this exact format
