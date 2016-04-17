@@ -323,7 +323,7 @@
 ] 
 } 
 
-
+,
 { 
 "flightNumber":"A115", 
 "aircraft": "Airbus", 
@@ -3003,9 +3003,7 @@
 "seatNo":"191"} 
 ] 
 } 
-
-
-
+,
 { 
 "flightNumber":"F1315", 
 "aircraft": "Boeing", 
@@ -3652,7 +3650,7 @@
 ] 
 } 
  
-
+,
 { 
 "flightNumber":"H115", 
 "aircraft": "Airbus", 
@@ -9226,7 +9224,7 @@
 } 
 ] 
 } 
-
+,
 { 
 "flightNumber":"AF1315", 
 "aircraft": "Airbus", 
@@ -10566,7 +10564,7 @@
 } 
 ] 
 } 
-
+,
 { 
 "flightNumber":"AG115", 
 "aircraft": "Boeing", 
@@ -15106,8 +15104,7 @@
 } 
 ] 
 } 
-
-
+,
 { 
 "flightNumber":"Z1315", 
 "aircraft": "Boeing", 
@@ -15126,7 +15123,8 @@
 "seatNo":"961" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z1415", 
 "aircraft": "Boeing", 
@@ -15145,7 +15143,8 @@
 "seatNo":"540" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z1515", 
 "aircraft": "Boeing", 
@@ -15164,7 +15163,8 @@
 "seatNo":"341" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z1615", 
 "aircraft": "Boeing", 
@@ -15183,7 +15183,8 @@
 "seatNo":"293" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z1715", 
 "aircraft": "Boeing", 
@@ -15202,7 +15203,8 @@
 "seatNo":"308" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z1815", 
 "aircraft": "Boeing", 
@@ -15221,7 +15223,8 @@
 "seatNo":"115" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z1915", 
 "aircraft": "Boeing", 
@@ -15240,7 +15243,8 @@
 "seatNo":"378" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2015", 
 "aircraft": "Boeing", 
@@ -15259,7 +15263,8 @@
 "seatNo":"441" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2115", 
 "aircraft": "Boeing", 
@@ -15278,7 +15283,8 @@
 "seatNo":"373" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2215", 
 "aircraft": "Boeing", 
@@ -15297,7 +15303,8 @@
 "seatNo":"654" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2315", 
 "aircraft": "Boeing", 
@@ -15316,7 +15323,8 @@
 "seatNo":"620" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2415", 
 "aircraft": "Boeing", 
@@ -15335,7 +15343,8 @@
 "seatNo":"164" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2515", 
 "aircraft": "Boeing", 
@@ -15354,7 +15363,8 @@
 "seatNo":"736" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2615", 
 "aircraft": "Boeing", 
@@ -15373,7 +15383,8 @@
 "seatNo":"677" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2715", 
 "aircraft": "Boeing", 
@@ -15392,7 +15403,8 @@
 "seatNo":"903" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2815", 
 "aircraft": "Boeing", 
@@ -15411,7 +15423,8 @@
 "seatNo":"126" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z2915", 
 "aircraft": "Boeing", 
@@ -15430,7 +15443,8 @@
 "seatNo":"600" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"Z3015", 
 "aircraft": "Boeing", 
@@ -15452,7 +15466,7 @@
 } 
 
 
-
+,
 
 { 
 "flightNumber":"AA115", 
@@ -15472,7 +15486,8 @@
 "seatNo":"435" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA215", 
 "aircraft": "Boeing", 
@@ -15491,7 +15506,8 @@
 "seatNo":"2" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA315", 
 "aircraft": "Boeing", 
@@ -15510,7 +15526,8 @@
 "seatNo":"320" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA415", 
 "aircraft": "Boeing", 
@@ -15529,7 +15546,8 @@
 "seatNo":"444" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA515", 
 "aircraft": "Boeing", 
@@ -15548,7 +15566,8 @@
 "seatNo":"513" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA615", 
 "aircraft": "Boeing", 
@@ -15567,7 +15586,8 @@
 "seatNo":"533" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA715", 
 "aircraft": "Boeing", 
@@ -15586,7 +15606,8 @@
 "seatNo":"128" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA815", 
 "aircraft": "Boeing", 
@@ -15605,7 +15626,8 @@
 "seatNo":"720" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA915", 
 "aircraft": "Boeing", 
@@ -15624,7 +15646,8 @@
 "seatNo":"312" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1015", 
 "aircraft": "Boeing", 
@@ -15643,7 +15666,8 @@
 "seatNo":"247" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1115", 
 "aircraft": "Boeing", 
@@ -15662,7 +15686,8 @@
 "seatNo":"145" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1215", 
 "aircraft": "Boeing", 
@@ -15681,7 +15706,8 @@
 "seatNo":"427" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1315", 
 "aircraft": "Boeing", 
@@ -15700,7 +15726,8 @@
 "seatNo":"430" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1415", 
 "aircraft": "Boeing", 
@@ -15719,7 +15746,8 @@
 "seatNo":"626" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1515", 
 "aircraft": "Boeing", 
@@ -15738,7 +15766,8 @@
 "seatNo":"694" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1615", 
 "aircraft": "Boeing", 
@@ -15757,7 +15786,8 @@
 "seatNo":"718" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1715", 
 "aircraft": "Boeing", 
@@ -15776,7 +15806,8 @@
 "seatNo":"617" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1815", 
 "aircraft": "Boeing", 
@@ -15795,7 +15826,8 @@
 "seatNo":"226" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA1915", 
 "aircraft": "Boeing", 
@@ -15814,7 +15846,8 @@
 "seatNo":"315" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2015", 
 "aircraft": "Boeing", 
@@ -15833,7 +15866,8 @@
 "seatNo":"826" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2115", 
 "aircraft": "Boeing", 
@@ -15852,7 +15886,8 @@
 "seatNo":"821" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2215", 
 "aircraft": "Boeing", 
@@ -15871,7 +15906,8 @@
 "seatNo":"267" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2315", 
 "aircraft": "Boeing", 
@@ -15890,7 +15926,8 @@
 "seatNo":"580" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2415", 
 "aircraft": "Boeing", 
@@ -15909,7 +15946,8 @@
 "seatNo":"573" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2515", 
 "aircraft": "Boeing", 
@@ -15928,7 +15966,8 @@
 "seatNo":"356" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2615", 
 "aircraft": "Boeing", 
@@ -15947,7 +15986,8 @@
 "seatNo":"897" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2715", 
 "aircraft": "Boeing", 
@@ -15966,7 +16006,8 @@
 "seatNo":"977" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2815", 
 "aircraft": "Boeing", 
@@ -15985,7 +16026,8 @@
 "seatNo":"138" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA2915", 
 "aircraft": "Boeing", 
@@ -16004,7 +16046,8 @@
 "seatNo":"559" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA3015", 
 "aircraft": "Boeing", 
@@ -16023,7 +16066,8 @@
 "seatNo":"846" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AA3115", 
 "aircraft": "Boeing", 
@@ -16044,7 +16088,7 @@
 ] 
 } 
 
-
+,
 
 
 { 
@@ -16065,7 +16109,8 @@
 "seatNo":"781" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB1415", 
 "aircraft": "AIRBUS", 
@@ -16084,7 +16129,8 @@
 "seatNo":"460" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB1515", 
 "aircraft": "AIRBUS", 
@@ -16103,7 +16149,8 @@
 "seatNo":"326" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB1615", 
 "aircraft": "AIRBUS", 
@@ -16122,7 +16169,8 @@
 "seatNo":"357" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB1715", 
 "aircraft": "AIRBUS", 
@@ -16141,7 +16189,8 @@
 "seatNo":"329" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB1815", 
 "aircraft": "AIRBUS", 
@@ -16160,7 +16209,8 @@
 "seatNo":"556" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB1915", 
 "aircraft": "AIRBUS", 
@@ -16179,7 +16229,8 @@
 "seatNo":"465" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2015", 
 "aircraft": "AIRBUS", 
@@ -16198,7 +16249,8 @@
 "seatNo":"597" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2115", 
 "aircraft": "AIRBUS", 
@@ -16217,7 +16269,8 @@
 "seatNo":"514" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2215", 
 "aircraft": "AIRBUS", 
@@ -16236,7 +16289,8 @@
 "seatNo":"390" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2315", 
 "aircraft": "AIRBUS", 
@@ -16255,7 +16309,8 @@
 "seatNo":"263" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2415", 
 "aircraft": "AIRBUS", 
@@ -16274,7 +16329,8 @@
 "seatNo":"252" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2515", 
 "aircraft": "AIRBUS", 
@@ -16293,7 +16349,8 @@
 "seatNo":"427" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2615", 
 "aircraft": "AIRBUS", 
@@ -16312,7 +16369,8 @@
 "seatNo":"380" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2715", 
 "aircraft": "AIRBUS", 
@@ -16331,7 +16389,8 @@
 "seatNo":"894" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2815", 
 "aircraft": "AIRBUS", 
@@ -16350,7 +16409,8 @@
 "seatNo":"11" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB2915", 
 "aircraft": "AIRBUS", 
@@ -16369,7 +16429,8 @@
 "seatNo":"361" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AB3015", 
 "aircraft": "AIRBUS", 
@@ -16390,7 +16451,7 @@
 ] 
 } 
 
-
+, 
 { 
 "flightNumber":"AC115", 
 "aircraft": "A777", 
@@ -16409,7 +16470,8 @@
 "seatNo":"714" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC215", 
 "aircraft": "A777", 
@@ -16428,7 +16490,8 @@
 "seatNo":"116" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC315", 
 "aircraft": "A777", 
@@ -16447,7 +16510,8 @@
 "seatNo":"987" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC415", 
 "aircraft": "A777", 
@@ -16466,7 +16530,8 @@
 "seatNo":"130" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC515", 
 "aircraft": "A777", 
@@ -16485,7 +16550,8 @@
 "seatNo":"10" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC615", 
 "aircraft": "A777", 
@@ -16504,7 +16570,8 @@
 "seatNo":"815" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC715", 
 "aircraft": "A777", 
@@ -16523,7 +16590,8 @@
 "seatNo":"178" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC815", 
 "aircraft": "A777", 
@@ -16542,7 +16610,8 @@
 "seatNo":"123" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC915", 
 "aircraft": "A777", 
@@ -16561,7 +16630,8 @@
 "seatNo":"862" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1015", 
 "aircraft": "A777", 
@@ -16580,7 +16650,8 @@
 "seatNo":"770" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1115", 
 "aircraft": "A777", 
@@ -16599,7 +16670,8 @@
 "seatNo":"956" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1215", 
 "aircraft": "A777", 
@@ -16618,7 +16690,8 @@
 "seatNo":"422" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1315", 
 "aircraft": "A777", 
@@ -16637,7 +16710,8 @@
 "seatNo":"333" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1415", 
 "aircraft": "A777", 
@@ -16656,7 +16730,8 @@
 "seatNo":"481" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1515", 
 "aircraft": "A777", 
@@ -16675,7 +16750,8 @@
 "seatNo":"850" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1615", 
 "aircraft": "A777", 
@@ -16694,7 +16770,8 @@
 "seatNo":"962" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1715", 
 "aircraft": "A777", 
@@ -16713,7 +16790,8 @@
 "seatNo":"30" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1815", 
 "aircraft": "A777", 
@@ -16732,7 +16810,8 @@
 "seatNo":"205" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC1915", 
 "aircraft": "A777", 
@@ -16751,7 +16830,8 @@
 "seatNo":"127" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2015", 
 "aircraft": "A777", 
@@ -16770,7 +16850,8 @@
 "seatNo":"800" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2115", 
 "aircraft": "A777", 
@@ -16789,7 +16870,8 @@
 "seatNo":"558" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2215", 
 "aircraft": "A777", 
@@ -16808,7 +16890,8 @@
 "seatNo":"911" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2315", 
 "aircraft": "A777", 
@@ -16827,7 +16910,8 @@
 "seatNo":"591" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2415", 
 "aircraft": "A777", 
@@ -16846,7 +16930,8 @@
 "seatNo":"768" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2515", 
 "aircraft": "A777", 
@@ -16865,7 +16950,8 @@
 "seatNo":"333" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2615", 
 "aircraft": "A777", 
@@ -16884,7 +16970,8 @@
 "seatNo":"206" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2715", 
 "aircraft": "A777", 
@@ -16903,7 +16990,8 @@
 "seatNo":"875" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2815", 
 "aircraft": "A777", 
@@ -16922,7 +17010,8 @@
 "seatNo":"447" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC2915", 
 "aircraft": "A777", 
@@ -16941,7 +17030,8 @@
 "seatNo":"863" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC3015", 
 "aircraft": "A777", 
@@ -16960,7 +17050,8 @@
 "seatNo":"916" 
 } 
 ] 
-} 
+}
+,
 { 
 "flightNumber":"AC3115", 
 "aircraft": "A777", 
@@ -16980,7 +17071,1971 @@
 } 
 ] 
 } 
+,
+{ 
+"flightNumber":"R1315", 
+"aircraft": "Airbus", 
+"Capacity": 5505, 
+"date": "2016-04-13T6:41:00",
+"duration":6, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":90, 
+"costeconomy":1072, 
+"costfirst":1372, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9748J", 
+"seatNo":"267" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R1415", 
+"aircraft": "Airbus", 
+"Capacity": 2734, 
+"date": "2016-04-14T20:59:00",
+"duration":20, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":291, 
+"costeconomy":816, 
+"costfirst":1116, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7296J", 
+"seatNo":"922" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R1515", 
+"aircraft": "Airbus", 
+"Capacity": 5561, 
+"date": "2016-04-15T8:47:00",
+"duration":8, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":157, 
+"costeconomy":820, 
+"costfirst":1120, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7991J", 
+"seatNo":"451" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R1615", 
+"aircraft": "Airbus", 
+"Capacity": 1032, 
+"date": "2016-04-16T10:6:00",
+"duration":10, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":882, 
+"costeconomy":1108, 
+"costfirst":1408, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1226J", 
+"seatNo":"992"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R1715", 
+"aircraft": "Airbus", 
+"Capacity": 1154, 
+"date": "2016-04-17T6:4:00",
+"duration":6, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":463, 
+"costeconomy":1283, 
+"costfirst":1583, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7415J", 
+"seatNo":"987"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R1815", 
+"aircraft": "Airbus", 
+"Capacity": 2553, 
+"date": "2016-04-18T18:53:00",
+"duration":18, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":753, 
+"costeconomy":1338, 
+"costfirst":1638, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2689J", 
+"seatNo":"531"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R1915", 
+"aircraft": "Airbus", 
+"Capacity": 2039, 
+"date": "2016-04-19T18:56:00",
+"duration":18, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":241, 
+"costeconomy":826, 
+"costfirst":1126, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L8824J", 
+"seatNo":"825" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2015", 
+"aircraft": "Airbus", 
+"Capacity": 5020, 
+"date": "2016-04-20T14:37:00",
+"duration":14, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":810, 
+"costeconomy":1220, 
+"costfirst":1520, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L125J", 
+"seatNo":"487"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2115", 
+"aircraft": "Airbus", 
+"Capacity": 1998, 
+"date": "2016-04-21T24:13:00",
+"duration":24, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":394, 
+"costeconomy":1201, 
+"costfirst":1501, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4010J", 
+"seatNo":"950" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2215", 
+"aircraft": "Airbus", 
+"Capacity": 3853, 
+"date": "2016-04-22T12:9:00",
+"duration":12, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":273, 
+"costeconomy":553, 
+"costfirst":853, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3964J", 
+"seatNo":"417" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2315", 
+"aircraft": "Airbus", 
+"Capacity": 4538, 
+"date": "2016-04-23T13:36:00",
+"duration":13, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":644, 
+"costeconomy":1033, 
+"costfirst":1333, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L5934J", 
+"seatNo":"773" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2415", 
+"aircraft": "Airbus", 
+"Capacity": 5496, 
+"date": "2016-04-24T2:4:00",
+"duration":2, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":558, 
+"costeconomy":1271, 
+"costfirst":1571, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2205J", 
+"seatNo":"60" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2515", 
+"aircraft": "Airbus", 
+"Capacity": 5153, 
+"date": "2016-04-25T10:27:00",
+"duration":10, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":845, 
+"costeconomy":682, 
+"costfirst":982, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2299J", 
+"seatNo":"170" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2615", 
+"aircraft": "Airbus", 
+"Capacity": 2360, 
+"date": "2016-04-26T13:9:00",
+"duration":13, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":441, 
+"costeconomy":1444, 
+"costfirst":1744, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L6247J", 
+"seatNo":"914" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2715", 
+"aircraft": "Airbus", 
+"Capacity": 3738, 
+"date": "2016-04-27T6:38:00",
+"duration":6, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":918, 
+"costeconomy":637, 
+"costfirst":937, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L5735J", 
+"seatNo":"672" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2815", 
+"aircraft": "Airbus", 
+"Capacity": 2719, 
+"date": "2016-04-28T0:24:00",
+"duration":0, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":107, 
+"costeconomy":1006, 
+"costfirst":1306, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L6301J", 
+"seatNo":"739"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R2915", 
+"aircraft": "Airbus", 
+"Capacity": 2234, 
+"date": "2016-04-29T21:39:00",
+"duration":21, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":555, 
+"costeconomy":1177, 
+"costfirst":1477, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4057J", 
+"seatNo":"969"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"R3015", 
+"aircraft": "Airbus", 
+"Capacity": 4316, 
+"date": "2016-04-30T20:44:00",
+"duration":20, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":341, 
+"costeconomy":627, 
+"costfirst":927, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7640J", 
+"seatNo":"927" 
+} 
+] 
+} 
+,
 
+{ 
+"flightNumber":"S115", 
+"aircraft": "Airbus", 
+"Capacity": 3483, 
+"date": "2016-05-1T2:45:00",
+"duration":2, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":383, 
+"costeconomy":1442, 
+"costfirst":1742, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1918J", 
+"seatNo":"365" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S215", 
+"aircraft": "Airbus", 
+"Capacity": 5379, 
+"date": "2016-05-2T18:13:00",
+"duration":18, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":966, 
+"costeconomy":540, 
+"costfirst":840, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9982J", 
+"seatNo":"810" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S315", 
+"aircraft": "Airbus", 
+"Capacity": 2106, 
+"date": "2016-05-3T6:8:00",
+"duration":6, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":253, 
+"costeconomy":712, 
+"costfirst":1012, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3205J", 
+"seatNo":"462" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S415", 
+"aircraft": "Airbus", 
+"Capacity": 3123, 
+"date": "2016-05-4T1:18:00",
+"duration":1, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":880, 
+"costeconomy":544, 
+"costfirst":844, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L6076J", 
+"seatNo":"509" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S515", 
+"aircraft": "Airbus", 
+"Capacity": 5727, 
+"date": "2016-05-5T2:11:00",
+"duration":2, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":377, 
+"costeconomy":1384, 
+"costfirst":1684, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2265J", 
+"seatNo":"657" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S615", 
+"aircraft": "Airbus", 
+"Capacity": 2364, 
+"date": "2016-05-6T8:10:00",
+"duration":8, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":479, 
+"costeconomy":804, 
+"costfirst":1104, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7808J", 
+"seatNo":"135" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S715", 
+"aircraft": "Airbus", 
+"Capacity": 5018, 
+"date": "2016-05-7T17:20:00",
+"duration":17, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":51, 
+"costeconomy":1304, 
+"costfirst":1604, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7112J", 
+"seatNo":"688" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S815", 
+"aircraft": "Airbus", 
+"Capacity": 1155, 
+"date": "2016-05-8T19:37:00",
+"duration":19, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":543, 
+"costeconomy":536, 
+"costfirst":836, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L8164J", 
+"seatNo":"691" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S915", 
+"aircraft": "Airbus", 
+"Capacity": 5819, 
+"date": "2016-05-9T9:29:00",
+"duration":9, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":35, 
+"costeconomy":633, 
+"costfirst":933, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L167J", 
+"seatNo":"235" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1015", 
+"aircraft": "Airbus", 
+"Capacity": 3244, 
+"date": "2016-05-10T1:55:00",
+"duration":1, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":127, 
+"costeconomy":681, 
+"costfirst":981, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L6116J", 
+"seatNo":"872" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1115", 
+"aircraft": "Airbus", 
+"Capacity": 1872, 
+"date": "2016-05-11T21:22:00",
+"duration":21, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":219, 
+"costeconomy":503, 
+"costfirst":803, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L6284J", 
+"seatNo":"159"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1215", 
+"aircraft": "Airbus", 
+"Capacity": 4581, 
+"date": "2016-05-12T4:51:00",
+"duration":4, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":482, 
+"costeconomy":768, 
+"costfirst":1068, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L5001J", 
+"seatNo":"981"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1315", 
+"aircraft": "Airbus", 
+"Capacity": 4400, 
+"date": "2016-05-13T1:14:00",
+"duration":1, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":364, 
+"costeconomy":1336, 
+"costfirst":1636, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4740J", 
+"seatNo":"398" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1415", 
+"aircraft": "Airbus", 
+"Capacity": 2181, 
+"date": "2016-05-14T0:7:00",
+"duration":0, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":137, 
+"costeconomy":1482, 
+"costfirst":1782, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4194J", 
+"seatNo":"270"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1515", 
+"aircraft": "Airbus", 
+"Capacity": 1853, 
+"date": "2016-05-15T18:54:00",
+"duration":18, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":469, 
+"costeconomy":883, 
+"costfirst":1183, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1952J", 
+"seatNo":"875" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1615", 
+"aircraft": "Airbus", 
+"Capacity": 3882, 
+"date": "2016-05-16T5:54:00",
+"duration":5, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":868, 
+"costeconomy":1371, 
+"costfirst":1671, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2547J", 
+"seatNo":"206"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1715", 
+"aircraft": "Airbus", 
+"Capacity": 5399, 
+"date": "2016-05-17T8:49:00",
+"duration":8, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":579, 
+"costeconomy":505, 
+"costfirst":805, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9918J", 
+"seatNo":"215"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1815", 
+"aircraft": "Airbus", 
+"Capacity": 4797, 
+"date": "2016-05-18T0:55:00",
+"duration":0, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":185, 
+"costeconomy":1314, 
+"costfirst":1614, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L8693J", 
+"seatNo":"511" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S1915", 
+"aircraft": "Airbus", 
+"Capacity": 5815, 
+"date": "2016-05-19T0:33:00",
+"duration":0, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":188, 
+"costeconomy":1065, 
+"costfirst":1365, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L3122J", 
+"seatNo":"63"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2015", 
+"aircraft": "Airbus", 
+"Capacity": 4453, 
+"date": "2016-05-20T24:43:00",
+"duration":24, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":484, 
+"costeconomy":812, 
+"costfirst":1112, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L9713J", 
+"seatNo":"6" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2115", 
+"aircraft": "Airbus", 
+"Capacity": 3258, 
+"date": "2016-05-21T8:50:00",
+"duration":8, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":805, 
+"costeconomy":822, 
+"costfirst":1122, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1993J", 
+"seatNo":"581" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2215", 
+"aircraft": "Airbus", 
+"Capacity": 4613, 
+"date": "2016-05-22T19:6:00",
+"duration":19, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":541, 
+"costeconomy":802, 
+"costfirst":1102, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L8178J", 
+"seatNo":"733" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2315", 
+"aircraft": "Airbus", 
+"Capacity": 4189, 
+"date": "2016-05-23T20:44:00",
+"duration":20, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":110, 
+"costeconomy":876, 
+"costfirst":1176, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L5891J", 
+"seatNo":"355" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2415", 
+"aircraft": "Airbus", 
+"Capacity": 5526, 
+"date": "2016-05-24T14:34:00",
+"duration":14, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":329, 
+"costeconomy":564, 
+"costfirst":864, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L215J", 
+"seatNo":"826"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2515", 
+"aircraft": "Airbus", 
+"Capacity": 1161, 
+"date": "2016-05-25T12:16:00",
+"duration":12, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":286, 
+"costeconomy":1272, 
+"costfirst":1572, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1083J", 
+"seatNo":"868" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2615", 
+"aircraft": "Airbus", 
+"Capacity": 4388, 
+"date": "2016-05-26T14:11:00",
+"duration":14, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":647, 
+"costeconomy":1002, 
+"costfirst":1302, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L8608J", 
+"seatNo":"375" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2715", 
+"aircraft": "Airbus", 
+"Capacity": 3520, 
+"date": "2016-05-27T19:42:00",
+"duration":19, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":908, 
+"costeconomy":891, 
+"costfirst":1191, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L5701J", 
+"seatNo":"751" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2815", 
+"aircraft": "Airbus", 
+"Capacity": 5526, 
+"date": "2016-05-28T17:52:00",
+"duration":17, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":968, 
+"costeconomy":538, 
+"costfirst":838, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L4191J", 
+"seatNo":"7" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S2915", 
+"aircraft": "Airbus", 
+"Capacity": 5443, 
+"date": "2016-05-29T14:11:00",
+"duration":14, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":72, 
+"costeconomy":1332, 
+"costfirst":1632, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L1991J", 
+"seatNo":"872"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S3015", 
+"aircraft": "Airbus", 
+"Capacity": 3589, 
+"date": "2016-05-30T24:45:00",
+"duration":24, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":689, 
+"costeconomy":1146, 
+"costfirst":1446, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L2733J", 
+"seatNo":"966"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"S3115", 
+"aircraft": "Airbus", 
+"Capacity": 5761, 
+"date": "2016-05-31T17:29:00",
+"duration":17, 
+"origin": "LHR", 
+"destination": "JFK", 
+"availableSeats":630, 
+"costeconomy":1181, 
+"costfirst":1481, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"L7557J", 
+"seatNo":"460" 
+} 
+] 
+} 
+
+
+,
+
+{ 
+"flightNumber":"T1315", 
+"aircraft": "Boeing", 
+"Capacity": 4885, 
+"date": "2016-04-13T21:33:00",
+"duration":21, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":15, 
+"costeconomy":537, 
+"costfirst":837, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J5172L", 
+"seatNo":"100" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T1415", 
+"aircraft": "Boeing", 
+"Capacity": 3764, 
+"date": "2016-04-14T5:44:00",
+"duration":5, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":840, 
+"costeconomy":1276, 
+"costfirst":1576, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J7144L", 
+"seatNo":"778" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T1515", 
+"aircraft": "Boeing", 
+"Capacity": 4919, 
+"date": "2016-04-15T15:3:00",
+"duration":15, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":380, 
+"costeconomy":1322, 
+"costfirst":1622, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J2919L", 
+"seatNo":"95" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T1615", 
+"aircraft": "Boeing", 
+"Capacity": 3882, 
+"date": "2016-04-16T13:20:00",
+"duration":13, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":946, 
+"costeconomy":800, 
+"costfirst":1100, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J8713L", 
+"seatNo":"898" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T1715", 
+"aircraft": "Boeing", 
+"Capacity": 3499, 
+"date": "2016-04-17T11:4:00",
+"duration":11, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":229, 
+"costeconomy":870, 
+"costfirst":1170, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J4736L", 
+"seatNo":"987" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T1815", 
+"aircraft": "Boeing", 
+"Capacity": 2726, 
+"date": "2016-04-18T2:56:00",
+"duration":2, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":519, 
+"costeconomy":810, 
+"costfirst":1110, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J790L", 
+"seatNo":"895" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T1915", 
+"aircraft": "Boeing", 
+"Capacity": 4777, 
+"date": "2016-04-19T3:0:00",
+"duration":3, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":858, 
+"costeconomy":695, 
+"costfirst":995, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J5963L", 
+"seatNo":"811" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2015", 
+"aircraft": "Boeing", 
+"Capacity": 5103, 
+"date": "2016-04-20T18:39:00",
+"duration":18, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":585, 
+"costeconomy":1090, 
+"costfirst":1390, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J8588L", 
+"seatNo":"948" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2115", 
+"aircraft": "Boeing", 
+"Capacity": 2877, 
+"date": "2016-04-21T15:32:00",
+"duration":15, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":689, 
+"costeconomy":1322, 
+"costfirst":1622, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J6844L", 
+"seatNo":"953" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2215", 
+"aircraft": "Boeing", 
+"Capacity": 3917, 
+"date": "2016-04-22T19:18:00",
+"duration":19, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":687, 
+"costeconomy":575, 
+"costfirst":875, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J5570L", 
+"seatNo":"930" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2315", 
+"aircraft": "Boeing", 
+"Capacity": 3247, 
+"date": "2016-04-23T2:32:00",
+"duration":2, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":142, 
+"costeconomy":1244, 
+"costfirst":1544, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J4977L", 
+"seatNo":"281" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2415", 
+"aircraft": "Boeing", 
+"Capacity": 3498, 
+"date": "2016-04-24T9:52:00",
+"duration":9, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":5, 
+"costeconomy":839, 
+"costfirst":1139, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J2529L", 
+"seatNo":"713" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2515", 
+"aircraft": "Boeing", 
+"Capacity": 3529, 
+"date": "2016-04-25T22:45:00",
+"duration":22, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":415, 
+"costeconomy":802, 
+"costfirst":1102, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J8081L", 
+"seatNo":"762" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2615", 
+"aircraft": "Boeing", 
+"Capacity": 2796, 
+"date": "2016-04-26T4:23:00",
+"duration":4, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":339, 
+"costeconomy":550, 
+"costfirst":850, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J4696L", 
+"seatNo":"137" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2715", 
+"aircraft": "Boeing", 
+"Capacity": 2796, 
+"date": "2016-04-27T20:56:00",
+"duration":20, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":503, 
+"costeconomy":1310, 
+"costfirst":1610, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J3606L", 
+"seatNo":"324" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2815", 
+"aircraft": "Boeing", 
+"Capacity": 4549, 
+"date": "2016-04-28T22:36:00",
+"duration":22, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":481, 
+"costeconomy":1349, 
+"costfirst":1649, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J4848L", 
+"seatNo":"647" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T2915", 
+"aircraft": "Boeing", 
+"Capacity": 1799, 
+"date": "2016-04-29T24:26:00",
+"duration":24, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":681, 
+"costeconomy":665, 
+"costfirst":965, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J4037L", 
+"seatNo":"693" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"T3015", 
+"aircraft": "Boeing", 
+"Capacity": 5986, 
+"date": "2016-04-30T23:1:00",
+"duration":23, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":527, 
+"costeconomy":1310, 
+"costfirst":1610, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J2689L", 
+"seatNo":"134" 
+} 
+] 
+} 
+  
+,
+{ 
+"flightNumber":"U115", 
+"aircraft": "Boeing", 
+"Capacity": 4053, 
+"date": "2016-05-1T2:9:00",
+"duration":2, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":477, 
+"costeconomy":1095, 
+"costfirst":1395, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J39L", 
+"seatNo":"221" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U215", 
+"aircraft": "Boeing", 
+"Capacity": 3320, 
+"date": "2016-05-2T14:58:00",
+"duration":14, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":689, 
+"costeconomy":1085, 
+"costfirst":1385, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J1765L", 
+"seatNo":"504" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U315", 
+"aircraft": "Boeing", 
+"Capacity": 2180, 
+"date": "2016-05-3T19:58:00",
+"duration":19, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":904, 
+"costeconomy":750, 
+"costfirst":1050, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J5378L", 
+"seatNo":"54" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U415", 
+"aircraft": "Boeing", 
+"Capacity": 2741, 
+"date": "2016-05-4T11:19:00",
+"duration":11, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":680, 
+"costeconomy":589, 
+"costfirst":889, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J760L", 
+"seatNo":"544" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U515", 
+"aircraft": "Boeing", 
+"Capacity": 1111, 
+"date": "2016-05-5T4:19:00",
+"duration":4, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":17, 
+"costeconomy":1134, 
+"costfirst":1434, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J9905L", 
+"seatNo":"506" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U615", 
+"aircraft": "Boeing", 
+"Capacity": 3846, 
+"date": "2016-05-6T21:49:00",
+"duration":21, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":948, 
+"costeconomy":1175, 
+"costfirst":1475, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J1673L", 
+"seatNo":"242" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U715", 
+"aircraft": "Boeing", 
+"Capacity": 4434, 
+"date": "2016-05-7T12:38:00",
+"duration":12, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":709, 
+"costeconomy":732, 
+"costfirst":1032, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J6002L", 
+"seatNo":"762" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U815", 
+"aircraft": "Boeing", 
+"Capacity": 5021, 
+"date": "2016-05-8T18:16:00",
+"duration":18, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":99, 
+"costeconomy":1372, 
+"costfirst":1672, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J9028L", 
+"seatNo":"302" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U915", 
+"aircraft": "Boeing", 
+"Capacity": 4790, 
+"date": "2016-05-9T14:12:00",
+"duration":14, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":376, 
+"costeconomy":665, 
+"costfirst":965, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J4300L", 
+"seatNo":"494" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1015", 
+"aircraft": "Boeing", 
+"Capacity": 5473, 
+"date": "2016-05-10T10:49:00",
+"duration":10, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":964, 
+"costeconomy":521, 
+"costfirst":821, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J7168L", 
+"seatNo":"238" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1115", 
+"aircraft": "Boeing", 
+"Capacity": 2129, 
+"date": "2016-05-11T0:43:00",
+"duration":0, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":313, 
+"costeconomy":1182, 
+"costfirst":1482, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J4069L", 
+"seatNo":"821" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1215", 
+"aircraft": "Boeing", 
+"Capacity": 2523, 
+"date": "2016-05-12T3:3:00",
+"duration":3, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":662, 
+"costeconomy":587, 
+"costfirst":887, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J8205L", 
+"seatNo":"178" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1315", 
+"aircraft": "Boeing", 
+"Capacity": 2993, 
+"date": "2016-05-13T10:45:00",
+"duration":10, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":59, 
+"costeconomy":1018, 
+"costfirst":1318, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J8004L", 
+"seatNo":"112" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1415", 
+"aircraft": "Boeing", 
+"Capacity": 5394, 
+"date": "2016-05-14T3:41:00",
+"duration":3, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":726, 
+"costeconomy":998, 
+"costfirst":1298, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J4354L", 
+"seatNo":"424" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1515", 
+"aircraft": "Boeing", 
+"Capacity": 1445, 
+"date": "2016-05-15T11:10:00",
+"duration":11, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":611, 
+"costeconomy":785, 
+"costfirst":1085, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J290L", 
+"seatNo":"669" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1615", 
+"aircraft": "Boeing", 
+"Capacity": 1978, 
+"date": "2016-05-16T8:58:00",
+"duration":8, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":697, 
+"costeconomy":1092, 
+"costfirst":1392, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J1700L", 
+"seatNo":"702"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1715", 
+"aircraft": "Boeing", 
+"Capacity": 5431, 
+"date": "2016-05-17T6:54:00",
+"duration":6, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":622, 
+"costeconomy":578, 
+"costfirst":878, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J2045L", 
+"seatNo":"292"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1815", 
+"aircraft": "Boeing", 
+"Capacity": 3383, 
+"date": "2016-05-18T4:43:00",
+"duration":4, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":89, 
+"costeconomy":744, 
+"costfirst":1044, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J5641L", 
+"seatNo":"8" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U1915", 
+"aircraft": "Boeing", 
+"Capacity": 4648, 
+"date": "2016-05-19T7:8:00",
+"duration":7, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":673, 
+"costeconomy":1318, 
+"costfirst":1618, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J2310L", 
+"seatNo":"933" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2015", 
+"aircraft": "Boeing", 
+"Capacity": 1505, 
+"date": "2016-05-20T17:36:00",
+"duration":17, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":956, 
+"costeconomy":1258, 
+"costfirst":1558, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J3852L", 
+"seatNo":"251" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2115", 
+"aircraft": "Boeing", 
+"Capacity": 4466, 
+"date": "2016-05-21T1:14:00",
+"duration":1, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":729, 
+"costeconomy":1395, 
+"costfirst":1695, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J3282L", 
+"seatNo":"832" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2215", 
+"aircraft": "Boeing", 
+"Capacity": 4213, 
+"date": "2016-05-22T18:7:00",
+"duration":18, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":649, 
+"costeconomy":1055, 
+"costfirst":1355, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J3218L", 
+"seatNo":"143" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2315", 
+"aircraft": "Boeing", 
+"Capacity": 1396, 
+"date": "2016-05-23T12:46:00",
+"duration":12, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":884, 
+"costeconomy":845, 
+"costfirst":1145, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J8913L", 
+"seatNo":"608"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2415", 
+"aircraft": "Boeing", 
+"Capacity": 5383, 
+"date": "2016-05-24T15:34:00",
+"duration":15, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":859, 
+"costeconomy":1445, 
+"costfirst":1745, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J8011L", 
+"seatNo":"911"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2515", 
+"aircraft": "Boeing", 
+"Capacity": 2258, 
+"date": "2016-05-25T12:54:00",
+"duration":12, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":59, 
+"costeconomy":1125, 
+"costfirst":1425, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J8709L", 
+"seatNo":"317" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2615", 
+"aircraft": "Boeing", 
+"Capacity": 2134, 
+"date": "2016-05-26T12:51:00",
+"duration":12, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":279, 
+"costeconomy":1412, 
+"costfirst":1712, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J7543L", 
+"seatNo":"861"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2715", 
+"aircraft": "Boeing", 
+"Capacity": 1540, 
+"date": "2016-05-27T16:37:00",
+"duration":16, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":985, 
+"costeconomy":775, 
+"costfirst":1075, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J6683L", 
+"seatNo":"405" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2815", 
+"aircraft": "Boeing", 
+"Capacity": 3372, 
+"date": "2016-05-28T10:6:00",
+"duration":10, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":442, 
+"costeconomy":1166, 
+"costfirst":1466, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J9792L", 
+"seatNo":"31"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U2915", 
+"aircraft": "Boeing", 
+"Capacity": 3662, 
+"date": "2016-05-29T8:48:00",
+"duration":8, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":497, 
+"costeconomy":1493, 
+"costfirst":1793, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J5957L", 
+"seatNo":"220"
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U3015", 
+"aircraft": "Boeing", 
+"Capacity": 3630, 
+"date": "2016-05-30T15:35:00",
+"duration":15, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":353, 
+"costeconomy":837, 
+"costfirst":1137, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J348L", 
+"seatNo":"634" 
+} 
+] 
+}
+,
+{ 
+"flightNumber":"U3115", 
+"aircraft": "Boeing", 
+"Capacity": 2596, 
+"date": "2016-05-31T9:46:00",
+"duration":9, 
+"origin": "JFK", 
+"destination": "LHR", 
+"availableSeats":80, 
+"costeconomy":981, 
+"costfirst":1281, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"J5362L", 
+"seatNo":"412" 
+} 
+] 
+} 
 
 
 
