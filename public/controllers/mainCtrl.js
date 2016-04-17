@@ -12,10 +12,12 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
     
     $scope.one = function() {
         $scope.hidden = true;
+        FlightsSrv.setHidden($scope.hidden);
     };
 
     $scope.round = function() {
         $scope.hidden = false;
+        FlightsSrv.setHidden($scope.hidden);
     };
 
     $scope.closeAlert = function() {
@@ -80,11 +82,12 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
         else{
             FlightsSrv.setMultiplier($scope.selectedP);
         }
+
         if($scope.selectedC==="Cabin"||$scope.selectedC==="Economy"){
-            FlightsSrv.setCabin("Economy");
+            FlightsSrv.setCabin("economy");
         }
         else{
-            FlightsSrv.setCabin("First");
+            FlightsSrv.setCabin("business");        
         }
         if($scope.selectedDestination === undefined || $scope.selectedOrigin === undefined)
         {
@@ -103,6 +106,7 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
             $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose which airline to search from :(' });
             return;
         }
+        FlightsSrv.setHidden($scope.hidden);
         FlightsSrv.setSelectedOriginAirport($scope.selectedOrigin);
         FlightsSrv.setSelectedDestinationAirport($scope.selectedDestination);
         FlightsSrv.fixDate($scope.dt2).success(function(newDate){

@@ -6,12 +6,10 @@ var crypto = require('crypto');
 exports.seedDB = function(cb) {
     seedFlights(function(err1,seededFlights) {
         seedAirports(function(err2,seededAirports) {
-                if(err1 || err2){
-                    throw Error('Failed to seed a collection in the Database');
-                }
-                console.log(seedAirports);
-                console.log(seedFlights);
-                cb(null,seedAirports && seedFlights);
+            if(err1 || err2){
+                throw Error('Failed to seed a collection in the Database');
+            }
+            cb(null,seedAirports && seedFlights);
         });
     });
 }
@@ -44,8 +42,10 @@ function seedAirports(cb) {
     });
 }
     
-exports.getFlights = function( flyingFrom , flyingTo , departDate , cabin,cb ) {
-	db.db().collection('Flights').find().toArray(function (err, flights) {
+
+exports.getFlights = function ( flyingFrom , flyingTo , departDate,cb ) {
+    console.log(departDate);
+	db.db().collection('Flights').find({origin: flyingFrom,destination:flyingTo}).toArray(function (err, flights) {
         if (err) return "An error occurred";
         else
             cb(null,flights);
