@@ -5,7 +5,7 @@ App.controller('reservationsCtrl', function($scope,FlightsSrv,$location) {
 	$scope.search = function()
 	{
 		FlightsSrv.setSelectedBookingRefNumber($scope.selectedBookingRefNumber);
-		FlightsSrv.getMyReservation.success(function(reservation){
+		FlightsSrv.getMyReservation().success(function(reservation){
 			$scope.origin = reservation.origin ;
 			$scope.destination = reservation.destination ;
 			$scope.cabin = reservation.

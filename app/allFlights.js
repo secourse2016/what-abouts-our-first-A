@@ -49,7 +49,6 @@ exports.getFlights = function ( flyingFrom , flyingTo , departDate,cb ) {
     function checkDate(d2) 
     {
      var dateJSON = new Date(d2.date);
-     console.log(dateJSON+'  '+flyingFrom);
      return ((dateJSON.getMonth()+1 === d.getMonth()+1) && (dateJSON.getFullYear() === d.getFullYear()) && (dateJSON.getDate() === d.getDate()) ) ;
     }
 
@@ -77,21 +76,21 @@ function generateReceiptNumber(){
 
 var r = function ( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , bookingRefNum , receiptNum ,cb) {
     
-    db.db().collection('Reservations').findOne({ bookingRefNumber: bookingRefNum}, function(err1, doc1) {
-        db.db().collection('Reservations').findOne({ receipt_number: receiptNum}, function(err2, doc2) {
-            if( doc1 === null && doc2 === null) {
-                db.db().collection('Reservations').insert({firstName : fn  , lastName : ln ,  bookingRefNumber : bookingRefNum , receipt_number : receiptNum});
-                db.db().collection('Reservations').findOne({bookingRefNumber : bookingRefNum},function(err,record){
-                    var reservationID = record._id;
-                    db.db().collection('Flights').updateOne( {flighNumber: flightNumber} , {$push: { seatmap:{reservationID:reservationID,seatNo:seatNumber,window:windowBoolean,economy:economyBoolean}}});
-                    cb(err,true);
-                });
-            } 
-            else {
-               r( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , bookingRefNum , receiptNum) ;
-            }
-        });
-    });
+    // db.db().collection('Reservations').findOne({ bookingRefNumber: bookingRefNum}, function(err1, doc1) {
+    //     db.db().collection('Reservations').findOne({ receipt_number: receiptNum}, function(err2, doc2) {
+    //         if( doc1 === null && doc2 === null) {
+    //             db.db().collection('Reservations').insert({firstName : fn  , lastName : ln ,  bookingRefNumber : bookingRefNum , receipt_number : receiptNum});
+    //             db.db().collection('Reservations').findOne({bookingRefNumber : bookingRefNum},function(err,record){
+    //                 var reservationID = record._id;
+    //                 db.db().collection('Flights').updateOne( {flighNumber: flightNumber} , {$push: { seatmap:{reservationID:reservationID,seatNo:seatNumber,window:windowBoolean,economy:economyBoolean}}});
+    //                 cb(err,true);
+    //             });
+    //         } 
+    //         else {
+    //            r( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , bookingRefNum , receiptNum) ;
+    //         }
+    //     });
+    // });
 }
 
 exports.reserve = r;
