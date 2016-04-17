@@ -13,9 +13,7 @@ App.controller('reservationsCtrl', function($scope,FlightsSrv,$location) {
 			$scope.seatNumber = reservation.
 			$scope.duration = reservation.duration ;
 			$scope.departureTime = reservation.date ;
-			
-			$scope.arrivalTime = reservation.
-
+			// $scope.arrivalTime = reservation.
 		});
 		$scope.isCollapsed = !$scope.isCollapsed;
 	}
