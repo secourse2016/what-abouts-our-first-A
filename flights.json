@@ -3,7 +3,7 @@
 { 
 "flightNumber":"A1315", 
 "aircraft": "Airbus", 
-"Capacity": 2220, 
+"capacity": 2220, 
 "date": "2016-04-13T7:15:00",
 "duration":7, 
 "origin": "BOM", 
@@ -21,7 +21,7 @@
 { 
 "flightNumber":"A1415", 
 "aircraft": "Airbus", 
-"Capacity": 3436, 
+"capacity": 3436, 
 "date": "2016-04-14T19:2:00",
 "duration":19, 
 "origin": "BOM", 
@@ -39,7 +39,7 @@
 { 
 "flightNumber":"A1515", 
 "aircraft": "Airbus", 
-"Capacity": 5114, 
+"capacity": 5114, 
 "date": "2016-04-15T20:42:00",
 "duration":20, 
 "origin": "BOM", 
@@ -57,7 +57,7 @@
 { 
 "flightNumber":"A1615", 
 "aircraft": "Airbus", 
-"Capacity": 3187, 
+"capacity": 3187, 
 "date": "2016-04-16T16:21:00",
 "duration":16, 
 "origin": "BOM", 
@@ -75,7 +75,7 @@
 { 
 "flightNumber":"A1715", 
 "aircraft": "Airbus", 
-"Capacity": 2331, 
+"capacity": 2331, 
 "date": "2016-04-17T10:29:00",
 "duration":10, 
 "origin": "BOM", 
@@ -93,7 +93,7 @@
 { 
 "flightNumber":"A1815", 
 "aircraft": "Airbus", 
-"Capacity": 4588, 
+"capacity": 4588, 
 "date": "2016-04-18T15:35:00",
 "duration":15, 
 "origin": "BOM", 
@@ -111,7 +111,7 @@
 { 
 "flightNumber":"A1915", 
 "aircraft": "Airbus", 
-"Capacity": 4752, 
+"capacity": 4752, 
 "date": "2016-04-19T21:14:00",
 "duration":21, 
 "origin": "BOM", 
@@ -129,7 +129,7 @@
 { 
 "flightNumber":"A2015", 
 "aircraft": "Airbus", 
-"Capacity": 4685, 
+"capacity": 4685, 
 "date": "2016-04-20T8:41:00",
 "duration":8, 
 "origin": "BOM", 
@@ -147,7 +147,7 @@
 { 
 "flightNumber":"A2115", 
 "aircraft": "Airbus", 
-"Capacity": 3448, 
+"capacity": 3448, 
 "date": "2016-04-21T1:23:00",
 "duration":1, 
 "origin": "BOM", 
@@ -165,7 +165,7 @@
 { 
 "flightNumber":"A2215", 
 "aircraft": "Airbus", 
-"Capacity": 5953, 
+"capacity": 5953, 
 "date": "2016-04-22T11:15:00",
 "duration":11, 
 "origin": "BOM", 
@@ -183,7 +183,7 @@
 { 
 "flightNumber":"A2315", 
 "aircraft": "Airbus", 
-"Capacity": 4675, 
+"capacity": 4675, 
 "date": "2016-04-23T9:44:00",
 "duration":9, 
 "origin": "BOM", 
@@ -201,7 +201,7 @@
 { 
 "flightNumber":"A2415", 
 "aircraft": "Airbus", 
-"Capacity": 1492, 
+"capacity": 1492, 
 "date": "2016-04-24T18:34:00",
 "duration":18, 
 "origin": "BOM", 
@@ -219,7 +219,7 @@
 { 
 "flightNumber":"A2515", 
 "aircraft": "Airbus", 
-"Capacity": 3704, 
+"capacity": 3704, 
 "date": "2016-04-25T1:3:00",
 "duration":1, 
 "origin": "BOM", 
@@ -237,7 +237,7 @@
 { 
 "flightNumber":"A2615", 
 "aircraft": "Airbus", 
-"Capacity": 5892, 
+"capacity": 5892, 
 "date": "2016-04-26T18:50:00",
 "duration":18, 
 "origin": "BOM", 
@@ -255,7 +255,7 @@
 { 
 "flightNumber":"A2715", 
 "aircraft": "Airbus", 
-"Capacity": 4077, 
+"capacity": 4077, 
 "date": "2016-04-27T0:23:00",
 "duration":0, 
 "origin": "BOM", 
@@ -273,7 +273,7 @@
 { 
 "flightNumber":"A2815", 
 "aircraft": "Airbus", 
-"Capacity": 4868, 
+"capacity": 4868, 
 "date": "2016-04-28T1:20:00",
 "duration":1, 
 "origin": "BOM", 
@@ -291,7 +291,7 @@
 { 
 "flightNumber":"A2915", 
 "aircraft": "Airbus", 
-"Capacity": 2879, 
+"capacity": 2879, 
 "date": "2016-04-29T2:14:00",
 "duration":2, 
 "origin": "BOM", 
@@ -311,7 +311,7 @@
 { 
 "flightNumber":"A115", 
 "aircraft": "Airbus", 
-"Capacity": 3429, 
+"capacity": 3429, 
 "date": "2016-05-1T10:38:00",
 "duration":10, 
 "origin": "BOM", 
@@ -329,7 +329,7 @@
 { 
 "flightNumber":"A215", 
 "aircraft": "Airbus", 
-"Capacity": 1463, 
+"capacity": 1463, 
 "date": "2016-05-2T24:53:00",
 "duration":24, 
 "origin": "BOM", 
@@ -347,7 +347,7 @@
 { 
 "flightNumber":"A315", 
 "aircraft": "Airbus", 
-"Capacity": 1951, 
+"capacity": 1951, 
 "date": "2016-05-3T14:43:00",
 "duration":14, 
 "origin": "BOM", 
@@ -365,7 +365,7 @@
 { 
 "flightNumber":"A415", 
 "aircraft": "Airbus", 
-"Capacity": 4546, 
+"capacity": 4546, 
 "date": "2016-05-4T0:55:00",
 "duration":0, 
 "origin": "BOM", 
@@ -383,7 +383,7 @@
 { 
 "flightNumber":"A515", 
 "aircraft": "Airbus", 
-"Capacity": 2635, 
+"capacity": 2635, 
 "date": "2016-05-5T10:53:00",
 "duration":10, 
 "origin": "BOM", 
@@ -401,7 +401,7 @@
 { 
 "flightNumber":"A615", 
 "aircraft": "Airbus", 
-"Capacity": 3024, 
+"capacity": 3024, 
 "date": "2016-05-6T21:21:00",
 "duration":21, 
 "origin": "BOM", 
@@ -419,7 +419,7 @@
 { 
 "flightNumber":"A715", 
 "aircraft": "Airbus", 
-"Capacity": 4303, 
+"capacity": 4303, 
 "date": "2016-05-7T16:28:00",
 "duration":16, 
 "origin": "BOM", 
@@ -437,7 +437,7 @@
 { 
 "flightNumber":"A815", 
 "aircraft": "Airbus", 
-"Capacity": 3784, 
+"capacity": 3784, 
 "date": "2016-05-8T19:3:00",
 "duration":19, 
 "origin": "BOM", 
@@ -455,7 +455,7 @@
 { 
 "flightNumber":"A915", 
 "aircraft": "Airbus", 
-"Capacity": 3623, 
+"capacity": 3623, 
 "date": "2016-05-9T10:12:00",
 "duration":10, 
 "origin": "BOM", 
@@ -473,7 +473,7 @@
 { 
 "flightNumber":"A1015", 
 "aircraft": "Airbus", 
-"Capacity": 2134, 
+"capacity": 2134, 
 "date": "2016-05-10T3:3:00",
 "duration":3, 
 "origin": "BOM", 
@@ -491,7 +491,7 @@
 { 
 "flightNumber":"A1115", 
 "aircraft": "Airbus", 
-"Capacity": 3524, 
+"capacity": 3524, 
 "date": "2016-05-11T2:56:00",
 "duration":2, 
 "origin": "BOM", 
@@ -509,7 +509,7 @@
 { 
 "flightNumber":"A1215", 
 "aircraft": "Airbus", 
-"Capacity": 4590, 
+"capacity": 4590, 
 "date": "2016-05-12T10:44:00",
 "duration":10, 
 "origin": "BOM", 
@@ -527,7 +527,7 @@
 { 
 "flightNumber":"A1315", 
 "aircraft": "Airbus", 
-"Capacity": 4139, 
+"capacity": 4139, 
 "date": "2016-05-13T22:8:00",
 "duration":22, 
 "origin": "BOM", 
@@ -545,7 +545,7 @@
 { 
 "flightNumber":"A1415", 
 "aircraft": "Airbus", 
-"Capacity": 5198, 
+"capacity": 5198, 
 "date": "2016-05-14T12:29:00",
 "duration":12, 
 "origin": "BOM", 
@@ -563,7 +563,7 @@
 { 
 "flightNumber":"A1515", 
 "aircraft": "Airbus", 
-"Capacity": 4276, 
+"capacity": 4276, 
 "date": "2016-05-15T19:1:00",
 "duration":19, 
 "origin": "BOM", 
@@ -581,7 +581,7 @@
 { 
 "flightNumber":"A1615", 
 "aircraft": "Airbus", 
-"Capacity": 3379, 
+"capacity": 3379, 
 "date": "2016-05-16T4:6:00",
 "duration":4, 
 "origin": "BOM", 
@@ -599,7 +599,7 @@
 { 
 "flightNumber":"A1715", 
 "aircraft": "Airbus", 
-"Capacity": 3515, 
+"capacity": 3515, 
 "date": "2016-05-17T1:51:00",
 "duration":1, 
 "origin": "BOM", 
@@ -617,7 +617,7 @@
 { 
 "flightNumber":"A1815", 
 "aircraft": "Airbus", 
-"Capacity": 5040, 
+"capacity": 5040, 
 "date": "2016-05-18T6:10:00",
 "duration":6, 
 "origin": "BOM", 
@@ -635,7 +635,7 @@
 { 
 "flightNumber":"A1915", 
 "aircraft": "Airbus", 
-"Capacity": 1834, 
+"capacity": 1834, 
 "date": "2016-05-19T21:6:00",
 "duration":21, 
 "origin": "BOM", 
@@ -653,7 +653,7 @@
 { 
 "flightNumber":"A2015", 
 "aircraft": "Airbus", 
-"Capacity": 1932, 
+"capacity": 1932, 
 "date": "2016-05-20T16:44:00",
 "duration":16, 
 "origin": "BOM", 
@@ -671,7 +671,7 @@
 { 
 "flightNumber":"A2115", 
 "aircraft": "Airbus", 
-"Capacity": 1230, 
+"capacity": 1230, 
 "date": "2016-05-21T18:7:00",
 "duration":18, 
 "origin": "BOM", 
@@ -689,7 +689,7 @@
 { 
 "flightNumber":"A2215", 
 "aircraft": "Airbus", 
-"Capacity": 3043, 
+"capacity": 3043, 
 "date": "2016-05-22T1:45:00",
 "duration":1, 
 "origin": "BOM", 
@@ -707,7 +707,7 @@
 { 
 "flightNumber":"A2315", 
 "aircraft": "Airbus", 
-"Capacity": 1069, 
+"capacity": 1069, 
 "date": "2016-05-23T17:24:00",
 "duration":17, 
 "origin": "BOM", 
@@ -725,7 +725,7 @@
 { 
 "flightNumber":"A2415", 
 "aircraft": "Airbus", 
-"Capacity": 3315, 
+"capacity": 3315, 
 "date": "2016-05-24T23:20:00",
 "duration":23, 
 "origin": "BOM", 
@@ -743,7 +743,7 @@
 { 
 "flightNumber":"A2515", 
 "aircraft": "Airbus", 
-"Capacity": 4157, 
+"capacity": 4157, 
 "date": "2016-05-25T11:58:00",
 "duration":11, 
 "origin": "BOM", 
@@ -761,7 +761,7 @@
 { 
 "flightNumber":"A2615", 
 "aircraft": "Airbus", 
-"Capacity": 3970, 
+"capacity": 3970, 
 "date": "2016-05-26T24:52:00",
 "duration":24, 
 "origin": "BOM", 
@@ -779,7 +779,7 @@
 { 
 "flightNumber":"A2715", 
 "aircraft": "Airbus", 
-"Capacity": 2550, 
+"capacity": 2550, 
 "date": "2016-05-27T24:24:00",
 "duration":24, 
 "origin": "BOM", 
@@ -797,7 +797,7 @@
 { 
 "flightNumber":"A2815", 
 "aircraft": "Airbus", 
-"Capacity": 3412, 
+"capacity": 3412, 
 "date": "2016-05-28T23:20:00",
 "duration":23, 
 "origin": "BOM", 
@@ -815,7 +815,7 @@
 { 
 "flightNumber":"A2915", 
 "aircraft": "Airbus", 
-"Capacity": 1721, 
+"capacity": 1721, 
 "date": "2016-05-29T2:57:00",
 "duration":2, 
 "origin": "BOM", 
@@ -833,7 +833,7 @@
 { 
 "flightNumber":"A3015", 
 "aircraft": "Airbus", 
-"Capacity": 1357, 
+"capacity": 1357, 
 "date": "2016-05-30T16:12:00",
 "duration":16, 
 "origin": "BOM", 
@@ -856,7 +856,7 @@
 { 
 "flightNumber":"B1315", 
 "aircraft": "BOEING", 
-"Capacity": 4472, 
+"capacity": 4472, 
 "date": "2016-04-13T12:36:00",
 "duration":12, 
 "origin": "DEL", 
@@ -874,7 +874,7 @@
 { 
 "flightNumber":"B1415", 
 "aircraft": "BOEING", 
-"Capacity": 4597, 
+"capacity": 4597, 
 "date": "2016-04-14T3:6:00",
 "duration":3, 
 "origin": "DEL", 
@@ -892,7 +892,7 @@
 { 
 "flightNumber":"B1515", 
 "aircraft": "BOEING", 
-"Capacity": 2723, 
+"capacity": 2723, 
 "date": "2016-04-15T20:23:00",
 "duration":20, 
 "origin": "DEL", 
@@ -910,7 +910,7 @@
 { 
 "flightNumber":"B1615", 
 "aircraft": "BOEING", 
-"Capacity": 5732, 
+"capacity": 5732, 
 "date": "2016-04-16T17:43:00",
 "duration":17, 
 "origin": "DEL", 
@@ -928,7 +928,7 @@
 { 
 "flightNumber":"B1715", 
 "aircraft": "BOEING", 
-"Capacity": 5271, 
+"capacity": 5271, 
 "date": "2016-04-17T2:17:00",
 "duration":2, 
 "origin": "DEL", 
@@ -946,7 +946,7 @@
 { 
 "flightNumber":"B1815", 
 "aircraft": "BOEING", 
-"Capacity": 3217, 
+"capacity": 3217, 
 "date": "2016-04-18T24:12:00",
 "duration":24, 
 "origin": "DEL", 
@@ -964,7 +964,7 @@
 { 
 "flightNumber":"B1915", 
 "aircraft": "BOEING", 
-"Capacity": 5972, 
+"capacity": 5972, 
 "date": "2016-04-19T8:42:00",
 "duration":8, 
 "origin": "DEL", 
@@ -982,7 +982,7 @@
 { 
 "flightNumber":"B2015", 
 "aircraft": "BOEING", 
-"Capacity": 1389, 
+"capacity": 1389, 
 "date": "2016-04-20T20:21:00",
 "duration":20, 
 "origin": "DEL", 
@@ -1000,7 +1000,7 @@
 { 
 "flightNumber":"B2115", 
 "aircraft": "BOEING", 
-"Capacity": 5518, 
+"capacity": 5518, 
 "date": "2016-04-21T9:10:00",
 "duration":9, 
 "origin": "DEL", 
@@ -1018,7 +1018,7 @@
 { 
 "flightNumber":"B2215", 
 "aircraft": "BOEING", 
-"Capacity": 5204, 
+"capacity": 5204, 
 "date": "2016-04-22T4:39:00",
 "duration":4, 
 "origin": "DEL", 
@@ -1036,7 +1036,7 @@
 { 
 "flightNumber":"B2315", 
 "aircraft": "BOEING", 
-"Capacity": 1716, 
+"capacity": 1716, 
 "date": "2016-04-23T24:46:00",
 "duration":24, 
 "origin": "DEL", 
@@ -1054,7 +1054,7 @@
 { 
 "flightNumber":"B2415", 
 "aircraft": "BOEING", 
-"Capacity": 1268, 
+"capacity": 1268, 
 "date": "2016-04-24T1:4:00",
 "duration":1, 
 "origin": "DEL", 
@@ -1072,7 +1072,7 @@
 { 
 "flightNumber":"B2515", 
 "aircraft": "BOEING", 
-"Capacity": 5943, 
+"capacity": 5943, 
 "date": "2016-04-25T13:2:00",
 "duration":13, 
 "origin": "DEL", 
@@ -1090,7 +1090,7 @@
 { 
 "flightNumber":"B2615", 
 "aircraft": "BOEING", 
-"Capacity": 2420, 
+"capacity": 2420, 
 "date": "2016-04-26T9:16:00",
 "duration":9, 
 "origin": "DEL", 
@@ -1108,7 +1108,7 @@
 { 
 "flightNumber":"B2715", 
 "aircraft": "BOEING", 
-"Capacity": 1415, 
+"capacity": 1415, 
 "date": "2016-04-27T3:31:00",
 "duration":3, 
 "origin": "DEL", 
@@ -1126,7 +1126,7 @@
 { 
 "flightNumber":"B2815", 
 "aircraft": "BOEING", 
-"Capacity": 1938, 
+"capacity": 1938, 
 "date": "2016-04-28T6:43:00",
 "duration":6, 
 "origin": "DEL", 
@@ -1144,7 +1144,7 @@
 { 
 "flightNumber":"B2915", 
 "aircraft": "BOEING", 
-"Capacity": 5188, 
+"capacity": 5188, 
 "date": "2016-04-29T10:39:00",
 "duration":10, 
 "origin": "DEL", 
@@ -1166,7 +1166,7 @@
 { 
 "flightNumber":"B115", 
 "aircraft": "BOEING", 
-"Capacity": 3941, 
+"capacity": 3941, 
 "date": "2016-05-1T24:58:00",
 "duration":24, 
 "origin": "DEL", 
@@ -1184,7 +1184,7 @@
 { 
 "flightNumber":"B215", 
 "aircraft": "BOEING", 
-"Capacity": 5678, 
+"capacity": 5678, 
 "date": "2016-05-2T9:19:00",
 "duration":9, 
 "origin": "DEL", 
@@ -1202,7 +1202,7 @@
 { 
 "flightNumber":"B315", 
 "aircraft": "BOEING", 
-"Capacity": 5990, 
+"capacity": 5990, 
 "date": "2016-05-3T19:2:00",
 "duration":19, 
 "origin": "DEL", 
@@ -1220,7 +1220,7 @@
 { 
 "flightNumber":"B415", 
 "aircraft": "BOEING", 
-"Capacity": 3985, 
+"capacity": 3985, 
 "date": "2016-05-4T20:31:00",
 "duration":20, 
 "origin": "DEL", 
@@ -1238,7 +1238,7 @@
 { 
 "flightNumber":"B515", 
 "aircraft": "BOEING", 
-"Capacity": 2015, 
+"capacity": 2015, 
 "date": "2016-05-5T11:23:00",
 "duration":11, 
 "origin": "DEL", 
@@ -1256,7 +1256,7 @@
 { 
 "flightNumber":"B615", 
 "aircraft": "BOEING", 
-"Capacity": 4980, 
+"capacity": 4980, 
 "date": "2016-05-6T1:21:00",
 "duration":1, 
 "origin": "DEL", 
@@ -1274,7 +1274,7 @@
 { 
 "flightNumber":"B715", 
 "aircraft": "BOEING", 
-"Capacity": 4378, 
+"capacity": 4378, 
 "date": "2016-05-7T17:32:00",
 "duration":17, 
 "origin": "DEL", 
@@ -1292,7 +1292,7 @@
 { 
 "flightNumber":"B815", 
 "aircraft": "BOEING", 
-"Capacity": 1494, 
+"capacity": 1494, 
 "date": "2016-05-8T11:16:00",
 "duration":11, 
 "origin": "DEL", 
@@ -1310,7 +1310,7 @@
 { 
 "flightNumber":"B915", 
 "aircraft": "BOEING", 
-"Capacity": 5344, 
+"capacity": 5344, 
 "date": "2016-05-9T1:21:00",
 "duration":1, 
 "origin": "DEL", 
@@ -1328,7 +1328,7 @@
 { 
 "flightNumber":"B1015", 
 "aircraft": "BOEING", 
-"Capacity": 5325, 
+"capacity": 5325, 
 "date": "2016-05-10T4:34:00",
 "duration":4, 
 "origin": "DEL", 
@@ -1346,7 +1346,7 @@
 { 
 "flightNumber":"B1115", 
 "aircraft": "BOEING", 
-"Capacity": 4454, 
+"capacity": 4454, 
 "date": "2016-05-11T5:4:00",
 "duration":5, 
 "origin": "DEL", 
@@ -1364,7 +1364,7 @@
 { 
 "flightNumber":"B1215", 
 "aircraft": "BOEING", 
-"Capacity": 5155, 
+"capacity": 5155, 
 "date": "2016-05-12T13:12:00",
 "duration":13, 
 "origin": "DEL", 
@@ -1382,7 +1382,7 @@
 { 
 "flightNumber":"B1315", 
 "aircraft": "BOEING", 
-"Capacity": 3081, 
+"capacity": 3081, 
 "date": "2016-05-13T24:55:00",
 "duration":24, 
 "origin": "DEL", 
@@ -1400,7 +1400,7 @@
 { 
 "flightNumber":"B1415", 
 "aircraft": "BOEING", 
-"Capacity": 5288, 
+"capacity": 5288, 
 "date": "2016-05-14T20:36:00",
 "duration":20, 
 "origin": "DEL", 
@@ -1418,7 +1418,7 @@
 { 
 "flightNumber":"B1515", 
 "aircraft": "BOEING", 
-"Capacity": 5880, 
+"capacity": 5880, 
 "date": "2016-05-15T15:31:00",
 "duration":15, 
 "origin": "DEL", 
@@ -1436,7 +1436,7 @@
 { 
 "flightNumber":"B1615", 
 "aircraft": "BOEING", 
-"Capacity": 3066, 
+"capacity": 3066, 
 "date": "2016-05-16T18:50:00",
 "duration":18, 
 "origin": "DEL", 
@@ -1454,7 +1454,7 @@
 { 
 "flightNumber":"B1715", 
 "aircraft": "BOEING", 
-"Capacity": 4756, 
+"capacity": 4756, 
 "date": "2016-05-17T20:9:00",
 "duration":20, 
 "origin": "DEL", 
@@ -1472,7 +1472,7 @@
 { 
 "flightNumber":"B1815", 
 "aircraft": "BOEING", 
-"Capacity": 2574, 
+"capacity": 2574, 
 "date": "2016-05-18T8:20:00",
 "duration":8, 
 "origin": "DEL", 
@@ -1490,7 +1490,7 @@
 { 
 "flightNumber":"B1915", 
 "aircraft": "BOEING", 
-"Capacity": 4788, 
+"capacity": 4788, 
 "date": "2016-05-19T17:43:00",
 "duration":17, 
 "origin": "DEL", 
@@ -1508,7 +1508,7 @@
 { 
 "flightNumber":"B2015", 
 "aircraft": "BOEING", 
-"Capacity": 2754, 
+"capacity": 2754, 
 "date": "2016-05-20T17:45:00",
 "duration":17, 
 "origin": "DEL", 
@@ -1526,7 +1526,7 @@
 { 
 "flightNumber":"B2115", 
 "aircraft": "BOEING", 
-"Capacity": 5060, 
+"capacity": 5060, 
 "date": "2016-05-21T16:14:00",
 "duration":16, 
 "origin": "DEL", 
@@ -1544,7 +1544,7 @@
 { 
 "flightNumber":"B2215", 
 "aircraft": "BOEING", 
-"Capacity": 4553, 
+"capacity": 4553, 
 "date": "2016-05-22T1:58:00",
 "duration":1, 
 "origin": "DEL", 
@@ -1562,7 +1562,7 @@
 { 
 "flightNumber":"B2315", 
 "aircraft": "BOEING", 
-"Capacity": 5055, 
+"capacity": 5055, 
 "date": "2016-05-23T0:12:00",
 "duration":0, 
 "origin": "DEL", 
@@ -1580,7 +1580,7 @@
 { 
 "flightNumber":"B2415", 
 "aircraft": "BOEING", 
-"Capacity": 1548, 
+"capacity": 1548, 
 "date": "2016-05-24T24:15:00",
 "duration":24, 
 "origin": "DEL", 
@@ -1598,7 +1598,7 @@
 { 
 "flightNumber":"B2515", 
 "aircraft": "BOEING", 
-"Capacity": 1510, 
+"capacity": 1510, 
 "date": "2016-05-25T22:21:00",
 "duration":22, 
 "origin": "DEL", 
@@ -1616,7 +1616,7 @@
 { 
 "flightNumber":"B2615", 
 "aircraft": "BOEING", 
-"Capacity": 3436, 
+"capacity": 3436, 
 "date": "2016-05-26T9:40:00",
 "duration":9, 
 "origin": "DEL", 
@@ -1634,7 +1634,7 @@
 { 
 "flightNumber":"B2715", 
 "aircraft": "BOEING", 
-"Capacity": 3688, 
+"capacity": 3688, 
 "date": "2016-05-27T7:21:00",
 "duration":7, 
 "origin": "DEL", 
@@ -1652,7 +1652,7 @@
 { 
 "flightNumber":"B2815", 
 "aircraft": "BOEING", 
-"Capacity": 3433, 
+"capacity": 3433, 
 "date": "2016-05-28T12:41:00",
 "duration":12, 
 "origin": "DEL", 
@@ -1670,7 +1670,7 @@
 { 
 "flightNumber":"B2915", 
 "aircraft": "BOEING", 
-"Capacity": 4909, 
+"capacity": 4909, 
 "date": "2016-05-29T14:54:00",
 "duration":14, 
 "origin": "DEL", 
@@ -1688,7 +1688,7 @@
 { 
 "flightNumber":"B3015", 
 "aircraft": "BOEING", 
-"Capacity": 2598, 
+"capacity": 2598, 
 "date": "2016-05-30T4:8:00",
 "duration":4, 
 "origin": "DEL", 
@@ -1709,7 +1709,7 @@
 { 
 "flightNumber":"C1315", 
 "aircraft": "Airbus", 
-"Capacity": 5318, 
+"capacity": 5318, 
 "date": "2016-04-13T4:0:00",
 "duration":4, 
 "origin": "CAI", 
@@ -1727,7 +1727,7 @@
 { 
 "flightNumber":"C1415", 
 "aircraft": "Airbus", 
-"Capacity": 2719, 
+"capacity": 2719, 
 "date": "2016-04-14T13:11:00",
 "duration":13, 
 "origin": "CAI", 
@@ -1745,7 +1745,7 @@
 { 
 "flightNumber":"C1515", 
 "aircraft": "Airbus", 
-"Capacity": 1401, 
+"capacity": 1401, 
 "date": "2016-04-15T23:41:00",
 "duration":23, 
 "origin": "CAI", 
@@ -1763,7 +1763,7 @@
 { 
 "flightNumber":"C1615", 
 "aircraft": "Airbus", 
-"Capacity": 4063, 
+"capacity": 4063, 
 "date": "2016-04-16T0:16:00",
 "duration":0, 
 "origin": "CAI", 
@@ -1781,7 +1781,7 @@
 { 
 "flightNumber":"C1715", 
 "aircraft": "Airbus", 
-"Capacity": 1027, 
+"capacity": 1027, 
 "date": "2016-04-17T5:32:00",
 "duration":5, 
 "origin": "CAI", 
@@ -1799,7 +1799,7 @@
 { 
 "flightNumber":"C1815", 
 "aircraft": "Airbus", 
-"Capacity": 5839, 
+"capacity": 5839, 
 "date": "2016-04-18T2:23:00",
 "duration":2, 
 "origin": "CAI", 
@@ -1817,7 +1817,7 @@
 { 
 "flightNumber":"C1915", 
 "aircraft": "Airbus", 
-"Capacity": 5916, 
+"capacity": 5916, 
 "date": "2016-04-19T4:58:00",
 "duration":4, 
 "origin": "CAI", 
@@ -1835,7 +1835,7 @@
 { 
 "flightNumber":"C2015", 
 "aircraft": "Airbus", 
-"Capacity": 4083, 
+"capacity": 4083, 
 "date": "2016-04-20T6:13:00",
 "duration":6, 
 "origin": "CAI", 
@@ -1853,7 +1853,7 @@
 { 
 "flightNumber":"C2115", 
 "aircraft": "Airbus", 
-"Capacity": 1038, 
+"capacity": 1038, 
 "date": "2016-04-21T2:12:00",
 "duration":2, 
 "origin": "CAI", 
@@ -1871,7 +1871,7 @@
 { 
 "flightNumber":"C2215", 
 "aircraft": "Airbus", 
-"Capacity": 5764, 
+"capacity": 5764, 
 "date": "2016-04-22T24:52:00",
 "duration":24, 
 "origin": "CAI", 
@@ -1889,7 +1889,7 @@
 { 
 "flightNumber":"C2315", 
 "aircraft": "Airbus", 
-"Capacity": 2193, 
+"capacity": 2193, 
 "date": "2016-04-23T6:40:00",
 "duration":6, 
 "origin": "CAI", 
@@ -1907,7 +1907,7 @@
 { 
 "flightNumber":"C2415", 
 "aircraft": "Airbus", 
-"Capacity": 1060, 
+"capacity": 1060, 
 "date": "2016-04-24T21:43:00",
 "duration":21, 
 "origin": "CAI", 
@@ -1925,7 +1925,7 @@
 { 
 "flightNumber":"C2515", 
 "aircraft": "Airbus", 
-"Capacity": 4644, 
+"capacity": 4644, 
 "date": "2016-04-25T20:36:00",
 "duration":20, 
 "origin": "CAI", 
@@ -1943,7 +1943,7 @@
 { 
 "flightNumber":"C2615", 
 "aircraft": "Airbus", 
-"Capacity": 2984, 
+"capacity": 2984, 
 "date": "2016-04-26T10:5:00",
 "duration":10, 
 "origin": "CAI", 
@@ -1961,7 +1961,7 @@
 { 
 "flightNumber":"C2715", 
 "aircraft": "Airbus", 
-"Capacity": 5212, 
+"capacity": 5212, 
 "date": "2016-04-27T11:40:00",
 "duration":11, 
 "origin": "CAI", 
@@ -1979,7 +1979,7 @@
 { 
 "flightNumber":"C2815", 
 "aircraft": "Airbus", 
-"Capacity": 4945, 
+"capacity": 4945, 
 "date": "2016-04-28T3:52:00",
 "duration":3, 
 "origin": "CAI", 
@@ -1997,7 +1997,7 @@
 { 
 "flightNumber":"C2915", 
 "aircraft": "Airbus", 
-"Capacity": 2395, 
+"capacity": 2395, 
 "date": "2016-04-29T20:5:00",
 "duration":20, 
 "origin": "CAI", 
@@ -2018,7 +2018,7 @@
 { 
 "flightNumber":"D115", 
 "aircraft": "Airbus", 
-"Capacity": 3790, 
+"capacity": 3790, 
 "date": "2016-05-1T1:48:00",
 "duration":1, 
 "origin": "CAI", 
@@ -2036,7 +2036,7 @@
 { 
 "flightNumber":"D215", 
 "aircraft": "Airbus", 
-"Capacity": 4860, 
+"capacity": 4860, 
 "date": "2016-05-2T15:4:00",
 "duration":15, 
 "origin": "CAI", 
@@ -2054,7 +2054,7 @@
 { 
 "flightNumber":"D315", 
 "aircraft": "Airbus", 
-"Capacity": 3429, 
+"capacity": 3429, 
 "date": "2016-05-3T14:21:00",
 "duration":14, 
 "origin": "CAI", 
@@ -2072,7 +2072,7 @@
 { 
 "flightNumber":"D415", 
 "aircraft": "Airbus", 
-"Capacity": 5538, 
+"capacity": 5538, 
 "date": "2016-05-4T1:39:00",
 "duration":1, 
 "origin": "CAI", 
@@ -2090,7 +2090,7 @@
 { 
 "flightNumber":"D515", 
 "aircraft": "Airbus", 
-"Capacity": 1763, 
+"capacity": 1763, 
 "date": "2016-05-5T21:18:00",
 "duration":21, 
 "origin": "CAI", 
@@ -2108,7 +2108,7 @@
 { 
 "flightNumber":"D615", 
 "aircraft": "Airbus", 
-"Capacity": 3993, 
+"capacity": 3993, 
 "date": "2016-05-6T3:59:00",
 "duration":3, 
 "origin": "CAI", 
@@ -2126,7 +2126,7 @@
 { 
 "flightNumber":"D715", 
 "aircraft": "Airbus", 
-"Capacity": 2006, 
+"capacity": 2006, 
 "date": "2016-05-7T2:49:00",
 "duration":2, 
 "origin": "CAI", 
@@ -2144,7 +2144,7 @@
 { 
 "flightNumber":"D815", 
 "aircraft": "Airbus", 
-"Capacity": 5607, 
+"capacity": 5607, 
 "date": "2016-05-8T2:39:00",
 "duration":2, 
 "origin": "CAI", 
@@ -2162,7 +2162,7 @@
 { 
 "flightNumber":"D915", 
 "aircraft": "Airbus", 
-"Capacity": 1785, 
+"capacity": 1785, 
 "date": "2016-05-9T4:18:00",
 "duration":4, 
 "origin": "CAI", 
@@ -2180,7 +2180,7 @@
 { 
 "flightNumber":"D1015", 
 "aircraft": "Airbus", 
-"Capacity": 2877, 
+"capacity": 2877, 
 "date": "2016-05-10T8:57:00",
 "duration":8, 
 "origin": "CAI", 
@@ -2198,7 +2198,7 @@
 { 
 "flightNumber":"D1115", 
 "aircraft": "Airbus", 
-"Capacity": 2819, 
+"capacity": 2819, 
 "date": "2016-05-11T10:4:00",
 "duration":10, 
 "origin": "CAI", 
@@ -2216,7 +2216,7 @@
 { 
 "flightNumber":"D1215", 
 "aircraft": "Airbus", 
-"Capacity": 5893, 
+"capacity": 5893, 
 "date": "2016-05-12T3:2:00",
 "duration":3, 
 "origin": "CAI", 
@@ -2234,7 +2234,7 @@
 { 
 "flightNumber":"D1315", 
 "aircraft": "Airbus", 
-"Capacity": 2990, 
+"capacity": 2990, 
 "date": "2016-05-13T6:48:00",
 "duration":6, 
 "origin": "CAI", 
@@ -2252,7 +2252,7 @@
 { 
 "flightNumber":"D1415", 
 "aircraft": "Airbus", 
-"Capacity": 4675, 
+"capacity": 4675, 
 "date": "2016-05-14T9:6:00",
 "duration":9, 
 "origin": "CAI", 
@@ -2270,7 +2270,7 @@
 { 
 "flightNumber":"D1515", 
 "aircraft": "Airbus", 
-"Capacity": 5312, 
+"capacity": 5312, 
 "date": "2016-05-15T10:2:00",
 "duration":10, 
 "origin": "CAI", 
@@ -2288,7 +2288,7 @@
 { 
 "flightNumber":"D1615", 
 "aircraft": "Airbus", 
-"Capacity": 2146, 
+"capacity": 2146, 
 "date": "2016-05-16T7:15:00",
 "duration":7, 
 "origin": "CAI", 
@@ -2306,7 +2306,7 @@
 { 
 "flightNumber":"D1715", 
 "aircraft": "Airbus", 
-"Capacity": 5303, 
+"capacity": 5303, 
 "date": "2016-05-17T13:22:00",
 "duration":13, 
 "origin": "CAI", 
@@ -2324,7 +2324,7 @@
 { 
 "flightNumber":"D1815", 
 "aircraft": "Airbus", 
-"Capacity": 2392, 
+"capacity": 2392, 
 "date": "2016-05-18T16:27:00",
 "duration":16, 
 "origin": "CAI", 
@@ -2342,7 +2342,7 @@
 { 
 "flightNumber":"D1915", 
 "aircraft": "Airbus", 
-"Capacity": 4053, 
+"capacity": 4053, 
 "date": "2016-05-19T5:24:00",
 "duration":5, 
 "origin": "CAI", 
@@ -2360,7 +2360,7 @@
 { 
 "flightNumber":"D2015", 
 "aircraft": "Airbus", 
-"Capacity": 5157, 
+"capacity": 5157, 
 "date": "2016-05-20T8:55:00",
 "duration":8, 
 "origin": "CAI", 
@@ -2378,7 +2378,7 @@
 { 
 "flightNumber":"D2115", 
 "aircraft": "Airbus", 
-"Capacity": 5605, 
+"capacity": 5605, 
 "date": "2016-05-21T24:35:00",
 "duration":24, 
 "origin": "CAI", 
@@ -2396,7 +2396,7 @@
 { 
 "flightNumber":"D2215", 
 "aircraft": "Airbus", 
-"Capacity": 1033, 
+"capacity": 1033, 
 "date": "2016-05-22T24:27:00",
 "duration":24, 
 "origin": "CAI", 
@@ -2414,7 +2414,7 @@
 { 
 "flightNumber":"D2315", 
 "aircraft": "Airbus", 
-"Capacity": 5348, 
+"capacity": 5348, 
 "date": "2016-05-23T20:26:00",
 "duration":20, 
 "origin": "CAI", 
@@ -2432,7 +2432,7 @@
 { 
 "flightNumber":"D2415", 
 "aircraft": "Airbus", 
-"Capacity": 4209, 
+"capacity": 4209, 
 "date": "2016-05-24T14:55:00",
 "duration":14, 
 "origin": "CAI", 
@@ -2450,7 +2450,7 @@
 { 
 "flightNumber":"D2515", 
 "aircraft": "Airbus", 
-"Capacity": 1890, 
+"capacity": 1890, 
 "date": "2016-05-25T14:54:00",
 "duration":14, 
 "origin": "CAI", 
@@ -2468,7 +2468,7 @@
 { 
 "flightNumber":"D2615", 
 "aircraft": "Airbus", 
-"Capacity": 3202, 
+"capacity": 3202, 
 "date": "2016-05-26T10:25:00",
 "duration":10, 
 "origin": "CAI", 
@@ -2486,7 +2486,7 @@
 { 
 "flightNumber":"D2715", 
 "aircraft": "Airbus", 
-"Capacity": 1266, 
+"capacity": 1266, 
 "date": "2016-05-27T23:54:00",
 "duration":23, 
 "origin": "CAI", 
@@ -2504,7 +2504,7 @@
 { 
 "flightNumber":"D2815", 
 "aircraft": "Airbus", 
-"Capacity": 4423, 
+"capacity": 4423, 
 "date": "2016-05-28T2:56:00",
 "duration":2, 
 "origin": "CAI", 
@@ -2522,7 +2522,7 @@
 { 
 "flightNumber":"D2915", 
 "aircraft": "Airbus", 
-"Capacity": 4509, 
+"capacity": 4509, 
 "date": "2016-05-29T0:59:00",
 "duration":0, 
 "origin": "CAI", 
@@ -2540,7 +2540,7 @@
 { 
 "flightNumber":"D3015", 
 "aircraft": "Airbus", 
-"Capacity": 1385, 
+"capacity": 1385, 
 "date": "2016-05-30T24:16:00",
 "duration":24, 
 "origin": "CAI", 
@@ -2561,7 +2561,7 @@
 { 
 "flightNumber":"E1315", 
 "aircraft": "Boeing", 
-"Capacity": 3286, 
+"capacity": 3286, 
 "date": "2016-04-13T15:17:00",
 "duration":15, 
 "origin": "JED", 
@@ -2579,7 +2579,7 @@
 { 
 "flightNumber":"E1415", 
 "aircraft": "Boeing", 
-"Capacity": 1572, 
+"capacity": 1572, 
 "date": "2016-04-14T19:13:00",
 "duration":19, 
 "origin": "JED", 
@@ -2597,7 +2597,7 @@
 { 
 "flightNumber":"E1515", 
 "aircraft": "Boeing", 
-"Capacity": 2816, 
+"capacity": 2816, 
 "date": "2016-04-15T22:41:00",
 "duration":22, 
 "origin": "JED", 
@@ -2615,7 +2615,7 @@
 { 
 "flightNumber":"E1615", 
 "aircraft": "Boeing", 
-"Capacity": 2995, 
+"capacity": 2995, 
 "date": "2016-04-16T13:59:00",
 "duration":13, 
 "origin": "JED", 
@@ -2633,7 +2633,7 @@
 { 
 "flightNumber":"E1715", 
 "aircraft": "Boeing", 
-"Capacity": 1633, 
+"capacity": 1633, 
 "date": "2016-04-17T18:9:00",
 "duration":18, 
 "origin": "JED", 
@@ -2651,7 +2651,7 @@
 { 
 "flightNumber":"E1815", 
 "aircraft": "Boeing", 
-"Capacity": 4010, 
+"capacity": 4010, 
 "date": "2016-04-18T0:50:00",
 "duration":0, 
 "origin": "JED", 
@@ -2669,7 +2669,7 @@
 { 
 "flightNumber":"E1915", 
 "aircraft": "Boeing", 
-"Capacity": 3876, 
+"capacity": 3876, 
 "date": "2016-04-19T10:18:00",
 "duration":10, 
 "origin": "JED", 
@@ -2687,7 +2687,7 @@
 { 
 "flightNumber":"E2015", 
 "aircraft": "Boeing", 
-"Capacity": 1953, 
+"capacity": 1953, 
 "date": "2016-04-20T12:4:00",
 "duration":12, 
 "origin": "JED", 
@@ -2705,7 +2705,7 @@
 { 
 "flightNumber":"E2115", 
 "aircraft": "Boeing", 
-"Capacity": 3300, 
+"capacity": 3300, 
 "date": "2016-04-21T9:41:00",
 "duration":9, 
 "origin": "JED", 
@@ -2723,7 +2723,7 @@
 { 
 "flightNumber":"E2215", 
 "aircraft": "Boeing", 
-"Capacity": 1748, 
+"capacity": 1748, 
 "date": "2016-04-22T15:49:00",
 "duration":15, 
 "origin": "JED", 
@@ -2741,7 +2741,7 @@
 { 
 "flightNumber":"E2315", 
 "aircraft": "Boeing", 
-"Capacity": 2420, 
+"capacity": 2420, 
 "date": "2016-04-23T6:21:00",
 "duration":6, 
 "origin": "JED", 
@@ -2759,7 +2759,7 @@
 { 
 "flightNumber":"E2415", 
 "aircraft": "Boeing", 
-"Capacity": 1857, 
+"capacity": 1857, 
 "date": "2016-04-24T11:12:00",
 "duration":11, 
 "origin": "JED", 
@@ -2777,7 +2777,7 @@
 { 
 "flightNumber":"E2515", 
 "aircraft": "Boeing", 
-"Capacity": 5687, 
+"capacity": 5687, 
 "date": "2016-04-25T11:37:00",
 "duration":11, 
 "origin": "JED", 
@@ -2795,7 +2795,7 @@
 { 
 "flightNumber":"E2615", 
 "aircraft": "Boeing", 
-"Capacity": 4998, 
+"capacity": 4998, 
 "date": "2016-04-26T6:1:00",
 "duration":6, 
 "origin": "JED", 
@@ -2813,7 +2813,7 @@
 { 
 "flightNumber":"E2715", 
 "aircraft": "Boeing", 
-"Capacity": 2011, 
+"capacity": 2011, 
 "date": "2016-04-27T2:53:00",
 "duration":2, 
 "origin": "JED", 
@@ -2831,7 +2831,7 @@
 { 
 "flightNumber":"E2815", 
 "aircraft": "Boeing", 
-"Capacity": 3209, 
+"capacity": 3209, 
 "date": "2016-04-28T4:29:00",
 "duration":4, 
 "origin": "JED", 
@@ -2849,7 +2849,7 @@
 { 
 "flightNumber":"E2915", 
 "aircraft": "Boeing", 
-"Capacity": 1223, 
+"capacity": 1223, 
 "date": "2016-04-29T16:28:00",
 "duration":16, 
 "origin": "JED", 
@@ -2870,7 +2870,7 @@
 { 
 "flightNumber":"F1315", 
 "aircraft": "Boeing", 
-"Capacity": 2671, 
+"capacity": 2671, 
 "date": "2016-05-13T13:57:00",
 "duration":13, 
 "origin": "JED", 
@@ -2888,7 +2888,7 @@
 { 
 "flightNumber":"F1415", 
 "aircraft": "Boeing", 
-"Capacity": 3767, 
+"capacity": 3767, 
 "date": "2016-05-14T23:18:00",
 "duration":23, 
 "origin": "JED", 
@@ -2906,7 +2906,7 @@
 { 
 "flightNumber":"F1515", 
 "aircraft": "Boeing", 
-"Capacity": 1849, 
+"capacity": 1849, 
 "date": "2016-05-15T5:26:00",
 "duration":5, 
 "origin": "JED", 
@@ -2924,7 +2924,7 @@
 { 
 "flightNumber":"F1615", 
 "aircraft": "Boeing", 
-"Capacity": 1917, 
+"capacity": 1917, 
 "date": "2016-05-16T18:0:00",
 "duration":18, 
 "origin": "JED", 
@@ -2942,7 +2942,7 @@
 { 
 "flightNumber":"F1715", 
 "aircraft": "Boeing", 
-"Capacity": 5904, 
+"capacity": 5904, 
 "date": "2016-05-17T22:28:00",
 "duration":22, 
 "origin": "JED", 
@@ -2960,7 +2960,7 @@
 { 
 "flightNumber":"F1815", 
 "aircraft": "Boeing", 
-"Capacity": 2510, 
+"capacity": 2510, 
 "date": "2016-05-18T16:26:00",
 "duration":16, 
 "origin": "JED", 
@@ -2978,7 +2978,7 @@
 { 
 "flightNumber":"F1915", 
 "aircraft": "Boeing", 
-"Capacity": 5461, 
+"capacity": 5461, 
 "date": "2016-05-19T16:51:00",
 "duration":16, 
 "origin": "JED", 
@@ -2996,7 +2996,7 @@
 { 
 "flightNumber":"F2015", 
 "aircraft": "Boeing", 
-"Capacity": 1853, 
+"capacity": 1853, 
 "date": "2016-05-20T14:32:00",
 "duration":14, 
 "origin": "JED", 
@@ -3014,7 +3014,7 @@
 { 
 "flightNumber":"F2115", 
 "aircraft": "Boeing", 
-"Capacity": 4784, 
+"capacity": 4784, 
 "date": "2016-05-21T19:58:00",
 "duration":19, 
 "origin": "JED", 
@@ -3032,7 +3032,7 @@
 { 
 "flightNumber":"F2215", 
 "aircraft": "Boeing", 
-"Capacity": 3332, 
+"capacity": 3332, 
 "date": "2016-05-22T22:30:00",
 "duration":22, 
 "origin": "JED", 
@@ -3050,7 +3050,7 @@
 { 
 "flightNumber":"F2315", 
 "aircraft": "Boeing", 
-"Capacity": 3325, 
+"capacity": 3325, 
 "date": "2016-05-23T6:41:00",
 "duration":6, 
 "origin": "JED", 
@@ -3068,7 +3068,7 @@
 { 
 "flightNumber":"F2415", 
 "aircraft": "Boeing", 
-"Capacity": 2004, 
+"capacity": 2004, 
 "date": "2016-05-24T13:55:00",
 "duration":13, 
 "origin": "JED", 
@@ -3086,7 +3086,7 @@
 { 
 "flightNumber":"F2515", 
 "aircraft": "Boeing", 
-"Capacity": 3160, 
+"capacity": 3160, 
 "date": "2016-05-25T13:53:00",
 "duration":13, 
 "origin": "JED", 
@@ -3104,7 +3104,7 @@
 { 
 "flightNumber":"F2615", 
 "aircraft": "Boeing", 
-"Capacity": 5237, 
+"capacity": 5237, 
 "date": "2016-05-26T22:4:00",
 "duration":22, 
 "origin": "JED", 
@@ -3122,7 +3122,7 @@
 { 
 "flightNumber":"F2715", 
 "aircraft": "Boeing", 
-"Capacity": 1962, 
+"capacity": 1962, 
 "date": "2016-05-27T23:29:00",
 "duration":23, 
 "origin": "JED", 
@@ -3140,7 +3140,7 @@
 { 
 "flightNumber":"F2815", 
 "aircraft": "Boeing", 
-"Capacity": 2180, 
+"capacity": 2180, 
 "date": "2016-05-28T4:57:00",
 "duration":4, 
 "origin": "JED", 
@@ -3158,7 +3158,7 @@
 { 
 "flightNumber":"F2915", 
 "aircraft": "Boeing", 
-"Capacity": 3849, 
+"capacity": 3849, 
 "date": "2016-05-29T9:14:00",
 "duration":9, 
 "origin": "JED", 
@@ -3177,7 +3177,7 @@
 { 
 "flightNumber":"G1315", 
 "aircraft": "Airbus", 
-"Capacity": 3228, 
+"capacity": 3228, 
 "date": "2016-04-13T7:30:00",
 "duration":7, 
 "origin": "HKG", 
@@ -3195,7 +3195,7 @@
 { 
 "flightNumber":"G1415", 
 "aircraft": "Airbus", 
-"Capacity": 3120, 
+"capacity": 3120, 
 "date": "2016-04-14T11:15:00",
 "duration":11, 
 "origin": "HKG", 
@@ -3213,7 +3213,7 @@
 { 
 "flightNumber":"G1515", 
 "aircraft": "Airbus", 
-"Capacity": 2370, 
+"capacity": 2370, 
 "date": "2016-04-15T8:56:00",
 "duration":8, 
 "origin": "HKG", 
@@ -3231,7 +3231,7 @@
 { 
 "flightNumber":"G1615", 
 "aircraft": "Airbus", 
-"Capacity": 3553, 
+"capacity": 3553, 
 "date": "2016-04-16T12:57:00",
 "duration":12, 
 "origin": "HKG", 
@@ -3249,7 +3249,7 @@
 { 
 "flightNumber":"G1715", 
 "aircraft": "Airbus", 
-"Capacity": 3802, 
+"capacity": 3802, 
 "date": "2016-04-17T21:56:00",
 "duration":21, 
 "origin": "HKG", 
@@ -3267,7 +3267,7 @@
 { 
 "flightNumber":"G1815", 
 "aircraft": "Airbus", 
-"Capacity": 3510, 
+"capacity": 3510, 
 "date": "2016-04-18T19:34:00",
 "duration":19, 
 "origin": "HKG", 
@@ -3285,7 +3285,7 @@
 { 
 "flightNumber":"G1915", 
 "aircraft": "Airbus", 
-"Capacity": 5845, 
+"capacity": 5845, 
 "date": "2016-04-19T16:8:00",
 "duration":16, 
 "origin": "HKG", 
@@ -3303,7 +3303,7 @@
 { 
 "flightNumber":"G2015", 
 "aircraft": "Airbus", 
-"Capacity": 4897, 
+"capacity": 4897, 
 "date": "2016-04-20T21:0:00",
 "duration":21, 
 "origin": "HKG", 
@@ -3321,7 +3321,7 @@
 { 
 "flightNumber":"G2115", 
 "aircraft": "Airbus", 
-"Capacity": 3637, 
+"capacity": 3637, 
 "date": "2016-04-21T17:41:00",
 "duration":17, 
 "origin": "HKG", 
@@ -3339,7 +3339,7 @@
 { 
 "flightNumber":"G2215", 
 "aircraft": "Airbus", 
-"Capacity": 3245, 
+"capacity": 3245, 
 "date": "2016-04-22T4:20:00",
 "duration":4, 
 "origin": "HKG", 
@@ -3357,7 +3357,7 @@
 { 
 "flightNumber":"G2315", 
 "aircraft": "Airbus", 
-"Capacity": 4429, 
+"capacity": 4429, 
 "date": "2016-04-23T10:25:00",
 "duration":10, 
 "origin": "HKG", 
@@ -3375,7 +3375,7 @@
 { 
 "flightNumber":"G2415", 
 "aircraft": "Airbus", 
-"Capacity": 1038, 
+"capacity": 1038, 
 "date": "2016-04-24T13:21:00",
 "duration":13, 
 "origin": "HKG", 
@@ -3393,7 +3393,7 @@
 { 
 "flightNumber":"G2515", 
 "aircraft": "Airbus", 
-"Capacity": 2874, 
+"capacity": 2874, 
 "date": "2016-04-25T17:8:00",
 "duration":17, 
 "origin": "HKG", 
@@ -3411,7 +3411,7 @@
 { 
 "flightNumber":"G2615", 
 "aircraft": "Airbus", 
-"Capacity": 5732, 
+"capacity": 5732, 
 "date": "2016-04-26T19:7:00",
 "duration":19, 
 "origin": "HKG", 
@@ -3429,7 +3429,7 @@
 { 
 "flightNumber":"G2715", 
 "aircraft": "Airbus", 
-"Capacity": 1201, 
+"capacity": 1201, 
 "date": "2016-04-27T3:42:00",
 "duration":3, 
 "origin": "HKG", 
@@ -3447,7 +3447,7 @@
 { 
 "flightNumber":"G2815", 
 "aircraft": "Airbus", 
-"Capacity": 1085, 
+"capacity": 1085, 
 "date": "2016-04-28T13:55:00",
 "duration":13, 
 "origin": "HKG", 
@@ -3465,7 +3465,7 @@
 { 
 "flightNumber":"G2915", 
 "aircraft": "Airbus", 
-"Capacity": 4636, 
+"capacity": 4636, 
 "date": "2016-04-29T16:4:00",
 "duration":16, 
 "origin": "HKG", 
@@ -3485,7 +3485,7 @@
 { 
 "flightNumber":"H115", 
 "aircraft": "Airbus", 
-"Capacity": 1327, 
+"capacity": 1327, 
 "date": "2016-05-1T3:53:00",
 "duration":3, 
 "origin": "HKG", 
@@ -3503,7 +3503,7 @@
 { 
 "flightNumber":"H215", 
 "aircraft": "Airbus", 
-"Capacity": 3921, 
+"capacity": 3921, 
 "date": "2016-05-2T7:9:00",
 "duration":7, 
 "origin": "HKG", 
@@ -3521,7 +3521,7 @@
 { 
 "flightNumber":"H315", 
 "aircraft": "Airbus", 
-"Capacity": 3460, 
+"capacity": 3460, 
 "date": "2016-05-3T10:5:00",
 "duration":10, 
 "origin": "HKG", 
@@ -3539,7 +3539,7 @@
 { 
 "flightNumber":"H415", 
 "aircraft": "Airbus", 
-"Capacity": 4936, 
+"capacity": 4936, 
 "date": "2016-05-4T23:1:00",
 "duration":23, 
 "origin": "HKG", 
@@ -3557,7 +3557,7 @@
 { 
 "flightNumber":"H515", 
 "aircraft": "Airbus", 
-"Capacity": 5018, 
+"capacity": 5018, 
 "date": "2016-05-5T8:26:00",
 "duration":8, 
 "origin": "HKG", 
@@ -3575,7 +3575,7 @@
 { 
 "flightNumber":"H615", 
 "aircraft": "Airbus", 
-"Capacity": 5910, 
+"capacity": 5910, 
 "date": "2016-05-6T19:21:00",
 "duration":19, 
 "origin": "HKG", 
@@ -3593,7 +3593,7 @@
 { 
 "flightNumber":"H715", 
 "aircraft": "Airbus", 
-"Capacity": 5514, 
+"capacity": 5514, 
 "date": "2016-05-7T10:0:00",
 "duration":10, 
 "origin": "HKG", 
@@ -3611,7 +3611,7 @@
 { 
 "flightNumber":"H815", 
 "aircraft": "Airbus", 
-"Capacity": 4673, 
+"capacity": 4673, 
 "date": "2016-05-8T21:13:00",
 "duration":21, 
 "origin": "HKG", 
@@ -3629,7 +3629,7 @@
 { 
 "flightNumber":"H915", 
 "aircraft": "Airbus", 
-"Capacity": 5326, 
+"capacity": 5326, 
 "date": "2016-05-9T19:45:00",
 "duration":19, 
 "origin": "HKG", 
@@ -3647,7 +3647,7 @@
 { 
 "flightNumber":"H1015", 
 "aircraft": "Airbus", 
-"Capacity": 5381, 
+"capacity": 5381, 
 "date": "2016-05-10T6:55:00",
 "duration":6, 
 "origin": "HKG", 
@@ -3665,7 +3665,7 @@
 { 
 "flightNumber":"H1115", 
 "aircraft": "Airbus", 
-"Capacity": 5865, 
+"capacity": 5865, 
 "date": "2016-05-11T11:46:00",
 "duration":11, 
 "origin": "HKG", 
@@ -3683,7 +3683,7 @@
 { 
 "flightNumber":"H1215", 
 "aircraft": "Airbus", 
-"Capacity": 1909, 
+"capacity": 1909, 
 "date": "2016-05-12T11:4:00",
 "duration":11, 
 "origin": "HKG", 
@@ -3701,7 +3701,7 @@
 { 
 "flightNumber":"H1315", 
 "aircraft": "Airbus", 
-"Capacity": 4102, 
+"capacity": 4102, 
 "date": "2016-05-13T15:42:00",
 "duration":15, 
 "origin": "HKG", 
@@ -3719,7 +3719,7 @@
 { 
 "flightNumber":"H1415", 
 "aircraft": "Airbus", 
-"Capacity": 1035, 
+"capacity": 1035, 
 "date": "2016-05-14T11:43:00",
 "duration":11, 
 "origin": "HKG", 
@@ -3737,7 +3737,7 @@
 { 
 "flightNumber":"H1515", 
 "aircraft": "Airbus", 
-"Capacity": 1354, 
+"capacity": 1354, 
 "date": "2016-05-15T14:38:00",
 "duration":14, 
 "origin": "HKG", 
@@ -3755,7 +3755,7 @@
 { 
 "flightNumber":"H1615", 
 "aircraft": "Airbus", 
-"Capacity": 5092, 
+"capacity": 5092, 
 "date": "2016-05-16T2:25:00",
 "duration":2, 
 "origin": "HKG", 
@@ -3773,7 +3773,7 @@
 { 
 "flightNumber":"H1715", 
 "aircraft": "Airbus", 
-"Capacity": 3228, 
+"capacity": 3228, 
 "date": "2016-05-17T8:26:00",
 "duration":8, 
 "origin": "HKG", 
@@ -3791,7 +3791,7 @@
 { 
 "flightNumber":"H1815", 
 "aircraft": "Airbus", 
-"Capacity": 3842, 
+"capacity": 3842, 
 "date": "2016-05-18T8:58:00",
 "duration":8, 
 "origin": "HKG", 
@@ -3809,7 +3809,7 @@
 { 
 "flightNumber":"H1915", 
 "aircraft": "Airbus", 
-"Capacity": 2872, 
+"capacity": 2872, 
 "date": "2016-05-19T16:37:00",
 "duration":16, 
 "origin": "HKG", 
@@ -3827,7 +3827,7 @@
 { 
 "flightNumber":"H2015", 
 "aircraft": "Airbus", 
-"Capacity": 5000, 
+"capacity": 5000, 
 "date": "2016-05-20T19:27:00",
 "duration":19, 
 "origin": "HKG", 
@@ -3845,7 +3845,7 @@
 { 
 "flightNumber":"H2115", 
 "aircraft": "Airbus", 
-"Capacity": 2467, 
+"capacity": 2467, 
 "date": "2016-05-21T2:24:00",
 "duration":2, 
 "origin": "HKG", 
@@ -3863,7 +3863,7 @@
 { 
 "flightNumber":"H2215", 
 "aircraft": "Airbus", 
-"Capacity": 3527, 
+"capacity": 3527, 
 "date": "2016-05-22T22:4:00",
 "duration":22, 
 "origin": "HKG", 
@@ -3881,7 +3881,7 @@
 { 
 "flightNumber":"H2315", 
 "aircraft": "Airbus", 
-"Capacity": 3471, 
+"capacity": 3471, 
 "date": "2016-05-23T15:52:00",
 "duration":15, 
 "origin": "HKG", 
@@ -3899,7 +3899,7 @@
 { 
 "flightNumber":"H2415", 
 "aircraft": "Airbus", 
-"Capacity": 4673, 
+"capacity": 4673, 
 "date": "2016-05-24T20:31:00",
 "duration":20, 
 "origin": "HKG", 
@@ -3917,7 +3917,7 @@
 { 
 "flightNumber":"H2515", 
 "aircraft": "Airbus", 
-"Capacity": 1814, 
+"capacity": 1814, 
 "date": "2016-05-25T11:43:00",
 "duration":11, 
 "origin": "HKG", 
@@ -3935,7 +3935,7 @@
 { 
 "flightNumber":"H2615", 
 "aircraft": "Airbus", 
-"Capacity": 5314, 
+"capacity": 5314, 
 "date": "2016-05-26T13:25:00",
 "duration":13, 
 "origin": "HKG", 
@@ -3953,7 +3953,7 @@
 { 
 "flightNumber":"H2715", 
 "aircraft": "Airbus", 
-"Capacity": 5732, 
+"capacity": 5732, 
 "date": "2016-05-27T1:20:00",
 "duration":1, 
 "origin": "HKG", 
@@ -3971,7 +3971,7 @@
 { 
 "flightNumber":"H2815", 
 "aircraft": "Airbus", 
-"Capacity": 2280, 
+"capacity": 2280, 
 "date": "2016-05-28T19:3:00",
 "duration":19, 
 "origin": "HKG", 
@@ -3989,7 +3989,7 @@
 { 
 "flightNumber":"H2915", 
 "aircraft": "Airbus", 
-"Capacity": 1493, 
+"capacity": 1493, 
 "date": "2016-05-29T1:15:00",
 "duration":1, 
 "origin": "HKG", 
@@ -4007,7 +4007,7 @@
 { 
 "flightNumber":"H3015", 
 "aircraft": "Airbus", 
-"Capacity": 4919, 
+"capacity": 4919, 
 "date": "2016-05-30T6:28:00",
 "duration":6, 
 "origin": "HKG", 
@@ -4028,7 +4028,7 @@
 { 
 "flightNumber":"I1315", 
 "aircraft": "Boeing", 
-"Capacity": 3973, 
+"capacity": 3973, 
 "date": "2016-04-13T6:4:00",
 "duration":6, 
 "origin": "TPE", 
@@ -4046,7 +4046,7 @@
 { 
 "flightNumber":"I1415", 
 "aircraft": "Boeing", 
-"Capacity": 3677, 
+"capacity": 3677, 
 "date": "2016-04-14T5:44:00",
 "duration":5, 
 "origin": "TPE", 
@@ -4064,7 +4064,7 @@
 { 
 "flightNumber":"I1515", 
 "aircraft": "Boeing", 
-"Capacity": 2268, 
+"capacity": 2268, 
 "date": "2016-04-15T19:56:00",
 "duration":19, 
 "origin": "TPE", 
@@ -4082,7 +4082,7 @@
 { 
 "flightNumber":"I1615", 
 "aircraft": "Boeing", 
-"Capacity": 3792, 
+"capacity": 3792, 
 "date": "2016-04-16T16:23:00",
 "duration":16, 
 "origin": "TPE", 
@@ -4100,7 +4100,7 @@
 { 
 "flightNumber":"I1715", 
 "aircraft": "Boeing", 
-"Capacity": 1871, 
+"capacity": 1871, 
 "date": "2016-04-17T1:6:00",
 "duration":1, 
 "origin": "TPE", 
@@ -4118,7 +4118,7 @@
 { 
 "flightNumber":"I1815", 
 "aircraft": "Boeing", 
-"Capacity": 5264, 
+"capacity": 5264, 
 "date": "2016-04-18T6:51:00",
 "duration":6, 
 "origin": "TPE", 
@@ -4136,7 +4136,7 @@
 { 
 "flightNumber":"I1915", 
 "aircraft": "Boeing", 
-"Capacity": 1714, 
+"capacity": 1714, 
 "date": "2016-04-19T13:13:00",
 "duration":13, 
 "origin": "TPE", 
@@ -4154,7 +4154,7 @@
 { 
 "flightNumber":"I2015", 
 "aircraft": "Boeing", 
-"Capacity": 2231, 
+"capacity": 2231, 
 "date": "2016-04-20T22:25:00",
 "duration":22, 
 "origin": "TPE", 
@@ -4172,7 +4172,7 @@
 { 
 "flightNumber":"I2115", 
 "aircraft": "Boeing", 
-"Capacity": 3644, 
+"capacity": 3644, 
 "date": "2016-04-21T10:48:00",
 "duration":10, 
 "origin": "TPE", 
@@ -4190,7 +4190,7 @@
 { 
 "flightNumber":"I2215", 
 "aircraft": "Boeing", 
-"Capacity": 1559, 
+"capacity": 1559, 
 "date": "2016-04-22T18:57:00",
 "duration":18, 
 "origin": "TPE", 
@@ -4208,7 +4208,7 @@
 { 
 "flightNumber":"I2315", 
 "aircraft": "Boeing", 
-"Capacity": 5195, 
+"capacity": 5195, 
 "date": "2016-04-23T14:5:00",
 "duration":14, 
 "origin": "TPE", 
@@ -4226,7 +4226,7 @@
 { 
 "flightNumber":"I2415", 
 "aircraft": "Boeing", 
-"Capacity": 1139, 
+"capacity": 1139, 
 "date": "2016-04-24T6:58:00",
 "duration":6, 
 "origin": "TPE", 
@@ -4244,7 +4244,7 @@
 { 
 "flightNumber":"I2515", 
 "aircraft": "Boeing", 
-"Capacity": 2910, 
+"capacity": 2910, 
 "date": "2016-04-25T9:33:00",
 "duration":9, 
 "origin": "TPE", 
@@ -4262,7 +4262,7 @@
 { 
 "flightNumber":"I2615", 
 "aircraft": "Boeing", 
-"Capacity": 5812, 
+"capacity": 5812, 
 "date": "2016-04-26T12:44:00",
 "duration":12, 
 "origin": "TPE", 
@@ -4280,7 +4280,7 @@
 { 
 "flightNumber":"I2715", 
 "aircraft": "Boeing", 
-"Capacity": 5767, 
+"capacity": 5767, 
 "date": "2016-04-27T15:13:00",
 "duration":15, 
 "origin": "TPE", 
@@ -4298,7 +4298,7 @@
 { 
 "flightNumber":"I2815", 
 "aircraft": "Boeing", 
-"Capacity": 1857, 
+"capacity": 1857, 
 "date": "2016-04-28T21:46:00",
 "duration":21, 
 "origin": "TPE", 
@@ -4316,7 +4316,7 @@
 { 
 "flightNumber":"I2915", 
 "aircraft": "Boeing", 
-"Capacity": 3774, 
+"capacity": 3774, 
 "date": "2016-04-29T2:5:00",
 "duration":2, 
 "origin": "TPE", 
@@ -4334,7 +4334,7 @@
 { 
 "flightNumber":"I3015", 
 "aircraft": "Boeing", 
-"Capacity": 4360, 
+"capacity": 4360, 
 "date": "2016-04-30T7:53:00",
 "duration":7, 
 "origin": "TPE", 
@@ -4354,7 +4354,7 @@
 { 
 "flightNumber":"J115", 
 "aircraft": "Boeing", 
-"Capacity": 3153, 
+"capacity": 3153, 
 "date": "2016-05-1T19:15:00",
 "duration":19, 
 "origin": "TPE", 
@@ -4372,7 +4372,7 @@
 { 
 "flightNumber":"J215", 
 "aircraft": "Boeing", 
-"Capacity": 3440, 
+"capacity": 3440, 
 "date": "2016-05-2T16:58:00",
 "duration":16, 
 "origin": "TPE", 
@@ -4390,7 +4390,7 @@
 { 
 "flightNumber":"J315", 
 "aircraft": "Boeing", 
-"Capacity": 1814, 
+"capacity": 1814, 
 "date": "2016-05-3T5:6:00",
 "duration":5, 
 "origin": "TPE", 
@@ -4408,7 +4408,7 @@
 { 
 "flightNumber":"J415", 
 "aircraft": "Boeing", 
-"Capacity": 4816, 
+"capacity": 4816, 
 "date": "2016-05-4T18:53:00",
 "duration":18, 
 "origin": "TPE", 
@@ -4426,7 +4426,7 @@
 { 
 "flightNumber":"J515", 
 "aircraft": "Boeing", 
-"Capacity": 2868, 
+"capacity": 2868, 
 "date": "2016-05-5T9:22:00",
 "duration":9, 
 "origin": "TPE", 
@@ -4444,7 +4444,7 @@
 { 
 "flightNumber":"J615", 
 "aircraft": "Boeing", 
-"Capacity": 3038, 
+"capacity": 3038, 
 "date": "2016-05-6T8:46:00",
 "duration":8, 
 "origin": "TPE", 
@@ -4462,7 +4462,7 @@
 { 
 "flightNumber":"J715", 
 "aircraft": "Boeing", 
-"Capacity": 4571, 
+"capacity": 4571, 
 "date": "2016-05-7T15:47:00",
 "duration":15, 
 "origin": "TPE", 
@@ -4480,7 +4480,7 @@
 { 
 "flightNumber":"J815", 
 "aircraft": "Boeing", 
-"Capacity": 5915, 
+"capacity": 5915, 
 "date": "2016-05-8T18:36:00",
 "duration":18, 
 "origin": "TPE", 
@@ -4498,7 +4498,7 @@
 { 
 "flightNumber":"J915", 
 "aircraft": "Boeing", 
-"Capacity": 2925, 
+"capacity": 2925, 
 "date": "2016-05-9T6:13:00",
 "duration":6, 
 "origin": "TPE", 
@@ -4516,7 +4516,7 @@
 { 
 "flightNumber":"J1015", 
 "aircraft": "Boeing", 
-"Capacity": 5152, 
+"capacity": 5152, 
 "date": "2016-05-10T10:8:00",
 "duration":10, 
 "origin": "TPE", 
@@ -4534,7 +4534,7 @@
 { 
 "flightNumber":"J1115", 
 "aircraft": "Boeing", 
-"Capacity": 1239, 
+"capacity": 1239, 
 "date": "2016-05-11T24:39:00",
 "duration":24, 
 "origin": "TPE", 
@@ -4552,7 +4552,7 @@
 { 
 "flightNumber":"J1215", 
 "aircraft": "Boeing", 
-"Capacity": 2395, 
+"capacity": 2395, 
 "date": "2016-05-12T5:8:00",
 "duration":5, 
 "origin": "TPE", 
@@ -4570,7 +4570,7 @@
 { 
 "flightNumber":"J1315", 
 "aircraft": "Boeing", 
-"Capacity": 3355, 
+"capacity": 3355, 
 "date": "2016-05-13T15:56:00",
 "duration":15, 
 "origin": "TPE", 
@@ -4588,7 +4588,7 @@
 { 
 "flightNumber":"J1415", 
 "aircraft": "Boeing", 
-"Capacity": 4461, 
+"capacity": 4461, 
 "date": "2016-05-14T2:39:00",
 "duration":2, 
 "origin": "TPE", 
@@ -4606,7 +4606,7 @@
 { 
 "flightNumber":"J1515", 
 "aircraft": "Boeing", 
-"Capacity": 5275, 
+"capacity": 5275, 
 "date": "2016-05-15T5:41:00",
 "duration":5, 
 "origin": "TPE", 
@@ -4624,7 +4624,7 @@
 { 
 "flightNumber":"J1615", 
 "aircraft": "Boeing", 
-"Capacity": 2149, 
+"capacity": 2149, 
 "date": "2016-05-16T6:18:00",
 "duration":6, 
 "origin": "TPE", 
@@ -4642,7 +4642,7 @@
 { 
 "flightNumber":"J1715", 
 "aircraft": "Boeing", 
-"Capacity": 4280, 
+"capacity": 4280, 
 "date": "2016-05-17T14:31:00",
 "duration":14, 
 "origin": "TPE", 
@@ -4660,7 +4660,7 @@
 { 
 "flightNumber":"J1815", 
 "aircraft": "Boeing", 
-"Capacity": 3350, 
+"capacity": 3350, 
 "date": "2016-05-18T9:54:00",
 "duration":9, 
 "origin": "TPE", 
@@ -4678,7 +4678,7 @@
 { 
 "flightNumber":"J1915", 
 "aircraft": "Boeing", 
-"Capacity": 1930, 
+"capacity": 1930, 
 "date": "2016-05-19T3:36:00",
 "duration":3, 
 "origin": "TPE", 
@@ -4696,7 +4696,7 @@
 { 
 "flightNumber":"J2015", 
 "aircraft": "Boeing", 
-"Capacity": 3866, 
+"capacity": 3866, 
 "date": "2016-05-20T14:42:00",
 "duration":14, 
 "origin": "TPE", 
@@ -4714,7 +4714,7 @@
 { 
 "flightNumber":"J2115", 
 "aircraft": "Boeing", 
-"Capacity": 2422, 
+"capacity": 2422, 
 "date": "2016-05-21T5:34:00",
 "duration":5, 
 "origin": "TPE", 
@@ -4732,7 +4732,7 @@
 { 
 "flightNumber":"J2215", 
 "aircraft": "Boeing", 
-"Capacity": 5168, 
+"capacity": 5168, 
 "date": "2016-05-22T1:28:00",
 "duration":1, 
 "origin": "TPE", 
@@ -4750,7 +4750,7 @@
 { 
 "flightNumber":"J2315", 
 "aircraft": "Boeing", 
-"Capacity": 4445, 
+"capacity": 4445, 
 "date": "2016-05-23T13:5:00",
 "duration":13, 
 "origin": "TPE", 
@@ -4768,7 +4768,7 @@
 { 
 "flightNumber":"J2415", 
 "aircraft": "Boeing", 
-"Capacity": 5534, 
+"capacity": 5534, 
 "date": "2016-05-24T8:21:00",
 "duration":8, 
 "origin": "TPE", 
@@ -4786,7 +4786,7 @@
 { 
 "flightNumber":"J2515", 
 "aircraft": "Boeing", 
-"Capacity": 1376, 
+"capacity": 1376, 
 "date": "2016-05-25T23:14:00",
 "duration":23, 
 "origin": "TPE", 
@@ -4804,7 +4804,7 @@
 { 
 "flightNumber":"J2615", 
 "aircraft": "Boeing", 
-"Capacity": 1334, 
+"capacity": 1334, 
 "date": "2016-05-26T7:51:00",
 "duration":7, 
 "origin": "TPE", 
@@ -4822,7 +4822,7 @@
 { 
 "flightNumber":"J2715", 
 "aircraft": "Boeing", 
-"Capacity": 1128, 
+"capacity": 1128, 
 "date": "2016-05-27T2:26:00",
 "duration":2, 
 "origin": "TPE", 
@@ -4840,7 +4840,7 @@
 { 
 "flightNumber":"J2815", 
 "aircraft": "Boeing", 
-"Capacity": 4202, 
+"capacity": 4202, 
 "date": "2016-05-28T20:22:00",
 "duration":20, 
 "origin": "TPE", 
@@ -4858,7 +4858,7 @@
 { 
 "flightNumber":"J2915", 
 "aircraft": "Boeing", 
-"Capacity": 5424, 
+"capacity": 5424, 
 "date": "2016-05-29T22:49:00",
 "duration":22, 
 "origin": "TPE", 
@@ -4876,7 +4876,7 @@
 { 
 "flightNumber":"J3015", 
 "aircraft": "Boeing", 
-"Capacity": 3986, 
+"capacity": 3986, 
 "date": "2016-05-30T16:55:00",
 "duration":16, 
 "origin": "TPE", 
@@ -4895,7 +4895,7 @@
 { 
 "flightNumber":"k1315", 
 "aircraft": "Airbus", 
-"Capacity": 2463, 
+"capacity": 2463, 
 "date": "2016-04-13T11:19:00",
 "duration":11, 
 "origin": "JNB", 
@@ -4913,7 +4913,7 @@
 { 
 "flightNumber":"k1415", 
 "aircraft": "Airbus", 
-"Capacity": 4800, 
+"capacity": 4800, 
 "date": "2016-04-14T24:7:00",
 "duration":24, 
 "origin": "JNB", 
@@ -4931,7 +4931,7 @@
 { 
 "flightNumber":"k1515", 
 "aircraft": "Airbus", 
-"Capacity": 5959, 
+"capacity": 5959, 
 "date": "2016-04-15T14:1:00",
 "duration":14, 
 "origin": "JNB", 
@@ -4949,7 +4949,7 @@
 { 
 "flightNumber":"k1615", 
 "aircraft": "Airbus", 
-"Capacity": 2571, 
+"capacity": 2571, 
 "date": "2016-04-16T17:10:00",
 "duration":17, 
 "origin": "JNB", 
@@ -4967,7 +4967,7 @@
 { 
 "flightNumber":"k1715", 
 "aircraft": "Airbus", 
-"Capacity": 2966, 
+"capacity": 2966, 
 "date": "2016-04-17T17:18:00",
 "duration":17, 
 "origin": "JNB", 
@@ -4985,7 +4985,7 @@
 { 
 "flightNumber":"k1815", 
 "aircraft": "Airbus", 
-"Capacity": 3937, 
+"capacity": 3937, 
 "date": "2016-04-18T23:51:00",
 "duration":23, 
 "origin": "JNB", 
@@ -5003,7 +5003,7 @@
 { 
 "flightNumber":"k1915", 
 "aircraft": "Airbus", 
-"Capacity": 3801, 
+"capacity": 3801, 
 "date": "2016-04-19T14:40:00",
 "duration":14, 
 "origin": "JNB", 
@@ -5021,7 +5021,7 @@
 { 
 "flightNumber":"k2015", 
 "aircraft": "Airbus", 
-"Capacity": 5549, 
+"capacity": 5549, 
 "date": "2016-04-20T10:31:00",
 "duration":10, 
 "origin": "JNB", 
@@ -5039,7 +5039,7 @@
 { 
 "flightNumber":"k2115", 
 "aircraft": "Airbus", 
-"Capacity": 5853, 
+"capacity": 5853, 
 "date": "2016-04-21T8:31:00",
 "duration":8, 
 "origin": "JNB", 
@@ -5057,7 +5057,7 @@
 { 
 "flightNumber":"k2215", 
 "aircraft": "Airbus", 
-"Capacity": 3409, 
+"capacity": 3409, 
 "date": "2016-04-22T4:15:00",
 "duration":4, 
 "origin": "JNB", 
@@ -5075,7 +5075,7 @@
 { 
 "flightNumber":"k2315", 
 "aircraft": "Airbus", 
-"Capacity": 2951, 
+"capacity": 2951, 
 "date": "2016-04-23T20:26:00",
 "duration":20, 
 "origin": "JNB", 
@@ -5093,7 +5093,7 @@
 { 
 "flightNumber":"k2415", 
 "aircraft": "Airbus", 
-"Capacity": 1246, 
+"capacity": 1246, 
 "date": "2016-04-24T13:47:00",
 "duration":13, 
 "origin": "JNB", 
@@ -5111,7 +5111,7 @@
 { 
 "flightNumber":"k2515", 
 "aircraft": "Airbus", 
-"Capacity": 1794, 
+"capacity": 1794, 
 "date": "2016-04-25T10:1:00",
 "duration":10, 
 "origin": "JNB", 
@@ -5129,7 +5129,7 @@
 { 
 "flightNumber":"k2615", 
 "aircraft": "Airbus", 
-"Capacity": 3688, 
+"capacity": 3688, 
 "date": "2016-04-26T1:0:00",
 "duration":1, 
 "origin": "JNB", 
@@ -5147,7 +5147,7 @@
 { 
 "flightNumber":"k2715", 
 "aircraft": "Airbus", 
-"Capacity": 5094, 
+"capacity": 5094, 
 "date": "2016-04-27T24:38:00",
 "duration":24, 
 "origin": "JNB", 
@@ -5165,7 +5165,7 @@
 { 
 "flightNumber":"k2815", 
 "aircraft": "Airbus", 
-"Capacity": 1082, 
+"capacity": 1082, 
 "date": "2016-04-28T13:36:00",
 "duration":13, 
 "origin": "JNB", 
@@ -5183,7 +5183,7 @@
 { 
 "flightNumber":"k2915", 
 "aircraft": "Airbus", 
-"Capacity": 1366, 
+"capacity": 1366, 
 "date": "2016-04-29T12:49:00",
 "duration":12, 
 "origin": "JNB", 
@@ -5203,7 +5203,7 @@
 { 
 "flightNumber":"L115", 
 "aircraft": "Airbus", 
-"Capacity": 2529, 
+"capacity": 2529, 
 "date": "2016-05-1T9:11:00",
 "duration":9, 
 "origin": "JNB", 
@@ -5221,7 +5221,7 @@
 { 
 "flightNumber":"L215", 
 "aircraft": "Airbus", 
-"Capacity": 4673, 
+"capacity": 4673, 
 "date": "2016-05-2T8:4:00",
 "duration":8, 
 "origin": "JNB", 
@@ -5239,7 +5239,7 @@
 { 
 "flightNumber":"L315", 
 "aircraft": "Airbus", 
-"Capacity": 4726, 
+"capacity": 4726, 
 "date": "2016-05-3T9:57:00",
 "duration":9, 
 "origin": "JNB", 
@@ -5257,7 +5257,7 @@
 { 
 "flightNumber":"L415", 
 "aircraft": "Airbus", 
-"Capacity": 5092, 
+"capacity": 5092, 
 "date": "2016-05-4T17:5:00",
 "duration":17, 
 "origin": "JNB", 
@@ -5275,7 +5275,7 @@
 { 
 "flightNumber":"L515", 
 "aircraft": "Airbus", 
-"Capacity": 4918, 
+"capacity": 4918, 
 "date": "2016-05-5T21:24:00",
 "duration":21, 
 "origin": "JNB", 
@@ -5293,7 +5293,7 @@
 { 
 "flightNumber":"L615", 
 "aircraft": "Airbus", 
-"Capacity": 4760, 
+"capacity": 4760, 
 "date": "2016-05-6T7:44:00",
 "duration":7, 
 "origin": "JNB", 
@@ -5311,7 +5311,7 @@
 { 
 "flightNumber":"L715", 
 "aircraft": "Airbus", 
-"Capacity": 4768, 
+"capacity": 4768, 
 "date": "2016-05-7T14:54:00",
 "duration":14, 
 "origin": "JNB", 
@@ -5329,7 +5329,7 @@
 { 
 "flightNumber":"L815", 
 "aircraft": "Airbus", 
-"Capacity": 4083, 
+"capacity": 4083, 
 "date": "2016-05-8T2:32:00",
 "duration":2, 
 "origin": "JNB", 
@@ -5347,7 +5347,7 @@
 { 
 "flightNumber":"L915", 
 "aircraft": "Airbus", 
-"Capacity": 4687, 
+"capacity": 4687, 
 "date": "2016-05-9T22:53:00",
 "duration":22, 
 "origin": "JNB", 
@@ -5365,7 +5365,7 @@
 { 
 "flightNumber":"L1015", 
 "aircraft": "Airbus", 
-"Capacity": 4189, 
+"capacity": 4189, 
 "date": "2016-05-10T4:1:00",
 "duration":4, 
 "origin": "JNB", 
@@ -5383,7 +5383,7 @@
 { 
 "flightNumber":"L1115", 
 "aircraft": "Airbus", 
-"Capacity": 3446, 
+"capacity": 3446, 
 "date": "2016-05-11T21:59:00",
 "duration":21, 
 "origin": "JNB", 
@@ -5401,7 +5401,7 @@
 { 
 "flightNumber":"L1215", 
 "aircraft": "Airbus", 
-"Capacity": 4034, 
+"capacity": 4034, 
 "date": "2016-05-12T19:8:00",
 "duration":19, 
 "origin": "JNB", 
@@ -5419,7 +5419,7 @@
 { 
 "flightNumber":"L1315", 
 "aircraft": "Airbus", 
-"Capacity": 2947, 
+"capacity": 2947, 
 "date": "2016-05-13T2:52:00",
 "duration":2, 
 "origin": "JNB", 
@@ -5437,7 +5437,7 @@
 { 
 "flightNumber":"L1415", 
 "aircraft": "Airbus", 
-"Capacity": 1442, 
+"capacity": 1442, 
 "date": "2016-05-14T10:53:00",
 "duration":10, 
 "origin": "JNB", 
@@ -5455,7 +5455,7 @@
 { 
 "flightNumber":"L1515", 
 "aircraft": "Airbus", 
-"Capacity": 5227, 
+"capacity": 5227, 
 "date": "2016-05-15T7:57:00",
 "duration":7, 
 "origin": "JNB", 
@@ -5473,7 +5473,7 @@
 { 
 "flightNumber":"L1615", 
 "aircraft": "Airbus", 
-"Capacity": 3737, 
+"capacity": 3737, 
 "date": "2016-05-16T6:0:00",
 "duration":6, 
 "origin": "JNB", 
@@ -5491,7 +5491,7 @@
 { 
 "flightNumber":"L1715", 
 "aircraft": "Airbus", 
-"Capacity": 5453, 
+"capacity": 5453, 
 "date": "2016-05-17T1:17:00",
 "duration":1, 
 "origin": "JNB", 
@@ -5509,7 +5509,7 @@
 { 
 "flightNumber":"L1815", 
 "aircraft": "Airbus", 
-"Capacity": 5873, 
+"capacity": 5873, 
 "date": "2016-05-18T12:41:00",
 "duration":12, 
 "origin": "JNB", 
@@ -5527,7 +5527,7 @@
 { 
 "flightNumber":"L1915", 
 "aircraft": "Airbus", 
-"Capacity": 4798, 
+"capacity": 4798, 
 "date": "2016-05-19T10:28:00",
 "duration":10, 
 "origin": "JNB", 
@@ -5545,7 +5545,7 @@
 { 
 "flightNumber":"L2015", 
 "aircraft": "Airbus", 
-"Capacity": 1478, 
+"capacity": 1478, 
 "date": "2016-05-20T12:54:00",
 "duration":12, 
 "origin": "JNB", 
@@ -5563,7 +5563,7 @@
 { 
 "flightNumber":"L2115", 
 "aircraft": "Airbus", 
-"Capacity": 3012, 
+"capacity": 3012, 
 "date": "2016-05-21T2:29:00",
 "duration":2, 
 "origin": "JNB", 
@@ -5581,7 +5581,7 @@
 { 
 "flightNumber":"L2215", 
 "aircraft": "Airbus", 
-"Capacity": 5365, 
+"capacity": 5365, 
 "date": "2016-05-22T17:11:00",
 "duration":17, 
 "origin": "JNB", 
@@ -5599,7 +5599,7 @@
 { 
 "flightNumber":"L2315", 
 "aircraft": "Airbus", 
-"Capacity": 5660, 
+"capacity": 5660, 
 "date": "2016-05-23T4:36:00",
 "duration":4, 
 "origin": "JNB", 
@@ -5617,7 +5617,7 @@
 { 
 "flightNumber":"L2415", 
 "aircraft": "Airbus", 
-"Capacity": 4225, 
+"capacity": 4225, 
 "date": "2016-05-24T19:21:00",
 "duration":19, 
 "origin": "JNB", 
@@ -5635,7 +5635,7 @@
 { 
 "flightNumber":"L2515", 
 "aircraft": "Airbus", 
-"Capacity": 1293, 
+"capacity": 1293, 
 "date": "2016-05-25T22:11:00",
 "duration":22, 
 "origin": "JNB", 
@@ -5653,7 +5653,7 @@
 { 
 "flightNumber":"L2615", 
 "aircraft": "Airbus", 
-"Capacity": 5647, 
+"capacity": 5647, 
 "date": "2016-05-26T5:8:00",
 "duration":5, 
 "origin": "JNB", 
@@ -5671,7 +5671,7 @@
 { 
 "flightNumber":"L2715", 
 "aircraft": "Airbus", 
-"Capacity": 3905, 
+"capacity": 3905, 
 "date": "2016-05-27T16:30:00",
 "duration":16, 
 "origin": "JNB", 
@@ -5689,7 +5689,7 @@
 { 
 "flightNumber":"L2815", 
 "aircraft": "Airbus", 
-"Capacity": 1020, 
+"capacity": 1020, 
 "date": "2016-05-28T15:14:00",
 "duration":15, 
 "origin": "JNB", 
@@ -5707,7 +5707,7 @@
 { 
 "flightNumber":"L2915", 
 "aircraft": "Airbus", 
-"Capacity": 5208, 
+"capacity": 5208, 
 "date": "2016-05-29T10:12:00",
 "duration":10, 
 "origin": "JNB", 
@@ -5725,7 +5725,7 @@
 { 
 "flightNumber":"L3015", 
 "aircraft": "Airbus", 
-"Capacity": 5353, 
+"capacity": 5353, 
 "date": "2016-05-30T1:42:00",
 "duration":1, 
 "origin": "JNB", 
@@ -5749,7 +5749,7 @@
 { 
 "flightNumber":"M1315", 
 "aircraft": "BOEING", 
-"Capacity": 1846, 
+"capacity": 1846, 
 "date": "2016-04-13T24:12:00",
 "duration":24, 
 "origin": "CPT", 
@@ -5767,7 +5767,7 @@
 { 
 "flightNumber":"M1415", 
 "aircraft": "BOEING", 
-"Capacity": 1315, 
+"capacity": 1315, 
 "date": "2016-04-14T24:33:00",
 "duration":24, 
 "origin": "CPT", 
@@ -5785,7 +5785,7 @@
 { 
 "flightNumber":"M1515", 
 "aircraft": "BOEING", 
-"Capacity": 2786, 
+"capacity": 2786, 
 "date": "2016-04-15T5:52:00",
 "duration":5, 
 "origin": "CPT", 
@@ -5803,7 +5803,7 @@
 { 
 "flightNumber":"M1615", 
 "aircraft": "BOEING", 
-"Capacity": 5846, 
+"capacity": 5846, 
 "date": "2016-04-16T4:6:00",
 "duration":4, 
 "origin": "CPT", 
@@ -5821,7 +5821,7 @@
 { 
 "flightNumber":"M1715", 
 "aircraft": "BOEING", 
-"Capacity": 5931, 
+"capacity": 5931, 
 "date": "2016-04-17T3:23:00",
 "duration":3, 
 "origin": "CPT", 
@@ -5839,7 +5839,7 @@
 { 
 "flightNumber":"M1815", 
 "aircraft": "BOEING", 
-"Capacity": 5179, 
+"capacity": 5179, 
 "date": "2016-04-18T3:47:00",
 "duration":3, 
 "origin": "CPT", 
@@ -5857,7 +5857,7 @@
 { 
 "flightNumber":"M1915", 
 "aircraft": "BOEING", 
-"Capacity": 5860, 
+"capacity": 5860, 
 "date": "2016-04-19T21:47:00",
 "duration":21, 
 "origin": "CPT", 
@@ -5875,7 +5875,7 @@
 { 
 "flightNumber":"M2015", 
 "aircraft": "BOEING", 
-"Capacity": 1516, 
+"capacity": 1516, 
 "date": "2016-04-20T15:18:00",
 "duration":15, 
 "origin": "CPT", 
@@ -5893,7 +5893,7 @@
 { 
 "flightNumber":"M2115", 
 "aircraft": "BOEING", 
-"Capacity": 1870, 
+"capacity": 1870, 
 "date": "2016-04-21T14:5:00",
 "duration":14, 
 "origin": "CPT", 
@@ -5911,7 +5911,7 @@
 { 
 "flightNumber":"M2215", 
 "aircraft": "BOEING", 
-"Capacity": 2681, 
+"capacity": 2681, 
 "date": "2016-04-22T1:13:00",
 "duration":1, 
 "origin": "CPT", 
@@ -5929,7 +5929,7 @@
 { 
 "flightNumber":"M2315", 
 "aircraft": "BOEING", 
-"Capacity": 4422, 
+"capacity": 4422, 
 "date": "2016-04-23T7:24:00",
 "duration":7, 
 "origin": "CPT", 
@@ -5947,7 +5947,7 @@
 { 
 "flightNumber":"M2415", 
 "aircraft": "BOEING", 
-"Capacity": 4968, 
+"capacity": 4968, 
 "date": "2016-04-24T16:37:00",
 "duration":16, 
 "origin": "CPT", 
@@ -5965,7 +5965,7 @@
 { 
 "flightNumber":"M2515", 
 "aircraft": "BOEING", 
-"Capacity": 1361, 
+"capacity": 1361, 
 "date": "2016-04-25T17:30:00",
 "duration":17, 
 "origin": "CPT", 
@@ -5983,7 +5983,7 @@
 { 
 "flightNumber":"M2615", 
 "aircraft": "BOEING", 
-"Capacity": 2969, 
+"capacity": 2969, 
 "date": "2016-04-26T8:1:00",
 "duration":8, 
 "origin": "CPT", 
@@ -6001,7 +6001,7 @@
 { 
 "flightNumber":"M2715", 
 "aircraft": "BOEING", 
-"Capacity": 3926, 
+"capacity": 3926, 
 "date": "2016-04-27T19:30:00",
 "duration":19, 
 "origin": "CPT", 
@@ -6019,7 +6019,7 @@
 { 
 "flightNumber":"M2815", 
 "aircraft": "BOEING", 
-"Capacity": 5201, 
+"capacity": 5201, 
 "date": "2016-04-28T24:1:00",
 "duration":24, 
 "origin": "CPT", 
@@ -6037,7 +6037,7 @@
 { 
 "flightNumber":"M2915", 
 "aircraft": "BOEING", 
-"Capacity": 3235, 
+"capacity": 3235, 
 "date": "2016-04-29T8:37:00",
 "duration":8, 
 "origin": "CPT", 
@@ -6055,7 +6055,7 @@
 { 
 "flightNumber":"M3015", 
 "aircraft": "BOEING", 
-"Capacity": 3012, 
+"capacity": 3012, 
 "date": "2016-04-30T7:14:00",
 "duration":7, 
 "origin": "CPT", 
@@ -6074,7 +6074,7 @@
 { 
 "flightNumber":"N115", 
 "aircraft": "BOEING", 
-"Capacity": 2353, 
+"capacity": 2353, 
 "date": "2016-05-1T15:6:00",
 "duration":15, 
 "origin": "CPT", 
@@ -6092,7 +6092,7 @@
 { 
 "flightNumber":"N215", 
 "aircraft": "BOEING", 
-"Capacity": 2823, 
+"capacity": 2823, 
 "date": "2016-05-2T20:43:00",
 "duration":20, 
 "origin": "CPT", 
@@ -6110,7 +6110,7 @@
 { 
 "flightNumber":"N315", 
 "aircraft": "BOEING", 
-"Capacity": 3859, 
+"capacity": 3859, 
 "date": "2016-05-3T3:29:00",
 "duration":3, 
 "origin": "CPT", 
@@ -6128,7 +6128,7 @@
 { 
 "flightNumber":"N415", 
 "aircraft": "BOEING", 
-"Capacity": 2403, 
+"capacity": 2403, 
 "date": "2016-05-4T2:19:00",
 "duration":2, 
 "origin": "CPT", 
@@ -6146,7 +6146,7 @@
 { 
 "flightNumber":"N515", 
 "aircraft": "BOEING", 
-"Capacity": 3339, 
+"capacity": 3339, 
 "date": "2016-05-5T10:15:00",
 "duration":10, 
 "origin": "CPT", 
@@ -6164,7 +6164,7 @@
 { 
 "flightNumber":"N615", 
 "aircraft": "BOEING", 
-"Capacity": 3581, 
+"capacity": 3581, 
 "date": "2016-05-6T4:24:00",
 "duration":4, 
 "origin": "CPT", 
@@ -6182,7 +6182,7 @@
 { 
 "flightNumber":"N715", 
 "aircraft": "BOEING", 
-"Capacity": 4875, 
+"capacity": 4875, 
 "date": "2016-05-7T3:50:00",
 "duration":3, 
 "origin": "CPT", 
@@ -6200,7 +6200,7 @@
 { 
 "flightNumber":"N815", 
 "aircraft": "BOEING", 
-"Capacity": 4621, 
+"capacity": 4621, 
 "date": "2016-05-8T12:39:00",
 "duration":12, 
 "origin": "CPT", 
@@ -6218,7 +6218,7 @@
 { 
 "flightNumber":"N915", 
 "aircraft": "BOEING", 
-"Capacity": 5030, 
+"capacity": 5030, 
 "date": "2016-05-9T24:12:00",
 "duration":24, 
 "origin": "CPT", 
@@ -6236,7 +6236,7 @@
 { 
 "flightNumber":"N1015", 
 "aircraft": "BOEING", 
-"Capacity": 5001, 
+"capacity": 5001, 
 "date": "2016-05-10T15:50:00",
 "duration":15, 
 "origin": "CPT", 
@@ -6254,7 +6254,7 @@
 { 
 "flightNumber":"N1115", 
 "aircraft": "BOEING", 
-"Capacity": 1235, 
+"capacity": 1235, 
 "date": "2016-05-11T10:13:00",
 "duration":10, 
 "origin": "CPT", 
@@ -6272,7 +6272,7 @@
 { 
 "flightNumber":"N1215", 
 "aircraft": "BOEING", 
-"Capacity": 4094, 
+"capacity": 4094, 
 "date": "2016-05-12T21:2:00",
 "duration":21, 
 "origin": "CPT", 
@@ -6290,7 +6290,7 @@
 { 
 "flightNumber":"N1315", 
 "aircraft": "BOEING", 
-"Capacity": 4933, 
+"capacity": 4933, 
 "date": "2016-05-13T15:37:00",
 "duration":15, 
 "origin": "CPT", 
@@ -6308,7 +6308,7 @@
 { 
 "flightNumber":"N1415", 
 "aircraft": "BOEING", 
-"Capacity": 3861, 
+"capacity": 3861, 
 "date": "2016-05-14T22:10:00",
 "duration":22, 
 "origin": "CPT", 
@@ -6326,7 +6326,7 @@
 { 
 "flightNumber":"N1515", 
 "aircraft": "BOEING", 
-"Capacity": 5282, 
+"capacity": 5282, 
 "date": "2016-05-15T11:31:00",
 "duration":11, 
 "origin": "CPT", 
@@ -6344,7 +6344,7 @@
 { 
 "flightNumber":"N1615", 
 "aircraft": "BOEING", 
-"Capacity": 3899, 
+"capacity": 3899, 
 "date": "2016-05-16T3:25:00",
 "duration":3, 
 "origin": "CPT", 
@@ -6362,7 +6362,7 @@
 { 
 "flightNumber":"N1715", 
 "aircraft": "BOEING", 
-"Capacity": 4392, 
+"capacity": 4392, 
 "date": "2016-05-17T17:13:00",
 "duration":17, 
 "origin": "CPT", 
@@ -6380,7 +6380,7 @@
 { 
 "flightNumber":"N1815", 
 "aircraft": "BOEING", 
-"Capacity": 1579, 
+"capacity": 1579, 
 "date": "2016-05-18T23:13:00",
 "duration":23, 
 "origin": "CPT", 
@@ -6398,7 +6398,7 @@
 { 
 "flightNumber":"N1915", 
 "aircraft": "BOEING", 
-"Capacity": 5645, 
+"capacity": 5645, 
 "date": "2016-05-19T1:2:00",
 "duration":1, 
 "origin": "CPT", 
@@ -6416,7 +6416,7 @@
 { 
 "flightNumber":"N2015", 
 "aircraft": "BOEING", 
-"Capacity": 2854, 
+"capacity": 2854, 
 "date": "2016-05-20T12:2:00",
 "duration":12, 
 "origin": "CPT", 
@@ -6434,7 +6434,7 @@
 { 
 "flightNumber":"N2115", 
 "aircraft": "BOEING", 
-"Capacity": 4151, 
+"capacity": 4151, 
 "date": "2016-05-21T16:30:00",
 "duration":16, 
 "origin": "CPT", 
@@ -6452,7 +6452,7 @@
 { 
 "flightNumber":"N2215", 
 "aircraft": "BOEING", 
-"Capacity": 4559, 
+"capacity": 4559, 
 "date": "2016-05-22T7:6:00",
 "duration":7, 
 "origin": "CPT", 
@@ -6470,7 +6470,7 @@
 { 
 "flightNumber":"N2315", 
 "aircraft": "BOEING", 
-"Capacity": 1890, 
+"capacity": 1890, 
 "date": "2016-05-23T13:20:00",
 "duration":13, 
 "origin": "CPT", 
@@ -6488,7 +6488,7 @@
 { 
 "flightNumber":"N2415", 
 "aircraft": "BOEING", 
-"Capacity": 1759, 
+"capacity": 1759, 
 "date": "2016-05-24T10:55:00",
 "duration":10, 
 "origin": "CPT", 
@@ -6506,7 +6506,7 @@
 { 
 "flightNumber":"N2515", 
 "aircraft": "BOEING", 
-"Capacity": 3307, 
+"capacity": 3307, 
 "date": "2016-05-25T15:35:00",
 "duration":15, 
 "origin": "CPT", 
@@ -6524,7 +6524,7 @@
 { 
 "flightNumber":"N2615", 
 "aircraft": "BOEING", 
-"Capacity": 1224, 
+"capacity": 1224, 
 "date": "2016-05-26T23:5:00",
 "duration":23, 
 "origin": "CPT", 
@@ -6542,7 +6542,7 @@
 { 
 "flightNumber":"N2715", 
 "aircraft": "BOEING", 
-"Capacity": 4199, 
+"capacity": 4199, 
 "date": "2016-05-27T5:53:00",
 "duration":5, 
 "origin": "CPT", 
@@ -6560,7 +6560,7 @@
 { 
 "flightNumber":"N2815", 
 "aircraft": "BOEING", 
-"Capacity": 5759, 
+"capacity": 5759, 
 "date": "2016-05-28T8:48:00",
 "duration":8, 
 "origin": "CPT", 
@@ -6578,7 +6578,7 @@
 { 
 "flightNumber":"N2915", 
 "aircraft": "BOEING", 
-"Capacity": 3552, 
+"capacity": 3552, 
 "date": "2016-05-29T20:35:00",
 "duration":20, 
 "origin": "CPT", 
@@ -6596,7 +6596,7 @@
 { 
 "flightNumber":"N3015", 
 "aircraft": "BOEING", 
-"Capacity": 4836, 
+"capacity": 4836, 
 "date": "2016-05-30T23:44:00",
 "duration":23, 
 "origin": "CPT", 
@@ -6614,7 +6614,7 @@
 { 
 "flightNumber":"N3115", 
 "aircraft": "BOEING", 
-"Capacity": 3592, 
+"capacity": 3592, 
 "date": "2016-05-31T4:13:00",
 "duration":4, 
 "origin": "CPT", 
@@ -6633,7 +6633,7 @@
 { 
 "flightNumber":"O1315", 
 "aircraft": "Airbus", 
-"Capacity": 3990, 
+"capacity": 3990, 
 "date": "2016-04-13T10:37:00",
 "duration":10, 
 "origin": "RUH", 
@@ -6651,7 +6651,7 @@
 { 
 "flightNumber":"O1415", 
 "aircraft": "Airbus", 
-"Capacity": 5424, 
+"capacity": 5424, 
 "date": "2016-04-14T0:8:00",
 "duration":0, 
 "origin": "RUH", 
@@ -6669,7 +6669,7 @@
 { 
 "flightNumber":"O1515", 
 "aircraft": "Airbus", 
-"Capacity": 5354, 
+"capacity": 5354, 
 "date": "2016-04-15T20:30:00",
 "duration":20, 
 "origin": "RUH", 
@@ -6687,7 +6687,7 @@
 { 
 "flightNumber":"O1615", 
 "aircraft": "Airbus", 
-"Capacity": 3809, 
+"capacity": 3809, 
 "date": "2016-04-16T7:3:00",
 "duration":7, 
 "origin": "RUH", 
@@ -6705,7 +6705,7 @@
 { 
 "flightNumber":"O1715", 
 "aircraft": "Airbus", 
-"Capacity": 4570, 
+"capacity": 4570, 
 "date": "2016-04-17T3:25:00",
 "duration":3, 
 "origin": "RUH", 
@@ -6723,7 +6723,7 @@
 { 
 "flightNumber":"O1815", 
 "aircraft": "Airbus", 
-"Capacity": 2511, 
+"capacity": 2511, 
 "date": "2016-04-18T11:37:00",
 "duration":11, 
 "origin": "RUH", 
@@ -6741,7 +6741,7 @@
 { 
 "flightNumber":"O1915", 
 "aircraft": "Airbus", 
-"Capacity": 2314, 
+"capacity": 2314, 
 "date": "2016-04-19T4:6:00",
 "duration":4, 
 "origin": "RUH", 
@@ -6759,7 +6759,7 @@
 { 
 "flightNumber":"O2015", 
 "aircraft": "Airbus", 
-"Capacity": 2351, 
+"capacity": 2351, 
 "date": "2016-04-20T22:13:00",
 "duration":22, 
 "origin": "RUH", 
@@ -6777,7 +6777,7 @@
 { 
 "flightNumber":"O2115", 
 "aircraft": "Airbus", 
-"Capacity": 2539, 
+"capacity": 2539, 
 "date": "2016-04-21T9:16:00",
 "duration":9, 
 "origin": "RUH", 
@@ -6795,7 +6795,7 @@
 { 
 "flightNumber":"O2215", 
 "aircraft": "Airbus", 
-"Capacity": 3716, 
+"capacity": 3716, 
 "date": "2016-04-22T17:7:00",
 "duration":17, 
 "origin": "RUH", 
@@ -6813,7 +6813,7 @@
 { 
 "flightNumber":"O2315", 
 "aircraft": "Airbus", 
-"Capacity": 3802, 
+"capacity": 3802, 
 "date": "2016-04-23T19:54:00",
 "duration":19, 
 "origin": "RUH", 
@@ -6831,7 +6831,7 @@
 { 
 "flightNumber":"O2415", 
 "aircraft": "Airbus", 
-"Capacity": 3153, 
+"capacity": 3153, 
 "date": "2016-04-24T16:38:00",
 "duration":16, 
 "origin": "RUH", 
@@ -6849,7 +6849,7 @@
 { 
 "flightNumber":"O2515", 
 "aircraft": "Airbus", 
-"Capacity": 4448, 
+"capacity": 4448, 
 "date": "2016-04-25T14:4:00",
 "duration":14, 
 "origin": "RUH", 
@@ -6867,7 +6867,7 @@
 { 
 "flightNumber":"O2615", 
 "aircraft": "Airbus", 
-"Capacity": 5744, 
+"capacity": 5744, 
 "date": "2016-04-26T4:22:00",
 "duration":4, 
 "origin": "RUH", 
@@ -6885,7 +6885,7 @@
 { 
 "flightNumber":"O2715", 
 "aircraft": "Airbus", 
-"Capacity": 2030, 
+"capacity": 2030, 
 "date": "2016-04-27T23:23:00",
 "duration":23, 
 "origin": "RUH", 
@@ -6903,7 +6903,7 @@
 { 
 "flightNumber":"O2815", 
 "aircraft": "Airbus", 
-"Capacity": 1022, 
+"capacity": 1022, 
 "date": "2016-04-28T16:42:00",
 "duration":16, 
 "origin": "RUH", 
@@ -6921,7 +6921,7 @@
 { 
 "flightNumber":"O2915", 
 "aircraft": "Airbus", 
-"Capacity": 3828, 
+"capacity": 3828, 
 "date": "2016-04-29T11:15:00",
 "duration":11, 
 "origin": "RUH", 
@@ -6939,7 +6939,7 @@
 { 
 "flightNumber":"O3015", 
 "aircraft": "Airbus", 
-"Capacity": 5641, 
+"capacity": 5641, 
 "date": "2016-04-30T3:9:00",
 "duration":3, 
 "origin": "RUH", 
@@ -6960,7 +6960,7 @@
 { 
 "flightNumber":"P115", 
 "aircraft": "Airbus", 
-"Capacity": 3255, 
+"capacity": 3255, 
 "date": "2016-05-1T5:34:00",
 "duration":5, 
 "origin": "RUH", 
@@ -6978,7 +6978,7 @@
 { 
 "flightNumber":"P215", 
 "aircraft": "Airbus", 
-"Capacity": 4405, 
+"capacity": 4405, 
 "date": "2016-05-2T22:50:00",
 "duration":22, 
 "origin": "RUH", 
@@ -6996,7 +6996,7 @@
 { 
 "flightNumber":"P315", 
 "aircraft": "Airbus", 
-"Capacity": 1268, 
+"capacity": 1268, 
 "date": "2016-05-3T9:33:00",
 "duration":9, 
 "origin": "RUH", 
@@ -7014,7 +7014,7 @@
 { 
 "flightNumber":"P415", 
 "aircraft": "Airbus", 
-"Capacity": 1056, 
+"capacity": 1056, 
 "date": "2016-05-4T9:16:00",
 "duration":9, 
 "origin": "RUH", 
@@ -7032,7 +7032,7 @@
 { 
 "flightNumber":"P515", 
 "aircraft": "Airbus", 
-"Capacity": 2662, 
+"capacity": 2662, 
 "date": "2016-05-5T7:11:00",
 "duration":7, 
 "origin": "RUH", 
@@ -7050,7 +7050,7 @@
 { 
 "flightNumber":"P615", 
 "aircraft": "Airbus", 
-"Capacity": 5674, 
+"capacity": 5674, 
 "date": "2016-05-6T11:41:00",
 "duration":11, 
 "origin": "RUH", 
@@ -7068,7 +7068,7 @@
 { 
 "flightNumber":"P715", 
 "aircraft": "Airbus", 
-"Capacity": 1309, 
+"capacity": 1309, 
 "date": "2016-05-7T4:35:00",
 "duration":4, 
 "origin": "RUH", 
@@ -7086,7 +7086,7 @@
 { 
 "flightNumber":"P815", 
 "aircraft": "Airbus", 
-"Capacity": 3888, 
+"capacity": 3888, 
 "date": "2016-05-8T3:31:00",
 "duration":3, 
 "origin": "RUH", 
@@ -7104,7 +7104,7 @@
 { 
 "flightNumber":"P915", 
 "aircraft": "Airbus", 
-"Capacity": 1618, 
+"capacity": 1618, 
 "date": "2016-05-9T13:49:00",
 "duration":13, 
 "origin": "RUH", 
@@ -7122,7 +7122,7 @@
 { 
 "flightNumber":"P1015", 
 "aircraft": "Airbus", 
-"Capacity": 1349, 
+"capacity": 1349, 
 "date": "2016-05-10T13:45:00",
 "duration":13, 
 "origin": "RUH", 
@@ -7140,7 +7140,7 @@
 { 
 "flightNumber":"P1115", 
 "aircraft": "Airbus", 
-"Capacity": 2563, 
+"capacity": 2563, 
 "date": "2016-05-11T9:41:00",
 "duration":9, 
 "origin": "RUH", 
@@ -7158,7 +7158,7 @@
 { 
 "flightNumber":"P1215", 
 "aircraft": "Airbus", 
-"Capacity": 5548, 
+"capacity": 5548, 
 "date": "2016-05-12T19:45:00",
 "duration":19, 
 "origin": "RUH", 
@@ -7176,7 +7176,7 @@
 { 
 "flightNumber":"P1315", 
 "aircraft": "Airbus", 
-"Capacity": 4200, 
+"capacity": 4200, 
 "date": "2016-05-13T13:59:00",
 "duration":13, 
 "origin": "RUH", 
@@ -7194,7 +7194,7 @@
 { 
 "flightNumber":"P1415", 
 "aircraft": "Airbus", 
-"Capacity": 3563, 
+"capacity": 3563, 
 "date": "2016-05-14T19:1:00",
 "duration":19, 
 "origin": "RUH", 
@@ -7212,7 +7212,7 @@
 { 
 "flightNumber":"P1515", 
 "aircraft": "Airbus", 
-"Capacity": 3057, 
+"capacity": 3057, 
 "date": "2016-05-15T13:17:00",
 "duration":13, 
 "origin": "RUH", 
@@ -7230,7 +7230,7 @@
 { 
 "flightNumber":"P1615", 
 "aircraft": "Airbus", 
-"Capacity": 2581, 
+"capacity": 2581, 
 "date": "2016-05-16T13:51:00",
 "duration":13, 
 "origin": "RUH", 
@@ -7248,7 +7248,7 @@
 { 
 "flightNumber":"P1715", 
 "aircraft": "Airbus", 
-"Capacity": 3366, 
+"capacity": 3366, 
 "date": "2016-05-17T12:32:00",
 "duration":12, 
 "origin": "RUH", 
@@ -7266,7 +7266,7 @@
 { 
 "flightNumber":"P1815", 
 "aircraft": "Airbus", 
-"Capacity": 5711, 
+"capacity": 5711, 
 "date": "2016-05-18T10:47:00",
 "duration":10, 
 "origin": "RUH", 
@@ -7284,7 +7284,7 @@
 { 
 "flightNumber":"P1915", 
 "aircraft": "Airbus", 
-"Capacity": 2918, 
+"capacity": 2918, 
 "date": "2016-05-19T20:48:00",
 "duration":20, 
 "origin": "RUH", 
@@ -7302,7 +7302,7 @@
 { 
 "flightNumber":"P2015", 
 "aircraft": "Airbus", 
-"Capacity": 2796, 
+"capacity": 2796, 
 "date": "2016-05-20T2:2:00",
 "duration":2, 
 "origin": "RUH", 
@@ -7320,7 +7320,7 @@
 { 
 "flightNumber":"P2115", 
 "aircraft": "Airbus", 
-"Capacity": 5692, 
+"capacity": 5692, 
 "date": "2016-05-21T22:44:00",
 "duration":22, 
 "origin": "RUH", 
@@ -7338,7 +7338,7 @@
 { 
 "flightNumber":"P2215", 
 "aircraft": "Airbus", 
-"Capacity": 3936, 
+"capacity": 3936, 
 "date": "2016-05-22T4:55:00",
 "duration":4, 
 "origin": "RUH", 
@@ -7356,7 +7356,7 @@
 { 
 "flightNumber":"P2315", 
 "aircraft": "Airbus", 
-"Capacity": 4970, 
+"capacity": 4970, 
 "date": "2016-05-23T0:17:00",
 "duration":0, 
 "origin": "RUH", 
@@ -7374,7 +7374,7 @@
 { 
 "flightNumber":"P2415", 
 "aircraft": "Airbus", 
-"Capacity": 2032, 
+"capacity": 2032, 
 "date": "2016-05-24T14:37:00",
 "duration":14, 
 "origin": "RUH", 
@@ -7392,7 +7392,7 @@
 { 
 "flightNumber":"P2515", 
 "aircraft": "Airbus", 
-"Capacity": 5579, 
+"capacity": 5579, 
 "date": "2016-05-25T9:15:00",
 "duration":9, 
 "origin": "RUH", 
@@ -7410,7 +7410,7 @@
 { 
 "flightNumber":"P2615", 
 "aircraft": "Airbus", 
-"Capacity": 5367, 
+"capacity": 5367, 
 "date": "2016-05-26T5:8:00",
 "duration":5, 
 "origin": "RUH", 
@@ -7428,7 +7428,7 @@
 { 
 "flightNumber":"P2715", 
 "aircraft": "Airbus", 
-"Capacity": 1135, 
+"capacity": 1135, 
 "date": "2016-05-27T6:44:00",
 "duration":6, 
 "origin": "RUH", 
@@ -7446,7 +7446,7 @@
 { 
 "flightNumber":"P2815", 
 "aircraft": "Airbus", 
-"Capacity": 5130, 
+"capacity": 5130, 
 "date": "2016-05-28T23:25:00",
 "duration":23, 
 "origin": "RUH", 
@@ -7464,7 +7464,7 @@
 { 
 "flightNumber":"P2915", 
 "aircraft": "Airbus", 
-"Capacity": 1823, 
+"capacity": 1823, 
 "date": "2016-05-29T21:52:00",
 "duration":21, 
 "origin": "RUH", 
@@ -7482,7 +7482,7 @@
 { 
 "flightNumber":"P3015", 
 "aircraft": "Airbus", 
-"Capacity": 2780, 
+"capacity": 2780, 
 "date": "2016-05-30T14:27:00",
 "duration":14, 
 "origin": "RUH", 
@@ -7500,7 +7500,7 @@
 { 
 "flightNumber":"P3115", 
 "aircraft": "Airbus", 
-"Capacity": 1514, 
+"capacity": 1514, 
 "date": "2016-05-31T20:13:00",
 "duration":20, 
 "origin": "RUH", 
@@ -7520,7 +7520,7 @@
 { 
 "flightNumber":"P1315", 
 "aircraft": "Boeing", 
-"Capacity": 2319, 
+"capacity": 2319, 
 "date": "2016-04-13T21:2:00",
 "duration":21, 
 "origin": "JED", 
@@ -7538,7 +7538,7 @@
 { 
 "flightNumber":"P1415", 
 "aircraft": "Boeing", 
-"Capacity": 4762, 
+"capacity": 4762, 
 "date": "2016-04-14T20:38:00",
 "duration":20, 
 "origin": "JED", 
@@ -7556,7 +7556,7 @@
 { 
 "flightNumber":"P1515", 
 "aircraft": "Boeing", 
-"Capacity": 5140, 
+"capacity": 5140, 
 "date": "2016-04-15T11:45:00",
 "duration":11, 
 "origin": "JED", 
@@ -7574,7 +7574,7 @@
 { 
 "flightNumber":"P1615", 
 "aircraft": "Boeing", 
-"Capacity": 3495, 
+"capacity": 3495, 
 "date": "2016-04-16T6:5:00",
 "duration":6, 
 "origin": "JED", 
@@ -7593,7 +7593,7 @@
 { 
 "flightNumber":"P1715", 
 "aircraft": "Boeing", 
-"Capacity": 2169, 
+"capacity": 2169, 
 "date": "2016-04-17T8:11:00",
 "duration":8, 
 "origin": "JED", 
@@ -7612,7 +7612,7 @@
 { 
 "flightNumber":"P1815", 
 "aircraft": "Boeing", 
-"Capacity": 1905, 
+"capacity": 1905, 
 "date": "2016-04-18T7:8:00",
 "duration":7, 
 "origin": "JED", 
@@ -7631,7 +7631,7 @@
 { 
 "flightNumber":"P1915", 
 "aircraft": "Boeing", 
-"Capacity": 5965, 
+"capacity": 5965, 
 "date": "2016-04-19T2:47:00",
 "duration":2, 
 "origin": "JED", 
@@ -7650,7 +7650,7 @@
 { 
 "flightNumber":"P2015", 
 "aircraft": "Boeing", 
-"Capacity": 5548, 
+"capacity": 5548, 
 "date": "2016-04-20T0:20:00",
 "duration":0, 
 "origin": "JED", 
@@ -7669,7 +7669,7 @@
 { 
 "flightNumber":"P2115", 
 "aircraft": "Boeing", 
-"Capacity": 2786, 
+"capacity": 2786, 
 "date": "2016-04-21T17:45:00",
 "duration":17, 
 "origin": "JED", 
@@ -7688,7 +7688,7 @@
 { 
 "flightNumber":"P2215", 
 "aircraft": "Boeing", 
-"Capacity": 4992, 
+"capacity": 4992, 
 "date": "2016-04-22T17:44:00",
 "duration":17, 
 "origin": "JED", 
@@ -7707,7 +7707,7 @@
 { 
 "flightNumber":"P2315", 
 "aircraft": "Boeing", 
-"Capacity": 3235, 
+"capacity": 3235, 
 "date": "2016-04-23T1:32:00",
 "duration":1, 
 "origin": "JED", 
@@ -7726,7 +7726,7 @@
 { 
 "flightNumber":"P2415", 
 "aircraft": "Boeing", 
-"Capacity": 3799, 
+"capacity": 3799, 
 "date": "2016-04-24T5:15:00",
 "duration":5, 
 "origin": "JED", 
@@ -7745,7 +7745,7 @@
 { 
 "flightNumber":"P2515", 
 "aircraft": "Boeing", 
-"Capacity": 4877, 
+"capacity": 4877, 
 "date": "2016-04-25T7:29:00",
 "duration":7, 
 "origin": "JED", 
@@ -7764,7 +7764,7 @@
 { 
 "flightNumber":"P2615", 
 "aircraft": "Boeing", 
-"Capacity": 5899, 
+"capacity": 5899, 
 "date": "2016-04-26T9:3:00",
 "duration":9, 
 "origin": "JED", 
@@ -7783,7 +7783,7 @@
 { 
 "flightNumber":"P2715", 
 "aircraft": "Boeing", 
-"Capacity": 1720, 
+"capacity": 1720, 
 "date": "2016-04-27T11:34:00",
 "duration":11, 
 "origin": "JED", 
@@ -7802,7 +7802,7 @@
 { 
 "flightNumber":"P2815", 
 "aircraft": "Boeing", 
-"Capacity": 5208, 
+"capacity": 5208, 
 "date": "2016-04-28T13:57:00",
 "duration":13, 
 "origin": "JED", 
@@ -7821,7 +7821,7 @@
 { 
 "flightNumber":"P2915", 
 "aircraft": "Boeing", 
-"Capacity": 1217, 
+"capacity": 1217, 
 "date": "2016-04-29T21:54:00",
 "duration":21, 
 "origin": "JED", 
@@ -7840,7 +7840,7 @@
 { 
 "flightNumber":"P3015", 
 "aircraft": "Boeing", 
-"Capacity": 4553, 
+"capacity": 4553, 
 "date": "2016-04-30T21:18:00",
 "duration":21, 
 "origin": "JED", 
@@ -7861,7 +7861,7 @@
 { 
 "flightNumber":"P1315", 
 "aircraft": "Boeing", 
-"Capacity": 2319, 
+"capacity": 2319, 
 "date": "2016-04-13T21:2:00",
 "duration":21, 
 "origin": "JED", 
@@ -7880,7 +7880,7 @@
 { 
 "flightNumber":"P1415", 
 "aircraft": "Boeing", 
-"Capacity": 4762, 
+"capacity": 4762, 
 "date": "2016-04-14T20:38:00",
 "duration":20, 
 "origin": "JED", 
@@ -7899,7 +7899,7 @@
 { 
 "flightNumber":"P1515", 
 "aircraft": "Boeing", 
-"Capacity": 5140, 
+"capacity": 5140, 
 "date": "2016-04-15T11:45:00",
 "duration":11, 
 "origin": "JED", 
@@ -7918,7 +7918,7 @@
 { 
 "flightNumber":"P1615", 
 "aircraft": "Boeing", 
-"Capacity": 3495, 
+"capacity": 3495, 
 "date": "2016-04-16T6:5:00",
 "duration":6, 
 "origin": "JED", 
@@ -7937,7 +7937,7 @@
 { 
 "flightNumber":"P1715", 
 "aircraft": "Boeing", 
-"Capacity": 2169, 
+"capacity": 2169, 
 "date": "2016-04-17T8:11:00",
 "duration":8, 
 "origin": "JED", 
@@ -7956,7 +7956,7 @@
 { 
 "flightNumber":"P1815", 
 "aircraft": "Boeing", 
-"Capacity": 1905, 
+"capacity": 1905, 
 "date": "2016-04-18T7:8:00",
 "duration":7, 
 "origin": "JED", 
@@ -7975,7 +7975,7 @@
 { 
 "flightNumber":"P1915", 
 "aircraft": "Boeing", 
-"Capacity": 5965, 
+"capacity": 5965, 
 "date": "2016-04-19T2:47:00",
 "duration":2, 
 "origin": "JED", 
@@ -7994,7 +7994,7 @@
 { 
 "flightNumber":"P2015", 
 "aircraft": "Boeing", 
-"Capacity": 5548, 
+"capacity": 5548, 
 "date": "2016-04-20T0:20:00",
 "duration":0, 
 "origin": "JED", 
@@ -8013,7 +8013,7 @@
 { 
 "flightNumber":"P2115", 
 "aircraft": "Boeing", 
-"Capacity": 2786, 
+"capacity": 2786, 
 "date": "2016-04-21T17:45:00",
 "duration":17, 
 "origin": "JED", 
@@ -8032,7 +8032,7 @@
 { 
 "flightNumber":"P2215", 
 "aircraft": "Boeing", 
-"Capacity": 4992, 
+"capacity": 4992, 
 "date": "2016-04-22T17:44:00",
 "duration":17, 
 "origin": "JED", 
@@ -8051,7 +8051,7 @@
 { 
 "flightNumber":"P2315", 
 "aircraft": "Boeing", 
-"Capacity": 3235, 
+"capacity": 3235, 
 "date": "2016-04-23T1:32:00",
 "duration":1, 
 "origin": "JED", 
@@ -8070,7 +8070,7 @@
 { 
 "flightNumber":"P2415", 
 "aircraft": "Boeing", 
-"Capacity": 3799, 
+"capacity": 3799, 
 "date": "2016-04-24T5:15:00",
 "duration":5, 
 "origin": "JED", 
@@ -8089,7 +8089,7 @@
 { 
 "flightNumber":"P2515", 
 "aircraft": "Boeing", 
-"Capacity": 4877, 
+"capacity": 4877, 
 "date": "2016-04-25T7:29:00",
 "duration":7, 
 "origin": "JED", 
@@ -8108,7 +8108,7 @@
 { 
 "flightNumber":"P2615", 
 "aircraft": "Boeing", 
-"Capacity": 5899, 
+"capacity": 5899, 
 "date": "2016-04-26T9:3:00",
 "duration":9, 
 "origin": "JED", 
@@ -8127,7 +8127,7 @@
 { 
 "flightNumber":"P2715", 
 "aircraft": "Boeing", 
-"Capacity": 1720, 
+"capacity": 1720, 
 "date": "2016-04-27T11:34:00",
 "duration":11, 
 "origin": "JED", 
@@ -8146,7 +8146,7 @@
 { 
 "flightNumber":"P2815", 
 "aircraft": "Boeing", 
-"Capacity": 5208, 
+"capacity": 5208, 
 "date": "2016-04-28T13:57:00",
 "duration":13, 
 "origin": "JED", 
@@ -8165,7 +8165,7 @@
 { 
 "flightNumber":"P2915", 
 "aircraft": "Boeing", 
-"Capacity": 1217, 
+"capacity": 1217, 
 "date": "2016-04-29T21:54:00",
 "duration":21, 
 "origin": "JED", 
@@ -8184,7 +8184,7 @@
 { 
 "flightNumber":"P3015", 
 "aircraft": "Boeing", 
-"Capacity": 4553, 
+"capacity": 4553, 
 "date": "2016-04-30T21:18:00",
 "duration":21, 
 "origin": "JED", 
@@ -8205,7 +8205,7 @@
 { 
 "flightNumber":"Q115", 
 "aircraft": "Boeing", 
-"Capacity": 4434, 
+"capacity": 4434, 
 "date": "2016-05-1T15:55:00",
 "duration":15, 
 "origin": "JED", 
@@ -8224,7 +8224,7 @@
 { 
 "flightNumber":"Q215", 
 "aircraft": "Boeing", 
-"Capacity": 1808, 
+"capacity": 1808, 
 "date": "2016-05-2T21:28:00",
 "duration":21, 
 "origin": "JED", 
@@ -8243,7 +8243,7 @@
 { 
 "flightNumber":"Q315", 
 "aircraft": "Boeing", 
-"Capacity": 2146, 
+"capacity": 2146, 
 "date": "2016-05-3T9:32:00",
 "duration":9, 
 "origin": "JED", 
@@ -8262,7 +8262,7 @@
 { 
 "flightNumber":"Q415", 
 "aircraft": "Boeing", 
-"Capacity": 2888, 
+"capacity": 2888, 
 "date": "2016-05-4T4:58:00",
 "duration":4, 
 "origin": "JED", 
@@ -8281,7 +8281,7 @@
 { 
 "flightNumber":"Q515", 
 "aircraft": "Boeing", 
-"Capacity": 2238, 
+"capacity": 2238, 
 "date": "2016-05-5T2:17:00",
 "duration":2, 
 "origin": "JED", 
@@ -8300,7 +8300,7 @@
 { 
 "flightNumber":"Q615", 
 "aircraft": "Boeing", 
-"Capacity": 1140, 
+"capacity": 1140, 
 "date": "2016-05-6T21:20:00",
 "duration":21, 
 "origin": "JED", 
@@ -8319,7 +8319,7 @@
 { 
 "flightNumber":"Q715", 
 "aircraft": "Boeing", 
-"Capacity": 3740, 
+"capacity": 3740, 
 "date": "2016-05-7T14:5:00",
 "duration":14, 
 "origin": "JED", 
@@ -8338,7 +8338,7 @@
 { 
 "flightNumber":"Q815", 
 "aircraft": "Boeing", 
-"Capacity": 3818, 
+"capacity": 3818, 
 "date": "2016-05-8T11:10:00",
 "duration":11, 
 "origin": "JED", 
@@ -8357,7 +8357,7 @@
 { 
 "flightNumber":"Q915", 
 "aircraft": "Boeing", 
-"Capacity": 5402, 
+"capacity": 5402, 
 "date": "2016-05-9T22:48:00",
 "duration":22, 
 "origin": "JED", 
@@ -8376,7 +8376,7 @@
 { 
 "flightNumber":"Q1015", 
 "aircraft": "Boeing", 
-"Capacity": 1420, 
+"capacity": 1420, 
 "date": "2016-05-10T9:6:00",
 "duration":9, 
 "origin": "JED", 
@@ -8395,7 +8395,7 @@
 { 
 "flightNumber":"Q1115", 
 "aircraft": "Boeing", 
-"Capacity": 1846, 
+"capacity": 1846, 
 "date": "2016-05-11T22:47:00",
 "duration":22, 
 "origin": "JED", 
@@ -8414,7 +8414,7 @@
 { 
 "flightNumber":"Q1215", 
 "aircraft": "Boeing", 
-"Capacity": 5983, 
+"capacity": 5983, 
 "date": "2016-05-12T19:2:00",
 "duration":19, 
 "origin": "JED", 
@@ -8433,7 +8433,7 @@
 { 
 "flightNumber":"Q1315", 
 "aircraft": "Boeing", 
-"Capacity": 5935, 
+"capacity": 5935, 
 "date": "2016-05-13T17:47:00",
 "duration":17, 
 "origin": "JED", 
@@ -8452,7 +8452,7 @@
 { 
 "flightNumber":"Q1415", 
 "aircraft": "Boeing", 
-"Capacity": 4059, 
+"capacity": 4059, 
 "date": "2016-05-14T11:55:00",
 "duration":11, 
 "origin": "JED", 
@@ -8471,7 +8471,7 @@
 { 
 "flightNumber":"Q1515", 
 "aircraft": "Boeing", 
-"Capacity": 3054, 
+"capacity": 3054, 
 "date": "2016-05-15T7:23:00",
 "duration":7, 
 "origin": "JED", 
@@ -8490,7 +8490,7 @@
 { 
 "flightNumber":"Q1615", 
 "aircraft": "Boeing", 
-"Capacity": 5925, 
+"capacity": 5925, 
 "date": "2016-05-16T18:22:00",
 "duration":18, 
 "origin": "JED", 
@@ -8509,7 +8509,7 @@
 { 
 "flightNumber":"Q1715", 
 "aircraft": "Boeing", 
-"Capacity": 5911, 
+"capacity": 5911, 
 "date": "2016-05-17T16:35:00",
 "duration":16, 
 "origin": "JED", 
@@ -8528,7 +8528,7 @@
 { 
 "flightNumber":"Q1815", 
 "aircraft": "Boeing", 
-"Capacity": 3008, 
+"capacity": 3008, 
 "date": "2016-05-18T6:25:00",
 "duration":6, 
 "origin": "JED", 
@@ -8547,7 +8547,7 @@
 { 
 "flightNumber":"Q1915", 
 "aircraft": "Boeing", 
-"Capacity": 1305, 
+"capacity": 1305, 
 "date": "2016-05-19T21:12:00",
 "duration":21, 
 "origin": "JED", 
@@ -8566,7 +8566,7 @@
 { 
 "flightNumber":"Q2015", 
 "aircraft": "Boeing", 
-"Capacity": 1332, 
+"capacity": 1332, 
 "date": "2016-05-20T6:38:00",
 "duration":6, 
 "origin": "JED", 
@@ -8585,7 +8585,7 @@
 { 
 "flightNumber":"Q2115", 
 "aircraft": "Boeing", 
-"Capacity": 1783, 
+"capacity": 1783, 
 "date": "2016-05-21T10:8:00",
 "duration":10, 
 "origin": "JED", 
@@ -8604,7 +8604,7 @@
 { 
 "flightNumber":"Q2215", 
 "aircraft": "Boeing", 
-"Capacity": 1886, 
+"capacity": 1886, 
 "date": "2016-05-22T19:3:00",
 "duration":19, 
 "origin": "JED", 
@@ -8623,7 +8623,7 @@
 { 
 "flightNumber":"Q2315", 
 "aircraft": "Boeing", 
-"Capacity": 4747, 
+"capacity": 4747, 
 "date": "2016-05-23T6:56:00",
 "duration":6, 
 "origin": "JED", 
@@ -8642,7 +8642,7 @@
 { 
 "flightNumber":"Q2415", 
 "aircraft": "Boeing", 
-"Capacity": 3495, 
+"capacity": 3495, 
 "date": "2016-05-24T17:36:00",
 "duration":17, 
 "origin": "JED", 
@@ -8661,7 +8661,7 @@
 { 
 "flightNumber":"Q2515", 
 "aircraft": "Boeing", 
-"Capacity": 2273, 
+"capacity": 2273, 
 "date": "2016-05-25T5:55:00",
 "duration":5, 
 "origin": "JED", 
@@ -8680,7 +8680,7 @@
 { 
 "flightNumber":"Q2615", 
 "aircraft": "Boeing", 
-"Capacity": 2593, 
+"capacity": 2593, 
 "date": "2016-05-26T24:10:00",
 "duration":24, 
 "origin": "JED", 
@@ -8699,7 +8699,7 @@
 { 
 "flightNumber":"Q2715", 
 "aircraft": "Boeing", 
-"Capacity": 3060, 
+"capacity": 3060, 
 "date": "2016-05-27T18:45:00",
 "duration":18, 
 "origin": "JED", 
@@ -8718,7 +8718,7 @@
 { 
 "flightNumber":"Q2815", 
 "aircraft": "Boeing", 
-"Capacity": 4362, 
+"capacity": 4362, 
 "date": "2016-05-28T20:36:00",
 "duration":20, 
 "origin": "JED", 
@@ -8737,7 +8737,7 @@
 { 
 "flightNumber":"Q2915", 
 "aircraft": "Boeing", 
-"Capacity": 5432, 
+"capacity": 5432, 
 "date": "2016-05-29T2:19:00",
 "duration":2, 
 "origin": "JED", 
@@ -8756,7 +8756,7 @@
 { 
 "flightNumber":"Q3015", 
 "aircraft": "Boeing", 
-"Capacity": 4116, 
+"capacity": 4116, 
 "date": "2016-05-30T0:59:00",
 "duration":0, 
 "origin": "JED", 
@@ -8775,7 +8775,7 @@
 { 
 "flightNumber":"Q3115", 
 "aircraft": "Boeing", 
-"Capacity": 5484, 
+"capacity": 5484, 
 "date": "2016-05-31T7:59:00",
 "duration":7, 
 "origin": "JED", 
@@ -8795,7 +8795,7 @@
 { 
 "flightNumber":"AF1315", 
 "aircraft": "Airbus", 
-"Capacity": 1361, 
+"capacity": 1361, 
 "date": "2016-04-13T4:1:00",
 "duration":4, 
 "origin": "FCO", 
@@ -8814,7 +8814,7 @@
 { 
 "flightNumber":"AF1415", 
 "aircraft": "Airbus", 
-"Capacity": 4366, 
+"capacity": 4366, 
 "date": "2016-04-14T19:43:00",
 "duration":19, 
 "origin": "FCO", 
@@ -8833,7 +8833,7 @@
 { 
 "flightNumber":"AF1515", 
 "aircraft": "Airbus", 
-"Capacity": 3838, 
+"capacity": 3838, 
 "date": "2016-04-15T7:5:00",
 "duration":7, 
 "origin": "FCO", 
@@ -8852,7 +8852,7 @@
 { 
 "flightNumber":"AF1615", 
 "aircraft": "Airbus", 
-"Capacity": 1710, 
+"capacity": 1710, 
 "date": "2016-04-16T16:36:00",
 "duration":16, 
 "origin": "FCO", 
@@ -8871,7 +8871,7 @@
 { 
 "flightNumber":"AF1715", 
 "aircraft": "Airbus", 
-"Capacity": 2985, 
+"capacity": 2985, 
 "date": "2016-04-17T1:4:00",
 "duration":1, 
 "origin": "FCO", 
@@ -8890,7 +8890,7 @@
 { 
 "flightNumber":"AF1815", 
 "aircraft": "Airbus", 
-"Capacity": 1425, 
+"capacity": 1425, 
 "date": "2016-04-18T23:31:00",
 "duration":23, 
 "origin": "FCO", 
@@ -8909,7 +8909,7 @@
 { 
 "flightNumber":"AF1915", 
 "aircraft": "Airbus", 
-"Capacity": 4113, 
+"capacity": 4113, 
 "date": "2016-04-19T18:40:00",
 "duration":18, 
 "origin": "FCO", 
@@ -8928,7 +8928,7 @@
 { 
 "flightNumber":"AF2015", 
 "aircraft": "Airbus", 
-"Capacity": 5497, 
+"capacity": 5497, 
 "date": "2016-04-20T22:28:00",
 "duration":22, 
 "origin": "FCO", 
@@ -8947,7 +8947,7 @@
 { 
 "flightNumber":"AF2115", 
 "aircraft": "Airbus", 
-"Capacity": 1500, 
+"capacity": 1500, 
 "date": "2016-04-21T15:30:00",
 "duration":15, 
 "origin": "FCO", 
@@ -8966,7 +8966,7 @@
 { 
 "flightNumber":"AF2215", 
 "aircraft": "Airbus", 
-"Capacity": 1191, 
+"capacity": 1191, 
 "date": "2016-04-22T6:37:00",
 "duration":6, 
 "origin": "FCO", 
@@ -8985,7 +8985,7 @@
 { 
 "flightNumber":"AF2315", 
 "aircraft": "Airbus", 
-"Capacity": 1837, 
+"capacity": 1837, 
 "date": "2016-04-23T14:13:00",
 "duration":14, 
 "origin": "FCO", 
@@ -9004,7 +9004,7 @@
 { 
 "flightNumber":"AF2415", 
 "aircraft": "Airbus", 
-"Capacity": 1206, 
+"capacity": 1206, 
 "date": "2016-04-24T12:27:00",
 "duration":12, 
 "origin": "FCO", 
@@ -9023,7 +9023,7 @@
 { 
 "flightNumber":"AF2515", 
 "aircraft": "Airbus", 
-"Capacity": 5833, 
+"capacity": 5833, 
 "date": "2016-04-25T18:0:00",
 "duration":18, 
 "origin": "FCO", 
@@ -9042,7 +9042,7 @@
 { 
 "flightNumber":"AF2615", 
 "aircraft": "Airbus", 
-"Capacity": 4672, 
+"capacity": 4672, 
 "date": "2016-04-26T2:17:00",
 "duration":2, 
 "origin": "FCO", 
@@ -9061,7 +9061,7 @@
 { 
 "flightNumber":"AF2715", 
 "aircraft": "Airbus", 
-"Capacity": 3855, 
+"capacity": 3855, 
 "date": "2016-04-27T6:51:00",
 "duration":6, 
 "origin": "FCO", 
@@ -9080,7 +9080,7 @@
 { 
 "flightNumber":"AF2815", 
 "aircraft": "Airbus", 
-"Capacity": 2461, 
+"capacity": 2461, 
 "date": "2016-04-28T19:20:00",
 "duration":19, 
 "origin": "FCO", 
@@ -9099,7 +9099,7 @@
 { 
 "flightNumber":"AF2915", 
 "aircraft": "Airbus", 
-"Capacity": 3466, 
+"capacity": 3466, 
 "date": "2016-04-29T1:7:00",
 "duration":1, 
 "origin": "FCO", 
@@ -9118,7 +9118,7 @@
 { 
 "flightNumber":"AF3015", 
 "aircraft": "Airbus", 
-"Capacity": 1391, 
+"capacity": 1391, 
 "date": "2016-04-30T24:2:00",
 "duration":24, 
 "origin": "FCO", 
@@ -9138,7 +9138,7 @@
 { 
 "flightNumber":"AF115", 
 "aircraft": "Airbus", 
-"Capacity": 4877, 
+"capacity": 4877, 
 "date": "2016-05-1T0:51:00",
 "duration":0, 
 "origin": "FCO", 
@@ -9157,7 +9157,7 @@
 { 
 "flightNumber":"AF215", 
 "aircraft": "Airbus", 
-"Capacity": 1385, 
+"capacity": 1385, 
 "date": "2016-05-2T18:19:00",
 "duration":18, 
 "origin": "FCO", 
@@ -9176,7 +9176,7 @@
 { 
 "flightNumber":"AF315", 
 "aircraft": "Airbus", 
-"Capacity": 5835, 
+"capacity": 5835, 
 "date": "2016-05-3T16:34:00",
 "duration":16, 
 "origin": "FCO", 
@@ -9195,7 +9195,7 @@
 { 
 "flightNumber":"AF415", 
 "aircraft": "Airbus", 
-"Capacity": 5572, 
+"capacity": 5572, 
 "date": "2016-05-4T1:7:00",
 "duration":1, 
 "origin": "FCO", 
@@ -9214,7 +9214,7 @@
 { 
 "flightNumber":"AF515", 
 "aircraft": "Airbus", 
-"Capacity": 2444, 
+"capacity": 2444, 
 "date": "2016-05-5T15:29:00",
 "duration":15, 
 "origin": "FCO", 
@@ -9233,7 +9233,7 @@
 { 
 "flightNumber":"AF615", 
 "aircraft": "Airbus", 
-"Capacity": 1841, 
+"capacity": 1841, 
 "date": "2016-05-6T7:43:00",
 "duration":7, 
 "origin": "FCO", 
@@ -9252,7 +9252,7 @@
 { 
 "flightNumber":"AF715", 
 "aircraft": "Airbus", 
-"Capacity": 3410, 
+"capacity": 3410, 
 "date": "2016-05-7T24:31:00",
 "duration":24, 
 "origin": "FCO", 
@@ -9271,7 +9271,7 @@
 { 
 "flightNumber":"AF815", 
 "aircraft": "Airbus", 
-"Capacity": 4210, 
+"capacity": 4210, 
 "date": "2016-05-8T1:47:00",
 "duration":1, 
 "origin": "FCO", 
@@ -9290,7 +9290,7 @@
 { 
 "flightNumber":"AF915", 
 "aircraft": "Airbus", 
-"Capacity": 1450, 
+"capacity": 1450, 
 "date": "2016-05-9T24:47:00",
 "duration":24, 
 "origin": "FCO", 
@@ -9309,7 +9309,7 @@
 { 
 "flightNumber":"AF1015", 
 "aircraft": "Airbus", 
-"Capacity": 3282, 
+"capacity": 3282, 
 "date": "2016-05-10T18:9:00",
 "duration":18, 
 "origin": "FCO", 
@@ -9328,7 +9328,7 @@
 { 
 "flightNumber":"AF1115", 
 "aircraft": "Airbus", 
-"Capacity": 4695, 
+"capacity": 4695, 
 "date": "2016-05-11T9:54:00",
 "duration":9, 
 "origin": "FCO", 
@@ -9347,7 +9347,7 @@
 { 
 "flightNumber":"AF1215", 
 "aircraft": "Airbus", 
-"Capacity": 5973, 
+"capacity": 5973, 
 "date": "2016-05-12T10:22:00",
 "duration":10, 
 "origin": "FCO", 
@@ -9366,7 +9366,7 @@
 { 
 "flightNumber":"AF1315", 
 "aircraft": "Airbus", 
-"Capacity": 3644, 
+"capacity": 3644, 
 "date": "2016-05-13T2:35:00",
 "duration":2, 
 "origin": "FCO", 
@@ -9385,7 +9385,7 @@
 { 
 "flightNumber":"AF1415", 
 "aircraft": "Airbus", 
-"Capacity": 1163, 
+"capacity": 1163, 
 "date": "2016-05-14T10:53:00",
 "duration":10, 
 "origin": "FCO", 
@@ -9404,7 +9404,7 @@
 { 
 "flightNumber":"AF1515", 
 "aircraft": "Airbus", 
-"Capacity": 2068, 
+"capacity": 2068, 
 "date": "2016-05-15T19:22:00",
 "duration":19, 
 "origin": "FCO", 
@@ -9423,7 +9423,7 @@
 { 
 "flightNumber":"AF1615", 
 "aircraft": "Airbus", 
-"Capacity": 1430, 
+"capacity": 1430, 
 "date": "2016-05-16T12:52:00",
 "duration":12, 
 "origin": "FCO", 
@@ -9442,7 +9442,7 @@
 { 
 "flightNumber":"AF1715", 
 "aircraft": "Airbus", 
-"Capacity": 1917, 
+"capacity": 1917, 
 "date": "2016-05-17T8:10:00",
 "duration":8, 
 "origin": "FCO", 
@@ -9461,7 +9461,7 @@
 { 
 "flightNumber":"AF1815", 
 "aircraft": "Airbus", 
-"Capacity": 5888, 
+"capacity": 5888, 
 "date": "2016-05-18T13:50:00",
 "duration":13, 
 "origin": "FCO", 
@@ -9480,7 +9480,7 @@
 { 
 "flightNumber":"AF1915", 
 "aircraft": "Airbus", 
-"Capacity": 5108, 
+"capacity": 5108, 
 "date": "2016-05-19T6:21:00",
 "duration":6, 
 "origin": "FCO", 
@@ -9499,7 +9499,7 @@
 { 
 "flightNumber":"AF2015", 
 "aircraft": "Airbus", 
-"Capacity": 4178, 
+"capacity": 4178, 
 "date": "2016-05-20T16:44:00",
 "duration":16, 
 "origin": "FCO", 
@@ -9518,7 +9518,7 @@
 { 
 "flightNumber":"AF2115", 
 "aircraft": "Airbus", 
-"Capacity": 1416, 
+"capacity": 1416, 
 "date": "2016-05-21T14:26:00",
 "duration":14, 
 "origin": "FCO", 
@@ -9537,7 +9537,7 @@
 { 
 "flightNumber":"AF2215", 
 "aircraft": "Airbus", 
-"Capacity": 5552, 
+"capacity": 5552, 
 "date": "2016-05-22T8:36:00",
 "duration":8, 
 "origin": "FCO", 
@@ -9556,7 +9556,7 @@
 { 
 "flightNumber":"AF2315", 
 "aircraft": "Airbus", 
-"Capacity": 5000, 
+"capacity": 5000, 
 "date": "2016-05-23T5:3:00",
 "duration":5, 
 "origin": "FCO", 
@@ -9575,7 +9575,7 @@
 { 
 "flightNumber":"AF2415", 
 "aircraft": "Airbus", 
-"Capacity": 2671, 
+"capacity": 2671, 
 "date": "2016-05-24T17:48:00",
 "duration":17, 
 "origin": "FCO", 
@@ -9594,7 +9594,7 @@
 { 
 "flightNumber":"AF2515", 
 "aircraft": "Airbus", 
-"Capacity": 2165, 
+"capacity": 2165, 
 "date": "2016-05-25T1:18:00",
 "duration":1, 
 "origin": "FCO", 
@@ -9613,7 +9613,7 @@
 { 
 "flightNumber":"AF2615", 
 "aircraft": "Airbus", 
-"Capacity": 4800, 
+"capacity": 4800, 
 "date": "2016-05-26T11:49:00",
 "duration":11, 
 "origin": "FCO", 
@@ -9632,7 +9632,7 @@
 { 
 "flightNumber":"AF2715", 
 "aircraft": "Airbus", 
-"Capacity": 3077, 
+"capacity": 3077, 
 "date": "2016-05-27T4:17:00",
 "duration":4, 
 "origin": "FCO", 
@@ -9651,7 +9651,7 @@
 { 
 "flightNumber":"AF2815", 
 "aircraft": "Airbus", 
-"Capacity": 3168, 
+"capacity": 3168, 
 "date": "2016-05-28T9:36:00",
 "duration":9, 
 "origin": "FCO", 
@@ -9670,7 +9670,7 @@
 { 
 "flightNumber":"AF2915", 
 "aircraft": "Airbus", 
-"Capacity": 2406, 
+"capacity": 2406, 
 "date": "2016-05-29T7:10:00",
 "duration":7, 
 "origin": "FCO", 
@@ -9689,7 +9689,7 @@
 { 
 "flightNumber":"AF3015", 
 "aircraft": "Airbus", 
-"Capacity": 3812, 
+"capacity": 3812, 
 "date": "2016-05-30T10:58:00",
 "duration":10, 
 "origin": "FCO", 
@@ -9708,7 +9708,7 @@
 { 
 "flightNumber":"AF3115", 
 "aircraft": "Airbus", 
-"Capacity": 1390, 
+"capacity": 1390, 
 "date": "2016-05-31T5:20:00",
 "duration":5, 
 "origin": "FCO", 
@@ -9728,7 +9728,7 @@
 { 
 "flightNumber":"AG1315", 
 "aircraft": "Boeing", 
-"Capacity": 1812, 
+"capacity": 1812, 
 "date": "2016-04-13T3:45:00",
 "duration":3, 
 "origin": "MXP", 
@@ -9747,7 +9747,7 @@
 { 
 "flightNumber":"AG1415", 
 "aircraft": "Boeing", 
-"Capacity": 3575, 
+"capacity": 3575, 
 "date": "2016-04-14T5:43:00",
 "duration":5, 
 "origin": "MXP", 
@@ -9766,7 +9766,7 @@
 { 
 "flightNumber":"AG1515", 
 "aircraft": "Boeing", 
-"Capacity": 1208, 
+"capacity": 1208, 
 "date": "2016-04-15T5:37:00",
 "duration":5, 
 "origin": "MXP", 
@@ -9785,7 +9785,7 @@
 { 
 "flightNumber":"AG1615", 
 "aircraft": "Boeing", 
-"Capacity": 4328, 
+"capacity": 4328, 
 "date": "2016-04-16T3:24:00",
 "duration":3, 
 "origin": "MXP", 
@@ -9804,7 +9804,7 @@
 { 
 "flightNumber":"AG1715", 
 "aircraft": "Boeing", 
-"Capacity": 5080, 
+"capacity": 5080, 
 "date": "2016-04-17T9:32:00",
 "duration":9, 
 "origin": "MXP", 
@@ -9823,7 +9823,7 @@
 { 
 "flightNumber":"AG1815", 
 "aircraft": "Boeing", 
-"Capacity": 1964, 
+"capacity": 1964, 
 "date": "2016-04-18T23:58:00",
 "duration":23, 
 "origin": "MXP", 
@@ -9842,7 +9842,7 @@
 { 
 "flightNumber":"AG1915", 
 "aircraft": "Boeing", 
-"Capacity": 4492, 
+"capacity": 4492, 
 "date": "2016-04-19T6:36:00",
 "duration":6, 
 "origin": "MXP", 
@@ -9861,7 +9861,7 @@
 { 
 "flightNumber":"AG2015", 
 "aircraft": "Boeing", 
-"Capacity": 5433, 
+"capacity": 5433, 
 "date": "2016-04-20T17:51:00",
 "duration":17, 
 "origin": "MXP", 
@@ -9880,7 +9880,7 @@
 { 
 "flightNumber":"AG2115", 
 "aircraft": "Boeing", 
-"Capacity": 2040, 
+"capacity": 2040, 
 "date": "2016-04-21T6:19:00",
 "duration":6, 
 "origin": "MXP", 
@@ -9899,7 +9899,7 @@
 { 
 "flightNumber":"AG2215", 
 "aircraft": "Boeing", 
-"Capacity": 4275, 
+"capacity": 4275, 
 "date": "2016-04-22T4:46:00",
 "duration":4, 
 "origin": "MXP", 
@@ -9918,7 +9918,7 @@
 { 
 "flightNumber":"AG2315", 
 "aircraft": "Boeing", 
-"Capacity": 1033, 
+"capacity": 1033, 
 "date": "2016-04-23T5:56:00",
 "duration":5, 
 "origin": "MXP", 
@@ -9937,7 +9937,7 @@
 { 
 "flightNumber":"AG2415", 
 "aircraft": "Boeing", 
-"Capacity": 5197, 
+"capacity": 5197, 
 "date": "2016-04-24T17:24:00",
 "duration":17, 
 "origin": "MXP", 
@@ -9956,7 +9956,7 @@
 { 
 "flightNumber":"AG2515", 
 "aircraft": "Boeing", 
-"Capacity": 1436, 
+"capacity": 1436, 
 "date": "2016-04-25T6:33:00",
 "duration":6, 
 "origin": "MXP", 
@@ -9975,7 +9975,7 @@
 { 
 "flightNumber":"AG2615", 
 "aircraft": "Boeing", 
-"Capacity": 5082, 
+"capacity": 5082, 
 "date": "2016-04-26T3:33:00",
 "duration":3, 
 "origin": "MXP", 
@@ -9994,7 +9994,7 @@
 { 
 "flightNumber":"AG2715", 
 "aircraft": "Boeing", 
-"Capacity": 4509, 
+"capacity": 4509, 
 "date": "2016-04-27T17:20:00",
 "duration":17, 
 "origin": "MXP", 
@@ -10013,7 +10013,7 @@
 { 
 "flightNumber":"AG2815", 
 "aircraft": "Boeing", 
-"Capacity": 5538, 
+"capacity": 5538, 
 "date": "2016-04-28T0:58:00",
 "duration":0, 
 "origin": "MXP", 
@@ -10032,7 +10032,7 @@
 { 
 "flightNumber":"AG2915", 
 "aircraft": "Boeing", 
-"Capacity": 1392, 
+"capacity": 1392, 
 "date": "2016-04-29T4:53:00",
 "duration":4, 
 "origin": "MXP", 
@@ -10051,7 +10051,7 @@
 { 
 "flightNumber":"AG3015", 
 "aircraft": "Boeing", 
-"Capacity": 5527, 
+"capacity": 5527, 
 "date": "2016-04-30T7:25:00",
 "duration":7, 
 "origin": "MXP", 
@@ -10071,7 +10071,7 @@
 { 
 "flightNumber":"AG115", 
 "aircraft": "Boeing", 
-"Capacity": 3293, 
+"capacity": 3293, 
 "date": "2016-05-1T11:33:00",
 "duration":11, 
 "origin": "MXP", 
@@ -10090,7 +10090,7 @@
 { 
 "flightNumber":"AG215", 
 "aircraft": "Boeing", 
-"Capacity": 4540, 
+"capacity": 4540, 
 "date": "2016-05-2T8:32:00",
 "duration":8, 
 "origin": "MXP", 
@@ -10109,7 +10109,7 @@
 { 
 "flightNumber":"AG315", 
 "aircraft": "Boeing", 
-"Capacity": 1143, 
+"capacity": 1143, 
 "date": "2016-05-3T10:59:00",
 "duration":10, 
 "origin": "MXP", 
@@ -10128,7 +10128,7 @@
 { 
 "flightNumber":"AG415", 
 "aircraft": "Boeing", 
-"Capacity": 3900, 
+"capacity": 3900, 
 "date": "2016-05-4T6:38:00",
 "duration":6, 
 "origin": "MXP", 
@@ -10147,7 +10147,7 @@
 { 
 "flightNumber":"AG515", 
 "aircraft": "Boeing", 
-"Capacity": 1125, 
+"capacity": 1125, 
 "date": "2016-05-5T5:59:00",
 "duration":5, 
 "origin": "MXP", 
@@ -10166,7 +10166,7 @@
 { 
 "flightNumber":"AG615", 
 "aircraft": "Boeing", 
-"Capacity": 4391, 
+"capacity": 4391, 
 "date": "2016-05-6T7:5:00",
 "duration":7, 
 "origin": "MXP", 
@@ -10185,7 +10185,7 @@
 { 
 "flightNumber":"AG715", 
 "aircraft": "Boeing", 
-"Capacity": 5118, 
+"capacity": 5118, 
 "date": "2016-05-7T6:15:00",
 "duration":6, 
 "origin": "MXP", 
@@ -10204,7 +10204,7 @@
 { 
 "flightNumber":"AG815", 
 "aircraft": "Boeing", 
-"Capacity": 5905, 
+"capacity": 5905, 
 "date": "2016-05-8T24:45:00",
 "duration":24, 
 "origin": "MXP", 
@@ -10223,7 +10223,7 @@
 { 
 "flightNumber":"AG915", 
 "aircraft": "Boeing", 
-"Capacity": 1228, 
+"capacity": 1228, 
 "date": "2016-05-9T3:37:00",
 "duration":3, 
 "origin": "MXP", 
@@ -10242,7 +10242,7 @@
 { 
 "flightNumber":"AG1015", 
 "aircraft": "Boeing", 
-"Capacity": 3986, 
+"capacity": 3986, 
 "date": "2016-05-10T10:5:00",
 "duration":10, 
 "origin": "MXP", 
@@ -10261,7 +10261,7 @@
 { 
 "flightNumber":"AG1115", 
 "aircraft": "Boeing", 
-"Capacity": 4349, 
+"capacity": 4349, 
 "date": "2016-05-11T17:49:00",
 "duration":17, 
 "origin": "MXP", 
@@ -10280,7 +10280,7 @@
 { 
 "flightNumber":"AG1215", 
 "aircraft": "Boeing", 
-"Capacity": 3653, 
+"capacity": 3653, 
 "date": "2016-05-12T5:11:00",
 "duration":5, 
 "origin": "MXP", 
@@ -10299,7 +10299,7 @@
 { 
 "flightNumber":"AG1315", 
 "aircraft": "Boeing", 
-"Capacity": 5745, 
+"capacity": 5745, 
 "date": "2016-05-13T10:16:00",
 "duration":10, 
 "origin": "MXP", 
@@ -10318,7 +10318,7 @@
 { 
 "flightNumber":"AG1415", 
 "aircraft": "Boeing", 
-"Capacity": 3977, 
+"capacity": 3977, 
 "date": "2016-05-14T20:5:00",
 "duration":20, 
 "origin": "MXP", 
@@ -10337,7 +10337,7 @@
 { 
 "flightNumber":"AG1515", 
 "aircraft": "Boeing", 
-"Capacity": 1546, 
+"capacity": 1546, 
 "date": "2016-05-15T20:26:00",
 "duration":20, 
 "origin": "MXP", 
@@ -10356,7 +10356,7 @@
 { 
 "flightNumber":"AG1615", 
 "aircraft": "Boeing", 
-"Capacity": 1522, 
+"capacity": 1522, 
 "date": "2016-05-16T23:47:00",
 "duration":23, 
 "origin": "MXP", 
@@ -10375,7 +10375,7 @@
 { 
 "flightNumber":"AG1715", 
 "aircraft": "Boeing", 
-"Capacity": 2979, 
+"capacity": 2979, 
 "date": "2016-05-17T16:36:00",
 "duration":16, 
 "origin": "MXP", 
@@ -10394,7 +10394,7 @@
 { 
 "flightNumber":"AG1815", 
 "aircraft": "Boeing", 
-"Capacity": 4730, 
+"capacity": 4730, 
 "date": "2016-05-18T10:59:00",
 "duration":10, 
 "origin": "MXP", 
@@ -10413,7 +10413,7 @@
 { 
 "flightNumber":"AG1915", 
 "aircraft": "Boeing", 
-"Capacity": 3687, 
+"capacity": 3687, 
 "date": "2016-05-19T7:45:00",
 "duration":7, 
 "origin": "MXP", 
@@ -10432,7 +10432,7 @@
 { 
 "flightNumber":"AG2015", 
 "aircraft": "Boeing", 
-"Capacity": 2781, 
+"capacity": 2781, 
 "date": "2016-05-20T10:1:00",
 "duration":10, 
 "origin": "MXP", 
@@ -10451,7 +10451,7 @@
 { 
 "flightNumber":"AG2115", 
 "aircraft": "Boeing", 
-"Capacity": 5276, 
+"capacity": 5276, 
 "date": "2016-05-21T19:10:00",
 "duration":19, 
 "origin": "MXP", 
@@ -10470,7 +10470,7 @@
 { 
 "flightNumber":"AG2215", 
 "aircraft": "Boeing", 
-"Capacity": 1783, 
+"capacity": 1783, 
 "date": "2016-05-22T1:34:00",
 "duration":1, 
 "origin": "MXP", 
@@ -10489,7 +10489,7 @@
 { 
 "flightNumber":"AG2315", 
 "aircraft": "Boeing", 
-"Capacity": 3607, 
+"capacity": 3607, 
 "date": "2016-05-23T6:0:00",
 "duration":6, 
 "origin": "MXP", 
@@ -10508,7 +10508,7 @@
 { 
 "flightNumber":"AG2415", 
 "aircraft": "Boeing", 
-"Capacity": 5332, 
+"capacity": 5332, 
 "date": "2016-05-24T7:41:00",
 "duration":7, 
 "origin": "MXP", 
@@ -10527,7 +10527,7 @@
 { 
 "flightNumber":"AG2515", 
 "aircraft": "Boeing", 
-"Capacity": 2765, 
+"capacity": 2765, 
 "date": "2016-05-25T21:14:00",
 "duration":21, 
 "origin": "MXP", 
@@ -10546,7 +10546,7 @@
 { 
 "flightNumber":"AG2615", 
 "aircraft": "Boeing", 
-"Capacity": 1088, 
+"capacity": 1088, 
 "date": "2016-05-26T19:21:00",
 "duration":19, 
 "origin": "MXP", 
@@ -10565,7 +10565,7 @@
 { 
 "flightNumber":"AG2715", 
 "aircraft": "Boeing", 
-"Capacity": 4396, 
+"capacity": 4396, 
 "date": "2016-05-27T19:56:00",
 "duration":19, 
 "origin": "MXP", 
@@ -10584,7 +10584,7 @@
 { 
 "flightNumber":"AG2815", 
 "aircraft": "Boeing", 
-"Capacity": 4310, 
+"capacity": 4310, 
 "date": "2016-05-28T3:35:00",
 "duration":3, 
 "origin": "MXP", 
@@ -10603,7 +10603,7 @@
 { 
 "flightNumber":"AG2915", 
 "aircraft": "Boeing", 
-"Capacity": 3284, 
+"capacity": 3284, 
 "date": "2016-05-29T10:10:00",
 "duration":10, 
 "origin": "MXP", 
@@ -10622,7 +10622,7 @@
 { 
 "flightNumber":"AG3015", 
 "aircraft": "Boeing", 
-"Capacity": 3440, 
+"capacity": 3440, 
 "date": "2016-05-30T15:51:00",
 "duration":15, 
 "origin": "MXP", 
@@ -10641,7 +10641,7 @@
 { 
 "flightNumber":"AG3115", 
 "aircraft": "Boeing", 
-"Capacity": 5079, 
+"capacity": 5079, 
 "date": "2016-05-31T24:32:00",
 "duration":24, 
 "origin": "MXP", 
@@ -10660,7 +10660,7 @@
 { 
 "flightNumber":"AD1315", 
 "aircraft": "AirBus", 
-"Capacity": 5161, 
+"capacity": 5161, 
 "date": "2016-04-13T0:43:00",
 "duration":0, 
 "origin": "FRA", 
@@ -10679,7 +10679,7 @@
 { 
 "flightNumber":"AD1415", 
 "aircraft": "AirBus", 
-"Capacity": 1747, 
+"capacity": 1747, 
 "date": "2016-04-14T3:20:00",
 "duration":3, 
 "origin": "FRA", 
@@ -10698,7 +10698,7 @@
 { 
 "flightNumber":"AD1515", 
 "aircraft": "AirBus", 
-"Capacity": 5530, 
+"capacity": 5530, 
 "date": "2016-04-15T11:16:00",
 "duration":11, 
 "origin": "FRA", 
@@ -10717,7 +10717,7 @@
 { 
 "flightNumber":"AD1615", 
 "aircraft": "AirBus", 
-"Capacity": 5563, 
+"capacity": 5563, 
 "date": "2016-04-16T5:32:00",
 "duration":5, 
 "origin": "FRA", 
@@ -10736,7 +10736,7 @@
 { 
 "flightNumber":"AD1715", 
 "aircraft": "AirBus", 
-"Capacity": 2694, 
+"capacity": 2694, 
 "date": "2016-04-17T13:51:00",
 "duration":13, 
 "origin": "FRA", 
@@ -10755,7 +10755,7 @@
 { 
 "flightNumber":"AD1815", 
 "aircraft": "AirBus", 
-"Capacity": 3243, 
+"capacity": 3243, 
 "date": "2016-04-18T23:17:00",
 "duration":23, 
 "origin": "FRA", 
@@ -10774,7 +10774,7 @@
 { 
 "flightNumber":"AD1915", 
 "aircraft": "AirBus", 
-"Capacity": 3187, 
+"capacity": 3187, 
 "date": "2016-04-19T11:27:00",
 "duration":11, 
 "origin": "FRA", 
@@ -10793,7 +10793,7 @@
 { 
 "flightNumber":"AD2015", 
 "aircraft": "AirBus", 
-"Capacity": 3701, 
+"capacity": 3701, 
 "date": "2016-04-20T12:1:00",
 "duration":12, 
 "origin": "FRA", 
@@ -10812,7 +10812,7 @@
 { 
 "flightNumber":"AD2115", 
 "aircraft": "AirBus", 
-"Capacity": 3253, 
+"capacity": 3253, 
 "date": "2016-04-21T1:3:00",
 "duration":1, 
 "origin": "FRA", 
@@ -10831,7 +10831,7 @@
 { 
 "flightNumber":"AD2215", 
 "aircraft": "AirBus", 
-"Capacity": 2385, 
+"capacity": 2385, 
 "date": "2016-04-22T4:18:00",
 "duration":4, 
 "origin": "FRA", 
@@ -10850,7 +10850,7 @@
 { 
 "flightNumber":"AD2315", 
 "aircraft": "AirBus", 
-"Capacity": 2777, 
+"capacity": 2777, 
 "date": "2016-04-23T3:51:00",
 "duration":3, 
 "origin": "FRA", 
@@ -10869,7 +10869,7 @@
 { 
 "flightNumber":"AD2415", 
 "aircraft": "AirBus", 
-"Capacity": 1393, 
+"capacity": 1393, 
 "date": "2016-04-24T19:4:00",
 "duration":19, 
 "origin": "FRA", 
@@ -10888,7 +10888,7 @@
 { 
 "flightNumber":"AD2515", 
 "aircraft": "AirBus", 
-"Capacity": 4155, 
+"capacity": 4155, 
 "date": "2016-04-25T16:29:00",
 "duration":16, 
 "origin": "FRA", 
@@ -10907,7 +10907,7 @@
 { 
 "flightNumber":"AD2615", 
 "aircraft": "AirBus", 
-"Capacity": 5811, 
+"capacity": 5811, 
 "date": "2016-04-26T2:51:00",
 "duration":2, 
 "origin": "FRA", 
@@ -10926,7 +10926,7 @@
 { 
 "flightNumber":"AD2715", 
 "aircraft": "AirBus", 
-"Capacity": 1654, 
+"capacity": 1654, 
 "date": "2016-04-27T23:1:00",
 "duration":23, 
 "origin": "FRA", 
@@ -10945,7 +10945,7 @@
 { 
 "flightNumber":"AD2815", 
 "aircraft": "AirBus", 
-"Capacity": 2356, 
+"capacity": 2356, 
 "date": "2016-04-28T0:37:00",
 "duration":0, 
 "origin": "FRA", 
@@ -10964,7 +10964,7 @@
 { 
 "flightNumber":"AD2915", 
 "aircraft": "AirBus", 
-"Capacity": 1194, 
+"capacity": 1194, 
 "date": "2016-04-29T23:0:00",
 "duration":23, 
 "origin": "FRA", 
@@ -10983,7 +10983,7 @@
 { 
 "flightNumber":"AD3015", 
 "aircraft": "AirBus", 
-"Capacity": 5299, 
+"capacity": 5299, 
 "date": "2016-04-30T5:22:00",
 "duration":5, 
 "origin": "FRA", 
@@ -11003,7 +11003,7 @@
 { 
 "flightNumber":"AD115", 
 "aircraft": "AirBus", 
-"Capacity": 1362, 
+"capacity": 1362, 
 "date": "2016-05-1T19:26:00",
 "duration":19, 
 "origin": "FRA", 
@@ -11022,7 +11022,7 @@
 { 
 "flightNumber":"AD215", 
 "aircraft": "AirBus", 
-"Capacity": 1388, 
+"capacity": 1388, 
 "date": "2016-05-2T19:29:00",
 "duration":19, 
 "origin": "FRA", 
@@ -11041,7 +11041,7 @@
 { 
 "flightNumber":"AD315", 
 "aircraft": "AirBus", 
-"Capacity": 5663, 
+"capacity": 5663, 
 "date": "2016-05-3T18:49:00",
 "duration":18, 
 "origin": "FRA", 
@@ -11060,7 +11060,7 @@
 { 
 "flightNumber":"AD415", 
 "aircraft": "AirBus", 
-"Capacity": 3788, 
+"capacity": 3788, 
 "date": "2016-05-4T9:2:00",
 "duration":9, 
 "origin": "FRA", 
@@ -11079,7 +11079,7 @@
 { 
 "flightNumber":"AD515", 
 "aircraft": "AirBus", 
-"Capacity": 4150, 
+"capacity": 4150, 
 "date": "2016-05-5T20:43:00",
 "duration":20, 
 "origin": "FRA", 
@@ -11098,7 +11098,7 @@
 { 
 "flightNumber":"AD615", 
 "aircraft": "AirBus", 
-"Capacity": 1393, 
+"capacity": 1393, 
 "date": "2016-05-6T15:29:00",
 "duration":15, 
 "origin": "FRA", 
@@ -11117,7 +11117,7 @@
 { 
 "flightNumber":"AD715", 
 "aircraft": "AirBus", 
-"Capacity": 1891, 
+"capacity": 1891, 
 "date": "2016-05-7T11:12:00",
 "duration":11, 
 "origin": "FRA", 
@@ -11136,7 +11136,7 @@
 { 
 "flightNumber":"AD815", 
 "aircraft": "AirBus", 
-"Capacity": 1838, 
+"capacity": 1838, 
 "date": "2016-05-8T21:31:00",
 "duration":21, 
 "origin": "FRA", 
@@ -11155,7 +11155,7 @@
 { 
 "flightNumber":"AD915", 
 "aircraft": "AirBus", 
-"Capacity": 3266, 
+"capacity": 3266, 
 "date": "2016-05-9T18:43:00",
 "duration":18, 
 "origin": "FRA", 
@@ -11174,7 +11174,7 @@
 { 
 "flightNumber":"AD1015", 
 "aircraft": "AirBus", 
-"Capacity": 5858, 
+"capacity": 5858, 
 "date": "2016-05-10T14:37:00",
 "duration":14, 
 "origin": "FRA", 
@@ -11193,7 +11193,7 @@
 { 
 "flightNumber":"AD1115", 
 "aircraft": "AirBus", 
-"Capacity": 1416, 
+"capacity": 1416, 
 "date": "2016-05-11T2:6:00",
 "duration":2, 
 "origin": "FRA", 
@@ -11212,7 +11212,7 @@
 { 
 "flightNumber":"AD1215", 
 "aircraft": "AirBus", 
-"Capacity": 2649, 
+"capacity": 2649, 
 "date": "2016-05-12T10:15:00",
 "duration":10, 
 "origin": "FRA", 
@@ -11231,7 +11231,7 @@
 { 
 "flightNumber":"AD1315", 
 "aircraft": "AirBus", 
-"Capacity": 3432, 
+"capacity": 3432, 
 "date": "2016-05-13T13:9:00",
 "duration":13, 
 "origin": "FRA", 
@@ -11250,7 +11250,7 @@
 { 
 "flightNumber":"AD1415", 
 "aircraft": "AirBus", 
-"Capacity": 5801, 
+"capacity": 5801, 
 "date": "2016-05-14T11:47:00",
 "duration":11, 
 "origin": "FRA", 
@@ -11269,7 +11269,7 @@
 { 
 "flightNumber":"AD1515", 
 "aircraft": "AirBus", 
-"Capacity": 5927, 
+"capacity": 5927, 
 "date": "2016-05-15T23:5:00",
 "duration":23, 
 "origin": "FRA", 
@@ -11288,7 +11288,7 @@
 { 
 "flightNumber":"AD1615", 
 "aircraft": "AirBus", 
-"Capacity": 1861, 
+"capacity": 1861, 
 "date": "2016-05-16T14:33:00",
 "duration":14, 
 "origin": "FRA", 
@@ -11307,7 +11307,7 @@
 { 
 "flightNumber":"AD1715", 
 "aircraft": "AirBus", 
-"Capacity": 4173, 
+"capacity": 4173, 
 "date": "2016-05-17T4:8:00",
 "duration":4, 
 "origin": "FRA", 
@@ -11326,7 +11326,7 @@
 { 
 "flightNumber":"AD1815", 
 "aircraft": "AirBus", 
-"Capacity": 5575, 
+"capacity": 5575, 
 "date": "2016-05-18T14:9:00",
 "duration":14, 
 "origin": "FRA", 
@@ -11345,7 +11345,7 @@
 { 
 "flightNumber":"AD1915", 
 "aircraft": "AirBus", 
-"Capacity": 1800, 
+"capacity": 1800, 
 "date": "2016-05-19T1:30:00",
 "duration":1, 
 "origin": "FRA", 
@@ -11364,7 +11364,7 @@
 { 
 "flightNumber":"AD2015", 
 "aircraft": "AirBus", 
-"Capacity": 1821, 
+"capacity": 1821, 
 "date": "2016-05-20T18:54:00",
 "duration":18, 
 "origin": "FRA", 
@@ -11383,7 +11383,7 @@
 { 
 "flightNumber":"AD2115", 
 "aircraft": "AirBus", 
-"Capacity": 4231, 
+"capacity": 4231, 
 "date": "2016-05-21T16:23:00",
 "duration":16, 
 "origin": "FRA", 
@@ -11402,7 +11402,7 @@
 { 
 "flightNumber":"AD2215", 
 "aircraft": "AirBus", 
-"Capacity": 3828, 
+"capacity": 3828, 
 "date": "2016-05-22T8:8:00",
 "duration":8, 
 "origin": "FRA", 
@@ -11421,7 +11421,7 @@
 { 
 "flightNumber":"AD2315", 
 "aircraft": "AirBus", 
-"Capacity": 4634, 
+"capacity": 4634, 
 "date": "2016-05-23T15:56:00",
 "duration":15, 
 "origin": "FRA", 
@@ -11440,7 +11440,7 @@
 { 
 "flightNumber":"AD2415", 
 "aircraft": "AirBus", 
-"Capacity": 2599, 
+"capacity": 2599, 
 "date": "2016-05-24T11:52:00",
 "duration":11, 
 "origin": "FRA", 
@@ -11459,7 +11459,7 @@
 { 
 "flightNumber":"AD2515", 
 "aircraft": "AirBus", 
-"Capacity": 4289, 
+"capacity": 4289, 
 "date": "2016-05-25T20:26:00",
 "duration":20, 
 "origin": "FRA", 
@@ -11478,7 +11478,7 @@
 { 
 "flightNumber":"AD2615", 
 "aircraft": "AirBus", 
-"Capacity": 5521, 
+"capacity": 5521, 
 "date": "2016-05-26T10:53:00",
 "duration":10, 
 "origin": "FRA", 
@@ -11497,7 +11497,7 @@
 { 
 "flightNumber":"AD2715", 
 "aircraft": "AirBus", 
-"Capacity": 5517, 
+"capacity": 5517, 
 "date": "2016-05-27T11:53:00",
 "duration":11, 
 "origin": "FRA", 
@@ -11516,7 +11516,7 @@
 { 
 "flightNumber":"AD2815", 
 "aircraft": "AirBus", 
-"Capacity": 5028, 
+"capacity": 5028, 
 "date": "2016-05-28T0:58:00",
 "duration":0, 
 "origin": "FRA", 
@@ -11535,7 +11535,7 @@
 { 
 "flightNumber":"AD2915", 
 "aircraft": "AirBus", 
-"Capacity": 4017, 
+"capacity": 4017, 
 "date": "2016-05-29T20:53:00",
 "duration":20, 
 "origin": "FRA", 
@@ -11554,7 +11554,7 @@
 { 
 "flightNumber":"AD3015", 
 "aircraft": "AirBus", 
-"Capacity": 5067, 
+"capacity": 5067, 
 "date": "2016-05-30T1:27:00",
 "duration":1, 
 "origin": "FRA", 
@@ -11573,7 +11573,7 @@
 { 
 "flightNumber":"AD3115", 
 "aircraft": "AirBus", 
-"Capacity": 2696, 
+"capacity": 2696, 
 "date": "2016-05-31T12:33:00",
 "duration":12, 
 "origin": "FRA", 
@@ -11593,7 +11593,7 @@
 { 
 "flightNumber":"AE1315", 
 "aircraft": "Boeing", 
-"Capacity": 5241, 
+"capacity": 5241, 
 "date": "2016-04-13T12:25:00",
 "duration":12, 
 "origin": "TXL", 
@@ -11612,7 +11612,7 @@
 { 
 "flightNumber":"AE1415", 
 "aircraft": "Boeing", 
-"Capacity": 1076, 
+"capacity": 1076, 
 "date": "2016-04-14T13:19:00",
 "duration":13, 
 "origin": "TXL", 
@@ -11631,7 +11631,7 @@
 { 
 "flightNumber":"AE1515", 
 "aircraft": "Boeing", 
-"Capacity": 5676, 
+"capacity": 5676, 
 "date": "2016-04-15T10:34:00",
 "duration":10, 
 "origin": "TXL", 
@@ -11650,7 +11650,7 @@
 { 
 "flightNumber":"AE1615", 
 "aircraft": "Boeing", 
-"Capacity": 4520, 
+"capacity": 4520, 
 "date": "2016-04-16T1:54:00",
 "duration":1, 
 "origin": "TXL", 
@@ -11669,7 +11669,7 @@
 { 
 "flightNumber":"AE1715", 
 "aircraft": "Boeing", 
-"Capacity": 5599, 
+"capacity": 5599, 
 "date": "2016-04-17T8:54:00",
 "duration":8, 
 "origin": "TXL", 
@@ -11688,7 +11688,7 @@
 { 
 "flightNumber":"AE1815", 
 "aircraft": "Boeing", 
-"Capacity": 5771, 
+"capacity": 5771, 
 "date": "2016-04-18T3:9:00",
 "duration":3, 
 "origin": "TXL", 
@@ -11707,7 +11707,7 @@
 { 
 "flightNumber":"AE1915", 
 "aircraft": "Boeing", 
-"Capacity": 5712, 
+"capacity": 5712, 
 "date": "2016-04-19T1:23:00",
 "duration":1, 
 "origin": "TXL", 
@@ -11726,7 +11726,7 @@
 { 
 "flightNumber":"AE2015", 
 "aircraft": "Boeing", 
-"Capacity": 3342, 
+"capacity": 3342, 
 "date": "2016-04-20T22:48:00",
 "duration":22, 
 "origin": "TXL", 
@@ -11745,7 +11745,7 @@
 { 
 "flightNumber":"AE2115", 
 "aircraft": "Boeing", 
-"Capacity": 4898, 
+"capacity": 4898, 
 "date": "2016-04-21T17:26:00",
 "duration":17, 
 "origin": "TXL", 
@@ -11764,7 +11764,7 @@
 { 
 "flightNumber":"AE2215", 
 "aircraft": "Boeing", 
-"Capacity": 4411, 
+"capacity": 4411, 
 "date": "2016-04-22T0:45:00",
 "duration":0, 
 "origin": "TXL", 
@@ -11783,7 +11783,7 @@
 { 
 "flightNumber":"AE2315", 
 "aircraft": "Boeing", 
-"Capacity": 1074, 
+"capacity": 1074, 
 "date": "2016-04-23T10:16:00",
 "duration":10, 
 "origin": "TXL", 
@@ -11802,7 +11802,7 @@
 { 
 "flightNumber":"AE2415", 
 "aircraft": "Boeing", 
-"Capacity": 3382, 
+"capacity": 3382, 
 "date": "2016-04-24T4:6:00",
 "duration":4, 
 "origin": "TXL", 
@@ -11821,7 +11821,7 @@
 { 
 "flightNumber":"AE2515", 
 "aircraft": "Boeing", 
-"Capacity": 2882, 
+"capacity": 2882, 
 "date": "2016-04-25T15:21:00",
 "duration":15, 
 "origin": "TXL", 
@@ -11840,7 +11840,7 @@
 { 
 "flightNumber":"AE2615", 
 "aircraft": "Boeing", 
-"Capacity": 3724, 
+"capacity": 3724, 
 "date": "2016-04-26T8:50:00",
 "duration":8, 
 "origin": "TXL", 
@@ -11859,7 +11859,7 @@
 { 
 "flightNumber":"AE2715", 
 "aircraft": "Boeing", 
-"Capacity": 4749, 
+"capacity": 4749, 
 "date": "2016-04-27T18:29:00",
 "duration":18, 
 "origin": "TXL", 
@@ -11878,7 +11878,7 @@
 { 
 "flightNumber":"AE2815", 
 "aircraft": "Boeing", 
-"Capacity": 5478, 
+"capacity": 5478, 
 "date": "2016-04-28T9:22:00",
 "duration":9, 
 "origin": "TXL", 
@@ -11897,7 +11897,7 @@
 { 
 "flightNumber":"AE2915", 
 "aircraft": "Boeing", 
-"Capacity": 1516, 
+"capacity": 1516, 
 "date": "2016-04-29T20:21:00",
 "duration":20, 
 "origin": "TXL", 
@@ -11916,7 +11916,7 @@
 { 
 "flightNumber":"AE3015", 
 "aircraft": "Boeing", 
-"Capacity": 1280, 
+"capacity": 1280, 
 "date": "2016-04-30T6:44:00",
 "duration":6, 
 "origin": "TXL", 
@@ -11936,7 +11936,7 @@
 { 
 "flightNumber":"AE115", 
 "aircraft": "Boeing", 
-"Capacity": 2750, 
+"capacity": 2750, 
 "date": "2016-05-1T0:18:00",
 "duration":0, 
 "origin": "TXL", 
@@ -11955,7 +11955,7 @@
 { 
 "flightNumber":"AE215", 
 "aircraft": "Boeing", 
-"Capacity": 4720, 
+"capacity": 4720, 
 "date": "2016-05-2T5:45:00",
 "duration":5, 
 "origin": "TXL", 
@@ -11974,7 +11974,7 @@
 { 
 "flightNumber":"AE315", 
 "aircraft": "Boeing", 
-"Capacity": 1883, 
+"capacity": 1883, 
 "date": "2016-05-3T1:37:00",
 "duration":1, 
 "origin": "TXL", 
@@ -11993,7 +11993,7 @@
 { 
 "flightNumber":"AE415", 
 "aircraft": "Boeing", 
-"Capacity": 4177, 
+"capacity": 4177, 
 "date": "2016-05-4T0:45:00",
 "duration":0, 
 "origin": "TXL", 
@@ -12012,7 +12012,7 @@
 { 
 "flightNumber":"AE515", 
 "aircraft": "Boeing", 
-"Capacity": 5145, 
+"capacity": 5145, 
 "date": "2016-05-5T17:12:00",
 "duration":17, 
 "origin": "TXL", 
@@ -12031,7 +12031,7 @@
 { 
 "flightNumber":"AE615", 
 "aircraft": "Boeing", 
-"Capacity": 1381, 
+"capacity": 1381, 
 "date": "2016-05-6T4:34:00",
 "duration":4, 
 "origin": "TXL", 
@@ -12050,7 +12050,7 @@
 { 
 "flightNumber":"AE715", 
 "aircraft": "Boeing", 
-"Capacity": 5235, 
+"capacity": 5235, 
 "date": "2016-05-7T8:31:00",
 "duration":8, 
 "origin": "TXL", 
@@ -12069,7 +12069,7 @@
 { 
 "flightNumber":"AE815", 
 "aircraft": "Boeing", 
-"Capacity": 3697, 
+"capacity": 3697, 
 "date": "2016-05-8T16:3:00",
 "duration":16, 
 "origin": "TXL", 
@@ -12088,7 +12088,7 @@
 { 
 "flightNumber":"AE915", 
 "aircraft": "Boeing", 
-"Capacity": 1290, 
+"capacity": 1290, 
 "date": "2016-05-9T17:4:00",
 "duration":17, 
 "origin": "TXL", 
@@ -12107,7 +12107,7 @@
 { 
 "flightNumber":"AE1015", 
 "aircraft": "Boeing", 
-"Capacity": 4189, 
+"capacity": 4189, 
 "date": "2016-05-10T18:28:00",
 "duration":18, 
 "origin": "TXL", 
@@ -12126,7 +12126,7 @@
 { 
 "flightNumber":"AE1115", 
 "aircraft": "Boeing", 
-"Capacity": 2029, 
+"capacity": 2029, 
 "date": "2016-05-11T15:12:00",
 "duration":15, 
 "origin": "TXL", 
@@ -12145,7 +12145,7 @@
 { 
 "flightNumber":"AE1215", 
 "aircraft": "Boeing", 
-"Capacity": 5352, 
+"capacity": 5352, 
 "date": "2016-05-12T15:27:00",
 "duration":15, 
 "origin": "TXL", 
@@ -12164,7 +12164,7 @@
 { 
 "flightNumber":"AE1315", 
 "aircraft": "Boeing", 
-"Capacity": 4721, 
+"capacity": 4721, 
 "date": "2016-05-13T12:21:00",
 "duration":12, 
 "origin": "TXL", 
@@ -12183,7 +12183,7 @@
 { 
 "flightNumber":"AE1415", 
 "aircraft": "Boeing", 
-"Capacity": 5757, 
+"capacity": 5757, 
 "date": "2016-05-14T0:38:00",
 "duration":0, 
 "origin": "TXL", 
@@ -12202,7 +12202,7 @@
 { 
 "flightNumber":"AE1515", 
 "aircraft": "Boeing", 
-"Capacity": 2008, 
+"capacity": 2008, 
 "date": "2016-05-15T0:32:00",
 "duration":0, 
 "origin": "TXL", 
@@ -12221,7 +12221,7 @@
 { 
 "flightNumber":"AE1615", 
 "aircraft": "Boeing", 
-"Capacity": 4788, 
+"capacity": 4788, 
 "date": "2016-05-16T2:2:00",
 "duration":2, 
 "origin": "TXL", 
@@ -12240,7 +12240,7 @@
 { 
 "flightNumber":"AE1715", 
 "aircraft": "Boeing", 
-"Capacity": 2871, 
+"capacity": 2871, 
 "date": "2016-05-17T16:11:00",
 "duration":16, 
 "origin": "TXL", 
@@ -12259,7 +12259,7 @@
 { 
 "flightNumber":"AE1815", 
 "aircraft": "Boeing", 
-"Capacity": 5940, 
+"capacity": 5940, 
 "date": "2016-05-18T10:21:00",
 "duration":10, 
 "origin": "TXL", 
@@ -12278,7 +12278,7 @@
 { 
 "flightNumber":"AE1915", 
 "aircraft": "Boeing", 
-"Capacity": 5574, 
+"capacity": 5574, 
 "date": "2016-05-19T16:20:00",
 "duration":16, 
 "origin": "TXL", 
@@ -12297,7 +12297,7 @@
 { 
 "flightNumber":"AE2015", 
 "aircraft": "Boeing", 
-"Capacity": 5551, 
+"capacity": 5551, 
 "date": "2016-05-20T16:42:00",
 "duration":16, 
 "origin": "TXL", 
@@ -12316,7 +12316,7 @@
 { 
 "flightNumber":"AE2115", 
 "aircraft": "Boeing", 
-"Capacity": 4951, 
+"capacity": 4951, 
 "date": "2016-05-21T21:17:00",
 "duration":21, 
 "origin": "TXL", 
@@ -12335,7 +12335,7 @@
 { 
 "flightNumber":"AE2215", 
 "aircraft": "Boeing", 
-"Capacity": 2586, 
+"capacity": 2586, 
 "date": "2016-05-22T15:55:00",
 "duration":15, 
 "origin": "TXL", 
@@ -12354,7 +12354,7 @@
 { 
 "flightNumber":"AE2315", 
 "aircraft": "Boeing", 
-"Capacity": 3555, 
+"capacity": 3555, 
 "date": "2016-05-23T18:40:00",
 "duration":18, 
 "origin": "TXL", 
@@ -12373,7 +12373,7 @@
 { 
 "flightNumber":"AE2415", 
 "aircraft": "Boeing", 
-"Capacity": 4916, 
+"capacity": 4916, 
 "date": "2016-05-24T10:17:00",
 "duration":10, 
 "origin": "TXL", 
@@ -12392,7 +12392,7 @@
 { 
 "flightNumber":"AE2515", 
 "aircraft": "Boeing", 
-"Capacity": 1563, 
+"capacity": 1563, 
 "date": "2016-05-25T20:31:00",
 "duration":20, 
 "origin": "TXL", 
@@ -12411,7 +12411,7 @@
 { 
 "flightNumber":"AE2615", 
 "aircraft": "Boeing", 
-"Capacity": 5773, 
+"capacity": 5773, 
 "date": "2016-05-26T20:50:00",
 "duration":20, 
 "origin": "TXL", 
@@ -12430,7 +12430,7 @@
 { 
 "flightNumber":"AE2715", 
 "aircraft": "Boeing", 
-"Capacity": 5984, 
+"capacity": 5984, 
 "date": "2016-05-27T11:10:00",
 "duration":11, 
 "origin": "TXL", 
@@ -12449,7 +12449,7 @@
 { 
 "flightNumber":"AE2815", 
 "aircraft": "Boeing", 
-"Capacity": 3144, 
+"capacity": 3144, 
 "date": "2016-05-28T20:5:00",
 "duration":20, 
 "origin": "TXL", 
@@ -12468,7 +12468,7 @@
 { 
 "flightNumber":"AE2915", 
 "aircraft": "Boeing", 
-"Capacity": 5935, 
+"capacity": 5935, 
 "date": "2016-05-29T0:2:00",
 "duration":0, 
 "origin": "TXL", 
@@ -12487,7 +12487,7 @@
 { 
 "flightNumber":"AE3015", 
 "aircraft": "Boeing", 
-"Capacity": 3122, 
+"capacity": 3122, 
 "date": "2016-05-30T14:50:00",
 "duration":14, 
 "origin": "TXL", 
@@ -12506,7 +12506,7 @@
 { 
 "flightNumber":"AE3115", 
 "aircraft": "Boeing", 
-"Capacity": 2116, 
+"capacity": 2116, 
 "date": "2016-05-31T7:3:00",
 "duration":7, 
 "origin": "TXL", 
@@ -12526,7 +12526,7 @@
 { 
 "flightNumber":"V1315", 
 "aircraft": "Airbus", 
-"Capacity": 1411, 
+"capacity": 1411, 
 "date": "2016-04-13T10:29:00",
 "duration":10, 
 "origin": "LAS", 
@@ -12545,7 +12545,7 @@
 { 
 "flightNumber":"V1415", 
 "aircraft": "Airbus", 
-"Capacity": 2754, 
+"capacity": 2754, 
 "date": "2016-04-14T3:0:00",
 "duration":3, 
 "origin": "LAS", 
@@ -12564,7 +12564,7 @@
 { 
 "flightNumber":"V1515", 
 "aircraft": "Airbus", 
-"Capacity": 1032, 
+"capacity": 1032, 
 "date": "2016-04-15T2:9:00",
 "duration":2, 
 "origin": "LAS", 
@@ -12583,7 +12583,7 @@
 { 
 "flightNumber":"V1615", 
 "aircraft": "Airbus", 
-"Capacity": 3673, 
+"capacity": 3673, 
 "date": "2016-04-16T3:37:00",
 "duration":3, 
 "origin": "LAS", 
@@ -12602,7 +12602,7 @@
 { 
 "flightNumber":"V1715", 
 "aircraft": "Airbus", 
-"Capacity": 2129, 
+"capacity": 2129, 
 "date": "2016-04-17T3:41:00",
 "duration":3, 
 "origin": "LAS", 
@@ -12621,7 +12621,7 @@
 { 
 "flightNumber":"V1815", 
 "aircraft": "Airbus", 
-"Capacity": 3116, 
+"capacity": 3116, 
 "date": "2016-04-18T21:36:00",
 "duration":21, 
 "origin": "LAS", 
@@ -12640,7 +12640,7 @@
 { 
 "flightNumber":"V1915", 
 "aircraft": "Airbus", 
-"Capacity": 5216, 
+"capacity": 5216, 
 "date": "2016-04-19T19:15:00",
 "duration":19, 
 "origin": "LAS", 
@@ -12659,7 +12659,7 @@
 { 
 "flightNumber":"V2015", 
 "aircraft": "Airbus", 
-"Capacity": 3691, 
+"capacity": 3691, 
 "date": "2016-04-20T21:41:00",
 "duration":21, 
 "origin": "LAS", 
@@ -12678,7 +12678,7 @@
 { 
 "flightNumber":"V2115", 
 "aircraft": "Airbus", 
-"Capacity": 2247, 
+"capacity": 2247, 
 "date": "2016-04-21T21:28:00",
 "duration":21, 
 "origin": "LAS", 
@@ -12697,7 +12697,7 @@
 { 
 "flightNumber":"V2215", 
 "aircraft": "Airbus", 
-"Capacity": 2151, 
+"capacity": 2151, 
 "date": "2016-04-22T6:14:00",
 "duration":6, 
 "origin": "LAS", 
@@ -12716,7 +12716,7 @@
 { 
 "flightNumber":"V2315", 
 "aircraft": "Airbus", 
-"Capacity": 3860, 
+"capacity": 3860, 
 "date": "2016-04-23T3:54:00",
 "duration":3, 
 "origin": "LAS", 
@@ -12735,7 +12735,7 @@
 { 
 "flightNumber":"V2415", 
 "aircraft": "Airbus", 
-"Capacity": 4021, 
+"capacity": 4021, 
 "date": "2016-04-24T8:18:00",
 "duration":8, 
 "origin": "LAS", 
@@ -12754,7 +12754,7 @@
 { 
 "flightNumber":"V2515", 
 "aircraft": "Airbus", 
-"Capacity": 4928, 
+"capacity": 4928, 
 "date": "2016-04-25T24:52:00",
 "duration":24, 
 "origin": "LAS", 
@@ -12773,7 +12773,7 @@
 { 
 "flightNumber":"V2615", 
 "aircraft": "Airbus", 
-"Capacity": 5670, 
+"capacity": 5670, 
 "date": "2016-04-26T11:10:00",
 "duration":11, 
 "origin": "LAS", 
@@ -12792,7 +12792,7 @@
 { 
 "flightNumber":"V2715", 
 "aircraft": "Airbus", 
-"Capacity": 1776, 
+"capacity": 1776, 
 "date": "2016-04-27T15:50:00",
 "duration":15, 
 "origin": "LAS", 
@@ -12811,7 +12811,7 @@
 { 
 "flightNumber":"V2815", 
 "aircraft": "Airbus", 
-"Capacity": 1448, 
+"capacity": 1448, 
 "date": "2016-04-28T1:11:00",
 "duration":1, 
 "origin": "LAS", 
@@ -12830,7 +12830,7 @@
 { 
 "flightNumber":"V2915", 
 "aircraft": "Airbus", 
-"Capacity": 3157, 
+"capacity": 3157, 
 "date": "2016-04-29T13:58:00",
 "duration":13, 
 "origin": "LAS", 
@@ -12849,7 +12849,7 @@
 { 
 "flightNumber":"V3015", 
 "aircraft": "Airbus", 
-"Capacity": 1075, 
+"capacity": 1075, 
 "date": "2016-04-30T13:47:00",
 "duration":13, 
 "origin": "LAS", 
@@ -12871,7 +12871,7 @@
 { 
 "flightNumber":"W115", 
 "aircraft": "Airbus", 
-"Capacity": 5925, 
+"capacity": 5925, 
 "date": "2016-05-1T4:40:00",
 "duration":4, 
 "origin": "LAS", 
@@ -12890,7 +12890,7 @@
 { 
 "flightNumber":"W215", 
 "aircraft": "Airbus", 
-"Capacity": 3965, 
+"capacity": 3965, 
 "date": "2016-05-2T20:32:00",
 "duration":20, 
 "origin": "LAS", 
@@ -12909,7 +12909,7 @@
 { 
 "flightNumber":"W315", 
 "aircraft": "Airbus", 
-"Capacity": 4850, 
+"capacity": 4850, 
 "date": "2016-05-3T18:52:00",
 "duration":18, 
 "origin": "LAS", 
@@ -12928,7 +12928,7 @@
 { 
 "flightNumber":"W415", 
 "aircraft": "Airbus", 
-"Capacity": 1173, 
+"capacity": 1173, 
 "date": "2016-05-4T24:55:00",
 "duration":24, 
 "origin": "LAS", 
@@ -12947,7 +12947,7 @@
 { 
 "flightNumber":"W515", 
 "aircraft": "Airbus", 
-"Capacity": 1978, 
+"capacity": 1978, 
 "date": "2016-05-5T18:59:00",
 "duration":18, 
 "origin": "LAS", 
@@ -12966,7 +12966,7 @@
 { 
 "flightNumber":"W615", 
 "aircraft": "Airbus", 
-"Capacity": 2793, 
+"capacity": 2793, 
 "date": "2016-05-6T5:48:00",
 "duration":5, 
 "origin": "LAS", 
@@ -12985,7 +12985,7 @@
 { 
 "flightNumber":"W715", 
 "aircraft": "Airbus", 
-"Capacity": 4219, 
+"capacity": 4219, 
 "date": "2016-05-7T24:33:00",
 "duration":24, 
 "origin": "LAS", 
@@ -13004,7 +13004,7 @@
 { 
 "flightNumber":"W815", 
 "aircraft": "Airbus", 
-"Capacity": 1063, 
+"capacity": 1063, 
 "date": "2016-05-8T21:3:00",
 "duration":21, 
 "origin": "LAS", 
@@ -13023,7 +13023,7 @@
 { 
 "flightNumber":"W915", 
 "aircraft": "Airbus", 
-"Capacity": 4057, 
+"capacity": 4057, 
 "date": "2016-05-9T13:57:00",
 "duration":13, 
 "origin": "LAS", 
@@ -13042,7 +13042,7 @@
 { 
 "flightNumber":"W1015", 
 "aircraft": "Airbus", 
-"Capacity": 1772, 
+"capacity": 1772, 
 "date": "2016-05-10T13:0:00",
 "duration":13, 
 "origin": "LAS", 
@@ -13061,7 +13061,7 @@
 { 
 "flightNumber":"W1115", 
 "aircraft": "Airbus", 
-"Capacity": 5362, 
+"capacity": 5362, 
 "date": "2016-05-11T18:49:00",
 "duration":18, 
 "origin": "LAS", 
@@ -13080,7 +13080,7 @@
 { 
 "flightNumber":"W1215", 
 "aircraft": "Airbus", 
-"Capacity": 2074, 
+"capacity": 2074, 
 "date": "2016-05-12T13:8:00",
 "duration":13, 
 "origin": "LAS", 
@@ -13099,7 +13099,7 @@
 { 
 "flightNumber":"W1315", 
 "aircraft": "Airbus", 
-"Capacity": 5617, 
+"capacity": 5617, 
 "date": "2016-05-13T21:35:00",
 "duration":21, 
 "origin": "LAS", 
@@ -13118,7 +13118,7 @@
 { 
 "flightNumber":"W1415", 
 "aircraft": "Airbus", 
-"Capacity": 4781, 
+"capacity": 4781, 
 "date": "2016-05-14T24:25:00",
 "duration":24, 
 "origin": "LAS", 
@@ -13137,7 +13137,7 @@
 { 
 "flightNumber":"W1515", 
 "aircraft": "Airbus", 
-"Capacity": 5906, 
+"capacity": 5906, 
 "date": "2016-05-15T16:20:00",
 "duration":16, 
 "origin": "LAS", 
@@ -13156,7 +13156,7 @@
 { 
 "flightNumber":"W1615", 
 "aircraft": "Airbus", 
-"Capacity": 4101, 
+"capacity": 4101, 
 "date": "2016-05-16T4:59:00",
 "duration":4, 
 "origin": "LAS", 
@@ -13175,7 +13175,7 @@
 { 
 "flightNumber":"W1715", 
 "aircraft": "Airbus", 
-"Capacity": 4986, 
+"capacity": 4986, 
 "date": "2016-05-17T7:8:00",
 "duration":7, 
 "origin": "LAS", 
@@ -13194,7 +13194,7 @@
 { 
 "flightNumber":"W1815", 
 "aircraft": "Airbus", 
-"Capacity": 4653, 
+"capacity": 4653, 
 "date": "2016-05-18T0:31:00",
 "duration":0, 
 "origin": "LAS", 
@@ -13213,7 +13213,7 @@
 { 
 "flightNumber":"W1915", 
 "aircraft": "Airbus", 
-"Capacity": 5556, 
+"capacity": 5556, 
 "date": "2016-05-19T5:23:00",
 "duration":5, 
 "origin": "LAS", 
@@ -13232,7 +13232,7 @@
 { 
 "flightNumber":"W2015", 
 "aircraft": "Airbus", 
-"Capacity": 3859, 
+"capacity": 3859, 
 "date": "2016-05-20T24:1:00",
 "duration":24, 
 "origin": "LAS", 
@@ -13251,7 +13251,7 @@
 { 
 "flightNumber":"W2115", 
 "aircraft": "Airbus", 
-"Capacity": 3862, 
+"capacity": 3862, 
 "date": "2016-05-21T21:32:00",
 "duration":21, 
 "origin": "LAS", 
@@ -13270,7 +13270,7 @@
 { 
 "flightNumber":"W2215", 
 "aircraft": "Airbus", 
-"Capacity": 5541, 
+"capacity": 5541, 
 "date": "2016-05-22T12:13:00",
 "duration":12, 
 "origin": "LAS", 
@@ -13289,7 +13289,7 @@
 { 
 "flightNumber":"W2315", 
 "aircraft": "Airbus", 
-"Capacity": 4849, 
+"capacity": 4849, 
 "date": "2016-05-23T22:35:00",
 "duration":22, 
 "origin": "LAS", 
@@ -13308,7 +13308,7 @@
 { 
 "flightNumber":"W2415", 
 "aircraft": "Airbus", 
-"Capacity": 3195, 
+"capacity": 3195, 
 "date": "2016-05-24T23:30:00",
 "duration":23, 
 "origin": "LAS", 
@@ -13327,7 +13327,7 @@
 { 
 "flightNumber":"W2515", 
 "aircraft": "Airbus", 
-"Capacity": 4711, 
+"capacity": 4711, 
 "date": "2016-05-25T15:55:00",
 "duration":15, 
 "origin": "LAS", 
@@ -13346,7 +13346,7 @@
 { 
 "flightNumber":"W2615", 
 "aircraft": "Airbus", 
-"Capacity": 5308, 
+"capacity": 5308, 
 "date": "2016-05-26T1:10:00",
 "duration":1, 
 "origin": "LAS", 
@@ -13365,7 +13365,7 @@
 { 
 "flightNumber":"W2715", 
 "aircraft": "Airbus", 
-"Capacity": 1373, 
+"capacity": 1373, 
 "date": "2016-05-27T13:25:00",
 "duration":13, 
 "origin": "LAS", 
@@ -13384,7 +13384,7 @@
 { 
 "flightNumber":"W2815", 
 "aircraft": "Airbus", 
-"Capacity": 5599, 
+"capacity": 5599, 
 "date": "2016-05-28T14:33:00",
 "duration":14, 
 "origin": "LAS", 
@@ -13403,7 +13403,7 @@
 { 
 "flightNumber":"W2915", 
 "aircraft": "Airbus", 
-"Capacity": 2679, 
+"capacity": 2679, 
 "date": "2016-05-29T2:14:00",
 "duration":2, 
 "origin": "LAS", 
@@ -13422,7 +13422,7 @@
 { 
 "flightNumber":"W3015", 
 "aircraft": "Airbus", 
-"Capacity": 5880, 
+"capacity": 5880, 
 "date": "2016-05-30T20:35:00",
 "duration":20, 
 "origin": "LAS", 
@@ -13441,7 +13441,7 @@
 { 
 "flightNumber":"W3115", 
 "aircraft": "Airbus", 
-"Capacity": 1011, 
+"capacity": 1011, 
 "date": "2016-05-31T22:2:00",
 "duration":22, 
 "origin": "LAS", 
@@ -13465,7 +13465,7 @@
 { 
 "flightNumber":"X115", 
 "aircraft": "Boeing", 
-"Capacity": 4000, 
+"capacity": 4000, 
 "date": "2016-05-1T16:31:00",
 "duration":16, 
 "origin": "LAX", 
@@ -13484,7 +13484,7 @@
 { 
 "flightNumber":"X215", 
 "aircraft": "Boeing", 
-"Capacity": 4105, 
+"capacity": 4105, 
 "date": "2016-05-2T15:19:00",
 "duration":15, 
 "origin": "LAX", 
@@ -13503,7 +13503,7 @@
 { 
 "flightNumber":"X315", 
 "aircraft": "Boeing", 
-"Capacity": 3997, 
+"capacity": 3997, 
 "date": "2016-05-3T8:30:00",
 "duration":8, 
 "origin": "LAX", 
@@ -13522,7 +13522,7 @@
 { 
 "flightNumber":"X415", 
 "aircraft": "Boeing", 
-"Capacity": 1296, 
+"capacity": 1296, 
 "date": "2016-05-4T18:7:00",
 "duration":18, 
 "origin": "LAX", 
@@ -13541,7 +13541,7 @@
 { 
 "flightNumber":"X515", 
 "aircraft": "Boeing", 
-"Capacity": 5948, 
+"capacity": 5948, 
 "date": "2016-05-5T17:0:00",
 "duration":17, 
 "origin": "LAX", 
@@ -13560,7 +13560,7 @@
 { 
 "flightNumber":"X615", 
 "aircraft": "Boeing", 
-"Capacity": 2908, 
+"capacity": 2908, 
 "date": "2016-05-6T6:18:00",
 "duration":6, 
 "origin": "LAX", 
@@ -13579,7 +13579,7 @@
 { 
 "flightNumber":"X715", 
 "aircraft": "Boeing", 
-"Capacity": 4801, 
+"capacity": 4801, 
 "date": "2016-05-7T2:40:00",
 "duration":2, 
 "origin": "LAX", 
@@ -13598,7 +13598,7 @@
 { 
 "flightNumber":"X815", 
 "aircraft": "Boeing", 
-"Capacity": 5297, 
+"capacity": 5297, 
 "date": "2016-05-8T23:5:00",
 "duration":23, 
 "origin": "LAX", 
@@ -13617,7 +13617,7 @@
 { 
 "flightNumber":"X915", 
 "aircraft": "Boeing", 
-"Capacity": 3614, 
+"capacity": 3614, 
 "date": "2016-05-9T22:35:00",
 "duration":22, 
 "origin": "LAX", 
@@ -13636,7 +13636,7 @@
 { 
 "flightNumber":"X1015", 
 "aircraft": "Boeing", 
-"Capacity": 4893, 
+"capacity": 4893, 
 "date": "2016-05-10T8:49:00",
 "duration":8, 
 "origin": "LAX", 
@@ -13655,7 +13655,7 @@
 { 
 "flightNumber":"X1115", 
 "aircraft": "Boeing", 
-"Capacity": 3301, 
+"capacity": 3301, 
 "date": "2016-05-11T16:10:00",
 "duration":16, 
 "origin": "LAX", 
@@ -13674,7 +13674,7 @@
 { 
 "flightNumber":"X1215", 
 "aircraft": "Boeing", 
-"Capacity": 1873, 
+"capacity": 1873, 
 "date": "2016-05-12T0:0:00",
 "duration":0, 
 "origin": "LAX", 
@@ -13693,7 +13693,7 @@
 { 
 "flightNumber":"X1315", 
 "aircraft": "Boeing", 
-"Capacity": 3851, 
+"capacity": 3851, 
 "date": "2016-05-13T23:3:00",
 "duration":23, 
 "origin": "LAX", 
@@ -13712,7 +13712,7 @@
 { 
 "flightNumber":"X1415", 
 "aircraft": "Boeing", 
-"Capacity": 3260, 
+"capacity": 3260, 
 "date": "2016-05-14T19:58:00",
 "duration":19, 
 "origin": "LAX", 
@@ -13731,7 +13731,7 @@
 { 
 "flightNumber":"X1515", 
 "aircraft": "Boeing", 
-"Capacity": 5567, 
+"capacity": 5567, 
 "date": "2016-05-15T10:59:00",
 "duration":10, 
 "origin": "LAX", 
@@ -13750,7 +13750,7 @@
 { 
 "flightNumber":"X1615", 
 "aircraft": "Boeing", 
-"Capacity": 5987, 
+"capacity": 5987, 
 "date": "2016-05-16T16:15:00",
 "duration":16, 
 "origin": "LAX", 
@@ -13769,7 +13769,7 @@
 { 
 "flightNumber":"X1715", 
 "aircraft": "Boeing", 
-"Capacity": 3986, 
+"capacity": 3986, 
 "date": "2016-05-17T16:10:00",
 "duration":16, 
 "origin": "LAX", 
@@ -13788,7 +13788,7 @@
 { 
 "flightNumber":"X1815", 
 "aircraft": "Boeing", 
-"Capacity": 4382, 
+"capacity": 4382, 
 "date": "2016-05-18T3:49:00",
 "duration":3, 
 "origin": "LAX", 
@@ -13807,7 +13807,7 @@
 { 
 "flightNumber":"X1915", 
 "aircraft": "Boeing", 
-"Capacity": 3623, 
+"capacity": 3623, 
 "date": "2016-05-19T7:15:00",
 "duration":7, 
 "origin": "LAX", 
@@ -13826,7 +13826,7 @@
 { 
 "flightNumber":"X2015", 
 "aircraft": "Boeing", 
-"Capacity": 3572, 
+"capacity": 3572, 
 "date": "2016-05-20T13:46:00",
 "duration":13, 
 "origin": "LAX", 
@@ -13845,7 +13845,7 @@
 { 
 "flightNumber":"X2115", 
 "aircraft": "Boeing", 
-"Capacity": 4593, 
+"capacity": 4593, 
 "date": "2016-05-21T0:54:00",
 "duration":0, 
 "origin": "LAX", 
@@ -13864,7 +13864,7 @@
 { 
 "flightNumber":"X2215", 
 "aircraft": "Boeing", 
-"Capacity": 4113, 
+"capacity": 4113, 
 "date": "2016-05-22T14:14:00",
 "duration":14, 
 "origin": "LAX", 
@@ -13883,7 +13883,7 @@
 { 
 "flightNumber":"X2315", 
 "aircraft": "Boeing", 
-"Capacity": 2572, 
+"capacity": 2572, 
 "date": "2016-05-23T19:1:00",
 "duration":19, 
 "origin": "LAX", 
@@ -13902,7 +13902,7 @@
 { 
 "flightNumber":"X2415", 
 "aircraft": "Boeing", 
-"Capacity": 1820, 
+"capacity": 1820, 
 "date": "2016-05-24T14:47:00",
 "duration":14, 
 "origin": "LAX", 
@@ -13921,7 +13921,7 @@
 { 
 "flightNumber":"X2515", 
 "aircraft": "Boeing", 
-"Capacity": 1665, 
+"capacity": 1665, 
 "date": "2016-05-25T3:41:00",
 "duration":3, 
 "origin": "LAX", 
@@ -13940,7 +13940,7 @@
 { 
 "flightNumber":"X2615", 
 "aircraft": "Boeing", 
-"Capacity": 4139, 
+"capacity": 4139, 
 "date": "2016-05-26T17:46:00",
 "duration":17, 
 "origin": "LAX", 
@@ -13959,7 +13959,7 @@
 { 
 "flightNumber":"X2715", 
 "aircraft": "Boeing", 
-"Capacity": 3303, 
+"capacity": 3303, 
 "date": "2016-05-27T0:15:00",
 "duration":0, 
 "origin": "LAX", 
@@ -13978,7 +13978,7 @@
 { 
 "flightNumber":"X2815", 
 "aircraft": "Boeing", 
-"Capacity": 1740, 
+"capacity": 1740, 
 "date": "2016-05-28T13:34:00",
 "duration":13, 
 "origin": "LAX", 
@@ -13997,7 +13997,7 @@
 { 
 "flightNumber":"X2915", 
 "aircraft": "Boeing", 
-"Capacity": 1821, 
+"capacity": 1821, 
 "date": "2016-05-29T5:36:00",
 "duration":5, 
 "origin": "LAX", 
@@ -14016,7 +14016,7 @@
 { 
 "flightNumber":"X3015", 
 "aircraft": "Boeing", 
-"Capacity": 5639, 
+"capacity": 5639, 
 "date": "2016-05-30T14:48:00",
 "duration":14, 
 "origin": "LAX", 
@@ -14035,7 +14035,7 @@
 { 
 "flightNumber":"X3115", 
 "aircraft": "Boeing", 
-"Capacity": 2294, 
+"capacity": 2294, 
 "date": "2016-05-31T15:55:00",
 "duration":15, 
 "origin": "LAX", 
@@ -14057,7 +14057,7 @@
 { 
 "flightNumber":"Y1315", 
 "aircraft": "Boeing", 
-"Capacity": 1111, 
+"capacity": 1111, 
 "date": "2016-04-13T2:55:00",
 "duration":2, 
 "origin": "LAX", 
@@ -14076,7 +14076,7 @@
 { 
 "flightNumber":"Y1415", 
 "aircraft": "Boeing", 
-"Capacity": 2584, 
+"capacity": 2584, 
 "date": "2016-04-14T9:21:00",
 "duration":9, 
 "origin": "LAX", 
@@ -14095,7 +14095,7 @@
 { 
 "flightNumber":"Y1515", 
 "aircraft": "Boeing", 
-"Capacity": 1034, 
+"capacity": 1034, 
 "date": "2016-04-15T1:13:00",
 "duration":1, 
 "origin": "LAX", 
@@ -14114,7 +14114,7 @@
 { 
 "flightNumber":"Y1615", 
 "aircraft": "Boeing", 
-"Capacity": 3700, 
+"capacity": 3700, 
 "date": "2016-04-16T15:25:00",
 "duration":15, 
 "origin": "LAX", 
@@ -14133,7 +14133,7 @@
 { 
 "flightNumber":"Y1715", 
 "aircraft": "Boeing", 
-"Capacity": 3864, 
+"capacity": 3864, 
 "date": "2016-04-17T9:28:00",
 "duration":9, 
 "origin": "LAX", 
@@ -14152,7 +14152,7 @@
 { 
 "flightNumber":"Y1815", 
 "aircraft": "Boeing", 
-"Capacity": 5111, 
+"capacity": 5111, 
 "date": "2016-04-18T12:42:00",
 "duration":12, 
 "origin": "LAX", 
@@ -14171,7 +14171,7 @@
 { 
 "flightNumber":"Y1915", 
 "aircraft": "Boeing", 
-"Capacity": 5973, 
+"capacity": 5973, 
 "date": "2016-04-19T3:52:00",
 "duration":3, 
 "origin": "LAX", 
@@ -14190,7 +14190,7 @@
 { 
 "flightNumber":"Y2015", 
 "aircraft": "Boeing", 
-"Capacity": 5012, 
+"capacity": 5012, 
 "date": "2016-04-20T6:38:00",
 "duration":6, 
 "origin": "LAX", 
@@ -14209,7 +14209,7 @@
 { 
 "flightNumber":"Y2115", 
 "aircraft": "Boeing", 
-"Capacity": 5172, 
+"capacity": 5172, 
 "date": "2016-04-21T12:55:00",
 "duration":12, 
 "origin": "LAX", 
@@ -14228,7 +14228,7 @@
 { 
 "flightNumber":"Y2215", 
 "aircraft": "Boeing", 
-"Capacity": 3654, 
+"capacity": 3654, 
 "date": "2016-04-22T16:19:00",
 "duration":16, 
 "origin": "LAX", 
@@ -14247,7 +14247,7 @@
 { 
 "flightNumber":"Y2315", 
 "aircraft": "Boeing", 
-"Capacity": 1805, 
+"capacity": 1805, 
 "date": "2016-04-23T13:45:00",
 "duration":13, 
 "origin": "LAX", 
@@ -14266,7 +14266,7 @@
 { 
 "flightNumber":"Y2415", 
 "aircraft": "Boeing", 
-"Capacity": 3715, 
+"capacity": 3715, 
 "date": "2016-04-24T1:59:00",
 "duration":1, 
 "origin": "LAX", 
@@ -14285,7 +14285,7 @@
 { 
 "flightNumber":"Y2515", 
 "aircraft": "Boeing", 
-"Capacity": 4635, 
+"capacity": 4635, 
 "date": "2016-04-25T2:34:00",
 "duration":2, 
 "origin": "LAX", 
@@ -14304,7 +14304,7 @@
 { 
 "flightNumber":"Y2615", 
 "aircraft": "Boeing", 
-"Capacity": 1180, 
+"capacity": 1180, 
 "date": "2016-04-26T19:1:00",
 "duration":19, 
 "origin": "LAX", 
@@ -14323,7 +14323,7 @@
 { 
 "flightNumber":"Y2715", 
 "aircraft": "Boeing", 
-"Capacity": 1425, 
+"capacity": 1425, 
 "date": "2016-04-27T3:19:00",
 "duration":3, 
 "origin": "LAX", 
@@ -14342,7 +14342,7 @@
 { 
 "flightNumber":"Y2815", 
 "aircraft": "Boeing", 
-"Capacity": 3034, 
+"capacity": 3034, 
 "date": "2016-04-28T6:36:00",
 "duration":6, 
 "origin": "LAX", 
@@ -14361,7 +14361,7 @@
 { 
 "flightNumber":"Y2915", 
 "aircraft": "Boeing", 
-"Capacity": 5823, 
+"capacity": 5823, 
 "date": "2016-04-29T11:52:00",
 "duration":11, 
 "origin": "LAX", 
@@ -14380,7 +14380,7 @@
 { 
 "flightNumber":"Y3015", 
 "aircraft": "Boeing", 
-"Capacity": 1368, 
+"capacity": 1368, 
 "date": "2016-04-30T13:48:00",
 "duration":13, 
 "origin": "LAX", 
