@@ -61,7 +61,6 @@
     }
     th, td 
     {
-        /*width:265px;*/
         color:white;
         text-align: center;
     }
@@ -93,7 +92,7 @@
 </style>
 <div class="blueBackground"> 
    	<div class="FromTo">
-    	<h4>Flights departing from {{origin}} to {{destination}}</h4>
+    	<h4>Flights departing from {{origin}} to {{destination}} on {{dateFixer2(departDate)}}</h4>
     </div>
    	<hr>
     <table style="width:100%">
@@ -101,27 +100,27 @@
             <tr>
                 <th>Depart</th>
                 <th>Arrive</th>       
-                <th>Duration</th>
+                <th>Airline</th>
                 <th>FlightNo.</th>
                 <th>Price</th>
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="flight in Flights | filter : {origin:origin} | filter : {destination : destination} | filter : dateFilter" ng-click="setDepartFlight(flight,getPrice(flight.costeconomy,flight.costfirst))">
+            <tr ng-repeat="flight in Flights" ng-click="setDepartFlight(flight,flight.cost)">
                 <td> 
-                    {{dateFixer(flight.date)}} 
+                    {{dateFixer(flight.departureDateTime)}} 
                 </td>
                 <td>
-                    {{addMinutes(flight.date,flight.duration)}}
+                    {{dateFixer(flight.arrivalDateTime)}}
                 </td>
                 <td> 
-                    {{convertDuration(flight.duration)}} 
+                    {{flight.Airline}} 
                 </td>
                 <td>
-                    {{flight.flighNumber}} 
+                    {{flight.flightNumber}} 
                 </td>
                 <td>
-                    {{getPrice(flight.costeconomy,flight.costfirst)}}$
+                    {{flight.cost}}{{flight.currency}}
                 </td>
             </tr>
         </tbody>

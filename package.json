@@ -12,6 +12,7 @@
   "dependencies": {
     "angular": "^1.5.3",
     "angular-animate": "^1.5.3",
+    "angular-moment": "^0.10.3",
     "angular-ui-bootstrap": "^1.2.5",
     "body-parser": "^1.15.0",
     "bootstrap": "^3.3.6",
@@ -22,7 +23,7 @@
     "express": "*",
     "jsonwebtoken": "^5.4.0",
     "mocha": "*",
-    "moment": "*",
+    "moment": "^2.12.0",
     "mongodb": "*",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",

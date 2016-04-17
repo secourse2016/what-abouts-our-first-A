@@ -1,34 +1,35 @@
 module.exports = function(app,mongo) {
-      var path       = require('path');
-      var jwt        = require('jsonwebtoken');
-      var allFlights = require('./allFlights.js')
+    var path       = require('path');
+    var jwt        = require('jsonwebtoken');
+    var allFlights = require('./allFlights.js');
+    var moment     = require('moment');
+    moment().format();
 	
-
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
     });
+    
+    app.get('/', function (req, res) {
+	   res.sendFile(__dirname + '/public/index.html');
+    });
 
-	app.get('/', function (req, res) {
-	  res.sendFile(__dirname + '/public/index.html');
-	});
+    app.get('/api/dateconverter/:date',function(req, res){
+        var modifiedDate = moment(req.params.date).toDate().getTime();
+        res.send(moment(modifiedDate).format('YYYY-MM-DD'));
+    });
 
     app.get('/api/data/codes', function(req, res) {
       var codes =  require('../airports.json');
       res.json( codes );
     });
-
-    app.get('/api/data/flight', function(req, res) {
-      var flights =  require('../flights.json');
-      res.json( flights );
-    });
  
-     app.get('/db/seed', function(req, res) {
-        // allFlights.seed( function( err , seeded ){
-        //     if(err)
-        //         console.log("Error seeding");
-        //     if(seeded)
-        //         console.log("Seeding successfullly");
-        // });
+    app.get('/db/seed', function(req, res) {
+        allFlights.seedDB( function( err , seeded ){
+            if(err)
+              console.log("Error seeding");
+            if(seeded)
+              console.log("Seeded successfullly");
+        });
     });      
 
     /* DELETE DB */
@@ -37,13 +38,7 @@ module.exports = function(app,mongo) {
 
     /* Middleware */
     app.use(function(req, res, next) {
-
-
-    	 // check header or url parameters or post parameters for token
         var token = req.body.wt || req.query.wt || req.headers['x-access-token'];   
-
-        console.log("{{{{ TOKEN }}}} => ", token); 
-
 
         var jwtSecret = process.env.JWTSECRET;
 
@@ -56,8 +51,7 @@ module.exports = function(app,mongo) {
         } 
         catch (err) 
         {
-            console.error('[ERROR]: JWT Error reason:', err);
-            res.status(403).sendFile(path.join(__dirname, '../public/partials', '403.html'));
+
         }
 	
 
@@ -74,44 +68,51 @@ module.exports = function(app,mongo) {
     app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class', function(req, res) {
         // retrieve params from req.params.{{origin | departingDate | ...}}
         // return this exact format
-        return 
-        {
-          outgoingFlights: 
-            [{
-                "flightNumber"      : "SE2804",
-                "aircraftType"      : "Boeing",
+        allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,req.params.class,function(err,flights){
+            var outFlights = [];
+            for (var i = 0; i < flights.length; i++) {
+                var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
+                var arriveDT = departDT+flights[i].duration*60000;
+                outFlights.push({
+                "flightNumber"      : flights[i].flightNumber,
+                "aircraftType"      : flights[i].aircraft,
                 "aircraftModel"     : "747",
-                "departureDateTime" : 1460478300000,
-                "arrivalDateTime"   : 1460478300000,
-                "origin"            : "JFK",
-                "destination"       : "CAI",
-                "cost"              : "750",
+                "departureDateTime" : departDT,
+                "arrivalDateTime"   : arriveDT,
+                "origin"            : flights[i].origin,
+                "destination"       : flights[i].destination,
+                "cost"              : flights[i].costeconomy,//tochange
                 "currency"          : "USD",
-                "class"             : "economy",
+                "class"             : req.params.class,
                 "Airline"           : "United"
+            })
             }
+            allFlights.getFlights(req.params.destination,req.params.origin,req.params.returningDate,req.params.class,function(err,flights){
+                var returnFlights = [];
+                for (var i = 0; i < flights.length; i++) {
+                    var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
+                    var arriveDT = departDT+flights[i].duration*60000;
 
-            // ,
-            // {
-            //     other flights
-            // }
-            ]
-           
-          returnFlights:
-            [{
-                "flightNumber"      : "SE2805",
-                "aircraftType"      : "Boeing",
-                "aircraftModel"     : "747",
-                "departureDateTime" : 1460478300000,
-                "arrivalDateTime"   : 1460478300000,
-                "origin"            : "CAI",
-                "destination"       : "JFK",
-                "cost"              : "845",
-                "currency"          : "USD",
-                "class"             : "economy",
-                "Airline"           : "United"
-            }]
-        };
+                    returnFlights.push({
+                    "flightNumber"      : flights[i].flightNumber,
+                    "aircraftType"      : flights[i].aircraft,
+                    "aircraftModel"     : "767",
+                    "departureDateTime" : departDT,
+                    "arrivalDateTime"   : arriveDT,
+                    "origin"            : flights[i].origin,
+                    "destination"       : flights[i].destination,
+                    "cost"              : flights[i].costeconomy,//tochange
+                    "currency"          : "USD",
+                    "class"             : req.params.class,
+                    "Airline"           : "United"
+                    })
+                }
+                res.send({
+                    outgoingFlights     : outFlights,
+                    returnFlights       : returnFlights
+                });
+            });
+        });
     });    
 
     /**
@@ -124,7 +125,6 @@ module.exports = function(app,mongo) {
     app.get('/api/flights/search/:origin/:destination/:departingDate/:class', function(req, res) {
         // retrieve params from req.params.{{origin | departingDate | ...}}
         // return this exact format
-
         return 
         {
           outgoingFlights: 
