@@ -17,7 +17,12 @@ module.exports = function(app,mongo) {
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
     });
-    
+    app.get('/api/reserve/:fn/:ln/:flightNumber', function(req, res) {
+      
+      allFlights.reserve(req.params.fn , req.params.ln , req.params.flightNumber , 1 , 1 , 1 , cb);
+
+    });
+
     app.get('/', function (req, res) {
 	   res.sendFile(__dirname + '/public/index.html');
     });
