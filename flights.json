@@ -10657,6 +10657,1870 @@
 } 
 ] 
 } 
+{ 
+"flightNumber":"AD1315", 
+"aircraft": "AirBus", 
+"Capacity": 5161, 
+"date": "2016-04-13T0:43:00",
+"duration":0, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":862, 
+"costeconomy":1189, 
+"costfirst":1489, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F96T", 
+"seatNo":"646" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1415", 
+"aircraft": "AirBus", 
+"Capacity": 1747, 
+"date": "2016-04-14T3:20:00",
+"duration":3, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":249, 
+"costeconomy":712, 
+"costfirst":1012, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1413T", 
+"seatNo":"607" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1515", 
+"aircraft": "AirBus", 
+"Capacity": 5530, 
+"date": "2016-04-15T11:16:00",
+"duration":11, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":211, 
+"costeconomy":1361, 
+"costfirst":1661, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F5518T", 
+"seatNo":"345" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1615", 
+"aircraft": "AirBus", 
+"Capacity": 5563, 
+"date": "2016-04-16T5:32:00",
+"duration":5, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":900, 
+"costeconomy":751, 
+"costfirst":1051, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F3433T", 
+"seatNo":"64" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1715", 
+"aircraft": "AirBus", 
+"Capacity": 2694, 
+"date": "2016-04-17T13:51:00",
+"duration":13, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":751, 
+"costeconomy":1314, 
+"costfirst":1614, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9095T", 
+"seatNo":"933" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1815", 
+"aircraft": "AirBus", 
+"Capacity": 3243, 
+"date": "2016-04-18T23:17:00",
+"duration":23, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":10, 
+"costeconomy":1089, 
+"costfirst":1389, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7635T", 
+"seatNo":"25" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1915", 
+"aircraft": "AirBus", 
+"Capacity": 3187, 
+"date": "2016-04-19T11:27:00",
+"duration":11, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":914, 
+"costeconomy":582, 
+"costfirst":882, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F4011T", 
+"seatNo":"386" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2015", 
+"aircraft": "AirBus", 
+"Capacity": 3701, 
+"date": "2016-04-20T12:1:00",
+"duration":12, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":609, 
+"costeconomy":945, 
+"costfirst":1245, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1457T", 
+"seatNo":"71" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2115", 
+"aircraft": "AirBus", 
+"Capacity": 3253, 
+"date": "2016-04-21T1:3:00",
+"duration":1, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":362, 
+"costeconomy":504, 
+"costfirst":804, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9637T", 
+"seatNo":"753" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2215", 
+"aircraft": "AirBus", 
+"Capacity": 2385, 
+"date": "2016-04-22T4:18:00",
+"duration":4, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":787, 
+"costeconomy":1487, 
+"costfirst":1787, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7152T", 
+"seatNo":"5" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2315", 
+"aircraft": "AirBus", 
+"Capacity": 2777, 
+"date": "2016-04-23T3:51:00",
+"duration":3, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":152, 
+"costeconomy":724, 
+"costfirst":1024, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F8878T", 
+"seatNo":"982" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2415", 
+"aircraft": "AirBus", 
+"Capacity": 1393, 
+"date": "2016-04-24T19:4:00",
+"duration":19, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":423, 
+"costeconomy":992, 
+"costfirst":1292, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2814T", 
+"seatNo":"120" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2515", 
+"aircraft": "AirBus", 
+"Capacity": 4155, 
+"date": "2016-04-25T16:29:00",
+"duration":16, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":865, 
+"costeconomy":1473, 
+"costfirst":1773, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9798T", 
+"seatNo":"906" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2615", 
+"aircraft": "AirBus", 
+"Capacity": 5811, 
+"date": "2016-04-26T2:51:00",
+"duration":2, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":17, 
+"costeconomy":1331, 
+"costfirst":1631, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F3511T", 
+"seatNo":"300" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2715", 
+"aircraft": "AirBus", 
+"Capacity": 1654, 
+"date": "2016-04-27T23:1:00",
+"duration":23, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":632, 
+"costeconomy":761, 
+"costfirst":1061, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F326T", 
+"seatNo":"495" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2815", 
+"aircraft": "AirBus", 
+"Capacity": 2356, 
+"date": "2016-04-28T0:37:00",
+"duration":0, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":587, 
+"costeconomy":1104, 
+"costfirst":1404, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9873T", 
+"seatNo":"116" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2915", 
+"aircraft": "AirBus", 
+"Capacity": 1194, 
+"date": "2016-04-29T23:0:00",
+"duration":23, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":751, 
+"costeconomy":827, 
+"costfirst":1127, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7775T", 
+"seatNo":"173" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD3015", 
+"aircraft": "AirBus", 
+"Capacity": 5299, 
+"date": "2016-04-30T5:22:00",
+"duration":5, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":976, 
+"costeconomy":995, 
+"costfirst":1295, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F743T", 
+"seatNo":"729" 
+} 
+] 
+} 
 
+{ 
+"flightNumber":"AD115", 
+"aircraft": "AirBus", 
+"Capacity": 1362, 
+"date": "2016-05-1T19:26:00",
+"duration":19, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":736, 
+"costeconomy":1331, 
+"costfirst":1631, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1859T", 
+"seatNo":"831" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD215", 
+"aircraft": "AirBus", 
+"Capacity": 1388, 
+"date": "2016-05-2T19:29:00",
+"duration":19, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":217, 
+"costeconomy":889, 
+"costfirst":1189, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F3878T", 
+"seatNo":"147" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD315", 
+"aircraft": "AirBus", 
+"Capacity": 5663, 
+"date": "2016-05-3T18:49:00",
+"duration":18, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":771, 
+"costeconomy":839, 
+"costfirst":1139, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1860T", 
+"seatNo":"24" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD415", 
+"aircraft": "AirBus", 
+"Capacity": 3788, 
+"date": "2016-05-4T9:2:00",
+"duration":9, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":91, 
+"costeconomy":1112, 
+"costfirst":1412, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F4207T", 
+"seatNo":"618" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD515", 
+"aircraft": "AirBus", 
+"Capacity": 4150, 
+"date": "2016-05-5T20:43:00",
+"duration":20, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":928, 
+"costeconomy":1049, 
+"costfirst":1349, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F6658T", 
+"seatNo":"657" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD615", 
+"aircraft": "AirBus", 
+"Capacity": 1393, 
+"date": "2016-05-6T15:29:00",
+"duration":15, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":191, 
+"costeconomy":612, 
+"costfirst":912, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F4829T", 
+"seatNo":"598" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD715", 
+"aircraft": "AirBus", 
+"Capacity": 1891, 
+"date": "2016-05-7T11:12:00",
+"duration":11, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":262, 
+"costeconomy":924, 
+"costfirst":1224, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9834T", 
+"seatNo":"474" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD815", 
+"aircraft": "AirBus", 
+"Capacity": 1838, 
+"date": "2016-05-8T21:31:00",
+"duration":21, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":522, 
+"costeconomy":1387, 
+"costfirst":1687, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9577T", 
+"seatNo":"469" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD915", 
+"aircraft": "AirBus", 
+"Capacity": 3266, 
+"date": "2016-05-9T18:43:00",
+"duration":18, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":969, 
+"costeconomy":895, 
+"costfirst":1195, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F5490T", 
+"seatNo":"994" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1015", 
+"aircraft": "AirBus", 
+"Capacity": 5858, 
+"date": "2016-05-10T14:37:00",
+"duration":14, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":24, 
+"costeconomy":728, 
+"costfirst":1028, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7332T", 
+"seatNo":"337" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1115", 
+"aircraft": "AirBus", 
+"Capacity": 1416, 
+"date": "2016-05-11T2:6:00",
+"duration":2, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":621, 
+"costeconomy":1058, 
+"costfirst":1358, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F4674T", 
+"seatNo":"529" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1215", 
+"aircraft": "AirBus", 
+"Capacity": 2649, 
+"date": "2016-05-12T10:15:00",
+"duration":10, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":195, 
+"costeconomy":910, 
+"costfirst":1210, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1313T", 
+"seatNo":"143" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1315", 
+"aircraft": "AirBus", 
+"Capacity": 3432, 
+"date": "2016-05-13T13:9:00",
+"duration":13, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":30, 
+"costeconomy":1491, 
+"costfirst":1791, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9467T", 
+"seatNo":"893" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1415", 
+"aircraft": "AirBus", 
+"Capacity": 5801, 
+"date": "2016-05-14T11:47:00",
+"duration":11, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":841, 
+"costeconomy":1483, 
+"costfirst":1783, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F5472T", 
+"seatNo":"807" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1515", 
+"aircraft": "AirBus", 
+"Capacity": 5927, 
+"date": "2016-05-15T23:5:00",
+"duration":23, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":512, 
+"costeconomy":1296, 
+"costfirst":1596, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F5920T", 
+"seatNo":"957" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1615", 
+"aircraft": "AirBus", 
+"Capacity": 1861, 
+"date": "2016-05-16T14:33:00",
+"duration":14, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":651, 
+"costeconomy":646, 
+"costfirst":946, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F8397T", 
+"seatNo":"839" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1715", 
+"aircraft": "AirBus", 
+"Capacity": 4173, 
+"date": "2016-05-17T4:8:00",
+"duration":4, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":38, 
+"costeconomy":522, 
+"costfirst":822, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F6965T", 
+"seatNo":"419" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1815", 
+"aircraft": "AirBus", 
+"Capacity": 5575, 
+"date": "2016-05-18T14:9:00",
+"duration":14, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":528, 
+"costeconomy":1145, 
+"costfirst":1445, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F4865T", 
+"seatNo":"901" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD1915", 
+"aircraft": "AirBus", 
+"Capacity": 1800, 
+"date": "2016-05-19T1:30:00",
+"duration":1, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":151, 
+"costeconomy":1412, 
+"costfirst":1712, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1400T", 
+"seatNo":"897" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2015", 
+"aircraft": "AirBus", 
+"Capacity": 1821, 
+"date": "2016-05-20T18:54:00",
+"duration":18, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":911, 
+"costeconomy":573, 
+"costfirst":873, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2480T", 
+"seatNo":"563" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2115", 
+"aircraft": "AirBus", 
+"Capacity": 4231, 
+"date": "2016-05-21T16:23:00",
+"duration":16, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":188, 
+"costeconomy":565, 
+"costfirst":865, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F8341T", 
+"seatNo":"468" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2215", 
+"aircraft": "AirBus", 
+"Capacity": 3828, 
+"date": "2016-05-22T8:8:00",
+"duration":8, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":502, 
+"costeconomy":1379, 
+"costfirst":1679, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9143T", 
+"seatNo":"337" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2315", 
+"aircraft": "AirBus", 
+"Capacity": 4634, 
+"date": "2016-05-23T15:56:00",
+"duration":15, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":232, 
+"costeconomy":1179, 
+"costfirst":1479, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7169T", 
+"seatNo":"270" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2415", 
+"aircraft": "AirBus", 
+"Capacity": 2599, 
+"date": "2016-05-24T11:52:00",
+"duration":11, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":461, 
+"costeconomy":629, 
+"costfirst":929, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2099T", 
+"seatNo":"168" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2515", 
+"aircraft": "AirBus", 
+"Capacity": 4289, 
+"date": "2016-05-25T20:26:00",
+"duration":20, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":856, 
+"costeconomy":1263, 
+"costfirst":1563, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9020T", 
+"seatNo":"850" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2615", 
+"aircraft": "AirBus", 
+"Capacity": 5521, 
+"date": "2016-05-26T10:53:00",
+"duration":10, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":518, 
+"costeconomy":511, 
+"costfirst":811, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1586T", 
+"seatNo":"276" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2715", 
+"aircraft": "AirBus", 
+"Capacity": 5517, 
+"date": "2016-05-27T11:53:00",
+"duration":11, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":905, 
+"costeconomy":992, 
+"costfirst":1292, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F6011T", 
+"seatNo":"371" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2815", 
+"aircraft": "AirBus", 
+"Capacity": 5028, 
+"date": "2016-05-28T0:58:00",
+"duration":0, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":207, 
+"costeconomy":695, 
+"costfirst":995, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9471T", 
+"seatNo":"275" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD2915", 
+"aircraft": "AirBus", 
+"Capacity": 4017, 
+"date": "2016-05-29T20:53:00",
+"duration":20, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":86, 
+"costeconomy":638, 
+"costfirst":938, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1260T", 
+"seatNo":"152" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD3015", 
+"aircraft": "AirBus", 
+"Capacity": 5067, 
+"date": "2016-05-30T1:27:00",
+"duration":1, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":230, 
+"costeconomy":1062, 
+"costfirst":1362, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F3631T", 
+"seatNo":"91" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AD3115", 
+"aircraft": "AirBus", 
+"Capacity": 2696, 
+"date": "2016-05-31T12:33:00",
+"duration":12, 
+"origin": "FRA", 
+"destination": "TXL", 
+"availableSeats":426, 
+"costeconomy":699, 
+"costfirst":999, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F4949T", 
+"seatNo":"413" 
+} 
+] 
+} 
+
+{ 
+"flightNumber":"AE1315", 
+"aircraft": "Boeing", 
+"Capacity": 5241, 
+"date": "2016-04-13T12:25:00",
+"duration":12, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":160, 
+"costeconomy":847, 
+"costfirst":1147, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T3761F", 
+"seatNo":"734" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1415", 
+"aircraft": "Boeing", 
+"Capacity": 1076, 
+"date": "2016-04-14T13:19:00",
+"duration":13, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":32, 
+"costeconomy":1171, 
+"costfirst":1471, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T7039F", 
+"seatNo":"884" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1515", 
+"aircraft": "Boeing", 
+"Capacity": 5676, 
+"date": "2016-04-15T10:34:00",
+"duration":10, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":935, 
+"costeconomy":1173, 
+"costfirst":1473, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T7115F", 
+"seatNo":"526" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1615", 
+"aircraft": "Boeing", 
+"Capacity": 4520, 
+"date": "2016-04-16T1:54:00",
+"duration":1, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":352, 
+"costeconomy":1449, 
+"costfirst":1749, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T8832F", 
+"seatNo":"737" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1715", 
+"aircraft": "Boeing", 
+"Capacity": 5599, 
+"date": "2016-04-17T8:54:00",
+"duration":8, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":843, 
+"costeconomy":1498, 
+"costfirst":1798, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T7918F", 
+"seatNo":"980" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1815", 
+"aircraft": "Boeing", 
+"Capacity": 5771, 
+"date": "2016-04-18T3:9:00",
+"duration":3, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":224, 
+"costeconomy":1347, 
+"costfirst":1647, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T2760F", 
+"seatNo":"70" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1915", 
+"aircraft": "Boeing", 
+"Capacity": 5712, 
+"date": "2016-04-19T1:23:00",
+"duration":1, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":262, 
+"costeconomy":525, 
+"costfirst":825, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T4351F", 
+"seatNo":"90" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2015", 
+"aircraft": "Boeing", 
+"Capacity": 3342, 
+"date": "2016-04-20T22:48:00",
+"duration":22, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":950, 
+"costeconomy":898, 
+"costfirst":1198, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T6562F", 
+"seatNo":"912" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2115", 
+"aircraft": "Boeing", 
+"Capacity": 4898, 
+"date": "2016-04-21T17:26:00",
+"duration":17, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":821, 
+"costeconomy":966, 
+"costfirst":1266, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T2180F", 
+"seatNo":"356" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2215", 
+"aircraft": "Boeing", 
+"Capacity": 4411, 
+"date": "2016-04-22T0:45:00",
+"duration":0, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":151, 
+"costeconomy":873, 
+"costfirst":1173, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T7237F", 
+"seatNo":"920" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2315", 
+"aircraft": "Boeing", 
+"Capacity": 1074, 
+"date": "2016-04-23T10:16:00",
+"duration":10, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":546, 
+"costeconomy":1468, 
+"costfirst":1768, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T8525F", 
+"seatNo":"476" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2415", 
+"aircraft": "Boeing", 
+"Capacity": 3382, 
+"date": "2016-04-24T4:6:00",
+"duration":4, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":554, 
+"costeconomy":997, 
+"costfirst":1297, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T549F", 
+"seatNo":"88" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2515", 
+"aircraft": "Boeing", 
+"Capacity": 2882, 
+"date": "2016-04-25T15:21:00",
+"duration":15, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":928, 
+"costeconomy":1081, 
+"costfirst":1381, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T6733F", 
+"seatNo":"148" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2615", 
+"aircraft": "Boeing", 
+"Capacity": 3724, 
+"date": "2016-04-26T8:50:00",
+"duration":8, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":402, 
+"costeconomy":1037, 
+"costfirst":1337, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T2627F", 
+"seatNo":"298" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2715", 
+"aircraft": "Boeing", 
+"Capacity": 4749, 
+"date": "2016-04-27T18:29:00",
+"duration":18, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":111, 
+"costeconomy":704, 
+"costfirst":1004, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T9415F", 
+"seatNo":"777" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2815", 
+"aircraft": "Boeing", 
+"Capacity": 5478, 
+"date": "2016-04-28T9:22:00",
+"duration":9, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":290, 
+"costeconomy":573, 
+"costfirst":873, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T316F", 
+"seatNo":"467" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2915", 
+"aircraft": "Boeing", 
+"Capacity": 1516, 
+"date": "2016-04-29T20:21:00",
+"duration":20, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":925, 
+"costeconomy":531, 
+"costfirst":831, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T5483F", 
+"seatNo":"327" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE3015", 
+"aircraft": "Boeing", 
+"Capacity": 1280, 
+"date": "2016-04-30T6:44:00",
+"duration":6, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":433, 
+"costeconomy":1214, 
+"costfirst":1514, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T7471F", 
+"seatNo":"924" 
+} 
+] 
+} 
+
+{ 
+"flightNumber":"AE115", 
+"aircraft": "Boeing", 
+"Capacity": 2750, 
+"date": "2016-05-1T0:18:00",
+"duration":0, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":77, 
+"costeconomy":1350, 
+"costfirst":1650, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T6732F", 
+"seatNo":"506" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE215", 
+"aircraft": "Boeing", 
+"Capacity": 4720, 
+"date": "2016-05-2T5:45:00",
+"duration":5, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":836, 
+"costeconomy":629, 
+"costfirst":929, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T358F", 
+"seatNo":"945" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE315", 
+"aircraft": "Boeing", 
+"Capacity": 1883, 
+"date": "2016-05-3T1:37:00",
+"duration":1, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":211, 
+"costeconomy":629, 
+"costfirst":929, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T9008F", 
+"seatNo":"59" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE415", 
+"aircraft": "Boeing", 
+"Capacity": 4177, 
+"date": "2016-05-4T0:45:00",
+"duration":0, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":39, 
+"costeconomy":545, 
+"costfirst":845, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T6749F", 
+"seatNo":"179" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE515", 
+"aircraft": "Boeing", 
+"Capacity": 5145, 
+"date": "2016-05-5T17:12:00",
+"duration":17, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":815, 
+"costeconomy":904, 
+"costfirst":1204, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T1862F", 
+"seatNo":"546" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE615", 
+"aircraft": "Boeing", 
+"Capacity": 1381, 
+"date": "2016-05-6T4:34:00",
+"duration":4, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":659, 
+"costeconomy":1005, 
+"costfirst":1305, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T9573F", 
+"seatNo":"398" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE715", 
+"aircraft": "Boeing", 
+"Capacity": 5235, 
+"date": "2016-05-7T8:31:00",
+"duration":8, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":643, 
+"costeconomy":871, 
+"costfirst":1171, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T1355F", 
+"seatNo":"462" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE815", 
+"aircraft": "Boeing", 
+"Capacity": 3697, 
+"date": "2016-05-8T16:3:00",
+"duration":16, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":339, 
+"costeconomy":732, 
+"costfirst":1032, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T1777F", 
+"seatNo":"503" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE915", 
+"aircraft": "Boeing", 
+"Capacity": 1290, 
+"date": "2016-05-9T17:4:00",
+"duration":17, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":401, 
+"costeconomy":1129, 
+"costfirst":1429, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T8200F", 
+"seatNo":"384" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1015", 
+"aircraft": "Boeing", 
+"Capacity": 4189, 
+"date": "2016-05-10T18:28:00",
+"duration":18, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":844, 
+"costeconomy":1304, 
+"costfirst":1604, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T1188F", 
+"seatNo":"422" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1115", 
+"aircraft": "Boeing", 
+"Capacity": 2029, 
+"date": "2016-05-11T15:12:00",
+"duration":15, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":243, 
+"costeconomy":771, 
+"costfirst":1071, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T1699F", 
+"seatNo":"7" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1215", 
+"aircraft": "Boeing", 
+"Capacity": 5352, 
+"date": "2016-05-12T15:27:00",
+"duration":15, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":715, 
+"costeconomy":611, 
+"costfirst":911, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T2350F", 
+"seatNo":"95" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1315", 
+"aircraft": "Boeing", 
+"Capacity": 4721, 
+"date": "2016-05-13T12:21:00",
+"duration":12, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":375, 
+"costeconomy":857, 
+"costfirst":1157, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T8358F", 
+"seatNo":"981" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1415", 
+"aircraft": "Boeing", 
+"Capacity": 5757, 
+"date": "2016-05-14T0:38:00",
+"duration":0, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":667, 
+"costeconomy":1096, 
+"costfirst":1396, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T9152F", 
+"seatNo":"224" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1515", 
+"aircraft": "Boeing", 
+"Capacity": 2008, 
+"date": "2016-05-15T0:32:00",
+"duration":0, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":153, 
+"costeconomy":906, 
+"costfirst":1206, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T6841F", 
+"seatNo":"923" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1615", 
+"aircraft": "Boeing", 
+"Capacity": 4788, 
+"date": "2016-05-16T2:2:00",
+"duration":2, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":473, 
+"costeconomy":595, 
+"costfirst":895, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T8143F", 
+"seatNo":"543" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1715", 
+"aircraft": "Boeing", 
+"Capacity": 2871, 
+"date": "2016-05-17T16:11:00",
+"duration":16, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":17, 
+"costeconomy":798, 
+"costfirst":1098, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T5025F", 
+"seatNo":"354" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1815", 
+"aircraft": "Boeing", 
+"Capacity": 5940, 
+"date": "2016-05-18T10:21:00",
+"duration":10, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":447, 
+"costeconomy":931, 
+"costfirst":1231, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T815F", 
+"seatNo":"94" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE1915", 
+"aircraft": "Boeing", 
+"Capacity": 5574, 
+"date": "2016-05-19T16:20:00",
+"duration":16, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":828, 
+"costeconomy":830, 
+"costfirst":1130, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T8203F", 
+"seatNo":"125" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2015", 
+"aircraft": "Boeing", 
+"Capacity": 5551, 
+"date": "2016-05-20T16:42:00",
+"duration":16, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":198, 
+"costeconomy":1145, 
+"costfirst":1445, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T7896F", 
+"seatNo":"396" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2115", 
+"aircraft": "Boeing", 
+"Capacity": 4951, 
+"date": "2016-05-21T21:17:00",
+"duration":21, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":139, 
+"costeconomy":1262, 
+"costfirst":1562, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T2215F", 
+"seatNo":"32" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2215", 
+"aircraft": "Boeing", 
+"Capacity": 2586, 
+"date": "2016-05-22T15:55:00",
+"duration":15, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":470, 
+"costeconomy":1378, 
+"costfirst":1678, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T3985F", 
+"seatNo":"798" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2315", 
+"aircraft": "Boeing", 
+"Capacity": 3555, 
+"date": "2016-05-23T18:40:00",
+"duration":18, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":358, 
+"costeconomy":905, 
+"costfirst":1205, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T8054F", 
+"seatNo":"734" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2415", 
+"aircraft": "Boeing", 
+"Capacity": 4916, 
+"date": "2016-05-24T10:17:00",
+"duration":10, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":812, 
+"costeconomy":1265, 
+"costfirst":1565, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T1858F", 
+"seatNo":"372" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2515", 
+"aircraft": "Boeing", 
+"Capacity": 1563, 
+"date": "2016-05-25T20:31:00",
+"duration":20, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":920, 
+"costeconomy":798, 
+"costfirst":1098, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T9547F", 
+"seatNo":"8" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2615", 
+"aircraft": "Boeing", 
+"Capacity": 5773, 
+"date": "2016-05-26T20:50:00",
+"duration":20, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":151, 
+"costeconomy":1002, 
+"costfirst":1302, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T1153F", 
+"seatNo":"518" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2715", 
+"aircraft": "Boeing", 
+"Capacity": 5984, 
+"date": "2016-05-27T11:10:00",
+"duration":11, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":904, 
+"costeconomy":1493, 
+"costfirst":1793, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T7026F", 
+"seatNo":"896" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2815", 
+"aircraft": "Boeing", 
+"Capacity": 3144, 
+"date": "2016-05-28T20:5:00",
+"duration":20, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":891, 
+"costeconomy":1012, 
+"costfirst":1312, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T853F", 
+"seatNo":"708" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE2915", 
+"aircraft": "Boeing", 
+"Capacity": 5935, 
+"date": "2016-05-29T0:2:00",
+"duration":0, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":81, 
+"costeconomy":1307, 
+"costfirst":1607, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T3832F", 
+"seatNo":"954" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE3015", 
+"aircraft": "Boeing", 
+"Capacity": 3122, 
+"date": "2016-05-30T14:50:00",
+"duration":14, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":829, 
+"costeconomy":890, 
+"costfirst":1190, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T2449F", 
+"seatNo":"565" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AE3115", 
+"aircraft": "Boeing", 
+"Capacity": 2116, 
+"date": "2016-05-31T7:3:00",
+"duration":7, 
+"origin": "TXL", 
+"destination": "FRA", 
+"availableSeats":61, 
+"costeconomy":1025, 
+"costfirst":1325, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"T151F", 
+"seatNo":"824" 
+} 
+] 
+} 
 
 ]
