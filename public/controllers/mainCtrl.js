@@ -105,8 +105,12 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
         }
         FlightsSrv.setSelectedOriginAirport($scope.selectedOrigin);
         FlightsSrv.setSelectedDestinationAirport($scope.selectedDestination);
-        FlightsSrv.setReturnDate($scope.dt2);
-        FlightsSrv.setDepartDate($scope.dt1); 
+        FlightsSrv.fixDate($scope.dt2).success(function(newDate){
+            FlightsSrv.setReturnDate(newDate);
+        });
+        FlightsSrv.fixDate($scope.dt1).success(function(newDate){
+            FlightsSrv.setDepartDate(newDate);
+        });
         $location.url('/flights');
     };
 

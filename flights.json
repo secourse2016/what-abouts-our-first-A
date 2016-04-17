@@ -1,7 +1,7 @@
 [
 {
-"flighNumber":"CR7KB9GB11",
-"aircraft": "",
+"flightNumber":"CR7KB9GB11",
+"aircraft": "Boeing",
 "capacity":5000,
 "date": "2016-05-06T20:30:00",
 "duration":90,
@@ -22,8 +22,8 @@
 ,
 
 {
-"flighNumber":"N11LS9LM10",
-"aircraft": "",
+"flightNumber":"N11LS9LM10",
+"aircraft": "Boeing",
 "capacity":6000,
 "date": "2016-04-02T20:30:00",
 "duration":90,
@@ -44,8 +44,8 @@
 ,
 
 {
-"flighNumber":"FR7RL9AR10",
-"aircraft": "",
+"flightNumber":"FR7RL9AR10",
+"aircraft": "Boeing",
 "capacity":5000,
 "date": "2016-05-05T00:00:00",
 "duration":20,
@@ -66,8 +66,8 @@
 ,
 
 {
-"flighNumber":"MK14",
-"aircraft": "",
+"flightNumber":"MK14",
+"aircraft": "Airbus",
 "capacity":5000,
 "date": "2016-04-23T18:25:00",
 "duration":20,
@@ -88,8 +88,8 @@
 ,
 
 {
-"flighNumber":"m191",
-"aircraft": "",
+"flightNumber":"m191",
+"aircraft": "Boeing",
 "capacity":5000,
 "date": "2016-04-30T12:25:00",
 "duration":20,
@@ -110,8 +110,8 @@
 ,
 
 {
-"flighNumber":"CS22",
-"aircraft": "",
+"flightNumber":"CS22",
+"aircraft": "Airbus",
 "capacity":5000,
 "date": "2016-05-05T18:30:00",
 "duration":20,
@@ -132,7 +132,7 @@
 ,
 
 {
-"flighNumber":"CS34",
+"flightNumber":"CS34",
 "aircraft": "",
 "capacity":5000,
 "date": "2016-04-30T16:25:00",
@@ -154,7 +154,7 @@
 ,
 
 {
-"flighNumber":"ST13",
+"flightNumber":"ST13",
 "aircraft": "",
 "capacity":5000,
 "date": "2016-04-28T02:25:00",
@@ -176,7 +176,7 @@
 ,
 
 {
-"flighNumber":"GM12",
+"flightNumber":"GM12",
 "aircraft": "",
 "capacity":5000,
 "date": "2016-04-01T18:25:43.511Z",
@@ -198,7 +198,7 @@
 ,
 
 {
-"flighNumber":"K14",
+"flightNumber":"K14",
 "aircraft": "",
 "capacity":5000,
 "date": "2016-04-29T18:25:00",
@@ -220,7 +220,7 @@
 ,
 
 {
-"flighNumber":"A22",
+"flightNumber":"A22",
 "aircraft": "",
 "capacity":5000,
 "date": "2016-04-04T13:25:00",
