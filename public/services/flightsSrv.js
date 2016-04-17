@@ -74,6 +74,12 @@ App.factory('FlightsSrv', function ($http) {
         setCabin:function(cabin) {
             this.cabin = cabin;
         },
+        setHidden: function(hidden) {
+            this.hidden = hidden;
+        },
+        getHidden: function() {
+            return this.hidden;
+        },
         getCabin:function() {
             return this.cabin;
         }

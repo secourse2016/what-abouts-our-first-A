@@ -10,7 +10,12 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
     $scope.setDepartFlight=function(flight,price){
         FlightsSrv.setDepartFlight(flight);
         FlightsSrv.setDepartPrice(price);
+        if(FlightsSrv.getHidden() === true){
+        	$location.url('/confirm');
+        }
+        else {
         $location.url('/flights2');
+      }
     }
 
     function Flights() {

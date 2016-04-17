@@ -12,10 +12,12 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
     
     $scope.one = function() {
         $scope.hidden = true;
+        FlightsSrv.setHidden($scope.hidden);
     };
 
     $scope.round = function() {
         $scope.hidden = false;
+        FlightsSrv.setHidden($scope.hidden);
     };
 
     $scope.closeAlert = function() {
