@@ -43,12 +43,27 @@ function seedAirports(cb) {
 }
     
 
+
 exports.getFlights = function ( flyingFrom , flyingTo , departDate,cb ) {
-    console.log(departDate);
-	db.db().collection('Flights').find({origin: flyingFrom,destination:flyingTo}).toArray(function (err, flights) {
+    var d = new Date(departDate);
+    console.log(d.getMonth());
+
+    function checkDate(d2) 
+    {
+
+     var dateJSON = new Date(d2.date);
+     console.log(dateJSON.getMonth());
+     console.log(d.getMonth());
+     return ((dateJSON.getMonth()+1 === d.getMonth()+1) && (dateJSON.getFullYear() === d.getFullYear()) && (dateJSON.getDate() === d.getDate()) ) ;
+    }
+
+	db.db().collection('Flights').find({origin: flyingFrom, destination:flyingTo}).toArray(function (err, flights) {
         if (err) return "An error occurred";
         else
-            cb(null,flights);
+        {
+            var x = flights.filter(checkDate);
+            cb(null,x);
+        }
     });
 }
 

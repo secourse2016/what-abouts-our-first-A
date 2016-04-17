@@ -6,7 +6,6 @@ module.exports = function(app,mongo) {
     moment().format();
 	
     function determinePrice(eco,buis,cabin) {
-        console.log(cabin);
         if(cabin === "business"){
             return buis;
         }else{
