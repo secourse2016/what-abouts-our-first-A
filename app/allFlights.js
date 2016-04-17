@@ -43,12 +43,22 @@ function seedAirports(cb) {
 }
     
 
+
 exports.getFlights = function ( flyingFrom , flyingTo , departDate,cb ) {
-    console.log(departDate);
-	db.db().collection('Flights').find({origin: flyingFrom,destination:flyingTo}).toArray(function (err, flights) {
+    var d = new Date(departDate);
+    function checkDate(d2) 
+    {
+     var dateJSON = new Date(d2.date);
+     return ((dateJSON.getMonth()+1 === d.getMonth()+1) && (dateJSON.getFullYear() === d.getFullYear()) && (dateJSON.getDate() === d.getDate()) ) ;
+    }
+
+	db.db().collection('Flights').find({origin: flyingFrom, destination:flyingTo}).toArray(function (err, flights) {
         if (err) return "An error occurred";
         else
-            cb(null,flights);
+        {
+            var x = flights.filter(checkDate);
+            cb(null,x);
+        }
     });
 }
 
@@ -56,9 +66,15 @@ function randomObjectId(length) {
     return crypto.createHash('md5').update(Math.random().toString()).digest('hex').substring(0, length).toUpperCase();
 }
 
-exports.reserve = function( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , cb) {
-    var bookingRefNum = randomObjectId(5);
-    var receiptNum = randomObjectId(7);
+function generateBookingRefNumber(){
+    return randomObjectId(5);
+}
+
+function generateReceiptNumber(){
+    return randomObjectId(7);
+}
+
+exports.reserve = function( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , bookingRefNum , receiptNum ,cb) {
     
     db.db().collection('Reservations').findOne({ bookingRefNumber: bookingRefNum}, function(err1, doc1) {
         db.db().collection('Reservations').findOne({ receipt_number: receiptNum}, function(err2, doc2) {
@@ -103,8 +119,8 @@ function viewMyReservedFlight( bookingRefNum , cb ){
         
         else{
             var reservationID = record._id;
-            db.db().collection('Flights').findOne( { seatmap: {reservationID:reservationID} } , function(err2 , flight){
-                cb(err2,flight);
+            db.db().collection('Flights').find( { seatmap: {reservationID:reservationID} }).toArray(function(err2 , flights){
+                cb(err2,flights);
             });
             
         }
