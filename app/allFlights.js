@@ -71,9 +71,15 @@ function randomObjectId(length) {
     return crypto.createHash('md5').update(Math.random().toString()).digest('hex').substring(0, length).toUpperCase();
 }
 
-exports.reserve = function( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , cb) {
-    var bookingRefNum = randomObjectId(5);
-    var receiptNum = randomObjectId(7);
+function generateBookingRefNumber(){
+    return randomObjectId(5);
+}
+
+function generateReceiptNumber(){
+    return randomObjectId(7);
+}
+
+exports.reserve = function( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , bookingRefNum , receiptNum ,cb) {
     
     db.db().collection('Reservations').findOne({ bookingRefNumber: bookingRefNum}, function(err1, doc1) {
         db.db().collection('Reservations').findOne({ receipt_number: receiptNum}, function(err2, doc2) {
@@ -118,8 +124,8 @@ function viewMyReservedFlight( bookingRefNum , cb ){
         
         else{
             var reservationID = record._id;
-            db.db().collection('Flights').findOne( { seatmap: {reservationID:reservationID} } , function(err2 , flight){
-                cb(err2,flight);
+            db.db().collection('Flights').find( { seatmap: {reservationID:reservationID} }).toArray(function(err2 , flights){
+                cb(err2,flights);
             });
             
         }
