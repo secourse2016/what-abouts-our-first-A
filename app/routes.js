@@ -155,9 +155,8 @@ module.exports = function(app,mongo) {
                     outgoingFlights     : outFlights
                 });
             });
-    });        
-          
-      app.get('/api/reservations/:bookingrefnum', function(req, res) {
+        });
+        app.get('/api/reservations/:bookingrefnum', function(req, res) {
       allFlights.viewMyReservedFlight( req.params.bookingrefnum , function(err,myFlights){
         var flights = [];
         for( var i=0 ; i<myFlights.length ; i++)
@@ -166,7 +165,8 @@ module.exports = function(app,mongo) {
         }
         res.send(flights);
       });
-    });   
+    }); 
+
 };
 
 
