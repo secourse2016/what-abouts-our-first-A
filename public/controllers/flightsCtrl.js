@@ -19,9 +19,17 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
     }
 
     function Flights() {
-    FlightsSrv.getFlights().success(function(flights) {
-	     $scope.Flights = flights.outgoingFlights;
-     });
+        if(FlightsSrv.getHidden() === true){
+            FlightsSrv.getFlightsOne().success(function(flights) {
+                $scope.Flights = flights.outgoingFlights;
+            });
+        }
+        else {
+            FlightsSrv.getFlights().success(function(flights) {
+                $scope.Flights = flights.outgoingFlights;
+        });
+       }
+
     };
 
     function addZero(i) {
