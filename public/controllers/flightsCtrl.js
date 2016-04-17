@@ -14,14 +14,22 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
         	$location.url('/confirm');
         }
         else {
-        $location.url('/flights2');
+            $location.url('/flights2');
       }
     }
 
     function Flights() {
-    FlightsSrv.getFlights().success(function(flights) {
-	     $scope.Flights = flights.outgoingFlights;
-     });
+        if(FlightsSrv.getHidden() === true){
+            FlightsSrv.getFlightsOne().success(function(flights) {
+                $scope.Flights = flights.outgoingFlights;
+            });
+        }
+        else {
+            FlightsSrv.getFlights().success(function(flights) {
+                $scope.Flights = flights.outgoingFlights;
+        });
+       }
+
     };
 
     function addZero(i) {
