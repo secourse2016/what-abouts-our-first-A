@@ -28,8 +28,9 @@ module.exports = function(app,mongo) {
     });
 
     app.get('/api/data/codes', function(req, res) {
-      var codes =  require('../airports.json');
-      res.json( codes );
+      allFlights.getAirports( function (err , airports){
+        res.send(airports);
+      });
     });
  
     app.get('/db/seed', function(req, res) {

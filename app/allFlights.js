@@ -88,3 +88,11 @@ exports.clearDB = function(done) {
     });
 };
     
+exports.getAirports = function( cb ){
+    db.db().collection('Airports').find({}).toArray(function (err, airports){
+        if (err) 
+            cb(err,null);
+        else
+            cb(null,airports);
+    });
+}
