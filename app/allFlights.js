@@ -77,13 +77,12 @@ exports.reserve = function( fn , ln , flightNumber , seatNumber , windowBoolean 
     });
 }
 
-exports.clearDB = function(done) {
+exports.clearDB = function() {
     db.db().listCollections().toArray().then(function (collections) {
-        console.log(collections.length);
         collections.forEach(function (c) {
-            console.log(c.name);
             db.db().collection(c.name).removeMany();   
         });
+      
        
     });
 };
