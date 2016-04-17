@@ -124,8 +124,8 @@ function viewMyReservedFlight( bookingRefNum , cb ){
         
         else{
             var reservationID = record._id;
-            db.db().collection('Flights').findOne( { seatmap: {reservationID:reservationID} } , function(err2 , flight){
-                cb(err2,flight);
+            db.db().collection('Flights').find( { seatmap: {reservationID:reservationID} }).toArray(function(err2 , flights){
+                cb(err2,flights);
             });
             
         }
