@@ -1,0 +1,241 @@
+[
+{
+"flightNumber":"CR7KB9GB11",
+"aircraft": "Boeing",
+"capacity":5000,
+"date": "2016-05-06T20:30:00",
+"duration":90,
+"origin": "FRA",
+"destination": "CAI",
+"availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"ABCD1234",
+"seatNo":"M19"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"N11LS9LM10",
+"aircraft": "Boeing",
+"capacity":6000,
+"date": "2016-04-02T20:30:00",
+"duration":90,
+"origin": "BAR",
+"destination": "MAD",
+"availableSeats":1000,
+"costeconomy":890,
+"costfirst":1600,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"EFGH5678",
+"seatNo":"I8"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"FR7RL9AR10",
+"aircraft": "Boeing",
+"capacity":5000,
+"date": "2016-05-05T00:00:00",
+"duration":20,
+"origin": "CAI",
+"destination": "FRA",
+"availableSeats":1000,
+"costeconomy":700,
+"costfirst":1900,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"ABCD12345",
+"seatNo":"TA10"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"MK14",
+"aircraft": "Airbus",
+"capacity":5000,
+"date": "2016-04-23T18:25:00",
+"duration":20,
+"origin": "MUN",
+"destination": "MAD",
+"availableSeats":1000,
+"costeconomy":800,
+"costfirst":1400,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"1234",
+"seatNo":"A12"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"m191",
+"aircraft": "Boeing",
+"capacity":5000,
+"date": "2016-04-30T12:25:00",
+"duration":20,
+"origin": "MUN",
+"destination": "MAD",
+"availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"12345",
+"seatNo":"C7"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"CS22",
+"aircraft": "Airbus",
+"capacity":5000,
+"date": "2016-05-05T18:30:00",
+"duration":20,
+"origin": "CAI",
+"destination": "FRA",
+"availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"4545",
+"seatNo":"B11"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"CS34",
+"aircraft": "",
+"capacity":5000,
+"date": "2016-04-30T16:25:00",
+"duration":20,
+"origin": "MUN",
+"destination": "MAD",
+"availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"5555",
+"seatNo":"M19"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"ST13",
+"aircraft": "",
+"capacity":5000,
+"date": "2016-04-28T02:25:00",
+"duration":20,
+"origin": "MAD",
+"destination": "MUN",
+"availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"1789",
+"seatNo":"C13"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"GM12",
+"aircraft": "",
+"capacity":5000,
+"date": "2016-04-01T18:25:43.511Z",
+"duration":20,
+"origin": "CAI",
+"destination": "FRA",
+"availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"6666",
+"seatNo":"C16"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"K14",
+"aircraft": "",
+"capacity":5000,
+"date": "2016-04-29T18:25:00",
+"duration":20,
+"origin": "CAI",
+"destination": "MUN",
+"availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"77777",
+"seatNo":"B14"
+}
+]
+}
+
+,
+
+{
+"flightNumber":"A22",
+"aircraft": "",
+"capacity":5000,
+"date": "2016-04-04T13:25:00",
+"duration":20,
+"origin": "CAI",
+"destination": "FRA",
+"availableSeats":1000,
+"costeconomy":855,
+"costfirst":1500,
+"seatmap":[
+{"window":true,
+"economy":true,
+"reservation_id":"999999",
+"seatNo":"J12"
+}
+]
+}
+]
