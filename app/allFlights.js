@@ -3,7 +3,7 @@ var airports = require('../airports.json');
 var db = require('./db.js');
 var crypto = require('crypto');
 
-exports.seedDB = function (cb) {
+exports.seedDB = function(cb) {
     seedFlights(function(err1,seededFlights) {
         seedAirports(function(err2,seededAirports) {
             if(err1 || err2){
@@ -42,12 +42,28 @@ function seedAirports(cb) {
     });
 }
     
+
+
 exports.getFlights = function ( flyingFrom , flyingTo , departDate,cb ) {
-    console.log(departDate);
-	db.db().collection('Flights').find({origin: flyingFrom,destination:flyingTo}).toArray(function (err, flights) {
+    var d = new Date(departDate);
+    console.log(d.getMonth());
+
+    function checkDate(d2) 
+    {
+
+     var dateJSON = new Date(d2.date);
+     console.log(dateJSON.getMonth());
+     console.log(d.getMonth());
+     return ((dateJSON.getMonth()+1 === d.getMonth()+1) && (dateJSON.getFullYear() === d.getFullYear()) && (dateJSON.getDate() === d.getDate()) ) ;
+    }
+
+	db.db().collection('Flights').find({origin: flyingFrom, destination:flyingTo}).toArray(function (err, flights) {
         if (err) return "An error occurred";
         else
-            cb(null,flights);
+        {
+            var x = flights.filter(checkDate);
+            cb(null,x);
+        }
     });
 }
 
@@ -55,7 +71,7 @@ function randomObjectId(length) {
     return crypto.createHash('md5').update(Math.random().toString()).digest('hex').substring(0, length).toUpperCase();
 }
 
-exports.reserve = function reserve( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , cb) {
+exports.reserve = function( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , cb) {
     var bookingRefNum = randomObjectId(5);
     var receiptNum = randomObjectId(7);
     
@@ -75,4 +91,38 @@ exports.reserve = function reserve( fn , ln , flightNumber , seatNumber , window
         });
     });
 }
+
+exports.clearDB = function() {
+    db.db().listCollections().toArray().then(function (collections) {
+        collections.forEach(function (c) {
+            db.db().collection(c.name).removeMany();   
+        });
+      
+       
+    });
+};
     
+exports.getAirports = function( cb ){
+    db.db().collection('Airports').find({}).toArray(function (err, airports){
+        if (err) 
+            cb(err,null);
+        else
+            cb(null,airports);
+    });
+}
+
+function viewMyReservedFlight( bookingRefNum , cb ){
+    db.db().collection('Reservations').findOne({bookingRefNumber : bookingRefNum},function(err,record){
+        if( record === null )
+            cb(err,null); //Not a valid booking reference number
+        
+        else{
+            var reservationID = record._id;
+            db.db().collection('Flights').findOne( { seatmap: {reservationID:reservationID} } , function(err2 , flight){
+                cb(err2,flight);
+            });
+            
+        }
+        
+    });
+}

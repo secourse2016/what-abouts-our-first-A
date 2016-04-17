@@ -6,7 +6,6 @@ module.exports = function(app,mongo) {
     moment().format();
 	
     function determinePrice(eco,buis,cabin) {
-        console.log(cabin);
         if(cabin === "business"){
             return buis;
         }else{
@@ -17,7 +16,12 @@ module.exports = function(app,mongo) {
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
     });
-    
+    app.get('/api/reserve/:fn/:ln/:flightNumber', function(req, res) {
+      
+      allFlights.reserve(req.params.fn , req.params.ln , req.params.flightNumber , 1 , 1 , 1 , cb);
+
+    });
+
     app.get('/', function (req, res) {
 	   res.sendFile(__dirname + '/public/index.html');
     });
@@ -28,8 +32,9 @@ module.exports = function(app,mongo) {
     });
 
     app.get('/api/data/codes', function(req, res) {
-      var codes =  require('../airports.json');
-      res.json( codes );
+      allFlights.getAirports( function (err , airports){
+        res.send(airports);
+      });
     });
  
     app.get('/db/seed', function(req, res) {
@@ -43,6 +48,7 @@ module.exports = function(app,mongo) {
 
     /* DELETE DB */
     app.get('/db/delete', function(req, res) {
+        allFlights.clearDB();
     });      
 
     /* Middleware */
