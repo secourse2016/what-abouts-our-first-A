@@ -6,8 +6,8 @@ App.controller('confirmCtrl',function($scope,FlightsSrv,$location){
     $location.url('/');
     };
     $scope.price = parseInt(FlightsSrv.getDepartPrice())*FlightsSrv.getMultiplier()+parseInt(FlightsSrv.getReturnPrice())*FlightsSrv.getMultiplier();
-    $scope.timeD = myFunction($scope.depart.date);
-    $scope.timeR = myFunction($scope.return.date);
+    $scope.timeD = myFunction($scope.depart.departureDateTime);
+    $scope.timeR = myFunction($scope.return.departureDateTime);
     $scope.pay = function() {
     $location.url('/payment');
     };
@@ -20,9 +20,10 @@ App.controller('confirmCtrl',function($scope,FlightsSrv,$location){
     }
 
     function myFunction(date) {
-    	var d = new Date(date);
-        var h = addZero(d.getHours());
-        var m = addZero(d.getMinutes());
-        return h + ":" + m;
+        var d = new Date(date);
+        var y = d.getFullYear();
+        var m = d.getMonth()+1;
+        var day = d.getDate();
+        return day + "/" + m+ "/"+ y;
     }
 })
