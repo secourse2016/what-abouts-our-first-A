@@ -3,7 +3,7 @@ var airports = require('../airports.json');
 var db = require('./db.js');
 var crypto = require('crypto');
 
-exports.seedDB = function (cb) {
+exports.seedDB = function(cb) {
     seedFlights(function(err1,seededFlights) {
         seedAirports(function(err2,seededAirports) {
             if(err1 || err2){
@@ -42,6 +42,7 @@ function seedAirports(cb) {
     });
 }
     
+
 exports.getFlights = function ( flyingFrom , flyingTo , departDate,cb ) {
     console.log(departDate);
 	db.db().collection('Flights').find({origin: flyingFrom,destination:flyingTo}).toArray(function (err, flights) {
@@ -55,7 +56,7 @@ function randomObjectId(length) {
     return crypto.createHash('md5').update(Math.random().toString()).digest('hex').substring(0, length).toUpperCase();
 }
 
-exports.reserve = function reserve( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , cb) {
+exports.reserve = function( fn , ln , flightNumber , seatNumber , windowBoolean , economyBoolean , cb) {
     var bookingRefNum = randomObjectId(5);
     var receiptNum = randomObjectId(7);
     
@@ -75,4 +76,15 @@ exports.reserve = function reserve( fn , ln , flightNumber , seatNumber , window
         });
     });
 }
+
+exports.clearDB = function(done) {
+    db.db().listCollections().toArray().then(function (collections) {
+        console.log(collections.length);
+        collections.forEach(function (c) {
+            console.log(c.name);
+            db.db().collection(c.name).removeMany();   
+        });
+       
+    });
+};
     

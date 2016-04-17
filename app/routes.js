@@ -43,6 +43,7 @@ module.exports = function(app,mongo) {
 
     /* DELETE DB */
     app.get('/db/delete', function(req, res) {
+        allFlights.clearDB();
     });      
 
     /* Middleware */
