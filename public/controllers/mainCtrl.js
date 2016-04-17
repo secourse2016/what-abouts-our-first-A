@@ -106,6 +106,7 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
             $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose which airline to search from :(' });
             return;
         }
+        FlightsSrv.setHidden($scope.hidden);
         FlightsSrv.setSelectedOriginAirport($scope.selectedOrigin);
         FlightsSrv.setSelectedDestinationAirport($scope.selectedDestination);
         FlightsSrv.fixDate($scope.dt2).success(function(newDate){

@@ -14,7 +14,7 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
         	$location.url('/confirm');
         }
         else {
-        $location.url('/flights2');
+            $location.url('/flights2');
       }
     }
 

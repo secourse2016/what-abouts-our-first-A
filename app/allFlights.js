@@ -44,7 +44,7 @@ function seedAirports(cb) {
     
 exports.getFlights = function ( flyingFrom , flyingTo , departDate,cb ) {
     console.log(departDate);
-	db.db().collection('Flights').find({origin: flyingFrom,destination:flyingTo,date:departDate}).toArray(function (err, flights) {
+	db.db().collection('Flights').find({origin: flyingFrom,destination:flyingTo}).toArray(function (err, flights) {
         if (err) return "An error occurred";
         else
             cb(null,flights);
