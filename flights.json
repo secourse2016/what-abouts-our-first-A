@@ -8792,4 +8792,1871 @@
 ] 
 } 
 
+{ 
+"flightNumber":"AF1315", 
+"aircraft": "Airbus", 
+"Capacity": 1361, 
+"date": "2016-04-13T4:1:00",
+"duration":4, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":519, 
+"costeconomy":1246, 
+"costfirst":1546, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7301M", 
+"seatNo":"496" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1415", 
+"aircraft": "Airbus", 
+"Capacity": 4366, 
+"date": "2016-04-14T19:43:00",
+"duration":19, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":858, 
+"costeconomy":1253, 
+"costfirst":1553, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F6256M", 
+"seatNo":"251" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1515", 
+"aircraft": "Airbus", 
+"Capacity": 3838, 
+"date": "2016-04-15T7:5:00",
+"duration":7, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":280, 
+"costeconomy":927, 
+"costfirst":1227, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F8878M", 
+"seatNo":"397" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1615", 
+"aircraft": "Airbus", 
+"Capacity": 1710, 
+"date": "2016-04-16T16:36:00",
+"duration":16, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":782, 
+"costeconomy":835, 
+"costfirst":1135, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1279M", 
+"seatNo":"348" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1715", 
+"aircraft": "Airbus", 
+"Capacity": 2985, 
+"date": "2016-04-17T1:4:00",
+"duration":1, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":63, 
+"costeconomy":1474, 
+"costfirst":1774, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F575M", 
+"seatNo":"967" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1815", 
+"aircraft": "Airbus", 
+"Capacity": 1425, 
+"date": "2016-04-18T23:31:00",
+"duration":23, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":673, 
+"costeconomy":1452, 
+"costfirst":1752, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F64M", 
+"seatNo":"405" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1915", 
+"aircraft": "Airbus", 
+"Capacity": 4113, 
+"date": "2016-04-19T18:40:00",
+"duration":18, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":522, 
+"costeconomy":664, 
+"costfirst":964, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F6030M", 
+"seatNo":"233" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2015", 
+"aircraft": "Airbus", 
+"Capacity": 5497, 
+"date": "2016-04-20T22:28:00",
+"duration":22, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":663, 
+"costeconomy":530, 
+"costfirst":830, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F5962M", 
+"seatNo":"202" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2115", 
+"aircraft": "Airbus", 
+"Capacity": 1500, 
+"date": "2016-04-21T15:30:00",
+"duration":15, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":335, 
+"costeconomy":536, 
+"costfirst":836, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2288M", 
+"seatNo":"527" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2215", 
+"aircraft": "Airbus", 
+"Capacity": 1191, 
+"date": "2016-04-22T6:37:00",
+"duration":6, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":222, 
+"costeconomy":715, 
+"costfirst":1015, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F3743M", 
+"seatNo":"292" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2315", 
+"aircraft": "Airbus", 
+"Capacity": 1837, 
+"date": "2016-04-23T14:13:00",
+"duration":14, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":955, 
+"costeconomy":532, 
+"costfirst":832, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9562M", 
+"seatNo":"687" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2415", 
+"aircraft": "Airbus", 
+"Capacity": 1206, 
+"date": "2016-04-24T12:27:00",
+"duration":12, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":518, 
+"costeconomy":673, 
+"costfirst":973, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9220M", 
+"seatNo":"630" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2515", 
+"aircraft": "Airbus", 
+"Capacity": 5833, 
+"date": "2016-04-25T18:0:00",
+"duration":18, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":653, 
+"costeconomy":1241, 
+"costfirst":1541, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F5325M", 
+"seatNo":"933" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2615", 
+"aircraft": "Airbus", 
+"Capacity": 4672, 
+"date": "2016-04-26T2:17:00",
+"duration":2, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":382, 
+"costeconomy":1482, 
+"costfirst":1782, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1220M", 
+"seatNo":"870" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2715", 
+"aircraft": "Airbus", 
+"Capacity": 3855, 
+"date": "2016-04-27T6:51:00",
+"duration":6, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":283, 
+"costeconomy":764, 
+"costfirst":1064, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F6627M", 
+"seatNo":"523" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2815", 
+"aircraft": "Airbus", 
+"Capacity": 2461, 
+"date": "2016-04-28T19:20:00",
+"duration":19, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":831, 
+"costeconomy":532, 
+"costfirst":832, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2290M", 
+"seatNo":"621" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2915", 
+"aircraft": "Airbus", 
+"Capacity": 3466, 
+"date": "2016-04-29T1:7:00",
+"duration":1, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":114, 
+"costeconomy":873, 
+"costfirst":1173, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F8690M", 
+"seatNo":"188" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF3015", 
+"aircraft": "Airbus", 
+"Capacity": 1391, 
+"date": "2016-04-30T24:2:00",
+"duration":24, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":388, 
+"costeconomy":857, 
+"costfirst":1157, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1121M", 
+"seatNo":"961" 
+} 
+] 
+} 
+
+{ 
+"flightNumber":"AF115", 
+"aircraft": "Airbus", 
+"Capacity": 4877, 
+"date": "2016-05-1T0:51:00",
+"duration":0, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":96, 
+"costeconomy":651, 
+"costfirst":951, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9299M", 
+"seatNo":"542" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF215", 
+"aircraft": "Airbus", 
+"Capacity": 1385, 
+"date": "2016-05-2T18:19:00",
+"duration":18, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":908, 
+"costeconomy":1112, 
+"costfirst":1412, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F412M", 
+"seatNo":"207" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF315", 
+"aircraft": "Airbus", 
+"Capacity": 5835, 
+"date": "2016-05-3T16:34:00",
+"duration":16, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":602, 
+"costeconomy":807, 
+"costfirst":1107, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2688M", 
+"seatNo":"47" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF415", 
+"aircraft": "Airbus", 
+"Capacity": 5572, 
+"date": "2016-05-4T1:7:00",
+"duration":1, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":651, 
+"costeconomy":1057, 
+"costfirst":1357, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2256M", 
+"seatNo":"353" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF515", 
+"aircraft": "Airbus", 
+"Capacity": 2444, 
+"date": "2016-05-5T15:29:00",
+"duration":15, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":254, 
+"costeconomy":1287, 
+"costfirst":1587, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F4427M", 
+"seatNo":"569" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF615", 
+"aircraft": "Airbus", 
+"Capacity": 1841, 
+"date": "2016-05-6T7:43:00",
+"duration":7, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":39, 
+"costeconomy":900, 
+"costfirst":1200, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F5563M", 
+"seatNo":"793" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF715", 
+"aircraft": "Airbus", 
+"Capacity": 3410, 
+"date": "2016-05-7T24:31:00",
+"duration":24, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":685, 
+"costeconomy":1378, 
+"costfirst":1678, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F3651M", 
+"seatNo":"895" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF815", 
+"aircraft": "Airbus", 
+"Capacity": 4210, 
+"date": "2016-05-8T1:47:00",
+"duration":1, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":570, 
+"costeconomy":730, 
+"costfirst":1030, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7700M", 
+"seatNo":"181" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF915", 
+"aircraft": "Airbus", 
+"Capacity": 1450, 
+"date": "2016-05-9T24:47:00",
+"duration":24, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":709, 
+"costeconomy":629, 
+"costfirst":929, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F8866M", 
+"seatNo":"746" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1015", 
+"aircraft": "Airbus", 
+"Capacity": 3282, 
+"date": "2016-05-10T18:9:00",
+"duration":18, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":82, 
+"costeconomy":1226, 
+"costfirst":1526, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9635M", 
+"seatNo":"112" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1115", 
+"aircraft": "Airbus", 
+"Capacity": 4695, 
+"date": "2016-05-11T9:54:00",
+"duration":9, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":38, 
+"costeconomy":1307, 
+"costfirst":1607, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9635M", 
+"seatNo":"892" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1215", 
+"aircraft": "Airbus", 
+"Capacity": 5973, 
+"date": "2016-05-12T10:22:00",
+"duration":10, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":859, 
+"costeconomy":1023, 
+"costfirst":1323, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F5343M", 
+"seatNo":"664" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1315", 
+"aircraft": "Airbus", 
+"Capacity": 3644, 
+"date": "2016-05-13T2:35:00",
+"duration":2, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":1, 
+"costeconomy":1238, 
+"costfirst":1538, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1725M", 
+"seatNo":"170" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1415", 
+"aircraft": "Airbus", 
+"Capacity": 1163, 
+"date": "2016-05-14T10:53:00",
+"duration":10, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":318, 
+"costeconomy":756, 
+"costfirst":1056, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F1085M", 
+"seatNo":"712" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1515", 
+"aircraft": "Airbus", 
+"Capacity": 2068, 
+"date": "2016-05-15T19:22:00",
+"duration":19, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":590, 
+"costeconomy":1500, 
+"costfirst":1800, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2115M", 
+"seatNo":"619" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1615", 
+"aircraft": "Airbus", 
+"Capacity": 1430, 
+"date": "2016-05-16T12:52:00",
+"duration":12, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":957, 
+"costeconomy":933, 
+"costfirst":1233, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7705M", 
+"seatNo":"586" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1715", 
+"aircraft": "Airbus", 
+"Capacity": 1917, 
+"date": "2016-05-17T8:10:00",
+"duration":8, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":944, 
+"costeconomy":910, 
+"costfirst":1210, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F4352M", 
+"seatNo":"377" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1815", 
+"aircraft": "Airbus", 
+"Capacity": 5888, 
+"date": "2016-05-18T13:50:00",
+"duration":13, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":103, 
+"costeconomy":900, 
+"costfirst":1200, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F268M", 
+"seatNo":"463" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF1915", 
+"aircraft": "Airbus", 
+"Capacity": 5108, 
+"date": "2016-05-19T6:21:00",
+"duration":6, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":366, 
+"costeconomy":1268, 
+"costfirst":1568, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7887M", 
+"seatNo":"458" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2015", 
+"aircraft": "Airbus", 
+"Capacity": 4178, 
+"date": "2016-05-20T16:44:00",
+"duration":16, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":80, 
+"costeconomy":901, 
+"costfirst":1201, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F5362M", 
+"seatNo":"913" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2115", 
+"aircraft": "Airbus", 
+"Capacity": 1416, 
+"date": "2016-05-21T14:26:00",
+"duration":14, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":478, 
+"costeconomy":1068, 
+"costfirst":1368, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F4700M", 
+"seatNo":"434" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2215", 
+"aircraft": "Airbus", 
+"Capacity": 5552, 
+"date": "2016-05-22T8:36:00",
+"duration":8, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":491, 
+"costeconomy":736, 
+"costfirst":1036, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F8052M", 
+"seatNo":"693" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2315", 
+"aircraft": "Airbus", 
+"Capacity": 5000, 
+"date": "2016-05-23T5:3:00",
+"duration":5, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":37, 
+"costeconomy":914, 
+"costfirst":1214, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7480M", 
+"seatNo":"410" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2415", 
+"aircraft": "Airbus", 
+"Capacity": 2671, 
+"date": "2016-05-24T17:48:00",
+"duration":17, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":535, 
+"costeconomy":884, 
+"costfirst":1184, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2171M", 
+"seatNo":"683" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2515", 
+"aircraft": "Airbus", 
+"Capacity": 2165, 
+"date": "2016-05-25T1:18:00",
+"duration":1, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":103, 
+"costeconomy":707, 
+"costfirst":1007, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F451M", 
+"seatNo":"842" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2615", 
+"aircraft": "Airbus", 
+"Capacity": 4800, 
+"date": "2016-05-26T11:49:00",
+"duration":11, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":156, 
+"costeconomy":891, 
+"costfirst":1191, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F9789M", 
+"seatNo":"275" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2715", 
+"aircraft": "Airbus", 
+"Capacity": 3077, 
+"date": "2016-05-27T4:17:00",
+"duration":4, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":479, 
+"costeconomy":1354, 
+"costfirst":1654, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F3742M", 
+"seatNo":"169" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2815", 
+"aircraft": "Airbus", 
+"Capacity": 3168, 
+"date": "2016-05-28T9:36:00",
+"duration":9, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":610, 
+"costeconomy":1376, 
+"costfirst":1676, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F7470M", 
+"seatNo":"832" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF2915", 
+"aircraft": "Airbus", 
+"Capacity": 2406, 
+"date": "2016-05-29T7:10:00",
+"duration":7, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":991, 
+"costeconomy":1180, 
+"costfirst":1480, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F6536M", 
+"seatNo":"307" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF3015", 
+"aircraft": "Airbus", 
+"Capacity": 3812, 
+"date": "2016-05-30T10:58:00",
+"duration":10, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":135, 
+"costeconomy":1266, 
+"costfirst":1566, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F8458M", 
+"seatNo":"738" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AF3115", 
+"aircraft": "Airbus", 
+"Capacity": 1390, 
+"date": "2016-05-31T5:20:00",
+"duration":5, 
+"origin": "FCO", 
+"destination": "MXP", 
+"availableSeats":966, 
+"costeconomy":711, 
+"costfirst":1011, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"F2514M", 
+"seatNo":"563" 
+} 
+] 
+} 
+
+{ 
+"flightNumber":"AG1315", 
+"aircraft": "Boeing", 
+"Capacity": 1812, 
+"date": "2016-04-13T3:45:00",
+"duration":3, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":985, 
+"costeconomy":733, 
+"costfirst":1033, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M4258F", 
+"seatNo":"196" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1415", 
+"aircraft": "Boeing", 
+"Capacity": 3575, 
+"date": "2016-04-14T5:43:00",
+"duration":5, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":855, 
+"costeconomy":1129, 
+"costfirst":1429, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M8146F", 
+"seatNo":"491" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1515", 
+"aircraft": "Boeing", 
+"Capacity": 1208, 
+"date": "2016-04-15T5:37:00",
+"duration":5, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":79, 
+"costeconomy":519, 
+"costfirst":819, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M9951F", 
+"seatNo":"852" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1615", 
+"aircraft": "Boeing", 
+"Capacity": 4328, 
+"date": "2016-04-16T3:24:00",
+"duration":3, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":730, 
+"costeconomy":610, 
+"costfirst":910, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M6093F", 
+"seatNo":"503" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1715", 
+"aircraft": "Boeing", 
+"Capacity": 5080, 
+"date": "2016-04-17T9:32:00",
+"duration":9, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":555, 
+"costeconomy":588, 
+"costfirst":888, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M5693F", 
+"seatNo":"623" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1815", 
+"aircraft": "Boeing", 
+"Capacity": 1964, 
+"date": "2016-04-18T23:58:00",
+"duration":23, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":200, 
+"costeconomy":1118, 
+"costfirst":1418, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M9035F", 
+"seatNo":"399" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1915", 
+"aircraft": "Boeing", 
+"Capacity": 4492, 
+"date": "2016-04-19T6:36:00",
+"duration":6, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":479, 
+"costeconomy":533, 
+"costfirst":833, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M9676F", 
+"seatNo":"736" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2015", 
+"aircraft": "Boeing", 
+"Capacity": 5433, 
+"date": "2016-04-20T17:51:00",
+"duration":17, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":45, 
+"costeconomy":878, 
+"costfirst":1178, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M3692F", 
+"seatNo":"724" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2115", 
+"aircraft": "Boeing", 
+"Capacity": 2040, 
+"date": "2016-04-21T6:19:00",
+"duration":6, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":212, 
+"costeconomy":1186, 
+"costfirst":1486, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M4226F", 
+"seatNo":"370" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2215", 
+"aircraft": "Boeing", 
+"Capacity": 4275, 
+"date": "2016-04-22T4:46:00",
+"duration":4, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":422, 
+"costeconomy":1356, 
+"costfirst":1656, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M9559F", 
+"seatNo":"833" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2315", 
+"aircraft": "Boeing", 
+"Capacity": 1033, 
+"date": "2016-04-23T5:56:00",
+"duration":5, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":910, 
+"costeconomy":835, 
+"costfirst":1135, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M2233F", 
+"seatNo":"872" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2415", 
+"aircraft": "Boeing", 
+"Capacity": 5197, 
+"date": "2016-04-24T17:24:00",
+"duration":17, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":801, 
+"costeconomy":536, 
+"costfirst":836, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M311F", 
+"seatNo":"543" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2515", 
+"aircraft": "Boeing", 
+"Capacity": 1436, 
+"date": "2016-04-25T6:33:00",
+"duration":6, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":178, 
+"costeconomy":519, 
+"costfirst":819, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M4714F", 
+"seatNo":"809" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2615", 
+"aircraft": "Boeing", 
+"Capacity": 5082, 
+"date": "2016-04-26T3:33:00",
+"duration":3, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":868, 
+"costeconomy":1004, 
+"costfirst":1304, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M8593F", 
+"seatNo":"345" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2715", 
+"aircraft": "Boeing", 
+"Capacity": 4509, 
+"date": "2016-04-27T17:20:00",
+"duration":17, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":897, 
+"costeconomy":774, 
+"costfirst":1074, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M920F", 
+"seatNo":"670" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2815", 
+"aircraft": "Boeing", 
+"Capacity": 5538, 
+"date": "2016-04-28T0:58:00",
+"duration":0, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":653, 
+"costeconomy":1047, 
+"costfirst":1347, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M1275F", 
+"seatNo":"68" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2915", 
+"aircraft": "Boeing", 
+"Capacity": 1392, 
+"date": "2016-04-29T4:53:00",
+"duration":4, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":575, 
+"costeconomy":816, 
+"costfirst":1116, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M6208F", 
+"seatNo":"117" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG3015", 
+"aircraft": "Boeing", 
+"Capacity": 5527, 
+"date": "2016-04-30T7:25:00",
+"duration":7, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":407, 
+"costeconomy":1314, 
+"costfirst":1614, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M1341F", 
+"seatNo":"108" 
+} 
+] 
+} 
+
+{ 
+"flightNumber":"AG115", 
+"aircraft": "Boeing", 
+"Capacity": 3293, 
+"date": "2016-05-1T11:33:00",
+"duration":11, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":53, 
+"costeconomy":1125, 
+"costfirst":1425, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M601F", 
+"seatNo":"272" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG215", 
+"aircraft": "Boeing", 
+"Capacity": 4540, 
+"date": "2016-05-2T8:32:00",
+"duration":8, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":942, 
+"costeconomy":1267, 
+"costfirst":1567, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M4868F", 
+"seatNo":"198" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG315", 
+"aircraft": "Boeing", 
+"Capacity": 1143, 
+"date": "2016-05-3T10:59:00",
+"duration":10, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":135, 
+"costeconomy":1282, 
+"costfirst":1582, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M2193F", 
+"seatNo":"932" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG415", 
+"aircraft": "Boeing", 
+"Capacity": 3900, 
+"date": "2016-05-4T6:38:00",
+"duration":6, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":739, 
+"costeconomy":1190, 
+"costfirst":1490, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M3300F", 
+"seatNo":"639" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG515", 
+"aircraft": "Boeing", 
+"Capacity": 1125, 
+"date": "2016-05-5T5:59:00",
+"duration":5, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":360, 
+"costeconomy":802, 
+"costfirst":1102, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M8234F", 
+"seatNo":"972" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG615", 
+"aircraft": "Boeing", 
+"Capacity": 4391, 
+"date": "2016-05-6T7:5:00",
+"duration":7, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":752, 
+"costeconomy":503, 
+"costfirst":803, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M6184F", 
+"seatNo":"634" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG715", 
+"aircraft": "Boeing", 
+"Capacity": 5118, 
+"date": "2016-05-7T6:15:00",
+"duration":6, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":417, 
+"costeconomy":1115, 
+"costfirst":1415, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M9647F", 
+"seatNo":"525" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG815", 
+"aircraft": "Boeing", 
+"Capacity": 5905, 
+"date": "2016-05-8T24:45:00",
+"duration":24, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":622, 
+"costeconomy":727, 
+"costfirst":1027, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M4671F", 
+"seatNo":"494" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG915", 
+"aircraft": "Boeing", 
+"Capacity": 1228, 
+"date": "2016-05-9T3:37:00",
+"duration":3, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":78, 
+"costeconomy":552, 
+"costfirst":852, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M2976F", 
+"seatNo":"141" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1015", 
+"aircraft": "Boeing", 
+"Capacity": 3986, 
+"date": "2016-05-10T10:5:00",
+"duration":10, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":233, 
+"costeconomy":657, 
+"costfirst":957, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M5244F", 
+"seatNo":"499" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1115", 
+"aircraft": "Boeing", 
+"Capacity": 4349, 
+"date": "2016-05-11T17:49:00",
+"duration":17, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":426, 
+"costeconomy":982, 
+"costfirst":1282, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M9115F", 
+"seatNo":"833" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1215", 
+"aircraft": "Boeing", 
+"Capacity": 3653, 
+"date": "2016-05-12T5:11:00",
+"duration":5, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":20, 
+"costeconomy":828, 
+"costfirst":1128, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M7437F", 
+"seatNo":"180" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1315", 
+"aircraft": "Boeing", 
+"Capacity": 5745, 
+"date": "2016-05-13T10:16:00",
+"duration":10, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":624, 
+"costeconomy":904, 
+"costfirst":1204, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M2258F", 
+"seatNo":"965" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1415", 
+"aircraft": "Boeing", 
+"Capacity": 3977, 
+"date": "2016-05-14T20:5:00",
+"duration":20, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":574, 
+"costeconomy":548, 
+"costfirst":848, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M5328F", 
+"seatNo":"494" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1515", 
+"aircraft": "Boeing", 
+"Capacity": 1546, 
+"date": "2016-05-15T20:26:00",
+"duration":20, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":823, 
+"costeconomy":541, 
+"costfirst":841, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M1672F", 
+"seatNo":"225" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1615", 
+"aircraft": "Boeing", 
+"Capacity": 1522, 
+"date": "2016-05-16T23:47:00",
+"duration":23, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":611, 
+"costeconomy":1106, 
+"costfirst":1406, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M1456F", 
+"seatNo":"672" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1715", 
+"aircraft": "Boeing", 
+"Capacity": 2979, 
+"date": "2016-05-17T16:36:00",
+"duration":16, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":817, 
+"costeconomy":508, 
+"costfirst":808, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M256F", 
+"seatNo":"500" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1815", 
+"aircraft": "Boeing", 
+"Capacity": 4730, 
+"date": "2016-05-18T10:59:00",
+"duration":10, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":338, 
+"costeconomy":946, 
+"costfirst":1246, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M1561F", 
+"seatNo":"57" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG1915", 
+"aircraft": "Boeing", 
+"Capacity": 3687, 
+"date": "2016-05-19T7:45:00",
+"duration":7, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":69, 
+"costeconomy":849, 
+"costfirst":1149, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M5165F", 
+"seatNo":"651" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2015", 
+"aircraft": "Boeing", 
+"Capacity": 2781, 
+"date": "2016-05-20T10:1:00",
+"duration":10, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":628, 
+"costeconomy":755, 
+"costfirst":1055, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M728F", 
+"seatNo":"866" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2115", 
+"aircraft": "Boeing", 
+"Capacity": 5276, 
+"date": "2016-05-21T19:10:00",
+"duration":19, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":5, 
+"costeconomy":1226, 
+"costfirst":1526, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M2040F", 
+"seatNo":"332" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2215", 
+"aircraft": "Boeing", 
+"Capacity": 1783, 
+"date": "2016-05-22T1:34:00",
+"duration":1, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":550, 
+"costeconomy":1412, 
+"costfirst":1712, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M385F", 
+"seatNo":"39" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2315", 
+"aircraft": "Boeing", 
+"Capacity": 3607, 
+"date": "2016-05-23T6:0:00",
+"duration":6, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":493, 
+"costeconomy":1379, 
+"costfirst":1679, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M4599F", 
+"seatNo":"380" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2415", 
+"aircraft": "Boeing", 
+"Capacity": 5332, 
+"date": "2016-05-24T7:41:00",
+"duration":7, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":909, 
+"costeconomy":1044, 
+"costfirst":1344, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M5043F", 
+"seatNo":"959" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2515", 
+"aircraft": "Boeing", 
+"Capacity": 2765, 
+"date": "2016-05-25T21:14:00",
+"duration":21, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":239, 
+"costeconomy":678, 
+"costfirst":978, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M52F", 
+"seatNo":"586" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2615", 
+"aircraft": "Boeing", 
+"Capacity": 1088, 
+"date": "2016-05-26T19:21:00",
+"duration":19, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":783, 
+"costeconomy":657, 
+"costfirst":957, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M4159F", 
+"seatNo":"612" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2715", 
+"aircraft": "Boeing", 
+"Capacity": 4396, 
+"date": "2016-05-27T19:56:00",
+"duration":19, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":102, 
+"costeconomy":1288, 
+"costfirst":1588, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M1812F", 
+"seatNo":"849" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2815", 
+"aircraft": "Boeing", 
+"Capacity": 4310, 
+"date": "2016-05-28T3:35:00",
+"duration":3, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":528, 
+"costeconomy":586, 
+"costfirst":886, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M9078F", 
+"seatNo":"774" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG2915", 
+"aircraft": "Boeing", 
+"Capacity": 3284, 
+"date": "2016-05-29T10:10:00",
+"duration":10, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":818, 
+"costeconomy":630, 
+"costfirst":930, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M8483F", 
+"seatNo":"582" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG3015", 
+"aircraft": "Boeing", 
+"Capacity": 3440, 
+"date": "2016-05-30T15:51:00",
+"duration":15, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":267, 
+"costeconomy":739, 
+"costfirst":1039, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M6304F", 
+"seatNo":"48" 
+} 
+] 
+} 
+{ 
+"flightNumber":"AG3115", 
+"aircraft": "Boeing", 
+"Capacity": 5079, 
+"date": "2016-05-31T24:32:00",
+"duration":24, 
+"origin": "MXP", 
+"destination": "FCO", 
+"availableSeats":256, 
+"costeconomy":1005, 
+"costfirst":1305, 
+"seatmap":[ 
+{"window":true, 
+"economy":true, 
+"reservation_id":"M482F", 
+"seatNo":"617" 
+} 
+] 
+} 
+
+
 ]
