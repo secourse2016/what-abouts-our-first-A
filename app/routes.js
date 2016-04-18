@@ -7,30 +7,26 @@ module.exports = function(app,mongo) {
     var async = require('async');
     var request = require('request');
     var jwtToken   = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60";
+    var outFlights = [];
+    var returnFlights = [];
+    var origin = "";
+    var dest = "";
+    var t1;
+    var t2;
+    var cabin;
     moment().format();
-
     function httpGet(url, callback) {
         const options = {
             url :  url,
             json : true
         };
         request(options,function(err, res, body) {
+            outFlights = outFlights.concat(body.outgoingFlights);
+            returnFlights = returnFlights.concat(body.returnFlights);
             callback(err, body);
         });
     }
-
-    var urls= [
-        "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt="+jwtToken,
-        "http://54.187.103.196:3000/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt="+jwtToken,
-        "http://52.27.150.19/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt="+jwtToken
-    ];
-
-    async.map(urls, httpGet, function (err, res){
-        if (err) return console.log(err);
-            console.log(res);
-    });
-
-
+    
     function determinePrice(eco,buis,cabin) {
         if(cabin === "business"){
             return buis;
@@ -95,8 +91,17 @@ module.exports = function(app,mongo) {
     }); 
 
     app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class/', function(req, res) {
-        var outFlights = [];
-        var returnFlights = [];
+        outFlights = [];
+        returnFlights = [];
+        origin = req.params.origin;
+        dest = req.params.destination;
+        t1 = req.params.departingDate;
+        t2 = req.params.returningDate;
+        cabin = req.params.class;
+        var urls= [
+            "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken //Austrian
+        // "http://52.27.150.19/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt="+jwtToken
+        ];
         allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,function(err,flights){
             for (var i = 0; i < flights.length; i++) {
                 var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
@@ -136,19 +141,14 @@ module.exports = function(app,mongo) {
                 }
                 if(req.query.airline==="Other")
                 {
-                    var req2 = http.get('http://54.187.103.196:3000/api/flights/search/'+req.params.origin+'/'+req.params.destination+'/'+req.params.departingDate+'/'+req.params.returningDate+'/'+req.params.class+'?wt='+jwtToken, function(res2) {
-                        var bodyChunks = [];
-                        res2.on('data', function(chunk) {
-                            bodyChunks.push(chunk);
-                        }).on('end', function() {
-                            var body = Buffer.concat(bodyChunks);
-                            var ihateSE = JSON.parse(body);
-                            outFlights = outFlights.concat(ihateSE.outgoingFlights);
+                    async.map(urls, httpGet, function (err, res2){
+                        if (err) return console.log(err);
+                        else{
                             res.send({
                                 outgoingFlights     : outFlights,
                                 returnFlights       : returnFlights
                             });
-                        })
+                        }
                     });
                 }
                 else{

@@ -26,7 +26,9 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
         }
         else {
             FlightsSrv.getFlights().success(function(flights) {
-                $scope.Flights = flights.outgoingFlights;
+                FlightsSrv.outFlights = flights.outgoingFlights;
+                FlightsSrv.inFlights = flights.returnFlights;
+                $scope.Flights = FlightsSrv.outFlights;
         });
        }
 
