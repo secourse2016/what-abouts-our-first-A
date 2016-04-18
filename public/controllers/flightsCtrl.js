@@ -49,7 +49,7 @@ App.controller('flightsCtrl',function($scope,FlightsSrv,$location){
         var d = new Date(date);
         var y = d.getFullYear();
         var m = d.getMonth()+1;
-        var day = d.getDate();
+        var day = d.getDate()+1;
         return day + "/" + m+ "/"+ y;
     }
     
