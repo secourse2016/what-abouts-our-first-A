@@ -35,6 +35,11 @@ App.config(function($routeProvider,$locationProvider) {
         .when('/payment',{
             templateUrl : '/partials/payment.html',
             controller  : 'paymentCtrl'
+        })
+
+        .when('/thankyou', {
+            templateUrl : '/partials/thankyou.html',
+            controller  : 'thankyouCtrl'
         });
         
     $locationProvider.html5Mode({enabled: true,requireBase: false});    

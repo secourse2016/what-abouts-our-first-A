@@ -5,10 +5,18 @@ module.exports = function(app,mongo) {
     var moment     = require('moment');
     moment().format();
 	
+    function determinePrice(eco,buis,cabin) {
+        if(cabin === "business"){
+            return buis;
+        }else{
+            return eco;
+        }
+    }
+
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
     });
-    
+
     app.get('/', function (req, res) {
 	   res.sendFile(__dirname + '/public/index.html');
     });
@@ -19,9 +27,11 @@ module.exports = function(app,mongo) {
     });
 
     app.get('/api/data/codes', function(req, res) {
-      var codes =  require('../airports.json');
-      res.json( codes );
+      allFlights.getAirports( function (err , airports){
+        res.send(airports);
+      });
     });
+
  
     app.get('/db/seed', function(req, res) {
         allFlights.seedDB( function( err , seeded ){
@@ -34,6 +44,7 @@ module.exports = function(app,mongo) {
 
     /* DELETE DB */
     app.get('/db/delete', function(req, res) {
+        allFlights.clearDB();
     });      
 
     /* Middleware */
@@ -56,19 +67,11 @@ module.exports = function(app,mongo) {
 	
 
     }); 
-    /**
-     * ROUND-TRIP SEARCH REST ENDPOINT
-     * @param origin - Flight Origin Location - Airport Code
-     * @param destination - Flight Destination Location - Airport Code
-     * @param departingDate - JavaScript Date.GetTime() numerical value corresponding to format `YYYY-MM-DD`
-     * @param returningDate - JavaScript Date.GetTime() numerical value corresponding to format `YYYY-MM-DD`
-     * @param class - economy or business only
-     * @returns {Array}
-     */        
+
     app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class', function(req, res) {
         // retrieve params from req.params.{{origin | departingDate | ...}}
         // return this exact format
-        allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,req.params.class,function(err,flights){
+        allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,function(err,flights){
             var outFlights = [];
             for (var i = 0; i < flights.length; i++) {
                 var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
@@ -81,13 +84,13 @@ module.exports = function(app,mongo) {
                 "arrivalDateTime"   : arriveDT,
                 "origin"            : flights[i].origin,
                 "destination"       : flights[i].destination,
-                "cost"              : flights[i].costeconomy,//tochange
+                "cost"              : determinePrice(flights[i].costeconomy,flights[i].costfirst,req.params.class),
                 "currency"          : "USD",
                 "class"             : req.params.class,
                 "Airline"           : "United"
             })
             }
-            allFlights.getFlights(req.params.destination,req.params.origin,req.params.returningDate,req.params.class,function(err,flights){
+            allFlights.getFlights(req.params.destination,req.params.origin,req.params.returningDate,function(err,flights){
                 var returnFlights = [];
                 for (var i = 0; i < flights.length; i++) {
                     var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
@@ -101,7 +104,7 @@ module.exports = function(app,mongo) {
                     "arrivalDateTime"   : arriveDT,
                     "origin"            : flights[i].origin,
                     "destination"       : flights[i].destination,
-                    "cost"              : flights[i].costeconomy,//tochange
+                    "cost"              : determinePrice(flights[i].costeconomy,flights[i].costfirst,req.params.class),
                     "currency"          : "USD",
                     "class"             : req.params.class,
                     "Airline"           : "United"
@@ -114,34 +117,50 @@ module.exports = function(app,mongo) {
             });
         });
     });    
-
-    /**
-     * ONE-WAY SEARCH REST ENDPOINT 
-     * @param origin - Flight Origin Location - Airport Code
-     * @param DepartingDate - JavaScript Date.GetTime() numerical value corresponding to format `YYYY-MM-DD`
-     * @param class - economy or business only
-     * @returns {Array}
-     */    
+ 
     app.get('/api/flights/search/:origin/:destination/:departingDate/:class', function(req, res) {
-        // retrieve params from req.params.{{origin | departingDate | ...}}
-        // return this exact format
-        return 
-        {
-          outgoingFlights: 
-            [{
-                "flightNumber"      : "SE2804",
-                "aircraftType"      : "Airbus",
-                "aircraftModel"     : "A320",
-                "departureDateTime" : 1460478300000,
-                "arrivalDateTime"   : 1460478300000,
-                "origin"            : "JFK",
-                "destination"       : "CAI",
-                "cost"              : "1567",
-                "currency"          : "USD",
-                "class"             : "economy",
-                "Airline"           : "United"
-            }]
-        };
-    });        
-             
+            allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,function(err,flights){
+                var outFlights = [];
+                for (var i = 0; i < flights.length; i++) {
+                    var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
+                    var arriveDT = departDT+flights[i].duration*60000;
+
+                    outFlights.push({
+                    "flightNumber"      : flights[i].flightNumber,
+                    "aircraftType"      : flights[i].aircraft,
+                    "aircraftModel"     : "767",
+                    "departureDateTime" : departDT,
+                    "arrivalDateTime"   : arriveDT,
+                    "origin"            : flights[i].origin,
+                    "destination"       : flights[i].destination,
+                    "cost"              : determinePrice(flights[i].costeconomy,flights[i].costfirst,req.params.class),
+                    "currency"          : "USD",
+                    "class"             : req.params.class,
+                    "Airline"           : "United"
+                    })
+                }
+                res.send({
+                    outgoingFlights     : outFlights
+                });
+            });
+        });
+    app.get('/api/reservations/:bookingrefnum', function(req, res) {
+        allFlights.viewMyReservedFlight( req.params.bookingrefnum , function(err,myFlights){
+            if(myFlights === null){
+                res.send(null);
+                console.log("invalid bookingrefnum")
+            }
+            else{
+                res.json(myFlights);
+            }
+        });
+    }); 
+    app.get('/api/reserve/:fn/:ln/:origin/:destination/:flightNumber/:cabin/:date', function(req, res) {
+        allFlights.reserve(req.params.fn , req.params.ln,req.params.origin,req.params.destination,req.params.flightNumber,req.params.cabin,req.params.date, function (brn,receipt){
+            res.send(brn);
+        });
+    });
+
 };
+
+

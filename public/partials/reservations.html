@@ -47,7 +47,7 @@
 <div class ="Head">
 	<div class="col-lg-6">
 		<div class="input-group">
-			<input type="text" class="form-control" ng-model="refNo" placeholder="Booking Reference Number">
+			<input type="text" class="form-control" ng-model="selectedBookingRefNumber" placeholder="Booking Reference Number">
 			<span class="input-group-btn">
 				<button class="btn btn-default" type="button" ng-click="search()" style="background:#00bd35;color: white;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
 			</span>
@@ -57,19 +57,16 @@
 <hr>
 <div uib-collapse="isCollapsed">
 	<div class="Body">
-		<label style="margin-right:160px;">From: CAI</label>
-		<label>To : FRA</label>
+		<label style="margin-right:160px;">From: {{origin}}</label>
+		<label>To : {{destination}}</label>
 		<br>
-		<label>Cabin : First Class</label>
+		<label>Cabin : {{cabin}}</label>
 		<br>
-		<label>Flight Number: ABC123</label>
+		<label>Flight Number: {{flightNumber}}</label>
 		<br>
-  		<label>Seat Number: D12</label>
+  		<label>Seat Number: {{seatNumber}}</label>
 		<br>
-		<label>Flight Duration: 90 minutes</label>
-		<br>
-  		<label>Departure: 25/9/2020 12:69 AM</label>
-  		<label>Arrival: 26/9/2020 69:12 PM</label>
+  		<label>Departure: {{departureTime}}</label>
 		<br>
 	</div>
 </div>

@@ -1,5 +1,8 @@
-App.controller('paymentCtrl',function($scope,$location){
+App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
     $scope.home = function() {
-    $location.url('/');
+        FlightsSrv.reserve($scope.fn,$scope.ln).success(function (response) {
+            FlightsSrv.setBrn(response);
+        });
+        $location.url('/thankyou');	
     };
 })
