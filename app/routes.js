@@ -3,8 +3,30 @@ module.exports = function(app,mongo) {
     var jwt        = require('jsonwebtoken');
     var allFlights = require('./allFlights.js');
     var moment     = require('moment');
+    var http       = require('http');
+    var async = require('async');
+    var request = require('request');
+    var jwtToken   = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60";
+    var outFlights = [];
+    var returnFlights = [];
+    var origin = "";
+    var dest = "";
+    var t1;
+    var t2;
+    var cabin;
     moment().format();
-	
+    function httpGet(url, callback) {
+        const options = {
+            url :  url,
+            json : true
+        };
+        request(options,function(err, res, body) {
+            outFlights = outFlights.concat(body.outgoingFlights);
+            returnFlights = returnFlights.concat(body.returnFlights);
+            callback(err, body);
+        });
+    }
+    
     function determinePrice(eco,buis,cabin) {
         if(cabin === "business"){
             return buis;
@@ -68,11 +90,19 @@ module.exports = function(app,mongo) {
 
     }); 
 
-    app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class', function(req, res) {
-        // retrieve params from req.params.{{origin | departingDate | ...}}
-        // return this exact format
+    app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class/', function(req, res) {
+        outFlights = [];
+        returnFlights = [];
+        origin = req.params.origin;
+        dest = req.params.destination;
+        t1 = req.params.departingDate;
+        t2 = req.params.returningDate;
+        cabin = req.params.class;
+        var urls= [
+            "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken //Austrian
+        // "http://52.27.150.19/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt="+jwtToken
+        ];
         allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,function(err,flights){
-            var outFlights = [];
             for (var i = 0; i < flights.length; i++) {
                 var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
                 var arriveDT = departDT+flights[i].duration*60000;
@@ -91,7 +121,6 @@ module.exports = function(app,mongo) {
             })
             }
             allFlights.getFlights(req.params.destination,req.params.origin,req.params.returningDate,function(err,flights){
-                var returnFlights = [];
                 for (var i = 0; i < flights.length; i++) {
                     var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
                     var arriveDT = departDT+flights[i].duration*60000;
@@ -110,10 +139,24 @@ module.exports = function(app,mongo) {
                     "Airline"           : "United"
                     })
                 }
-                res.send({
-                    outgoingFlights     : outFlights,
-                    returnFlights       : returnFlights
-                });
+                if(req.query.airline==="Other")
+                {
+                    async.map(urls, httpGet, function (err, res2){
+                        if (err) return console.log(err);
+                        else{
+                            res.send({
+                                outgoingFlights     : outFlights,
+                                returnFlights       : returnFlights
+                            });
+                        }
+                    });
+                }
+                else{
+                    res.send({
+                        outgoingFlights     : outFlights,
+                        returnFlights       : returnFlights
+                    });
+                }
             });
         });
     });    

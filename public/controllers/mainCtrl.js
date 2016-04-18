@@ -106,14 +106,19 @@ App.controller('mainCtrl', function($scope, FlightsSrv, $location, $log) {
             $scope.alerts.push({ type: 'danger', msg: 'Yalahwy! You forgot to choose which airline to search from :(' });
             return;
         }
+        FlightsSrv.setAirline($scope.radioModel2);
         FlightsSrv.setHidden($scope.hidden);
         FlightsSrv.setSelectedOriginAirport($scope.selectedOrigin);
         FlightsSrv.setSelectedDestinationAirport($scope.selectedDestination);
         FlightsSrv.fixDate($scope.dt2).success(function(newDate){
-            FlightsSrv.setReturnDate(newDate);
+            var d = new Date(newDate);
+            d.setDate(d.getDate()+1);
+            FlightsSrv.setReturnDate(d.getTime());
         });
         FlightsSrv.fixDate($scope.dt1).success(function(newDate){
-            FlightsSrv.setDepartDate(newDate);
+            var d = new Date(newDate);
+            d.setDate(d.getDate()+1);
+            FlightsSrv.setDepartDate(d.getTime());
         });
         $location.url('/flights');
     };
