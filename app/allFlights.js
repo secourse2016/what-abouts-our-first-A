@@ -1,8 +1,9 @@
 var flights = require('../flights.json');
 var airports = require('../airports.json');
+var moment = require('moment');
 var db = require('./db.js');
 var crypto = require('crypto');
-
+moment().format();
 exports.seedDB = function(cb) {
     seedFlights(function(err1,seededFlights) {
         seedAirports(function(err2,seededAirports) {
@@ -45,7 +46,8 @@ function seedAirports(cb) {
 
 
 exports.getFlights = function ( flyingFrom , flyingTo , departDate,cb ) {
-    var d = new Date(departDate);
+    var dep = moment(departDate, 'x').toDate().getTime();
+    var d = new Date(dep);
     function checkDate(d2) 
     {
      var dateJSON = new Date(d2.date);
