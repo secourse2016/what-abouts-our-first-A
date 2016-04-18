@@ -4,8 +4,32 @@ module.exports = function(app,mongo) {
     var allFlights = require('./allFlights.js');
     var moment     = require('moment');
     var http       = require('http');
+    var async = require('async');
+    var request = require('request');
+    var jwtToken   = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60";
     moment().format();
-	var jwtToken   = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60";
+
+    function httpGet(url, callback) {
+        const options = {
+            url :  url,
+            json : true
+        };
+        request(options,function(err, res, body) {
+            callback(err, body);
+        });
+    }
+
+    var urls= [
+        "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt="+jwtToken,
+        "http://54.187.103.196:3000/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt="+jwtToken,
+        "http://52.27.150.19/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt="+jwtToken
+    ];
+
+    async.map(urls, httpGet, function (err, res){
+        if (err) return console.log(err);
+            console.log(res);
+    });
+
 
     function determinePrice(eco,buis,cabin) {
         if(cabin === "business"){
@@ -110,29 +134,31 @@ module.exports = function(app,mongo) {
                     "Airline"           : "United"
                     })
                 }
-                res.send({
-                outgoingFlights     : outFlights,
-                returnFlights       : returnFlights
-                });
+                if(req.query.airline==="Other")
+                {
+                    var req2 = http.get('http://54.187.103.196:3000/api/flights/search/'+req.params.origin+'/'+req.params.destination+'/'+req.params.departingDate+'/'+req.params.returningDate+'/'+req.params.class+'?wt='+jwtToken, function(res2) {
+                        var bodyChunks = [];
+                        res2.on('data', function(chunk) {
+                            bodyChunks.push(chunk);
+                        }).on('end', function() {
+                            var body = Buffer.concat(bodyChunks);
+                            var ihateSE = JSON.parse(body);
+                            outFlights = outFlights.concat(ihateSE.outgoingFlights);
+                            res.send({
+                                outgoingFlights     : outFlights,
+                                returnFlights       : returnFlights
+                            });
+                        })
+                    });
+                }
+                else{
+                    res.send({
+                        outgoingFlights     : outFlights,
+                        returnFlights       : returnFlights
+                    });
+                }
             });
         });
-
-        if(req.query.airline==="Other")
-        {
-            var req2 = http.get('http://54.187.103.196:3000/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt='+jwtToken, function(res2) {
-                console.log('STATUS: ' + res2.statusCode);
-                console.log('HEADERS: ' + JSON.stringify(res2.headers));
-                var bodyChunks = [];
-                res2.on('data', function(chunk) {
-                    bodyChunks.push(chunk);
-                    console.log(bodyChunks);
-                }).on('end', function() {
-                    var body = Buffer.concat(bodyChunks);
-                    console.log('BODY: ' + body);
-                })
-            });
-            req2.send();
-        }
     });    
  
     app.get('/api/flights/search/:origin/:destination/:departingDate/:class', function(req, res) {

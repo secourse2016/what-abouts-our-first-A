@@ -26,6 +26,7 @@
     "moment": "^2.12.0",
     "mongodb": "*",
     "morgan": "~1.6.1",
+    "request": "^2.72.0",
     "serve-favicon": "~2.3.0",
     "should": ">= 0.0.1",
     "supertest": "0.3.x",
