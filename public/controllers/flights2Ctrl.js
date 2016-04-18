@@ -14,9 +14,7 @@ App.controller('flights2Ctrl',function($scope,FlightsSrv,$location){
     }
 
     function Flights() {
-    FlightsSrv.getFlights().success(function(flights) {
-	     $scope.Flights = flights.returnFlights;
-     });
+	     $scope.Flights = FlightsSrv.inFlights;
     };
 
     function addZero(i) {
