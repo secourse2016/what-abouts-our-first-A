@@ -5,15 +5,14 @@ App.controller('reservationsCtrl', function($scope,FlightsSrv,$location) {
 	$scope.search = function()
 	{
 		FlightsSrv.setSelectedBookingRefNumber($scope.selectedBookingRefNumber);
-		FlightsSrv.getMyReservation().success(function(reservation){
-			$scope.origin = reservation.origin ;
-			$scope.destination = reservation.destination ;
-			$scope.cabin = reservation.
-			$scope.flightNumber = reservation.flightNumber ;
-			$scope.seatNumber = reservation.
-			$scope.duration = reservation.duration ;
-			$scope.departureTime = reservation.date ;
-			// $scope.arrivalTime = reservation.
+
+		FlightsSrv.getMyReservation().success(function(reservations){
+			$scope.origin = reservations.origin ;
+			$scope.destination = reservations.destination ;
+			$scope.flightNumber = reservations.number;
+			$scope.cabin = reservations.cabin;
+			$scope.seatNumber = "12D";//reservations[0].
+			$scope.departureTime = reservations.depart ;
 		});
 		$scope.isCollapsed = !$scope.isCollapsed;
 	}

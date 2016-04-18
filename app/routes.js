@@ -16,18 +16,6 @@ module.exports = function(app,mongo) {
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
     });
-    app.get('/api/reserve/:fn/:ln/:flightNumber', function(req, res) {
-      allFlights.reserve(req.params.fn , req.params.ln , req.params.flightNumber , 1 , 1 , 1 , function (err,seeded){
-        if(err){
-            res.send("err");
-        }
-        else{
-            res.send("done");
-        }
-      } 
-      );
-
-    });
 
     app.get('/', function (req, res) {
 	   res.sendFile(__dirname + '/public/index.html');
@@ -156,16 +144,22 @@ module.exports = function(app,mongo) {
                 });
             });
         });
-        app.get('/api/reservations/:bookingrefnum', function(req, res) {
-      allFlights.viewMyReservedFlight( req.params.bookingrefnum , function(err,myFlights){
-        var flights = [];
-        for( var i=0 ; i<myFlights.length ; i++)
-        {
-            flights.push( myFlights[i]);
-        }
-        res.send(flights);
-      });
+    app.get('/api/reservations/:bookingrefnum', function(req, res) {
+        allFlights.viewMyReservedFlight( req.params.bookingrefnum , function(err,myFlights){
+            if(myFlights === null){
+                res.send(null);
+                console.log("invalid bookingrefnum")
+            }
+            else{
+                res.json(myFlights);
+            }
+        });
     }); 
+    app.get('/api/reserve/:fn/:ln/:origin/:destination/:flightNumber/:cabin/:date', function(req, res) {
+        allFlights.reserve(req.params.fn , req.params.ln,req.params.origin,req.params.destination,req.params.flightNumber,req.params.cabin,req.params.date, function (brn,receipt){
+            res.send(brn);
+        });
+    });
 
 };
 
