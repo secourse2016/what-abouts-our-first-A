@@ -26,7 +26,7 @@ module.exports = function(app,mongo) {
             callback(err, body);
         });
     }
-    
+
     function determinePrice(eco,buis,cabin) {
         if(cabin === "business"){
             return buis;
@@ -99,8 +99,19 @@ module.exports = function(app,mongo) {
         t2 = req.params.returningDate;
         cabin = req.params.class;
         var urls= [
-            "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken //Austrian
-        // "http://52.27.150.19/api/flights/search/CAI/JED/2016-05-01/2016-05-02/economy?wt="+jwtToken
+            "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken, //Austrian
+            "http://ec2-52-26-166-80.us-west-2.compute.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken,//KLM
+            "http://www.swiss-air.me/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken, //Swissair
+            // "http://52.207.211.179/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken //AlaskanAirlines
+            // "http://52.38.78.176/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken,//Oceanic
+            // "http://54.191.202.17/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken, //AirMadagascar
+            // "http://sebitsplease.com.s3-website-us-east-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken//singapore
+            // "http://52.25.15.124/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken //Delta
+            // "http://ec2-52-38-101-89.us-west-2.compute.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken,//AirBerlin
+            // "http://52.34.160.140/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken, //AirFrance
+            // "http://ec2-54-152-123-100.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken, //luftahnsa
+            // "http://52.90.46.68/#/home/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken,//Emirates
+            // "http://52.27.150.19/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken //Turkish airlines
         ];
         allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,function(err,flights){
             for (var i = 0; i < flights.length; i++) {
@@ -162,8 +173,27 @@ module.exports = function(app,mongo) {
     });    
  
     app.get('/api/flights/search/:origin/:destination/:departingDate/:class', function(req, res) {
+        outFlights = [];
+        origin = req.params.origin;
+        dest = req.params.destination;
+        t1 = req.params.departingDate;
+        cabin = req.params.class;
+        var urls= [
+            "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Austrian
+            "http://ec2-52-26-166-80.us-west-2.compute.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken,//KLM
+            "http://www.swiss-air.me/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Swissair
+            // "http://52.207.211.179/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken //AlaskanAirlines
+            // "http://52.38.78.176/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken,//Oceanic
+            // "http://54.191.202.17/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //AirMadagascar
+            // "http://sebitsplease.com.s3-website-us-east-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken//singapore
+            // "http://52.25.15.124/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken //Delta
+            // "http://ec2-52-38-101-89.us-west-2.compute.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken,//AirBerlin
+            // "http://52.34.160.140/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //AirFrance
+            // "http://ec2-54-152-123-100.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //luftahnsa
+            // "http://52.90.46.68/#/home/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken,//Emirates
+            // "http://52.27.150.19/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken //Turkish airlines
+        ];
             allFlights.getFlights(req.params.origin,req.params.destination,req.params.departingDate,function(err,flights){
-                var outFlights = [];
                 for (var i = 0; i < flights.length; i++) {
                     var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
                     var arriveDT = departDT+flights[i].duration*60000;
@@ -182,9 +212,22 @@ module.exports = function(app,mongo) {
                     "Airline"           : "United"
                     })
                 }
-                res.send({
-                    outgoingFlights     : outFlights
-                });
+                if(req.query.airline==="Other")
+                {
+                    async.map(urls, httpGet, function (err, res2){
+                        if (err) return console.log(err);
+                        else{
+                            res.send({
+                                outgoingFlights     : outFlights,
+                            });
+                        }
+                    });
+                }
+                else{
+                    res.send({
+                        outgoingFlights     : outFlights,
+                    });
+                }
             });
         });
     app.get('/api/reservations/:bookingrefnum', function(req, res) {
