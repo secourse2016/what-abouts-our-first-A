@@ -118,6 +118,7 @@ module.exports = function(app,mongo) {
                 var departDT = moment(flights[i].date, 'YYYY-MM-DD hh:mm A').toDate().getTime();
                 var arriveDT = departDT+flights[i].duration*60000;
                 outFlights.push({
+                "flightId"          : flights[i]._id,
                 "flightNumber"      : flights[i].flightNumber,
                 "aircraftType"      : flights[i].aircraft,
                 "aircraftModel"     : "747",
@@ -137,6 +138,7 @@ module.exports = function(app,mongo) {
                     var arriveDT = departDT+flights[i].duration*60000;
 
                     returnFlights.push({
+                    "flightId"          : flights[i]._id,
                     "flightNumber"      : flights[i].flightNumber,
                     "aircraftType"      : flights[i].aircraft,
                     "aircraftModel"     : "767",
@@ -199,6 +201,7 @@ module.exports = function(app,mongo) {
                     var arriveDT = departDT+flights[i].duration*60000;
 
                     outFlights.push({
+                    "flightId"          : flights[i]._id,
                     "flightNumber"      : flights[i].flightNumber,
                     "aircraftType"      : flights[i].aircraft,
                     "aircraftModel"     : "767",
