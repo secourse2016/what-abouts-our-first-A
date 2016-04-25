@@ -1,11 +1,11 @@
 <style>
-.blueBackground
+        .blueBackground
     {
         overflow: auto;
         margin: 0px;
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
         padding: 20px 0;
-        min-height: 500px;
+        min-height: 900px;
         background-color: hsla(219, 100%, 45%, 0.73);
     }
     .FromTo
@@ -61,7 +61,6 @@
     }
     th, td 
     {
-        /*width:265px;*/
         color:white;
         text-align: center;
     }
@@ -84,11 +83,16 @@
     }
     table
     {
-        margin-bottom:300px; 
+        min-height: 200px;
     }
-    thead > tr, tbody
+    tr.ng-enter 
     {
-        /*display:block;*/
+        -webkit-transition: 1.5s;
+        transition: 1.5s;
+        opacity: 0;
+    }
+    tr.ng-enter-active {
+        opacity: 1;
     }
 </style>
 <div class="blueBackground"> 
@@ -127,6 +131,7 @@
             </tr>
         </tbody>
     </table>
+    <hr>
     <div class="Proceeding">
       <input type="submit" value="Cancel" ng-click="return()">
     </div>
