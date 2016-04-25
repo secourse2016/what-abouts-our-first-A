@@ -5,6 +5,21 @@
         padding: 0px 500px 0px 250px;
         font-size: 120%;
     }
+
+ .btn-group label
+    {
+        margin-top:25px;
+        margin-right:4px; 
+        background: hsla(200, 100%, 50%, 1);
+        border: none;
+        margin-left: 200px;
+    }
+
+     .btn-group label:hover
+    {
+        background:hsla(200, 100%, 90%, 1);
+    }
+
 </style>
 
 
@@ -64,9 +79,29 @@
 
 
 </div>
+
+  <br>
+  <br>
+
+
+<div class="btn-group">
+                <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'One-way'" ng-click="one()" uib-uncheckable="false">One-way</label>
+                <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'Roundtrip'" ng-click="round()"uib-uncheckable="false">Roundtrip</label>
+                 <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'Roundtrip'" ng-click="round()"uib-uncheckable="false">United Airlines</label>
+                  <label class="btn btn-primary" ng-model="radioModel1" uib-btn-radio="'Roundtrip'" ng-click="round()"uib-uncheckable="false">Other Airlines</label>
+            </div>
+
+
+
+
         <button class="button button-block button-calm" 
               ng-click="SearchFlights(originAirport, destinationAirport)">Search</button>           
         </div>
+
+    
+
+
+
     </ion-content>
 
 </ion-view>
