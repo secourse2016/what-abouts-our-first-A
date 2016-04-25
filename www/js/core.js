@@ -1,8 +1,10 @@
-var app = angular.module("App" , ["ionic"]);
+/* Create Angular App Instance */
+app = angular.module('SE_L10', ['ionic']);
 
-
-
-App.config(function ($stateProvider, $urlRouterProvider) {
+/**
+ * Angular Routes
+ */
+app.config(function ($stateProvider, $urlRouterProvider) {
 
         $stateProvider
 
