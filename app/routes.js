@@ -1,6 +1,5 @@
 module.exports = function(app,mongo) {
     var path       = require('path');
-    var stripe = require('stripe')('sk_test_QCs2H8B60sw0QEPDdd5dIfKn');
     var jwt        = require('jsonwebtoken');
     var allFlights = require('./allFlights.js');
     var moment     = require('moment');
