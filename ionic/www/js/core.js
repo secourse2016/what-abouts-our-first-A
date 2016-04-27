@@ -34,23 +34,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/#');
 
 });
+
 app.controller('indexCtrl', function($scope,$state) {
     $scope.doSomething = function(){
         $state.go('index');
     }
 });
 
-app.controller('flights2Ctrl', function($scope, FlightsSrv,$state) {
-
-  /* Retrieve Selected Airports Codes */
-  $scope.flight = {
-    origin      : FlightsSrv.getSelectedOriginAirport(),
-    destination : FlightsSrv.getSelectedDestinationAirport()
-  };
-  $scope.next = function(){
-    $state.go('index');
-  }
-});
 app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
 
  $ionicModal.fromTemplateUrl('templates/datemodal.html', 
@@ -154,7 +144,6 @@ app.controller('flights2Ctrl', function($scope, FlightsSrv,$state) {
 app.factory('FlightsSrv', function ($http) {
      return {
             getAirportCodes : function() {
-                console.log('[flightsSrv]=>getAirportCodes');
                 return $http.get('http://localhost:3000/api/data/codes');
             },
             setSelectedOriginAirport: function(value) {
