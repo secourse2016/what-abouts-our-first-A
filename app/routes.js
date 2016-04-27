@@ -184,6 +184,7 @@ module.exports = function(app,mongo) {
             "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Austrian
             "http://ec2-52-26-166-80.us-west-2.compute.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken,//KLM
             "http://www.swiss-air.me/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Swissair
+            "http://52.58.46.74/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Dragonair
             // "http://52.207.211.179/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken //AlaskanAirlines
             // "http://52.38.78.176/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken,//Oceanic
             // "http://54.191.202.17/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //AirMadagascar
