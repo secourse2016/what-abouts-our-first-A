@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style> 
+
+
+  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Thank You for choosing United Airlines</h1>
+
+      </ion-header-bar>
+      <ion-content>
+      <br>
+      <br>
+       <div class="item item-avatar">
+    <img src="https://lh3.ggpht.com/2FNnag8WvCP4Z4Cr8cjZzrABvCv8Cw21FcIfI55fjAW3jMvJVnN7-ZSaWRzmC2v7Wkg_=w300">
+    <h2> Welcome To United Airlines </h2>
+    
+  </div>
+      <br>
+      <br>
+       <h3> Your Booking Reference Number is : {{brn}} </h3>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
