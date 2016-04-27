@@ -24,16 +24,33 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 url: '/flights',
                 templateUrl: '/partials/flights.html',
                 controller: 'flightsCtrl'
+            })
+            .state('flights2', {
+                url: '/flights2',
+                templateUrl: '/partials/flights2.html',
+                controller: 'flights2Ctrl'
             });
 
         $urlRouterProvider.otherwise('/#');
 
 });
+app.controller('indexCtrl', function($scope,$state) {
+    $scope.doSomething = function(){
+        $state.go('index');
+    }
+});
 
+app.controller('flights2Ctrl', function($scope, FlightsSrv,$state) {
 
-/**
- * Main Controller
- */
+  /* Retrieve Selected Airports Codes */
+  $scope.flight = {
+    origin      : FlightsSrv.getSelectedOriginAirport(),
+    destination : FlightsSrv.getSelectedDestinationAirport()
+  };
+  $scope.next = function(){
+    $state.go('index');
+  }
+});
 app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
 
  $ionicModal.fromTemplateUrl('templates/datemodal.html', 
@@ -53,7 +70,6 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
   $scope.closedateModal1 = function(modal1) {
     $scope.datemodal1.hide();
     $scope.dt1 = modal1;
-    $scope.dt2 = modal2;
   };
   $ionicModal.fromTemplateUrl('templates/datemodal2.html', 
       function(modal) {
@@ -109,36 +125,49 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
 /**
  * Flights Controller
  */
-app.controller('flightsCtrl', function($scope, FlightsSrv) {
+app.controller('flightsCtrl', function($scope, FlightsSrv,$state) {
 
   /* Retrieve Selected Airports Codes */
   $scope.flight = {
     origin      : FlightsSrv.getSelectedOriginAirport(),
     destination : FlightsSrv.getSelectedDestinationAirport()
   };
-
+  $scope.next = function(){
+    $state.go('flights2');
+  }
 });
 
+app.controller('flights2Ctrl', function($scope, FlightsSrv,$state) {
+
+  /* Retrieve Selected Airports Codes */
+  $scope.flight = {
+    origin      : FlightsSrv.getSelectedOriginAirport(),
+    destination : FlightsSrv.getSelectedDestinationAirport()
+  };
+  $scope.next = function(){
+    $state.go('index');
+  }
+});
 
 /** * Flights Service
  */
 app.factory('FlightsSrv', function ($http) {
      return {
-         getAirportCodes : function() {
-            console.log('[flightsSrv]=>getAirportCodes');
-           return $http.get('http://localhost:3000/api/data/codes');
-         },
-         setSelectedOriginAirport: function(value) {
-           this.selectedOriginAirport = value;
-         },
-         getSelectedOriginAirport: function() {
-           return this.selectedOriginAirport;
-         },
-         setSelectedDestinationAirport: function(value) {
-           this.selectedDestinationAirport = value;
-         },
-         getSelectedDestinationAirport: function() {
-           return this.selectedDestinationAirport;
-         }
+            getAirportCodes : function() {
+                console.log('[flightsSrv]=>getAirportCodes');
+                return $http.get('http://localhost:3000/api/data/codes');
+            },
+            setSelectedOriginAirport: function(value) {
+                this.selectedOriginAirport = value;
+            },
+            getSelectedOriginAirport: function() {
+                return this.selectedOriginAirport;
+            },
+            setSelectedDestinationAirport: function(value) {
+                this.selectedDestinationAirport = value;
+            },
+            getSelectedDestinationAirport: function() {
+                return this.selectedDestinationAirport;
+            }
      };
  });
