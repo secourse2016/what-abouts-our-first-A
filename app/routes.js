@@ -34,6 +34,12 @@ module.exports = function(app,mongo) {
             return eco;
         }
     }
+    
+    app.all('*',function (req,res,next) {
+        res.header('Access-Control-Allow-Origin','*');
+        res.header('Access-Control-Allow-Headers','X-Requested-With');
+        next();
+    });
 
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
