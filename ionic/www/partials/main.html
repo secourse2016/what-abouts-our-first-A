@@ -1,55 +1,66 @@
-<style type="text/css">
-    input-label
-    {
-
-    }
-</style>
 <ion-view title="Booking">
-
-    <ion-content class="has-header has-subheader">
-
-        <div class="list list-inset">
-           <label class="item item-input item-stacked-label">
-                <input type="text" placeholder="Flying From" ng-model="originAirport">
-                <br>
-                <ion-content class="has-header">
-                  <div>
-                    <label class="item item-input">
-                          <input type="text" 
-                          placeholder="Departure Date" 
-                          ng-model="dt1" 
-                          name="datepicker1" 
-                          ng-click="opendateModal1()" 
-                          readonly>
-                        </label>
-                    </div>
-                </ion-content>
-                <br>
-           </label>
-           <br>
-           <label class="item item-input item-stacked-label">
-                <input type="text" placeholder="Flying To" ng-model="destinationAirport">
-                <br>
-                <ion-content class="has-header">
-                  <div>
-                    <label class="item item-input">
-                          <input type="text" 
-                          placeholder="Arrival Date" 
-                          ng-model="dt2" 
-                          name="datepicker2" 
-                          ng-click="opendateModal2()" 
-                          readonly>
-                        </label>
-                    </div>
-                </ion-content>
-                <br>
-           </label>
-        </div>
-
-        <button class="button button-block button-calm" 
-              ng-click="SearchFlights(originAirport, destinationAirport)">Search <i class="icon ion-search"></i>
-        </button> 
-
-    </ion-content>
+  <ion-content class="has-header">
+    <p class="subHeader">Welcome to the United Airlines Mobile App</p>
+    <div class="list list-inset">
+        <label class="item item-input item-stacked-label">
+            <input type="text" placeholder="Flying From" ng-model="originAirport">
+            <br>
+            <ion-content class="has-header">
+              <div>
+                <label class="item item-input">
+                      <input type="text" 
+                      placeholder="Departure Date" 
+                      ng-model="dt1" 
+                      name="datepicker1" 
+                      ng-click="opendateModal1()" 
+                      readonly>
+                    </label>
+                </div>
+            </ion-content>
+            <br>
+        </label>
+        <br>
+        <label class="item item-input item-stacked-label">
+            <input type="text" placeholder="Flying To" ng-model="destinationAirport">
+            <br>
+            <ion-content class="has-header">
+              <div>
+                <label class="item item-input">
+                      <input type="text" 
+                      placeholder="Arrival Date" 
+                      ng-model="dt2" 
+                      name="datepicker2" 
+                      ng-click="opendateModal2()" 
+                      readonly>
+                    </label>
+                </div>
+            </ion-content>
+            <br>
+        </label>
+    </div>
+    <div class="input-label">
+        Cabin: <button ng-model="cabin" ng-click=switchCabin() class="myButton">{{cabin}}</button>
+        <br>
+        <br>
+        Trip: <button ng-model="trip" ng-click=switchTrip() class="myButton">{{trip}}</button>
+        <br>
+        <br>
+        Persons:
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <br>
+        <br>
+        Search Other Airlines
+        <input type="checkbox" ng-click="switch()"><br>
+    </div>
+    <button class="button button-block button-calm" 
+        ng-click="SearchFlights(originAirport, destinationAirport)">Search <i class="icon ion-search"></i>
+    </button>
+  </ion-content>
 
 </ion-view>

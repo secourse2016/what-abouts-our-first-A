@@ -1,0 +1,35 @@
+.subHeader
+{
+	text-align: center;
+	background:hsla(231, 72%, 50%, 1);
+	font-weight: bold;
+	color:white;
+	padding:10px;
+	margin:0px;
+}
+.input-label
+{
+	width: 100%;
+	padding: 10px;
+}
+select
+{
+	padding:5px;
+	background: hsla(120, 63%, 39%, 1);
+	border-radius: 2px;
+	color: white;
+	border:none;
+}
+select option
+{
+	background: white;
+	color: black;
+}
+.myButton
+{
+	padding:5px;
+	background: hsla(120, 63%, 39%, 1);
+	border-radius: 2px;
+	color: white;
+	border:none;	
+}
