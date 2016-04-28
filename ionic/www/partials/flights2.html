@@ -1,13 +1,13 @@
 <ion-view title="Return Flights">
-
-    <ion-content class="has-header has-subheader">
+    <ion-content class="has-header">
+    	<p class="subHeader">Flights departing from {{origin}} to {{destination}} on {{date}}</p>
         <ion-list>
-            <ion-item type="item-text-wrap" class="item-avatar" ng-click="next()">
+            <ion-item type="item-text-wrap" class="item-avatar" ng-repeat="flight in flights" ng-click="next(flight)">
                 <img src="/pics/flight.jpg"/>
-                {{flight.destination}} - {{flight.origin}}
-                <p>LH 549 09:45 AM - 05:15 PM</p>
+                {{dateFixer(flight.departureDateTime)}} - {{dateFixer(flight.arrivalDateTime)}} <br>
+                <p>Price: {{flight.cost}} {{flight.currency}}</p>
+                <p>{{flight.Airline}}</p>
             </ion-item>
         </ion-list>
     </ion-content>
-
 </ion-view>
