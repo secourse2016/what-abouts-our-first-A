@@ -54,7 +54,7 @@
         padding-left: 5px;
         border-width: 1.5px;
         border-style: solid;
-        border-color: white	;
+        border-color: white ;
         margin-right: 150px;
         width: 15%;
         border-radius: 4px;
@@ -98,41 +98,42 @@
         color:white;
         font-size:90%;
     }
+
 </style>
+
+
+
+
+
 <div class="methodOfPayment">
 
 
-<form action="" method="POST">
-  <script
-    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="sk_test_QCs2H8B60sw0QEPDdd5dIfKn"
-    data-amount="999"
-    data-name="Demo Site"
-    data-description="Widget"
-    data-image="/img/documentation/checkout/marketplace.png"
-    data-locale="auto">
-  </script>
-</form>
 
 
-	<h2> Card type:</h2>
-	<ul>
-     	<li> <input type="radio" name="method" value="Visa"> Visa </li> 
-      	<li> <input type="radio" name="method" value="masterCard"> Master Card </li> 
-      	<li> <input type="radio" name="method" value="americanExpress"> American Express </li>	
-  	</ul>
+
+    <h2> Card type:</h2>
+    <ul>
+        <li> <input type="radio" name="method" value="Visa"> Visa </li> 
+        <li> <input type="radio" name="method" value="masterCard"> Master Card </li> 
+        <li> <input type="radio" name="method" value="americanExpress"> American Express </li>  
+    </ul>
 </div>
 <hr>
-<div class="data">
+<div class="data" id="payment-form">
     
     <input type="text" ng-required="true" ng-model="fn" name="firstName" placeholder="First name" size="30"  >
     <input type="text" ng-required="true" ng-model="ln" name="lastName" placeholder="Last name" size="30"  > <br>
-    <input type="text" ng-required="true" name="cardNumber" placeholder="Card number" size="30"  > <br> 
+    <input type="text" ng-required="true" name="cardNumber" placeholder="Card number" size="30" data-stripe="number" > <br> 
+    <input type="text" ng-required="true" name="expirationYear" placeholder="Expiration Year" size="30" data-stripe="exp_year" > <br> 
+    <input type="text" ng-required="true" name="expirationMonth" placeholder="Expiration Month" size="30" data-stripe="exp_month"  > <br> 
+    <input type="text" ng-required="true" name="cvc" placeholder="CVC" size="30" data-stripe="cvc" > <br> 
+    
+
     <input type="text" ng-required="true" name="address" placeholder="Billing address" size="30"  ><br>
     <input type="text" ng-required="true" name="city" placeholder="City/town" size="30"  >
     <input type="text" ng-required="true" name="zip" placeholder="ZIP/postal code" size="30"  ><br>
 
-    <select id="countries" name="countries" >	
+    <select id="countries" name="countries" >   
         <option value="" disabled selected>Country</option>
         <option value="AF">Afghanistan</option>
         <option value="AX">Aland Islands</option>
@@ -380,10 +381,14 @@
         <option value="ZW">Zimbabwe</option>
     </select>
     <br>
+  
+
+
     <button class="Button" align="center" ng-click='home()'>Purchase  <i class="glyphicon glyphicon-usd"></i>
     </button>
     <p>
         Purchase of this ticket means you understand and agree to all fare rules associated with this non-refundable ticket,United's dangerous goods policy, and the terms and conditions in United's Contract of Carriage, and the collection, processing and transfer of your information to the United States for handling in accordance with our privacy policy.
     </p>
-	<br>
+    <br>
+
 </div>
