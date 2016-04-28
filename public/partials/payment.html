@@ -98,10 +98,32 @@
         color:white;
         font-size:90%;
     }
+/*    .pay{
+ border: 0;
+        padding: 8px;
+        margin-top: 65px;
+        font-size: 22px;
+        background: #1fa823;
+        color:white;
+        width: 170px;
+        font-weight: bold;
+        text-align: center;
+        margin-right: 26%;
+        border-radius: 5px;
+        float: right;
+
+    }*/
 </style>
+
+
+
+
+
 <div class="methodOfPayment">
 
 
+<<<<<<< HEAD
+=======
 <form action="" method="POST">
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -113,6 +135,7 @@
     data-locale="auto">
   </script>
 </form>
+>>>>>>> origin/dev
 
 
 	<h2> Card type:</h2>
@@ -380,10 +403,26 @@
         <option value="ZW">Zimbabwe</option>
     </select>
     <br>
+  
+
+<form action="" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_uvzPDBESJ2MJ0cTwAuZDUDfx"
+    data-amount="999"
+    data-name="Demo Site"
+    data-description="Widget"
+    data-image="/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
+</form>
+
+
     <button class="Button" align="center" ng-click='home()'>Purchase  <i class="glyphicon glyphicon-usd"></i>
     </button>
     <p>
         Purchase of this ticket means you understand and agree to all fare rules associated with this non-refundable ticket,United's dangerous goods policy, and the terms and conditions in United's Contract of Carriage, and the collection, processing and transfer of your information to the United States for handling in accordance with our privacy policy.
     </p>
 	<br>
+
 </div>
