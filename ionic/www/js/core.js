@@ -1,5 +1,9 @@
 /* Create Angular App Instance */
+<<<<<<< HEAD
 app = angular.module('United_Airlines', ['ionic','pickadate']);
+=======
+app = angular.module('SE_L10', ['ionic']);
+>>>>>>> eec89b6b61fe6c6f300246a919aadc3fb08f0672
 
 /**
  * Angular Routes
@@ -24,17 +28,21 @@ app.config(function ($stateProvider, $urlRouterProvider) {
                 url: '/flights',
                 templateUrl: '/partials/flights.html',
                 controller: 'flightsCtrl'
+<<<<<<< HEAD
             })
             .state('flights2', {
                 url: '/flights2',
                 templateUrl: '/partials/flights2.html',
                 controller: 'flights2Ctrl'
+=======
+>>>>>>> eec89b6b61fe6c6f300246a919aadc3fb08f0672
             });
 
         $urlRouterProvider.otherwise('/#');
 
 });
 
+<<<<<<< HEAD
 app.controller('indexCtrl', function($scope,$state) {
     $scope.doSomething = function(){
         $state.go('index');
@@ -79,6 +87,15 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
     $scope.datemodal2.hide();
     $scope.dt2 = modal2;
   };
+=======
+
+/**
+ * Main Controller
+ */
+app.controller('mainCtrl', function($scope, $state, FlightsSrv) {
+
+  /* Retrieve List of Airports Codes */
+>>>>>>> eec89b6b61fe6c6f300246a919aadc3fb08f0672
   function AirportCodes() {
     FlightsSrv.getAirportCodes().success(function(airports) {
         console.log('[airports codes=>', airports);
@@ -115,13 +132,18 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
 /**
  * Flights Controller
  */
+<<<<<<< HEAD
 app.controller('flightsCtrl', function($scope, FlightsSrv,$state) {
+=======
+app.controller('flightsCtrl', function($scope, FlightsSrv) {
+>>>>>>> eec89b6b61fe6c6f300246a919aadc3fb08f0672
 
   /* Retrieve Selected Airports Codes */
   $scope.flight = {
     origin      : FlightsSrv.getSelectedOriginAirport(),
     destination : FlightsSrv.getSelectedDestinationAirport()
   };
+<<<<<<< HEAD
   $scope.next = function(){
     $state.go('flights2');
   }
@@ -158,5 +180,32 @@ app.factory('FlightsSrv', function ($http) {
             getSelectedDestinationAirport: function() {
                 return this.selectedDestinationAirport;
             }
+=======
+
+});
+
+
+/**
+ * Flights Service
+ */
+app.factory('FlightsSrv', function ($http) {
+     return {
+         getAirportCodes : function() {
+            console.log('[flightsSrv]=>getAirportCodes');
+           return $http.get('http://localhost:3000/api/data/codes');
+         },
+         setSelectedOriginAirport: function(value) {
+           this.selectedOriginAirport = value;
+         },
+         getSelectedOriginAirport: function() {
+           return this.selectedOriginAirport;
+         },
+         setSelectedDestinationAirport: function(value) {
+           this.selectedDestinationAirport = value;
+         },
+         getSelectedDestinationAirport: function() {
+           return this.selectedDestinationAirport;
+         }
+>>>>>>> eec89b6b61fe6c6f300246a919aadc3fb08f0672
      };
  });
