@@ -28,8 +28,33 @@ select option
 .myButton
 {
 	padding:5px;
-	background: hsla(120, 63%, 39%, 1);
+	background: #33cd5f;
 	border-radius: 2px;
 	color: white;
 	border:none;	
+}
+.plusB
+{
+	background: #33cd5f;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	color: white;
+	border:none;
+	margin-right: 1px;
+}
+.plusB:active,.minusB:active,.myButton:active
+{
+	background: hsla(120, 63%, 20%, 1);
+}
+.minusB
+{
+	background: #33cd5f;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	color: white;
+	border:none;
+}
+.vis-hidden
+{
+    visibility: hidden;
 }

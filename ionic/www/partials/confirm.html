@@ -1,0 +1,42 @@
+<ion-view title="Confirm">
+	<ion-content class="has-header">
+	    <p class="subHeader">Are you sure you would like to book this flight?</p>    
+		<div class="list">
+			<div class="item item-divider">
+				Depart Flight : {{x.origin}} - {{x.destination}}
+			</div>
+			<a class="item">
+				Flight Number: {{x.flightNumber}}
+			</a>
+			<a class="item">
+				Date: {{dateFixer2(x.departureDateTime)}} at {{dateFixer(x.departureDateTime)}}
+			</a>
+			<a class="item">
+				Price: {{x.cost}} {{x.currency}}
+			</a>
+			<a class="item">
+				Airline: {{x.Airline}}
+			</a>
+			<div ng-hide="hidden">
+				<div class="item item-divider">
+					Return Flight : {{y.origin}} - {{y.destination}}
+				</div>
+				<a class="item">
+					Flight Number: {{y.flightNumber}}
+				</a>
+				<a class="item">
+					Date: {{dateFixer2(y.departureDateTime)}} at {{dateFixer(y.departureDateTime)}}
+				</a>
+				<a class="item">
+					Price: {{y.cost}} {{y.currency}}
+				</a>
+				<a class="item">
+					Airline: {{y.Airline}}
+				</a>
+			</div>
+		</div>
+		<button class="button button-full button-balanced" 
+        	ng-click="next()">Proceed <i class="icon ion-checkmark-round"></i>
+    	</button>
+	</ion-content>
+</ion-view>

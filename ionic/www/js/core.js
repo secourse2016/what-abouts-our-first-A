@@ -29,6 +29,11 @@ app = angular.module('United_Airlines', ['ionic','pickadate']);
         url: '/flights2',
         templateUrl: '/partials/flights2.html',
         controller: 'flights2Ctrl'
+    })
+    .state('confirm', {
+        url: '/confirm',
+        templateUrl: '/partials/confirm.html',
+        controller: 'confirmCtrl'
     });
 
     $urlRouterProvider.otherwise('/#');
@@ -50,33 +55,20 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
         scope: $scope, 
         animation: 'slide-in-up'
     });
-    $scope.cabin = "Economy";
+    $scope.hidden= false;
+    $scope.persons = 1;
+    $scope.cabin = "economy";
     FlightsSrv.cabin = 'economy';
-    $scope.trip = "One-way";
-    FlightsSrv.trip = 'One-way';
-    $scope.switchCabin = function(){
-        if($scope.cabin==="Economy")
-        {
-            $scope.cabin="Business";
-            FlightsSrv.cabin="business";
-        }
-        else
-        {
-            $scope.cabin="Economy";
-            FlightsSrv.cabin="economy";
-        }
+    $scope.trip = "Roundtrip";
+    FlightsSrv.trip = 'Roundtrip';
+    $scope.switchCabin = function(c){
+        $scope.cabin=c;
+        FlightsSrv.cabin=c;
     }
-    $scope.switchTrip = function(){
-        if($scope.trip==="One-way")
-        {
-            $scope.trip="Roundtrip";
-            FlightsSrv.trip="Roundtrip";
-        }
-        else
-        {
-            $scope.trip="One-way";
-            FlightsSrv.trip="One-way";
-        }
+    $scope.switchTrip = function(trip){
+        $scope.trip=trip;
+        FlightsSrv.trip=trip;
+        $scope.hidden=false;
     }
     $scope.otherAirlines=false;
     $scope.switch = function()
@@ -146,10 +138,27 @@ app.controller('flightsCtrl', function($scope, FlightsSrv,$state) {
     $scope.date = dateFixer2(FlightsSrv.departDate);
 
     function getFlights(){
-    FlightsSrv.getAllFlights().success(function(flights){
-        $scope.flights=flights.outgoingFlights;
-        FlightsSrv.returnFlights = flights.returnFlights;
-    });
+        if(FlightsSrv.trip==="One-way")
+        {
+            FlightsSrv.getOneWayFlights().success(function(flights){
+                $scope.flights=flights.outgoingFlights;
+                $scope.next = function(flight){
+                    FlightsSrv.flight1 = flight;
+                    $state.go('confirm');
+                }
+            });
+        }
+        else
+        {
+            FlightsSrv.getAllFlights().success(function(flights){
+                $scope.flights=flights.outgoingFlights;
+                FlightsSrv.returnFlights = flights.returnFlights;
+                $scope.next = function(flight){
+                    FlightsSrv.flight1 = flight;
+                    $state.go('flights2');
+                }
+            });    
+        }
     }
     function addZero(i) {
         if (i < 10) {
@@ -170,9 +179,6 @@ app.controller('flightsCtrl', function($scope, FlightsSrv,$state) {
         var m = d.getMonth()+1;
         var day = d.getDate();
         return day + "/" + m+ "/"+ y;
-    }
-    $scope.next = function(){
-        $state.go('flights2');
     }
     getFlights();
 });
@@ -205,11 +211,38 @@ app.controller('flights2Ctrl', function($scope, FlightsSrv,$state) {
         return day + "/" + m+ "/"+ y;
     }
     getFlights();
-    $scope.next = function(){
-        $state.go('index');
+    $scope.next = function(flight){
+        FlightsSrv.flight2 = flight;
+        $state.go('confirm');
     }
 });
+app.controller('confirmCtrl', function($scope, FlightsSrv,$state) {
+    $scope.x=FlightsSrv.flight1;
+    $scope.y=FlightsSrv.flight2;
+    $scope.hidden=false;
+    if($scope.y===undefined)
+        $scope.hidden=true;
+    function addZero(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+    }
 
+    $scope.dateFixer = function (date) {
+        var d = new Date(date);
+        var h = addZero(d.getHours());
+        var m = addZero(d.getMinutes());
+        return h + ":" + m;
+    }
+    $scope.dateFixer2 = function(date) {
+        var d = new Date(date);
+        var y = d.getFullYear();
+        var m = d.getMonth()+1;
+        var day = d.getDate();
+        return day + "/" + m+ "/"+ y;
+    }
+});
 app.factory('FlightsSrv', function ($http) {
     return {
         getAirportCodes : function() {
@@ -217,6 +250,9 @@ app.factory('FlightsSrv', function ($http) {
         },
         getAllFlights : function() {
             return $http.get('http://54.187.103.196/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.returnDate+'/'+this.cabin+'?airline='+this.airline+'&wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
+        },
+        getOneWayFlights : function() {
+            return $http.get('http://54.187.103.196/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.cabin+'?airline='+this.airline+'&wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
         },
         setSelectedOriginAirport: function(value) {
             this.selectedOriginAirport = value;
