@@ -256,13 +256,19 @@ app.controller('confirmCtrl', function($scope, FlightsSrv,$state) {
         $state.go('payment');
     }
 });
-app.controller('paymentCtrl', function($scope, FlightsSrv,$state) {
-
-    $scope.home = function() {
-        FlightsSrv.reserve($scope.fn,$scope.ln).success(function (response) {
+app.controller('paymentCtrl', function($scope, FlightsSrv,$state,$ionicPopup) {
+    $scope.home = function(fn,ln) {
+        FlightsSrv.reserve(fn,ln).success(function (response) {
             FlightsSrv.setBrn(response);
+            var alertPopup = $ionicPopup.alert({
+                title: 'Flight Booked',
+                template: 'Your Booking Reference Number is '+response
+            });
+
+            alertPopup.then(function(res) {
+                $state.go('index'); 
+            });
         });
-        $state.go('index'); 
     }
  });
 app.factory('FlightsSrv', function ($http) {
@@ -303,7 +309,7 @@ app.factory('FlightsSrv', function ($http) {
         setDepartFlight: function(flight) {
             this.departFlight = flight;
         },
-         setDepartPrice: function(price) {
+        setDepartPrice: function(price) {
             this.departPrice = price;
         },
         getDepartPrice: function() {
@@ -327,12 +333,10 @@ app.factory('FlightsSrv', function ($http) {
         getCabin:function() {
             return this.cabin;
         },
-         reserve : function(fn,ln) {
-            return $http.get('/api/reserve/'+fn+'/'+ln+'/'+this.departFlight.origin+'/'+this.departFlight.destination+'/'+this.departFlight.flightNumber+'/'+this.cabin+'/'+this.departDate,{
-                "headers" : { 'x-access-token' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60'}
-            });
+        reserve : function(fn,ln) {
+            return $http.get('http://54.187.103.196/api/reserve/q/z/'+this.departFlight.origin+'/'+this.departFlight.destination+'/'+this.departFlight.flightNumber+'/'+this.cabin+'/'+this.departDate+'?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
         },
-         setBrn:function(value) {
+        setBrn:function(value) {
             this.brn=value;
         },
         setReturnDate: function(value) {
