@@ -35,19 +35,31 @@ app = angular.module('United_Airlines', ['ionic','pickadate']);
         templateUrl: '/partials/confirm.html',
         controller: 'confirmCtrl'
     })
-     .state('payment', {
+    .state('payment', {
         url: '/payment',
         templateUrl: '/partials/payment.html',
         controller: 'paymentCtrl'
-    });   
+    })
+    .state('reservation',{
+        url: '/reservation',
+        templateUrl: '/partials/reservation.html',
+        controller: 'reservationCtrl'  
+    });
 
     $urlRouterProvider.otherwise('/#');
 
 });
 
- app.controller('indexCtrl', function($scope,$state) {
-    $scope.doSomething = function(){
+app.controller('reservationCtrl', function($scope,$state) {
+    
+});
+
+app.controller('indexCtrl', function($scope,$state) {
+    $scope.goHome = function(){
         $state.go('index');
+    }
+    $scope.goReserve = function(){
+        $state.go('reservation');
     }
 });
 
