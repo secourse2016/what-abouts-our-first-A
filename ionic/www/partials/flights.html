@@ -2,7 +2,7 @@
     <ion-content class="has-header">
     	<p class="subHeader">Flights departing from {{origin}} to {{destination}} on {{date}}</p>
         <ion-list>
-            <ion-item type="item-text-wrap" class="item-avatar" ng-repeat="flight in flights" ng-click="next(flight)">
+            <ion-item type="item-text-wrap" class="item-avatar" ng-repeat="flight in flights" ng-click="setDepartFlight(flight,flight.cost);next(flight)">
                 <img src="/pics/flight.jpg"/>
                 {{dateFixer(flight.departureDateTime)}} - {{dateFixer(flight.arrivalDateTime)}} <br>
                 <p>Price: {{flight.cost}} {{flight.currency}}</p>
