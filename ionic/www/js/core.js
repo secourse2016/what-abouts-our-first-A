@@ -141,10 +141,6 @@ app.controller('flightsCtrl', function($scope, FlightsSrv,$state) {
     $scope.origin = FlightsSrv.selectedOriginAirport;
     $scope.destination = FlightsSrv.selectedDestinationAirport;
     $scope.date = dateFixer2(FlightsSrv.departDate);
-    $scope.setDepartFlight=function(flight,price){
-        FlightsSrv.setDepartFlight(flight);
-        FlightsSrv.setDepartPrice(price);
-    }
 
     function getFlights(){
         if(FlightsSrv.trip==="One-way")
@@ -334,7 +330,7 @@ app.factory('FlightsSrv', function ($http) {
             return this.cabin;
         },
         reserve : function(fn,ln) {
-            return $http.get('http://54.187.103.196/api/reserve/q/z/'+this.departFlight.origin+'/'+this.departFlight.destination+'/'+this.departFlight.flightNumber+'/'+this.cabin+'/'+this.departDate+'?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
+            return $http.get('http://54.187.103.196/api/reserve/'+fn+'/'+ln+'/'+this.flight1.origin+'/'+this.flight1.destination+'/'+this.flight1.flightNumber+'/'+this.cabin+'/'+this.departDate+'?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
         },
         setBrn:function(value) {
             this.brn=value;
