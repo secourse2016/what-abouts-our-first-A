@@ -1,31 +1,33 @@
 <ion-view title="Payment">
-   <div> 
+    <div> 
        <br><br><br>
-   </div>
-  <ion-list>
-       <ion-list>
-          <ion-item>
+    </div>
+    <div class="list list-inset">
+        <label class="item item-input item-stacked-label">
             <input type="text" ng-required="true" ng-model="fn" name="firstName" placeholder="First name" size="30"  >
-          </ion-item>
-          <ion-item>
-             <input type="text" ng-required="true" ng-model="ln" name="lastName" placeholder="Last name" size="30" > <br>
-          </ion-item>
-          <ion-item>
-             <input type="text" ng-required="true" name="cardNumber" placeholder= "Card number" size="30"  > <br>
-          </ion-item>
-          <ion-item>
-             <input type="text" ng-required="true" name="address" placeholder="Billing address" size="30"  ><br>
-          </ion-item>
-          <ion-item>
+        </label>
+        <br>
+        <label class="item item-input item-stacked-label">
+            <input type="text" ng-required="true" ng-model="ln" name="lastName" placeholder="Last name" size="30" >
+        </label>
+        <br>
+        <label class="item item-input item-stacked-label">
+            <input type="text" ng-required="true" name="cardNumber" placeholder= "Card number" size="30"  >
+        </label>
+        <br>
+        <label class="item item-input item-stacked-label">
+            <input type="text" ng-required="true" name="address" placeholder="Billing address" size="30"  >        
+        </label>
+        <br>
+        <label class="item item-input item-stacked-label">
             <input type="text" ng-required="true" name="city" placeholder="City/town" size="30"  >
-          </ion-item>
-          <ion-item>
-            <input type="text" ng-required="true" name="zip" placeholder="ZIP/postal code" size="30"  ><br>
-          </ion-item>         
-       </ion-list>
-  </ion-list>
-      <button class="button button-full button-balanced" ng-click="home()">Purchase <i class="icon ion-checkmark-round"></i>
-      </button>
+        </label>
+        <br>
+        <label class="item item-input item-stacked-label">
+            <input type="text" ng-required="true" name="zip" placeholder="ZIP/postal code" size="30"  >
+        </label>
+    </div>
+    <button class="button button-full button-balanced" ng-click="home(fn,ln)">Purchase <i class="icon ion-card"></i></button>
 </ion-view>
 
 
