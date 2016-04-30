@@ -14,32 +14,35 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-    <script src="lib/ionic/js/angular/angular-resource.min.js"></script>
+    <script src="lib/datePicker/js/angular-pickadate.js"></script>
+    <link href="lib/datePicker/css/angular-pickadate.css" rel="stylesheet">
+	<script src="lib/ionic/js/ionic.bundle.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/core.js"></script>
+</head>
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
-
-    <!-- your app's js -->
-    <script src="js/core.js"></script>
-    <!-- <script src="js/controllers/mainCtrl.js"></script> -->
-    <!-- <script src="js/controllers/flightsCtrl.js"></script> -->
-    <!-- <script src="js/services/flightsSrv.js"></script> -->
-  </head>
-
-    <body>
-        <!-- TOP NAVBAR -->
-        
-        <ion-nav-bar class="bar-stable nav-title-slide-ios7">
-            <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
+<body ng-controller="indexCtrl">
+	<ion-nav-bar class="bar-positive">
+        <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back">
                 Back
-            </ion-nav-back-button>
-        </ion-nav-bar>
-        <!-- TOP NAVBAR -->
+        </ion-nav-back-button>
+        <ion-nav-buttons side="primary">
+	      <button class="button" ng-click="goHome()">
+              <i><img src="http://www.englandairpark.org/sites/default/files/white_united_logo.png" style="text-align: right; width: 100px; height: 100%;"></i>
+	      </button>
+    	</ion-nav-buttons>
+	</ion-nav-bar>
 
-        <!-- ANGULAR DYNAMIC TEMPLATING -->
-        <ion-nav-view></ion-nav-view>
-        <!-- ANGULAR DYNAMIC TEMPLATING -->
-
-    </body>
-
+    <ion-nav-view></ion-nav-view>
+    <div class="tabs tabs-positive">
+        <a class="tab-item" ng-click="goHome()">
+            <i class="icon ion-search"></i>
+            Search
+        </a>
+        <a class="tab-item">
+            <i class="icon ion-bookmark" ng-click="goReserve()"></i>
+            Reservations
+        </a>
+    </div>
+</body>
 </html>

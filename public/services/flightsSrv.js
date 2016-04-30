@@ -56,14 +56,14 @@ App.factory('FlightsSrv', function ($http) {
         setDepartFlight: function(flight) {
             this.departFlight = flight;
         },
-        setReturnPrice: function(price) {
-            this.returnPrice = price;
-        },
         setDepartPrice: function(price) {
             this.departPrice = price;
         },
         getDepartPrice: function() {
             return this.departPrice;
+        },
+        setReturnPrice: function(price) {
+            this.returnPrice = price;
         },
         getReturnPrice: function() {
             return this.returnPrice;
