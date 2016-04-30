@@ -1,9 +1,5 @@
-/* Create Angular App Instance */
-app = angular.module('United_Airlines', ['ionic','pickadate']);
+app = angular.module('SE_L10', ['ionic']);
 
-/**
- * Angular Routes
- */
  app.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
@@ -173,7 +169,6 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
            $scope.Airports = airports;
        });
     };
-
     SetOriginAirport = function(originAirport) {
         FlightsSrv.setSelectedOriginAirport(originAirport);
     };
@@ -329,12 +324,12 @@ app.controller('paymentCtrl', function($scope, FlightsSrv,$state,$ionicPopup) {
                 title: 'Flight Booked',
                 template: 'Your Booking Reference Number is '+response
             });
-
             alertPopup.then(function(res) {
                 $state.go('index'); 
             });
         });
     }
+
  });
 app.factory('FlightsSrv', function ($http) {
     return {
