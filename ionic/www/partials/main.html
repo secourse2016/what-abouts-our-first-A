@@ -52,7 +52,8 @@
             </ion-list> 
         </li>
         <li class="item">
-            {{persons}} Person{{x}} <button ng-click="persons=persons<5?persons+1:persons; x=persons===1?'':'s'" class="plusB"><i class="icon ion-plus"></i></button> <button ng-click="persons=persons>1?persons-1:persons;x=persons===1?'':'s'" class="minusB"><i class="icon ion-minus"></i></button>
+            {{persons}} Person{{x}} <button ng-click="
+            plus(persons); x=persons===1?'':'s'" class="plusB"><i class="icon ion-plus"></i></button> <button ng-click="minus(persons);x=persons===1?'':'s'" class="minusB"><i class="icon ion-minus"></i></button>
         </li>
         <li class="item item-toggle">
             Search Other Airlines
