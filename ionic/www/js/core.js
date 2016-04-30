@@ -1,9 +1,5 @@
-/* Create Angular App Instance */
-app = angular.module('United_Airlines', ['ionic','pickadate']);
+app = angular.module('SE_L10', ['ionic']);
 
-/**
- * Angular Routes
- */
  app.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
@@ -35,19 +31,78 @@ app = angular.module('United_Airlines', ['ionic','pickadate']);
         templateUrl: '/partials/confirm.html',
         controller: 'confirmCtrl'
     })
-     .state('payment', {
+    .state('payment', {
         url: '/payment',
         templateUrl: '/partials/payment.html',
         controller: 'paymentCtrl'
-    });   
+    })
+    .state('reservation',{
+        url: '/reservation',
+        templateUrl: '/partials/reservation.html',
+        controller: 'reservationCtrl'  
+    });
 
     $urlRouterProvider.otherwise('/#');
 
 });
 
- app.controller('indexCtrl', function($scope,$state) {
-    $scope.doSomething = function(){
+app.controller('reservationCtrl', function($scope,FlightsSrv,$state,$ionicPopup) {
+    $scope.hidden = true;
+    function addZero(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+    }
+    $scope.dateFixer = function (date) {
+        var d = new Date(date);
+        var h = addZero(d.getHours());
+        var m = addZero(d.getMinutes());
+        return h + ":" + m;
+    }
+    $scope.dateFixer2 = function(date) {
+        var d = new Date(date);
+        var y = d.getFullYear();
+        var m = d.getMonth()+1;
+        var day = d.getDate();
+        return day + "/" + m+ "/"+ y;
+    }
+    $scope.search = function(brn) {
+        if(brn === "")
+        {
+            $ionicPopup.alert({
+                    title: 'Error',
+                    template: 'Invalid Booking Reference Number'
+            });
+        }
+        else
+        {
+            FlightsSrv.searchReservation(brn).success(function(flights){
+                if(flights === "")
+                {
+                    $ionicPopup.alert({
+                        title: 'Error',
+                        template: 'Invalid Booking Reference Number'
+                    });
+                }
+                else
+                {   
+                    $scope.x = flights;
+                    $scope.d1 = $scope.dateFixer2(parseInt(flights.depart));
+                    $scope.d2 = $scope.dateFixer(parseInt(flights.depart));
+                    $scope.hidden = false;
+                }
+            }) 
+        }
+    }
+});
+
+app.controller('indexCtrl', function($scope,$state) {
+    $scope.goHome = function(){
         $state.go('index');
+    }
+    $scope.goReserve = function(){
+        $state.go('reservation');
     }
 });
 
@@ -74,6 +129,12 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
         $scope.trip=trip;
         FlightsSrv.trip=trip;
         $scope.hidden=false;
+    }
+    $scope.plus = function(pCount){
+        $scope.persons=pCount<5?$scope.persons+1:$scope.persons
+    }
+    $scope.minus = function(pCount){
+        $scope.persons=pCount>1?$scope.persons-1:$scope.persons
     }
     $scope.otherAirlines=false;
     $scope.switch = function()
@@ -108,7 +169,6 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
            $scope.Airports = airports;
        });
     };
-
     SetOriginAirport = function(originAirport) {
         FlightsSrv.setSelectedOriginAirport(originAirport);
     };
@@ -124,6 +184,7 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
         var d2 = new Date($scope.dt2);
         d1 = d1.getTime();
         d2 = d2.getTime();
+        FlightsSrv.persons = parseInt($scope.persons);
         FlightsSrv.setDepartDate(d1);
         FlightsSrv.setReturnDate(d2);
         if($scope.otherAirlines)
@@ -225,6 +286,9 @@ app.controller('confirmCtrl', function($scope, FlightsSrv,$state) {
     $scope.x=FlightsSrv.flight1;
     $scope.y=FlightsSrv.flight2;
     $scope.hidden=false;
+    $scope.total = function(x,y){
+        return y===undefined?(x*FlightsSrv.persons):((parseInt(x)+parseInt(y))*FlightsSrv.persons);
+    }
     if($scope.y===undefined)
         $scope.hidden=true;
     function addZero(i) {
@@ -260,12 +324,12 @@ app.controller('paymentCtrl', function($scope, FlightsSrv,$state,$ionicPopup) {
                 title: 'Flight Booked',
                 template: 'Your Booking Reference Number is '+response
             });
-
             alertPopup.then(function(res) {
                 $state.go('index'); 
             });
         });
     }
+
  });
 app.factory('FlightsSrv', function ($http) {
     return {
@@ -290,7 +354,7 @@ app.factory('FlightsSrv', function ($http) {
         getSelectedDestinationAirport: function() {
             return this.selectedDestinationAirport;
         },
-         getDepartFlight: function() {
+        getDepartFlight: function() {
             return this.departFlight;
         },
         setDepartFlight: function(flight) {
@@ -331,6 +395,9 @@ app.factory('FlightsSrv', function ($http) {
         },
         reserve : function(fn,ln) {
             return $http.get('http://54.187.103.196/api/reserve/'+fn+'/'+ln+'/'+this.flight1.origin+'/'+this.flight1.destination+'/'+this.flight1.flightNumber+'/'+this.cabin+'/'+this.departDate+'?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
+        },
+        searchReservation : function(brn) {
+            return $http.get('http://54.187.103.196/api/reservations/'+brn+'?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60'); 
         },
         setBrn:function(value) {
             this.brn=value;
