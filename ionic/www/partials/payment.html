@@ -1,14 +1,14 @@
 <ion-view title="Payment">
     <div> 
-       <br>
+       <br><br><br>
     </div>
     <div class="list list-inset">
         <label class="item item-input item-stacked-label">
-            <input type="text" ng-required="true" ng-model="fn" name="firstName" placeholder="FirstName" size="30"  >
+            <input type="text" ng-required="true" ng-model="fn" name="firstName" placeholder="First name" size="30"  >
         </label>
         <br>
         <label class="item item-input item-stacked-label">
-            <input type="text" ng-required="true" ng-model="ln" name="lastName" placeholder="LastName" size="30" >
+            <input type="text" ng-required="true" ng-model="ln" name="lastName" placeholder="Last name" size="30" >
         </label>
         <br>
         <label class="item item-input item-stacked-label">
@@ -27,5 +27,5 @@
             <input type="text" ng-required="true" name="zip" placeholder="ZIP/postal code" size="30"  >
         </label>
     </div>
-   
+    <button class="button button-full button-balanced" ng-click="home(fn,ln)">Purchase <i class="icon ion-card"></i></button>
 </ion-view>
