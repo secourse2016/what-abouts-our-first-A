@@ -12,7 +12,7 @@ app = angular.module('United_Airlines', ['ionic','pickadate']);
         url: '/',
         templateUrl: '/partials/main.html',
         controller: 'mainCtrl'
-    })        
+    })         
 
     .state('test', {
         url: '/test',
@@ -34,7 +34,12 @@ app = angular.module('United_Airlines', ['ionic','pickadate']);
         url: '/confirm',
         templateUrl: '/partials/confirm.html',
         controller: 'confirmCtrl'
-    });
+    })
+     .state('payment', {
+        url: '/payment',
+        templateUrl: '/partials/payment.html',
+        controller: 'paymentCtrl'
+    });   
 
     $urlRouterProvider.otherwise('/#');
 
@@ -136,6 +141,10 @@ app.controller('flightsCtrl', function($scope, FlightsSrv,$state) {
     $scope.origin = FlightsSrv.selectedOriginAirport;
     $scope.destination = FlightsSrv.selectedDestinationAirport;
     $scope.date = dateFixer2(FlightsSrv.departDate);
+    $scope.setDepartFlight=function(flight,price){
+        FlightsSrv.setDepartFlight(flight);
+        FlightsSrv.setDepartPrice(price);
+    }
 
     function getFlights(){
         if(FlightsSrv.trip==="One-way")
@@ -242,7 +251,20 @@ app.controller('confirmCtrl', function($scope, FlightsSrv,$state) {
         var day = d.getDate();
         return day + "/" + m+ "/"+ y;
     }
+    $scope.next = function(flight){
+        FlightsSrv.flight2 = flight;
+        $state.go('payment');
+    }
 });
+app.controller('paymentCtrl', function($scope, FlightsSrv,$state) {
+
+    $scope.home = function() {
+        FlightsSrv.reserve($scope.fn,$scope.ln).success(function (response) {
+            FlightsSrv.setBrn(response);
+        });
+        $state.go('index'); 
+    }
+ });
 app.factory('FlightsSrv', function ($http) {
     return {
         getAirportCodes : function() {
@@ -266,8 +288,52 @@ app.factory('FlightsSrv', function ($http) {
         getSelectedDestinationAirport: function() {
             return this.selectedDestinationAirport;
         },
+         getDepartFlight: function() {
+            return this.departFlight;
+        },
+        setDepartFlight: function(flight) {
+            this.departFlight = flight;
+        },
         setDepartDate: function(value) {
             this.departDate = value;
+        },
+        getDepartFlight: function() {
+            return this.departFlight;
+        },
+        setDepartFlight: function(flight) {
+            this.departFlight = flight;
+        },
+         setDepartPrice: function(price) {
+            this.departPrice = price;
+        },
+        getDepartPrice: function() {
+            return this.departPrice;
+        },
+        setReturnPrice: function(price) {
+            this.returnPrice = price;
+        },
+        getReturnPrice: function() {
+            return this.returnPrice;
+        },
+        setHidden: function(hidden) {
+            this.hidden = hidden;
+        },
+        getHidden: function() {
+            return this.hidden;
+        },
+        setCabin:function(cabin) {
+            this.cabin = cabin;
+        },
+        getCabin:function() {
+            return this.cabin;
+        },
+         reserve : function(fn,ln) {
+            return $http.get('/api/reserve/'+fn+'/'+ln+'/'+this.departFlight.origin+'/'+this.departFlight.destination+'/'+this.departFlight.flightNumber+'/'+this.cabin+'/'+this.departDate,{
+                "headers" : { 'x-access-token' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60'}
+            });
+        },
+         setBrn:function(value) {
+            this.brn=value;
         },
         setReturnDate: function(value) {
             this.returnDate = value;
