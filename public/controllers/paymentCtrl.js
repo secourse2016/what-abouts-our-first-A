@@ -35,11 +35,30 @@ function stripeResponseHandler(status, response) {
     // Submit the form:
     $form.get(0).submit();
   }
-};*/
+};*/    function stripeResponseHandler(status, response) {
+            if (response.error) {
+                alert(response.error.message);
+            } 
+            else{
+                var token = response.id;
+                FlightsSrv.sendStripeToken(token).success(function(data){//TODO
+                    if(data.errorMessage==null){
+                        FlightsSrv.reserve($scope.fn,$scope.ln).success(function (response2) {
+                            FlightsSrv.setBrn(response2);
+                            $location.url('/thankyou');
+                        });
+                    }else{
+                        alert(data.errorMessage.message);
+                    }
+                });
 
-        FlightsSrv.reserve($scope.fn,$scope.ln).success(function (response) {
-            FlightsSrv.setBrn(response);
-        });
-        $location.url('/thankyou');	
+            }
+        }
+        Stripe.card.createToken({
+            number: $scope.number,
+            cvc: $scope.cvc,
+            exp_month: $scope.expm,
+            exp_year: $scope.expy
+        },stripeResponseHandler);   
     };
 })
