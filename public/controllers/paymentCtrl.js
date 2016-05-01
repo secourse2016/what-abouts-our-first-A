@@ -1,4 +1,4 @@
-App.controller('paymentCtrl',function($scope,FlightsSrv,$location,stripeProvider){
+App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
     var airlines = {
         "Lufthansa": { 
             "IP": "ec2-54-152-123-100.compute-1.amazonaws.com" 
@@ -78,14 +78,14 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location,stripeProvider
         {
             bookTwo();
         }
-        stripeProvider.setPublishableKey('pk_test_uvzPDBESJ2MJ0cTwAuZDUDfx');
+        Stripe.setPublishableKey('pk_test_uvzPDBESJ2MJ0cTwAuZDUDfx');
 
     }
     function bookOne(){
         angular.forEach(airlines , function(value, key) {
-            if (key === departFlight.Airline) {
+            if (key === FlightsSrv.departFlight.Airline) {
                 FlightsSrv.getKey(value.IP).success(function(stripeKey){
-                    stripeProvider.setPublishableKey(stripeKey);
+                    Stripe.setPublishableKey(stripeKey);
                     function stripeResponseHandler(status, response) {
                         if (response.error) {
                             alert(response.error.message);
@@ -94,9 +94,9 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location,stripeProvider
                             var token = response.id;
                             var d = new Date($scope.dob);
                             var id = FlightsSrv.returnFlight===undefined?null:FlightsSrv.returnFlight.flightId;
-                            FlightsSrv.book(token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,FlightsSrv.departFlight.flightId,id).success(function(data){//TODO
+                            FlightsSrv.book(value.IP,token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,FlightsSrv.departFlight.flightId,id).success(function(data){//TODO
                                 if(data.errorMessage==null){
-                                    FlightsSrv.setBrn(data.refNum);
+                                    FlightsSrv.brn1 = data.refNum;
                                     $location.url('/thankyou');
                                 }else{
                                     alert(data.errorMessage.message);
@@ -112,13 +112,17 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location,stripeProvider
                     },stripeResponseHandler);
                 })
             }
+            else
+            {
+                alert("Something went wrong. "+FlightsSrv.departFlight.Airline+" is not in the JSON list of airlines")
+            }
         });
     }
     function bookTwo(){
         angular.forEach(airlines , function(value, key) {
             if (key === FlightsSrv.departFlight.Airline) {
                 FlightsSrv.getKey(value.IP).success(function(stripeKey){
-                    stripeProvider.setPublishableKey(stripeKey);
+                    Stripe.setPublishableKey(stripeKey);
                     function stripeResponseHandler(status, response) {
                         if (response.error) {
                             alert(response.error.message);
@@ -126,9 +130,9 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location,stripeProvider
                         else{
                             var token = response.id;
                             var d = new Date($scope.dob);
-                            FlightsSrv.book(token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,FlightsSrv.departFlight.flightId,null).success(function(data){//TODO
+                            FlightsSrv.book(value.IP,token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,FlightsSrv.departFlight.flightId,null).success(function(data){//TODO
                                 if(data.errorMessage==null){
-                                    FlightsSrv.setBrn(data.refNum);
+                                    FlightsSrv.brn1 = data.refNum;
                                     $location.url('/thankyou');
                                 }else{
                                     alert(data.errorMessage.message);
@@ -151,7 +155,7 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location,stripeProvider
             if (key === FlightsSrv.returnFlight.Airline)
             {
                 FlightsSrv.getKey(value.IP).success(function(stripeKey){
-                    stripeProvider.setPublishableKey(stripeKey);
+                    Stripe.setPublishableKey(stripeKey);
                     function stripeResponseHandler(status, response) {
                         if (response.error) {
                             alert(response.error.message);
@@ -159,9 +163,9 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location,stripeProvider
                         else{
                             var token = response.id;
                             var d = new Date($scope.dob);
-                            FlightsSrv.book(token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,null,FlightsSrv.returnFlight.flightId).success(function(data){//TODO
+                            FlightsSrv.book(value.IP,token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,null,FlightsSrv.returnFlight.flightId).success(function(data){//TODO
                                 if(data.errorMessage==null){
-                                    FlightsSrv.setBrn(data.refNum);
+                                    FlightsSrv.brn2 = data.refNum;
                                     $location.url('/thankyou');
                                 }else{
                                     alert(data.errorMessage.message);
