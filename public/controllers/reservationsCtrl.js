@@ -8,20 +8,38 @@ App.controller('reservationsCtrl', function($scope,FlightsSrv,$location) {
     }
     return i;
     }
-
+    $scope.hidden = true;
 	$scope.search = function()
 	{
 		FlightsSrv.setSelectedBookingRefNumber($scope.selectedBookingRefNumber);
 
 		FlightsSrv.getMyReservation().success(function(reservations){
-			$scope.origin = reservations.origin ;
-			$scope.destination = reservations.destination ;
-			$scope.flightNumber = reservations.number;
-			$scope.cabin = reservations.cabin;
-			$scope.seatNumber = "12D";//reservations[0].
-			var d = new Date(parseInt(reservations.depart));
-			$scope.departureTime = d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate()+" "+addZero(d.getHours())+":"+addZero(d.getMinutes()) ;
+			if(reservations === "")
+			{
+				alert("Invalid Booking Reference Number");
+			}
+			else
+			{
+				$scope.origin = reservations.outFlight.origin ;
+				$scope.destination = reservations.outFlight.destination ;
+				$scope.flightNumber = reservations.outFlight.flightNumber;
+				$scope.cabin = reservations.cabin;
+				$scope.seatNumber = reservations.seat;//reservations[0].
+				var d = new Date(reservations.outFlight.date);
+				$scope.departureTime = d.getFullYear()+"/"+(d.getMonth()+1)+"/"+d.getDate()+" "+addZero(d.getHours())+":"+addZero(d.getMinutes()) ;
+				if(reservations.returnFlight!=null)
+				{
+					$scope.origin2 = reservations.returnFlight.origin ;
+					$scope.destination2 = reservations.returnFlight.destination ;
+					$scope.flightNumber2 = reservations.returnFlight.flightNumber;
+					$scope.cabin2 = reservations.cabin;
+					$scope.seatNumber2 = reservations.seat;//reservations[0].
+					var d2 = new Date(reservations.returnFlight.date);
+					$scope.departureTime2 = d2.getFullYear()+"/"+(d2.getMonth()+1)+"/"+d2.getDate()+" "+addZero(d2.getHours())+":"+addZero(d2.getMinutes()) ;
+					$scope.hidden = false
+				}
+				$scope.isCollapsed = !$scope.isCollapsed;
+			}
 		});
-		$scope.isCollapsed = !$scope.isCollapsed;
 	}
 });

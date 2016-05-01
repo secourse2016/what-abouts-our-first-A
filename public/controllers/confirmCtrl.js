@@ -5,14 +5,16 @@ App.controller('confirmCtrl',function($scope,FlightsSrv,$location){
     $scope.home = function() {
     $location.url('/');
     };
-    $scope.price = parseInt(FlightsSrv.getDepartPrice())*FlightsSrv.getMultiplier();
+    FlightsSrv.totalPrice = parseInt(FlightsSrv.getDepartPrice())*FlightsSrv.getMultiplier();
+    $scope.price = FlightsSrv.totalPrice;
     $scope.timeD = myFunction($scope.depart.departureDateTime);
     $scope.string="";
 
     if(FlightsSrv.getHidden()===false){
         $scope.timeR = myFunction($scope.return.departureDateTime);
         $scope.string="Return Flight : "+$scope.timeR+ " from "+$scope.return.origin +" to " +$scope.return.destination;
-        $scope.price = parseInt(FlightsSrv.getDepartPrice())*FlightsSrv.getMultiplier()+parseInt(FlightsSrv.getReturnPrice())*FlightsSrv.getMultiplier();
+        FlightsSrv.totalPrice = parseInt(FlightsSrv.getDepartPrice())*FlightsSrv.getMultiplier()+parseInt(FlightsSrv.getReturnPrice())*FlightsSrv.getMultiplier();
+        $scope.price = FlightsSrv.totalPrice;
     }
     $scope.pay = function() {
     $location.url('/payment');
