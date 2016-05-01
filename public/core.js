@@ -41,7 +41,6 @@ App.config(function($routeProvider,$locationProvider,stripeProvider) {
         .when('/thankyou', {
             templateUrl : '/partials/thankyou.html',
             controller  : 'thankyouCtrl'
-        });
-        
+        });   
     $locationProvider.html5Mode({enabled: true,requireBase: false});    
 });

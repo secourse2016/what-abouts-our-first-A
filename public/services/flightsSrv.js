@@ -5,7 +5,7 @@ App.factory('FlightsSrv', function ($http) {
         getAirportCodes : function() {
             return $http.get('/api/data/codes');
         },
-        book : function(token,fn,ln,passNo,dob,country,cost,returnFlightId) {
+        book : function(token,fn,ln,passNo,dob,country,cost,departFlightId,returnFlightId) {
             return $http.post('/booking?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60',{
                 "passengerDetails":[{
                     "firstName": fn, // (required)
@@ -16,7 +16,7 @@ App.factory('FlightsSrv', function ($http) {
                 }],
                 "class": this.cabin,  // (required)
                 "cost": cost, // (required)
-                "outgoingFlightId": this.departFlight.flightId, // mongodb _id => 5NuiSNQdNcZwau92M (required)
+                "outgoingFlightId": departFlightId, // mongodb _id => 5NuiSNQdNcZwau92M (required)
                 "returnFlightId": returnFlightId, // mongodb _id => 9DuiBNVjNcUwiu42J (required)
                 "paymentToken": token // stripe generated token (required)
             });
@@ -41,6 +41,9 @@ App.factory('FlightsSrv', function ($http) {
             return $http.get('/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.cabin+'/'+this.getMultiplier()+'?airline='+this.airline, {
                 "headers" : { 'x-access-token' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60'}
             });        
+        },
+        getKey : function(airlineUrl) {
+            return $http.get('http://'+airlineUrl+'/stripe/pubkey');
         },
         fixDate : function(date) {
             return $http.get('/api/dateconverter/'+date);
