@@ -110,7 +110,7 @@ app.controller('indexCtrl', function($scope,$state) {
     }
 });
 
-app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
+app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal,$ionicPopup) {
     $ionicModal.fromTemplateUrl('templates/datemodal.html', 
     function(modal) {
         $scope.datemodal1 = modal;
@@ -183,20 +183,30 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal) {
     };
 
     $scope.SearchFlights = function(origin, destination) {
-        SetOriginAirport(origin);
-        SetDestinationAirport(destination);
-        var d1 = new Date($scope.dt1);
-        var d2 = new Date($scope.dt2);
-        d1 = d1.getTime();
-        d2 = d2.getTime();
-        FlightsSrv.persons = parseInt($scope.persons);
-        FlightsSrv.setDepartDate(d1);
-        FlightsSrv.setReturnDate(d2);
-        if($scope.otherAirlines)
-            FlightsSrv.airline='Other';
+        if(origin===""||destination===""||$scope.dt1===undefined||($scope.dt2===undefined&&$scope.trip==="Roundtrip"))
+        {
+            $ionicPopup.alert({
+                        title: 'Error',
+                        template: 'One of the inputs is missing.'
+                    });
+        }
         else
-            FlightsSrv.airline= 'United';
-        $state.go('flights');
+        {
+            SetOriginAirport(origin);
+            SetDestinationAirport(destination);
+            var d1 = new Date($scope.dt1);
+            var d2 = new Date($scope.dt2);
+            d1 = d1.getTime();
+            d2 = d2.getTime();
+            FlightsSrv.persons = parseInt($scope.persons);
+            FlightsSrv.setDepartDate(d1);
+            FlightsSrv.setReturnDate(d2);
+            if($scope.otherAirlines)
+                FlightsSrv.airline='Other';
+            else
+                FlightsSrv.airline= 'United';
+            $state.go('flights');
+        }
     };
 
     AirportCodes();

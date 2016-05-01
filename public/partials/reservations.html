@@ -8,7 +8,7 @@
         padding: 10px 0px 0px 0px;
         font-size:200%;
 		font-weight: 300%;
-        margin: 2% 30% 0% 30%;
+        margin: 1% 30% 0% 30%;
         font-size: 70%;
         padding:0px 0px; 
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.2);
@@ -31,16 +31,19 @@
 	}
 	.Body
 	{
-		line-height: 50px;
+		line-height: 40px;
 		color: white;
 		background: hsla(219, 100%, 25%, 0.84);
         box-shadow: 1px 1px 5px rgba(49, 21, 4, 0.4);
-		padding-left: 40px;
 		margin: 0 30%;
 		text-align: left;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
 		font-size: 130%; 
+	}
+	.Body label
+	{
+		padding-left: 40px;
 	}
 </style>
 
@@ -57,7 +60,7 @@
 <hr>
 <div uib-collapse="isCollapsed">
 	<div class="Body">
-		<label style="margin-right:160px;">From: {{origin}}</label>
+		<label style="margin-right:120px;">From: {{origin}}</label>
 		<label>To : {{destination}}</label>
 		<br>
 		<label>Cabin : {{cabin}}</label>
@@ -67,6 +70,18 @@
   		<label>Seat Number: {{seatNumber}}</label>
 		<br>
   		<label>Departure: {{departureTime}}</label>
-		<br>
+		<hr style="width: 100%;margin: 0% 0%">
+		<div ng-hide="hidden">
+			<label style="margin-right:120px;">From: {{origin2}}</label>
+			<label>To : {{destination2}}</label>
+			<br>
+			<label>Cabin : {{cabin2}}</label>
+			<br>
+			<label>Flight Number: {{flightNumber2}}</label>
+			<br>
+	  		<label>Seat Number: {{seatNumber2}}</label>
+			<br>
+	  		<label>Departure: {{departureTime2}}</label>
+		</div>
 	</div>
 </div>
