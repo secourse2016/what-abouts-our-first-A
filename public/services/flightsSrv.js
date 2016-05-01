@@ -5,8 +5,8 @@ App.factory('FlightsSrv', function ($http) {
         getAirportCodes : function() {
             return $http.get('/api/data/codes');
         },
-        book : function(token,fn,ln,passNo,dob,country,cost,departFlightId,returnFlightId) {
-            return $http.post('/booking?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60',{
+        book : function(airlineUrl,token,fn,ln,passNo,dob,country,cost,departFlightId,returnFlightId) {
+            return $http.post('http://'+airlineUrl+'/booking?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60',{
                 "passengerDetails":[{
                     "firstName": fn, // (required)
                     "lastName": ln,  // (required)
