@@ -1,24 +1,57 @@
-/* Create Angular App Instance */
+
 app = angular.module('United_Airlines', ['ionic','pickadate']);
 
-/**
- * Angular Routes
- */
- app.config(function ($stateProvider, $urlRouterProvider) {
+app.run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      cordova.plugins.Keyboard.disableScroll(true);
+
+    }
+    if (window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
+})
+app.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
 
-    .state('index', {
-        url: '/',
-        templateUrl: '/partials/main.html',
-        controller: 'mainCtrl'
-    })         
-
-    .state('test', {
-        url: '/test',
-        templateUrl: '/partials/test.html',
-        controller: 'mainCtrl'
+    .state('tab', {
+        url: '/tab',
+        abstract: true,
+        templateUrl: 'templates/tabs.html'
     })
+    .state('tab.search',{
+        url: '/search',
+        views: {
+            'tab-search': {
+                templateUrl: 'partials/main.html',
+                controller: 'mainCtrl'
+            }
+        }
+    })
+    .state('tab.reservation',{
+        url: '/reservation',
+        views:{
+            'tab-reservation': {
+                templateUrl: 'partials/reservation.html',
+                controller: 'reservationCtrl'
+            }
+        }  
+    })
+    .state('tab.search-flights',{
+        url: '/flights',
+        views:{
+            'tab-search':{
+                templateUrl:'partials/flights.html',
+                controller:'flightsCtrl'
+            }
+        }
+    })        
 
     .state('flights', {
         url: '/flights',
@@ -40,13 +73,9 @@ app = angular.module('United_Airlines', ['ionic','pickadate']);
         templateUrl: '/partials/payment.html',
         controller: 'paymentCtrl'
     })
-    .state('reservation',{
-        url: '/reservation',
-        templateUrl: '/partials/reservation.html',
-        controller: 'reservationCtrl'  
-    });
+    ;
 
-    $urlRouterProvider.otherwise('/#');
+    $urlRouterProvider.otherwise('/tab/search');
 
 });
 
@@ -98,15 +127,6 @@ app.controller('reservationCtrl', function($scope,FlightsSrv,$state,$ionicPopup)
                 }
             }) 
         }
-    }
-});
-
-app.controller('indexCtrl', function($scope,$state) {
-    $scope.goHome = function(){
-        $state.go('index');
-    }
-    $scope.goReserve = function(){
-        $state.go('reservation');
     }
 });
 
@@ -205,7 +225,7 @@ app.controller('mainCtrl', function($scope, $state, FlightsSrv,$ionicModal,$ioni
                 FlightsSrv.airline='Other';
             else
                 FlightsSrv.airline= 'United';
-            $state.go('flights');
+            $state.go('tab.search-flights');
         }
     };
 
