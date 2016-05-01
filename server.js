@@ -9,7 +9,7 @@ var stripe = require("stripe")("sk_test_QCs2H8B60sw0QEPDdd5dIfKn");
 
 // (Assuming you're using express - expressjs.com	)
 // Get the credit card details submitted by the form
-/*var stripeToken = app.request.body.stripeToken;
+/*var stripeToken = app.req.body.stripeToken;
 
 var charge = stripe.charges.create({
   amount: 1000, // amount in cents, again
@@ -20,5 +20,4 @@ var charge = stripe.charges.create({
   if (err && err.type === 'StripeCardError') {
     // The card has been declined
   }
-});
-*/
+});*/

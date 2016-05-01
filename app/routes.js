@@ -15,8 +15,6 @@ module.exports = function(app,mongo) {
     var t2;
     var cabin;
     moment().format();
-
-  
     function httpGet(url, callback) {
         const options = {
             url :  url,
@@ -42,6 +40,8 @@ module.exports = function(app,mongo) {
         res.header('Access-Control-Allow-Headers','X-Requested-With');
         next();
     });
+
+ 
 
     app.get('/403', function (req, res) {
       res.sendFile(path.join(__dirname, '../public/partials', '403.html'));
@@ -82,6 +82,10 @@ module.exports = function(app,mongo) {
         var token = req.body.wt || req.query.wt || req.headers['x-access-token'];   
 
         var jwtSecret = process.env.JWTSECRET;
+
+
+
+
 
           // Get JWT contents:
         try 
@@ -257,6 +261,25 @@ module.exports = function(app,mongo) {
         allFlights.reserve(req.params.fn , req.params.ln,req.params.origin,req.params.destination,req.params.flightNumber,req.params.cabin,req.params.date, function (brn,receipt){
             res.send(brn);
         });
+    });
+
+
+       app.post('/payment',function(req,res){
+ res.send('Got a POST request');
+
+var stripeToken = req.body.stripeToken;
+
+var charge = stripe.charges.create({
+  amount: 1000, // amount in cents, again
+  currency: "usd",
+  source: stripeToken,
+  description: "flight charge"
+}, function(err, charge) {
+  if (err && err.type === 'StripeCardError') {
+    // The card has been declined
+    
+  }
+});
     });
 
 };
