@@ -16,17 +16,6 @@ module.exports = function(app,mongo) {
     var t2;
     var cabin;
     moment().format();
-    function httpGet(url, callback) {
-        const options = {
-            url :  url,
-            json : true
-        };
-        request(options,function(err, res, body) {
-            outFlights = outFlights.concat(body.outgoingFlights);
-            returnFlights = returnFlights.concat(body.returnFlights);
-            callback(err, body);
-        });
-    }
 
     function determinePrice(eco,buis,cabin) {
         if(cabin === "business"){
@@ -98,18 +87,36 @@ module.exports = function(app,mongo) {
 
     }); 
 
-    app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class/', function(req, res) {
+    app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class/:seats', function(req, res) {
         outFlights = [];
         returnFlights = [];
         origin = req.params.origin;
         dest = req.params.destination;
+        seats = req.params.seats;
         t1 = req.params.departingDate;
         t2 = req.params.returningDate;
         cabin = req.params.class;
+        function httpGet(url, callback) {
+            const options = {
+                url :  url+"/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"/"+seats+"?wt="+jwtToken,
+                json : true
+            };
+            request(options,function(err, res, body) {
+                if(body.outgoingFlights!=undefined)
+                {
+                    outFlights = outFlights.concat(body.outgoingFlights);
+                }
+                if(body.returnFlights!=undefined)
+                {
+                    returnFlights = returnFlights.concat(body.returnFlights);
+                }
+                callback(err, body);
+            });
+        }
         var urls= [
-            "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken, //Austrian
-            "http://ec2-52-26-166-80.us-west-2.compute.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken,//KLM
-            "http://www.swiss-air.me/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken, //Swissair
+            "http://ec2-52-90-41-197.compute-1.amazonaws.com", //Austrian
+            "http://ec2-52-26-166-80.us-west-2.compute.amazonaws.com",//KLM
+            "http://www.swiss-air.me", //Swissair
             // "http://52.207.211.179/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken //AlaskanAirlines
             // "http://52.38.78.176/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken,//Oceanic
             // "http://54.191.202.17/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken, //AirMadagascar
@@ -182,17 +189,31 @@ module.exports = function(app,mongo) {
         });
     });    
  
-    app.get('/api/flights/search/:origin/:destination/:departingDate/:class', function(req, res) {
+    app.get('/api/flights/search/:origin/:destination/:departingDate/:class/:seats', function(req, res) {
         outFlights = [];
         origin = req.params.origin;
         dest = req.params.destination;
         t1 = req.params.departingDate;
         cabin = req.params.class;
+        var seats = req.params.seats;
+        function httpGet(url, callback) {
+            const options = {
+                url :  url+"/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"/"+seats+"?wt="+jwtToken,
+                json : true
+            };
+            request(options,function(err, res, body) {
+                if(body.outgoingFlights!=undefined)
+                {
+                    outFlights = outFlights.concat(body.outgoingFlights);
+                }
+                callback(err, body);
+            });
+        }
         var urls= [
-            "http://ec2-52-90-41-197.compute-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Austrian
-            "http://ec2-52-26-166-80.us-west-2.compute.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken,//KLM
-            "http://www.swiss-air.me/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Swissair
-            "http://52.58.46.74/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Dragonair
+            "http://ec2-52-90-41-197.compute-1.amazonaws.com", //Austrian
+            "http://ec2-52-26-166-80.us-west-2.compute.amazonaws.com", //KLM
+            "http://www.swiss-air.me" //Swissair
+            // "http://52.58.46.74/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Dragonair
             // "http://52.207.211.179/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken //AlaskanAirlines
             // "http://52.38.78.176/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken,//Oceanic
             // "http://54.191.202.17/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //AirMadagascar
@@ -225,8 +246,9 @@ module.exports = function(app,mongo) {
                     })
                 }
                 if(req.query.airline==="Other")
-                {
+                {                    
                     async.map(urls, httpGet, function (err, res2){
+
                         if (err) return console.log(err);
                         else{
                             res.send({
