@@ -3,6 +3,9 @@ var airports = require('../airports.json');
 var moment = require('moment');
 var db = require('./db.js');
 var crypto = require('crypto');
+var ObjectID = require('mongodb').ObjectID;
+
+
 moment().format();
 exports.seedDB = function(cb) {
     seedFlights(function(err1,seededFlights) {
@@ -116,3 +119,14 @@ exports.viewMyReservedFlight = function( bookingRefNum , cb ){
     });
 }
 
+exports.newReserve = function(fn,ln,outId,returnId,cabin,cb){
+    var brn = generateBookingRefNumber();
+    var receipt = generateReceiptNumber();
+    var sn = randomObjectId(3);
+    db.db().collection('Flights').findOne({_id:new ObjectID(outId)},function(err,flightOut){
+        db.db().collection('Flights').findOne({_id:new ObjectID(returnId)},function(err,flightReturn){
+            db.db().collection('Reservations').insert({firstName : fn  , lastName : ln ,seat :sn,  bookingRefNumber : brn , receipt_number : receipt,cabin:cabin,outFlight:flightOut,returnFlight:flightReturn});
+            cb(brn);
+        })
+    })
+}

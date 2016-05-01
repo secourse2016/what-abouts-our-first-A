@@ -7,6 +7,7 @@ module.exports = function(app,mongo) {
     var async = require('async');
     var request = require('request');
     var jwtToken   = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60";
+    var stripe = require('stripe')("sk_test_QCs2H8B60sw0QEPDdd5dIfKn");
     var outFlights = [];
     var returnFlights = [];
     var origin = "";
@@ -15,8 +16,6 @@ module.exports = function(app,mongo) {
     var t2;
     var cabin;
     moment().format();
-
-  
     function httpGet(url, callback) {
         const options = {
             url :  url,
@@ -61,6 +60,7 @@ module.exports = function(app,mongo) {
         res.send(airports);
       });
     });
+    
 
  
     app.get('/db/seed', function(req, res) {
@@ -242,11 +242,11 @@ module.exports = function(app,mongo) {
                 }
             });
         });
+
     app.get('/api/reservations/:bookingrefnum', function(req, res) {
         allFlights.viewMyReservedFlight( req.params.bookingrefnum , function(err,myFlights){
             if(myFlights === null){
                 res.send(null);
-                console.log("invalid bookingrefnum")
             }
             else{
                 res.json(myFlights);
@@ -258,7 +258,27 @@ module.exports = function(app,mongo) {
             res.send(brn);
         });
     });
-
+    app.post('/booking',function(req,res){
+        var stripeToken = req.body.paymentToken;
+        stripe.charges.create({
+            amount:parseInt(req.body.cost)*100,
+            currency: "usd",
+            source: stripeToken,
+            description: "test"
+        },function(err,data){
+            if(err)
+            {
+                res.send({refNum:null,errorMessage:err});
+            }
+            else
+            {
+                allFlights.newReserve(req.body.passengerDetails[0].firstName,req.body.passengerDetails[0].lastName,req.body.outgoingFlightId,req.body.returnFlightId,req.body.class,function(brn){
+                    res.send({refNum:brn,errorMessage:null});
+                })                    
+            }
+        })
+    
+    });
 };
 
 
