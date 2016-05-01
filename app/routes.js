@@ -62,6 +62,7 @@ module.exports = function(app,mongo) {
     });
     
 
+    
  
     app.get('/db/seed', function(req, res) {
         allFlights.seedDB( function( err , seeded ){
@@ -97,6 +98,10 @@ module.exports = function(app,mongo) {
 	
 
     }); 
+
+    app.get('/stripe/pubkey', function (req, res) {
+       res.send('pk_test_uvzPDBESJ2MJ0cTwAuZDUDfx');
+    });
 
     app.get('/api/flights/search/:origin/:destination/:departingDate/:returningDate/:class/', function(req, res) {
         outFlights = [];
