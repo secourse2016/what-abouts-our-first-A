@@ -61,7 +61,7 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
             "IP": "52.58.24.76"
         },
         "United": { 
-            "IP":"localhost:3000"
+            "IP":"54.187.103.196"
         },
         "AirNewZealand": { 
             "IP":"52.28.246.230"
