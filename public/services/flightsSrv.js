@@ -5,8 +5,8 @@ App.factory('FlightsSrv', function ($http) {
         getAirportCodes : function() {
             return $http.get('/api/data/codes');
         },
-        book : function(token,fn,ln,passNo,dob,country,cost,returnFlightId) {
-            return $http.post('/booking?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60',{
+        book : function(airlineUrl,token,fn,ln,passNo,dob,country,cost,departFlightId,returnFlightId) {
+            return $http.post('http://'+airlineUrl+'/booking?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60',{
                 "passengerDetails":[{
                     "firstName": fn, // (required)
                     "lastName": ln,  // (required)
@@ -16,18 +16,35 @@ App.factory('FlightsSrv', function ($http) {
                 }],
                 "class": this.cabin,  // (required)
                 "cost": cost, // (required)
-                "outgoingFlightId": this.departFlight.flightId, // mongodb _id => 5NuiSNQdNcZwau92M (required)
+                "outgoingFlightId": departFlightId, // mongodb _id => 5NuiSNQdNcZwau92M (required)
                 "returnFlightId": returnFlightId, // mongodb _id => 9DuiBNVjNcUwiu42J (required)
                 "paymentToken": token // stripe generated token (required)
             });
         },
+        // bookA : function(airlineUrl,token,fn,ln,passNo,dob,country,cost,departFlightId,returnFlightId) {
+        //     console.log(token +" "+ fn+" "+ln+" "+passNo+" "+dob);
+        //     return $http.post('http://'+airlineUrl+'/booking?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60',{
+        //         "passengerDetails":[{
+        //             "firstName": fn, // (required)
+        //             "lastName": ln,  // (required)
+        //             "passportNum": passNo, // (required)
+        //             "dateOfBirth": dob,  // (required)
+        //             "nationality": country // (optional)
+        //         }],
+        //         "class": this.cabin,  // (required)
+        //         "cost": cost, // (required)
+        //         "outgoingFlightId": departFlightId, // mongodb _id => 5NuiSNQdNcZwau92M (required)
+        //         // "returnFlightId": returnFlightId, // mongodb _id => 9DuiBNVjNcUwiu42J (required)
+        //         "paymentToken": token // stripe generated token (required)
+        //     });
+        // },
         reserve : function(fn,ln) {
             return $http.get('/api/reserve/'+fn+'/'+ln+'/'+this.departFlight.origin+'/'+this.departFlight.destination+'/'+this.departFlight.flightNumber+'/'+this.cabin+'/'+this.departDate,{
                 "headers" : { 'x-access-token' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60'}
             });
         },
         getFlights : function() {
-            return $http.get('/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.returnDate+'/'+this.cabin+'?airline='+this.airline, {
+            return $http.get('/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.returnDate+'/'+this.cabin+'/'+this.getMultiplier()+'?airline='+this.airline, {
                 "headers" : { 'x-access-token' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60'}
             });        
         },
@@ -38,9 +55,12 @@ App.factory('FlightsSrv', function ($http) {
         },
 
         getFlightsOne : function() {
-            return $http.get('/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.cabin+'?airline='+this.airline, {
+            return $http.get('/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.cabin+'/'+this.getMultiplier()+'?airline='+this.airline, {
                 "headers" : { 'x-access-token' : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60'}
             });        
+        },
+        getKey : function(airlineUrl) {
+            return $http.get('http://'+airlineUrl+'/stripe/pubkey?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
         },
         fixDate : function(date) {
             return $http.get('/api/dateconverter/'+date);
