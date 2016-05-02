@@ -61,7 +61,7 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
             "IP": "52.58.24.76"
         },
         "United": { 
-            "IP":"54.187.103.196"
+            "IP":"localhost:3000"
         },
         "AirNewZealand": { 
             "IP":"52.28.246.230"
@@ -98,6 +98,8 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
                             FlightsSrv.book(value.IP,token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,FlightsSrv.departFlight.flightId,id).success(function(data){//TODO
                                 if(data.refNum!=null){
                                     FlightsSrv.brn1 = data.refNum;
+                                    FlightsSrv.airline1 = FlightsSrv.departFlight.Airline;
+                                    $location.url("/thankyou");
                                 }else{
                                     alert(data.errorMessage.message);
                                 }
@@ -144,7 +146,7 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
                                                     else{
                                                         var token = response2.id;
                                                         var d2 = new Date($scope.dob);
-                                                        FlightsSrv.book(value2.IP,token,$scope.fn,$scope.ln,$scope.number,d2.getTime(),$scope.country,FlightsSrv.returnFlight.cost,null,FlightsSrv.returnFlight.flightId).success(function(data2){//TODO
+                                                        FlightsSrv.book(value2.IP,token,$scope.fn,$scope.ln,$scope.number,d2.getTime(),$scope.country,FlightsSrv.returnFlight.cost,FlightsSrv.returnFlight.flightId,null).success(function(data2){//TODO
                                                             if(data2.refNum!=null){
                                                                 FlightsSrv.brn2 = data2.refNum;
                                                                 FlightsSrv.airline1 = FlightsSrv.departFlight.Airline;
