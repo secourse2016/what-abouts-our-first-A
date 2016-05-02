@@ -1,0 +1,29 @@
+<ion-view title="Reservations" >
+    <ion-content class="has-header">
+		<div class="bar bar-header item-input-inset">
+			<label class="item-input-wrapper">
+			    <input type="search" ng-model="brn" placeholder="Booking Reference Number">
+			</label>
+	  		<button class="button button-clear" ng-click = "search(brn)">
+			    <i class="icon ion-ios-search placeholder-icon"></i>
+	  		</button>
+		</div>
+		<div class="list" ng-hide="hidden">
+			<a class="item">
+				Name : {{x.firstName}} {{x.lastName}}
+			</a>
+			<a class="item">
+				From : {{x.origin}}
+			</a>
+			<a class="item">
+				To : {{x.destination}}
+			</a>
+			<a class="item">
+				Flight Number: {{x.number}}
+			</a>
+			<a class="item">
+				Date: {{d1}} at {{d2}}
+			</a>
+		</div>
+	</ion-content>
+</ion-view>
