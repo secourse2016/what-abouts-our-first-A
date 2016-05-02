@@ -30,7 +30,7 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
         "Hawaiian": { 
             "IP": "54.93.36.94"
         },
-        "Austrian Airlines": { 
+        "Austrian": { 
             "IP": "ec2-52-90-41-197.compute-1.amazonaws.com"
         },
         "South African Airways": { 
@@ -83,7 +83,8 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
     }
     function bookOne(){
         angular.forEach(airlines , function(value, key) {
-            if (key === FlightsSrv.departFlight.Airline) {
+            if (key === FlightsSrv.departFlight.Airline) 
+            {
                 FlightsSrv.getKey(value.IP).success(function(stripeKey){
                     Stripe.setPublishableKey(stripeKey);
                     function stripeResponseHandler(status, response) {
@@ -95,9 +96,8 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
                             var d = new Date($scope.dob);
                             var id = FlightsSrv.returnFlight===undefined?null:FlightsSrv.returnFlight.flightId;
                             FlightsSrv.book(value.IP,token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,FlightsSrv.departFlight.flightId,id).success(function(data){//TODO
-                                if(data.errorMessage==null){
+                                if(data.refNum!=null){
                                     FlightsSrv.brn1 = data.refNum;
-                                    $location.url('/thankyou');
                                 }else{
                                     alert(data.errorMessage.message);
                                 }
@@ -111,18 +111,15 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
                         exp_year: $scope.expy
                     },stripeResponseHandler);
                 })
-            }
-            else
-            {
-                alert("Something went wrong. "+FlightsSrv.departFlight.Airline+" is not in the JSON list of airlines")
             }
         });
     }
     function bookTwo(){
         angular.forEach(airlines , function(value, key) {
             if (key === FlightsSrv.departFlight.Airline) {
+                console.log(FlightsSrv.departFlight.Airline)
                 FlightsSrv.getKey(value.IP).success(function(stripeKey){
-                    Stripe.setPublishableKey(stripeKey);
+                    Stripe.setPublishableKey(stripeKey+"");
                     function stripeResponseHandler(status, response) {
                         if (response.error) {
                             alert(response.error.message);
@@ -130,11 +127,47 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
                         else{
                             var token = response.id;
                             var d = new Date($scope.dob);
-                            FlightsSrv.book(value.IP,token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,FlightsSrv.departFlight.flightId,null).success(function(data){//TODO
-                                if(data.errorMessage==null){
+                            FlightsSrv.book(value.IP,token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.departFlight.cost,FlightsSrv.departFlight.flightId,null).success(function(data){//TODO
+                                if(data.refNum!=null)
+                                {
                                     FlightsSrv.brn1 = data.refNum;
-                                    $location.url('/thankyou');
-                                }else{
+                                    angular.forEach(airlines , function(value2, key2) {
+                                        if (key2 === FlightsSrv.returnFlight.Airline)
+                                        {
+                                            console.log(FlightsSrv.returnFlight.Airline)
+                                            FlightsSrv.getKey(value2.IP).success(function(stripeKey){
+                                                Stripe.setPublishableKey(stripeKey+"");
+                                                function stripeResponseHandler2(status2, response2) {
+                                                    if (response2.error) {
+                                                        alert(response2.error.message);
+                                                    } 
+                                                    else{
+                                                        var token = response2.id;
+                                                        var d2 = new Date($scope.dob);
+                                                        FlightsSrv.book(value2.IP,token,$scope.fn,$scope.ln,$scope.number,d2.getTime(),$scope.country,FlightsSrv.returnFlight.cost,null,FlightsSrv.returnFlight.flightId).success(function(data2){//TODO
+                                                            if(data2.refNum!=null){
+                                                                FlightsSrv.brn2 = data2.refNum;
+                                                                FlightsSrv.airline1 = FlightsSrv.departFlight.Airline;
+                                                                FlightsSrv.airline2 = FlightsSrv.returnFlight.Airline;
+                                                                $location.url("/thankyou");
+                                                            }else{
+                                                                alert(data2.refNum);
+                                                            }
+                                                        });
+                                                    }
+                                                }
+                                                Stripe.card.createToken({
+                                                    number: $scope.number,
+                                                    cvc: $scope.cvc,
+                                                    exp_month: $scope.expm,
+                                                    exp_year: $scope.expy
+                                                },stripeResponseHandler2);
+                                            })
+                                        }
+
+                                    });
+                                }else
+                                {
                                     alert(data.errorMessage.message);
                                 }
                             });
@@ -148,43 +181,7 @@ App.controller('paymentCtrl',function($scope,FlightsSrv,$location){
                     },stripeResponseHandler);
                 })
             }
-            else
-            {
-                alert("Something went wrong. "+FlightsSrv.departFlight.Airline+" is not in the JSON list of airlines");
-            }
-            if (key === FlightsSrv.returnFlight.Airline)
-            {
-                FlightsSrv.getKey(value.IP).success(function(stripeKey){
-                    Stripe.setPublishableKey(stripeKey);
-                    function stripeResponseHandler(status, response) {
-                        if (response.error) {
-                            alert(response.error.message);
-                        } 
-                        else{
-                            var token = response.id;
-                            var d = new Date($scope.dob);
-                            FlightsSrv.book(value.IP,token,$scope.fn,$scope.ln,$scope.number,d.getTime(),$scope.country,FlightsSrv.totalPrice,null,FlightsSrv.returnFlight.flightId).success(function(data){//TODO
-                                if(data.errorMessage==null){
-                                    FlightsSrv.brn2 = data.refNum;
-                                    $location.url('/thankyou');
-                                }else{
-                                    alert(data.errorMessage.message);
-                                }
-                            });
-                        }
-                    }
-                    Stripe.card.createToken({
-                        number: $scope.number,
-                        cvc: $scope.cvc,
-                        exp_month: $scope.expm,
-                        exp_year: $scope.expy
-                    },stripeResponseHandler);
-                })
-            }
-            else
-            {
-                alert("Something went wrong. "+FlightsSrv.returnFlight.Airline+" is not in the JSON list of airlines"); 
-            }
+            
         });
     }
 })

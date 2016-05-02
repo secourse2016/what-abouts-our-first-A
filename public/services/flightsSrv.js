@@ -43,7 +43,7 @@ App.factory('FlightsSrv', function ($http) {
             });        
         },
         getKey : function(airlineUrl) {
-            return $http.get('http://'+airlineUrl+'/stripe/pubkey');
+            return $http.get('http://'+airlineUrl+'/stripe/pubkey?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
         },
         fixDate : function(date) {
             return $http.get('/api/dateconverter/'+date);
