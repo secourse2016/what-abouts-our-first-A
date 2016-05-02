@@ -1,4 +1,4 @@
-App = angular.module('United_Airlines', ['ui.bootstrap', 'ngRoute','ngAnimate','angular-stripe']);
+App = angular.module('United_Airlines', [,'ui.bootstrap', 'ngRoute','ngAnimate','angular-stripe']);
 
 App.config(function($routeProvider,$locationProvider,stripeProvider) {
     stripeProvider.setPublishableKey('pk_test_uvzPDBESJ2MJ0cTwAuZDUDfx');
