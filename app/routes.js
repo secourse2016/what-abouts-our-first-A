@@ -26,9 +26,9 @@ module.exports = function(app,mongo) {
     }
     
     app.all('*',function (req,res,next) {
-        res.header('Access-Control-Allow-Origin','*');
-        res.header('Access-Control-Allow-Headers','X-Requested-With');
-        next();
+        res.header("Access-Control-Allow-Origin", "*");
+          res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+          next();
     });
 
     app.get('/403', function (req, res) {
@@ -124,7 +124,7 @@ module.exports = function(app,mongo) {
             "http://www.swiss-air.me", //Swissair
             "http://52.207.211.179", //Alaskan
             "http://54.191.202.17", //AirMadagascar
-            "http://52.34.160.140" //AirFrance
+            "http://52.34.160.140", //AirFrance
             // "http://52.38.78.176/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken,//Oceanic
             // "http://sebitsplease.com.s3-website-us-east-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken//singapore
             // "http://52.25.15.124/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken //Delta
