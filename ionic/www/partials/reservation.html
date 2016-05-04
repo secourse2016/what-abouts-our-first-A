@@ -10,19 +10,30 @@
 		</div>
 		<div class="list" ng-hide="hidden">
 			<a class="item">
-				Name : {{x.firstName}} {{x.lastName}}
+				From : {{x.outFlight.origin}}
 			</a>
 			<a class="item">
-				From : {{x.origin}}
+				To : {{x.outFlight.destination}}
 			</a>
 			<a class="item">
-				To : {{x.destination}}
-			</a>
-			<a class="item">
-				Flight Number: {{x.number}}
+				Flight Number: {{x.outFlight.flightNumber}}
 			</a>
 			<a class="item">
 				Date: {{d1}} at {{d2}}
+			</a>
+		</div>
+		<div class="list" ng-hide="hidden2">
+			<a class="item">
+				From : {{x.returnFlight.origin}}
+			</a>
+			<a class="item">
+				To : {{x.returnFlight.destination}}
+			</a>
+			<a class="item">
+				Flight Number: {{x.returnFlight.flightNumber}}
+			</a>
+			<a class="item">
+				Date: {{d3}} at {{d4}}
 			</a>
 		</div>
 	</ion-content>

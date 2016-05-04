@@ -125,6 +125,7 @@ module.exports = function(app,mongo) {
             "http://52.207.211.179", //Alaskan
             "http://54.191.202.17", //AirMadagascar
             "http://52.34.160.140", //AirFrance
+            "http://52.58.46.74" //Dragonair
             // "http://52.38.78.176/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken,//Oceanic
             // "http://sebitsplease.com.s3-website-us-east-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken//singapore
             // "http://52.25.15.124/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+t2+"/"+cabin+"?wt="+jwtToken //Delta
@@ -220,8 +221,8 @@ module.exports = function(app,mongo) {
             "http://www.swiss-air.me", //Swissair
             "http://52.207.211.179", //AlaskanAirlines
             "http://54.191.202.17", //AirMadagascar
-            "http://52.34.160.140" //AirFrance
-            // "http://52.58.46.74/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Dragonair
+            "http://52.34.160.140", //AirFrance
+            "http://52.58.46.74"///api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken, //Dragonair
             // "http://52.38.78.176/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken,//Oceanic
             // "http://sebitsplease.com.s3-website-us-east-1.amazonaws.com/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken//singapore
             // "http://52.25.15.124/api/flights/search/"+origin+"/"+dest+"/"+t1+"/"+cabin+"?wt="+jwtToken //Delta
