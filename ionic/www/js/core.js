@@ -71,15 +71,13 @@ app = angular.module('United_Airlines', ['ionic','pickadate','angular-stripe']);
 
 app.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard)
+    {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
-
     }
-    if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
+    if (window.StatusBar) 
+    {
       StatusBar.styleDefault();
     }
   });
@@ -158,6 +156,7 @@ app.controller('indexCtrl',function($state,$scope){
 })
 app.controller('reservationCtrl', function($scope,FlightsSrv,$state,$ionicPopup) {
     $scope.hidden = true;
+    $scope.hidden2 = true;
     function addZero(i) {
         if (i < 10) {
           i = "0" + i;
@@ -188,7 +187,7 @@ app.controller('reservationCtrl', function($scope,FlightsSrv,$state,$ionicPopup)
         else
         {
             FlightsSrv.searchReservation(brn).success(function(flights){
-                if(flights === "")
+                if(flights === null||flights ==="")
                 {
                     $ionicPopup.alert({
                         title: 'Error',
@@ -196,11 +195,18 @@ app.controller('reservationCtrl', function($scope,FlightsSrv,$state,$ionicPopup)
                     });
                 }
                 else
-                {   
+                {
                     $scope.x = flights;
-                    $scope.d1 = $scope.dateFixer2(parseInt(flights.depart));
-                    $scope.d2 = $scope.dateFixer(parseInt(flights.depart));
+                    $scope.d1 = $scope.dateFixer2(flights.outFlight.date);
+                    $scope.d2 = $scope.dateFixer(flights.outFlight.date);
                     $scope.hidden = false;
+                    console.log(flights);
+                    if(flights.returnFlight!=null)
+                    {
+                        $scope.hidden2 = false;
+                        $scope.d3 = $scope.dateFixer2(flights.returnFlight.date);
+                        $scope.d4 = $scope.dateFixer(flights.returnFlight.date);
+                    }
                 }
             }) 
         }
@@ -507,7 +513,6 @@ app.controller('paymentCtrl', function($scope, FlightsSrv,$state,$ionicPopup) {
                                     angular.forEach(airlines , function(value2, key2) {
                                         if (key2 === FlightsSrv.flight2.Airline)
                                         {
-                                            console.log(FlightsSrv.flight2.Airline)
                                             FlightsSrv.getKey(value2.IP).success(function(stripeKey){
                                                 Stripe.setPublishableKey(stripeKey+"");
                                                 function stripeResponseHandler2(status2, response2) {
