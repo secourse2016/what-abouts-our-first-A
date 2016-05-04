@@ -1,5 +1,73 @@
 
-app = angular.module('United_Airlines', ['ionic','pickadate']);
+app = angular.module('United_Airlines', ['ionic','pickadate','angular-stripe']);
+ var airlines = {
+        "Lufthansa": { 
+            "IP": "ec2-54-152-123-100.compute-1.amazonaws.com" 
+        },
+        "KLM": { 
+            "IP": "ec2-52-26-166-80.us-west-2.compute.amazonaws.com" 
+        },
+        "Emirates Airlines": { 
+            "IP": "52.90.46.68" 
+        },
+        "Air France": { 
+            "IP": "52.34.160.140"
+        },
+        "Swiss Air": { 
+            "IP": "www.swiss-air.me"
+        },
+        "Delta Airlines": { 
+            "IP": "52.25.15.124"
+        },
+        "Japan Airlines": { 
+            "IP": "54.187.208.145"
+        },
+        "Singapore Airlines": { 
+            "IP": "sebitsplease.com.s3-website-us-east-1.amazonaws.com"
+        },
+        "Dragonair": { 
+            "IP": "52.58.46.74"
+        },
+        "Hawaiian": { 
+            "IP": "54.93.36.94"
+        },
+        "Austrian": { 
+            "IP": "ec2-52-90-41-197.compute-1.amazonaws.com"
+        },
+        "South African Airways": { 
+            "IP": "54.213.157.185"
+        },
+        "Malaysia Airlines": { 
+            "IP": "52.32.109.147"
+        },
+        "Northwest Airlines": { 
+            "IP": "52.36.169.206"
+        },
+        "Cathay Pacific Airlines": { 
+            "IP": "ec2-52-91-94-227.compute-1.amazonaws.com"
+        },
+        "Air Madagascar": { 
+            "IP": "54.191.202.17"
+        },
+        "Alaska": { 
+            "IP":"52.207.211.179"
+        },
+        "Turkish Airlines": { 
+            "IP": "52.27.150.19"
+        },
+        "Virgin australia": { 
+            "IP": "54.93.116.90"
+        },
+        "Iberia": { 
+            "IP": "52.58.24.76"
+        },
+        "United": { 
+            "IP":"54.187.103.196"
+        },
+        "AirNewZealand": { 
+            "IP":"52.28.246.230"
+        }
+    }
 
 app.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -331,7 +399,8 @@ app.controller('confirmCtrl', function($scope, FlightsSrv,$state) {
     $scope.y=FlightsSrv.flight2;
     $scope.hidden=false;
     $scope.total = function(x,y){
-        return y===undefined?(x*FlightsSrv.persons):((parseInt(x)+parseInt(y))*FlightsSrv.persons);
+        FlightsSrv.totalPrice= y===undefined?(x*FlightsSrv.persons):((parseInt(x)+parseInt(y))*FlightsSrv.persons);
+        return FlightsSrv.totalPrice;
     }
     if($scope.y===undefined)
         $scope.hidden=true;
@@ -355,25 +424,170 @@ app.controller('confirmCtrl', function($scope, FlightsSrv,$state) {
         var day = d.getDate();
         return day + "/" + m+ "/"+ y;
     }
-    $scope.next = function(flight){
-        FlightsSrv.flight2 = flight;
+    $scope.next = function(){
         $state.go('tab.search-payment');
     }
 });
 app.controller('paymentCtrl', function($scope, FlightsSrv,$state,$ionicPopup) {
-    $scope.home = function(fn,ln) {
-        FlightsSrv.reserve(fn,ln).success(function (response) {
-            FlightsSrv.setBrn(response);
-            var alertPopup = $ionicPopup.alert({
-                title: 'Flight Booked',
-                template: 'Your Booking Reference Number is '+response
-            });
-
-            alertPopup.then(function(res) {
-                $state.go('tab.search'); 
-            });
+    $scope.home = function(fn,ln,number,dob,country,expy,expm,cvc) 
+    {
+        if(FlightsSrv.flight2===undefined||FlightsSrv.flight1.Airline===FlightsSrv.flight2.Airline)
+        {
+            bookOne(fn,ln,number,dob,country,expy,expm,cvc);
+        }
+        else
+        {
+            bookTwo(fn,ln,number,dob,country,expy,expm,cvc);
+        }
+    }
+    function bookOne(fn,ln,number,dob,country,expy,expm,cvc){
+        angular.forEach(airlines , function(value, key) {
+            if (key === FlightsSrv.flight1.Airline) 
+            {
+                FlightsSrv.getKey(value.IP).success(function(stripeKey){
+                    Stripe.setPublishableKey(stripeKey);
+                    function stripeResponseHandler(status, response) {
+                        if (response.error) {
+                            $ionicPopup.alert({
+                                title: 'Error',
+                                template: response.error.message
+                            })
+                        } 
+                        else{
+                            var token = response.id;
+                            var d = new Date(dob);
+                            var id = FlightsSrv.flight2===undefined?null:FlightsSrv.flight2.flightId;
+                            FlightsSrv.book(value.IP,token,fn,ln,number,d.getTime(),country,FlightsSrv.totalPrice,FlightsSrv.flight1.flightId,id).success(function(data){//TODO
+                                if(data.refNum!=null){
+                                    FlightsSrv.brn1 = data.refNum;
+                                    FlightsSrv.airline1 = FlightsSrv.flight1.Airline;
+                                    $ionicPopup.alert({
+                                        title: 'Booking Successful',
+                                        template: 'Your Booking Reference Number: '+data.refNum+' From: '+FlightsSrv.airline1
+                                    })
+                                    $state.go("tab.search");
+                                }else{
+                                    $ionicPopup.alert({
+                                        title: 'Error',
+                                        template: data.errorMessage.message
+                                    })
+                                }
+                            });
+                        }
+                    }
+                    Stripe.card.createToken({
+                        number: number,
+                        cvc: cvc,
+                        exp_month: expm,
+                        exp_year: expy
+                    },stripeResponseHandler);
+                })
+            }
         });
     }
+    function bookTwo(fn,ln,number,dob,country,expy,expm,cvc){
+        angular.forEach(airlines , function(value, key) {
+            if (key === FlightsSrv.flight1.Airline) {
+                FlightsSrv.getKey(value.IP).success(function(stripeKey){
+                    Stripe.setPublishableKey(stripeKey+"");
+                    function stripeResponseHandler(status, response) {
+                        if (response.error) {
+                            $ionicPopup.alert({
+                                title: 'Error',
+                                template: response.error.message
+                            })
+                        } 
+                        else{
+                            var token = response.id;
+                            var d = new Date(dob);
+                            FlightsSrv.book(value.IP,token,fn,ln,number,d.getTime(),$scope.country,FlightsSrv.flight1.cost,FlightsSrv.flight1.flightId,null).success(function(data){//TODO
+                                if(data.refNum!=null)
+                                {
+                                    FlightsSrv.brn1 = data.refNum;
+                                    angular.forEach(airlines , function(value2, key2) {
+                                        if (key2 === FlightsSrv.flight2.Airline)
+                                        {
+                                            console.log(FlightsSrv.flight2.Airline)
+                                            FlightsSrv.getKey(value2.IP).success(function(stripeKey){
+                                                Stripe.setPublishableKey(stripeKey+"");
+                                                function stripeResponseHandler2(status2, response2) {
+                                                    if (response2.error) {
+                                                        $ionicPopup.alert({
+                                                            title: 'Error',
+                                                            template: response2.error.message
+                                                        })
+                                                    } 
+                                                    else{
+                                                        var token = response2.id;
+                                                        var d2 = new Date(dob);
+                                                        FlightsSrv.book(value2.IP,token,fn,ln,number,d2.getTime(),country,FlightsSrv.flight2.cost,FlightsSrv.flight2.flightId,null).success(function(data2){//TODO
+                                                            if(data2.refNum!=null){
+                                                                FlightsSrv.brn2 = data2.refNum;
+                                                                FlightsSrv.airline1 = FlightsSrv.flight1.Airline;
+                                                                FlightsSrv.airline2 = FlightsSrv.flight2.Airline;
+                                                                $ionicPopup.alert({
+                                                                    title: 'Booking Successful',
+                                                                    template: 'Your First Booking Reference Number: '+FlightsSrv.brn1+' From: '+FlightsSrv.airline1
+                                                                })
+                                                                $ionicPopup.alert({
+                                                                    title: 'Booking Successful',
+                                                                    template: 'Your Second Booking Reference Number: '+FlightsSrv.brn2+' From: '+FlightsSrv.airline2
+                                                                })
+                                                                $state.go("tab.search");
+                                                            }else{
+                                                                $ionicPopup.alert({
+                                                                    title: 'Error',
+                                                                    template: data2.error.message
+                                                                })
+                                                            }
+                                                        });
+                                                    }
+                                                }
+                                                Stripe.card.createToken({
+                                                    number: number,
+                                                    cvc: cvc,
+                                                    exp_month: expm,
+                                                    exp_year: expy
+                                                },stripeResponseHandler2);
+                                            })
+                                        }
+
+                                    });
+                                }else
+                                {
+                                    $ionicPopup.alert({
+                                        title: 'Error',
+                                        template: data.errorMessage.message
+                                    })
+                                    alert(data.errorMessage.message);
+                                }
+                            });
+                        }
+                    }
+                    Stripe.card.createToken({
+                        number: number,
+                        cvc: cvc,
+                        exp_month: expm,
+                        exp_year: expy
+                    },stripeResponseHandler);
+                })
+            }
+            
+        });
+    }
+    // $scope.home = function(fn,ln) {
+    //     FlightsSrv.reserve(fn,ln).success(function (response) {
+    //         FlightsSrv.setBrn(response);
+    //         var alertPopup = $ionicPopup.alert({
+    //             title: 'Flight Booked',
+    //             template: 'Your Booking Reference Number is '+response
+    //         });
+
+    //         alertPopup.then(function(res) {
+    //             $state.go('tab.search'); 
+    //         });
+    //     });
+    // }
  });
 app.factory('FlightsSrv', function ($http) {
     return {
@@ -381,10 +595,10 @@ app.factory('FlightsSrv', function ($http) {
             return $http.get('http://54.187.103.196/api/data/codes');
         },
         getAllFlights : function() {
-            return $http.get('http://54.187.103.196/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.returnDate+'/'+this.cabin+'?airline='+this.airline+'/'+this.persons+'&wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
+            return $http.get('http://54.187.103.196/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.returnDate+'/'+this.cabin+'/'+this.persons+'?airline='+this.airline+'&wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
         },
         getOneWayFlights : function() {
-            return $http.get('http://54.187.103.196/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.cabin+'?airline='+this.airline++'/'+this.persons+'&wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
+            return $http.get('http://54.187.103.196/api/flights/search/'+this.selectedOriginAirport+'/'+this.selectedDestinationAirport+'/'+this.departDate+'/'+this.cabin+'/'+this.persons+'?airline='+this.airline+'&wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
         },
         setSelectedOriginAirport: function(value) {
             this.selectedOriginAirport = value;
@@ -436,6 +650,25 @@ app.factory('FlightsSrv', function ($http) {
         },
         getCabin:function() {
             return this.cabin;
+        },
+        book : function(airlineUrl,token,fn,ln,passNo,dob,country,cost,departFlightId,returnFlightId) {
+            return $http.post('http://'+airlineUrl+'/booking?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60',{
+                "passengerDetails":[{
+                    "firstName": fn, // (required)
+                    "lastName": ln,  // (required)
+                    "passportNum": passNo, // (required)
+                    "dateOfBirth": dob,  // (required)
+                    "nationality": country // (optional)
+                }],
+                "class": this.cabin,  // (required)
+                "cost": cost, // (required)
+                "outgoingFlightId": departFlightId, // mongodb _id => 5NuiSNQdNcZwau92M (required)
+                "returnFlightId": returnFlightId, // mongodb _id => 9DuiBNVjNcUwiu42J (required)
+                "paymentToken": token // stripe generated token (required)
+            });
+        },
+        getKey : function(airlineUrl) {
+            return $http.get('http://'+airlineUrl+'/stripe/pubkey?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
         },
         reserve : function(fn,ln) {
             return $http.get('http://54.187.103.196/api/reserve/'+fn+'/'+ln+'/'+this.flight1.origin+'/'+this.flight1.destination+'/'+this.flight1.flightNumber+'/'+this.cabin+'/'+this.departDate+'?wt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE0NjA4MzkxMDcsImV4cCI6MTQ5MjM3NTIxMSwiYXVkIjoiNTQuMTg3LjEwMy4xOTY6MzAwMCIsInN1YiI6IlVuaXRlZF9BaXJsaW5lcyJ9.en-MKTd8N_dfLL7hr6Yvu-s3WzkV6-9_xEc-zRNnv60');
